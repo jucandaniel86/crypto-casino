@@ -1,0 +1,1991 @@
+[
+  {
+    "container": "GamesCategoryContainer",
+    "data": {
+      "initialState": {
+        "totalItems": 24,
+        "data": [
+          {
+            "id": "e590ee84-a7a3-487a-816e-3fe1bb256f20",
+            "name": "Cash Wheel Carnival",
+            "imageUrl": "/cdn/c024d36a-73b2-49ce-abc6-7bf8c83b1ae3.jpg",
+            "realPlayUrl": "/casino/microgaming-live/cash-wheel-carnival/play",
+            "demoPlayUrl": "/casino/microgaming-live/cash-wheel-carnival/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "5c19e99c-d9fe-4582-a560-845227da9691",
+            "name": "Mega Roulette",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/204/0bd821a9-6666-482a-a4b0-59cd8c615314.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/mega-roulette/play",
+            "demoPlayUrl": "/casino/pragmatic-play/mega-roulette/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "793ed2fd-330d-4d3b-9f15-17afa265b4af",
+            "name": "Roulette 1",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Live88/bbl_roulette1/2e7f2b1a-9052-46c7-93a6-31c1fdfd52bc.jpg",
+            "realPlayUrl": "/casino/live88/roulette-1/play",
+            "demoPlayUrl": "/casino/live88/roulette-1/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "81694d95-b73a-469a-a011-638c936b3511",
+            "name": "Royal Roulette",
+            "imageUrl": "/cdn/ab0868cd-02fd-424b-8e47-5fac8c527aef.jpg",
+            "realPlayUrl": "/casino/iconic21/royal-roulette/play",
+            "demoPlayUrl": "/casino/iconic21/royal-roulette/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "f21b061b-5d07-41d1-979b-69d9b0d10154",
+            "name": "Playboy Speed Baccarat 3",
+            "imageUrl": "/cdn/d6ceeeb7-d802-4c93-b99a-71e38d4f8759.jpg",
+            "realPlayUrl": "/casino/microgaming-live/playboy-speed-baccarat-3/play",
+            "demoPlayUrl": "/casino/microgaming-live/playboy-speed-baccarat-3/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "9df8ca8d-aebf-43c8-abe0-fdbb76d9d436",
+            "name": "Speed Baccarat 8",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/432/20405735-7dc8-47c9-a61c-a05ca4970c87.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/speed-baccarat-8/play",
+            "demoPlayUrl": "/casino/pragmatic-play/speed-baccarat-8/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "d8bf38ef-12ff-4623-b7bc-94080026525e",
+            "name": "The Kickoff",
+            "imageUrl": "/cdn/imported_games_images/RA_BETER/RA_BETER/launch_rom_sport_kickoff_1/1b1b035b-30a0-449e-8321-795a07f615ab.jpg",
+            "realPlayUrl": "/casino/iconic21/the-kickoff/play",
+            "demoPlayUrl": "/casino/iconic21/the-kickoff/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "1206a727-3dd9-4b61-a64f-a81fc71f5b3b",
+            "name": "FashionTV X-Beat Roulette",
+            "imageUrl": "/cdn/48a869bb-8d21-428b-96bf-1bca596a38da.jpg",
+            "realPlayUrl": "/casino/microgaming-live/fashiontv-x-beat-roulette/play",
+            "demoPlayUrl": "/casino/microgaming-live/fashiontv-x-beat-roulette/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "ea6a0c9b-8043-4ac0-8cba-beaa177f86ff",
+            "name": "Big Bass Crash",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/1320/cfedcde6-4a62-4c9d-b77b-0315f3a11d5a.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/big-bass-crash/play",
+            "demoPlayUrl": "/casino/pragmatic-play/big-bass-crash/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "4219220c-dbdd-4376-948a-b1a4dfee7b19",
+            "name": "Blackjack VIP 3",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Live88/bbl_blackjack6vip/24690458-1526-40e4-8bd4-7ad5033626ad.jpg",
+            "realPlayUrl": "/casino/live88/blackjack-vip-3/play",
+            "demoPlayUrl": "/casino/live88/blackjack-vip-3/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "593b1281-4481-4794-b872-f2fa7446dcd5",
+            "name": "Auto Roulette",
+            "imageUrl": "/cdn/imported_games_images/RA_BETER/RA_BETER/launch_auto_rol_01/2c77c4c3-eb3c-45f2-b773-cb1be77c0c9b.jpg",
+            "realPlayUrl": "/casino/iconic21/auto-roulette/play",
+            "demoPlayUrl": "/casino/iconic21/auto-roulette/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "4049188d-0382-4141-a569-8bd1b8e1db04",
+            "name": "Fashiontv Blackjack",
+            "imageUrl": "/cdn/6db2d326-993b-492f-bc96-0fec0000337d.jpg",
+            "realPlayUrl": "/casino/microgaming-live/fashiontv-blackjack/play",
+            "demoPlayUrl": "/casino/microgaming-live/fashiontv-blackjack/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "23cc59cd-f0e3-4c12-bc5e-ebb42d3efa5b",
+            "name": "Blackjack B",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Live88/bbl_blackjackb/435bb11d-5608-4ab6-9b65-0408ba1d257a.jpg",
+            "realPlayUrl": "/casino/live88/blackjack-b/play",
+            "demoPlayUrl": "/casino/live88/blackjack-b/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "0dab1973-c875-4e65-b4f9-4dbeaa9cf01d",
+            "name": "Mega Sic Bac",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/2101/552acbfc-8a38-4d02-a47f-0eded28746f4.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/mega-sic-bac/play",
+            "demoPlayUrl": "/casino/pragmatic-play/mega-sic-bac/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "eac7739c-5032-4de1-8fae-4748efa731c9",
+            "name": "Blackjack 2",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Live88/bbl_blackjack2/efbed241-5db7-4145-b8e8-898507888b29.jpg",
+            "realPlayUrl": "/casino/live88/blackjack-2/play",
+            "demoPlayUrl": "/casino/live88/blackjack-2/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "b8e06cc8-3e0d-4a62-9aec-1a9141c211e0",
+            "name": "Baccarat 6",
+            "imageUrl": "/cdn/48c67c0c-36cf-4782-a9d4-3ffaeda85dc4.jpg",
+            "realPlayUrl": "/casino/microgaming-live/baccarat-6/play",
+            "demoPlayUrl": "/casino/microgaming-live/baccarat-6/demo",
+            "hasDemo": true
+          }
+        ],
+        "page": 1,
+        "size": 16
+      },
+      "title": "♾️ Featured",
+      "fetchUrl": "cms-service/api/frontend/casino/category-games/18957cc0-786f-4991-81d2-8c6c727fcbf4",
+      "slug": "/casino/category/featured-2",
+      "resolutionsConfig": {
+        "XS": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "SM": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "MD": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "LG": {
+          "itemsPerRow": 8,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "XL": {
+          "itemsPerRow": 8,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        }
+      },
+      "viewMoreConfig": {},
+      "aspectRatioPercentage": 127,
+      "iconParams": {},
+      "id": "18957cc0-786f-4991-81d2-8c6c727fcbf4"
+    },
+    "id": "eea45ce1-7e1f-4c68-b69d-12595b23a32d",
+    "children": [],
+    "appearance": {
+      "resolutionConfig": {
+        "XS": {
+          "background": {},
+          "isVisible": true
+        },
+        "SM": {
+          "background": {},
+          "isVisible": true
+        },
+        "MD": {
+          "background": {},
+          "isVisible": true
+        },
+        "LG": {
+          "background": {},
+          "isVisible": true
+        },
+        "XL": {
+          "background": {},
+          "isVisible": true
+        }
+      }
+    }
+  },
+  {
+    "container": "GamesCategoryContainer",
+    "data": {
+      "initialState": {
+        "totalItems": 25,
+        "data": [
+          {
+            "id": "095c2d43-1ddd-4602-99b4-07b9d04780ef",
+            "name": "Sweet Bonanza CandyLand",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/1101/ab8e4821-1699-46bc-bb6c-4e2619c18387.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/sweet-bonanza-candyland/play",
+            "demoPlayUrl": "/casino/pragmatic-play/sweet-bonanza-candyland/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "1efff464-2351-406e-b7e7-a64331f825fe",
+            "name": "Venice Roulette",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Winfinity/wfnt_veniceroulette/d9909704-16a9-4ffc-ad4b-fef6386a6771.jpg",
+            "realPlayUrl": "/casino/winfinity/venice-roulette/play",
+            "demoPlayUrl": "/casino/winfinity/venice-roulette/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "91e5d8ed-70a0-4346-8ea2-3d95f00a7170",
+            "name": "Bar BJ 5",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Winfinity/wfnt_barbj5/5385d2a4-ed45-4c76-a95f-cbea948f84c8.jpg",
+            "realPlayUrl": "/casino/winfinity/bar-bj-5/play",
+            "demoPlayUrl": "/casino/winfinity/bar-bj-5/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "695cd7a1-afde-4c8b-8b60-4bc6c86083e3",
+            "name": "Live Roulette",
+            "imageUrl": "/cdn/imported_games_images/RA_BETER/RA_BETER/launch_main_rol_01/08668aff-e18c-42f0-88d1-b96a33fc3353.jpg",
+            "realPlayUrl": "/casino/iconic21/live-roulette/play",
+            "demoPlayUrl": "/casino/iconic21/live-roulette/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "7731ef33-fd66-4da3-8283-3aae65b7339e",
+            "name": "Airwave Roulette",
+            "imageUrl": "/cdn/7ad06908-0d1b-46b0-b40c-ffa41bdea6c9.jpg",
+            "realPlayUrl": "/casino/microgaming-live/airwave-roulette/play",
+            "demoPlayUrl": "/casino/microgaming-live/airwave-roulette/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "004c0bd6-d576-4186-9cbd-a5277199d365",
+            "name": "Roulette 2",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Live88/bbl_roulette2/81a29398-4e23-42cb-bc8c-2b111300c179.jpg",
+            "realPlayUrl": "/casino/live88/roulette-2/play",
+            "demoPlayUrl": "/casino/live88/roulette-2/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "ed3c9ced-8474-426a-bd0e-5d5e5f699d3d",
+            "name": "Crash Live",
+            "imageUrl": "/cdn/imported_games_images/RA_BETER/RA_BETER/launch_rom_sport_crash_1/5f936316-d0fb-4615-b631-5dc70b9d2e82.jpg",
+            "realPlayUrl": "/casino/iconic21/crash-live/play",
+            "demoPlayUrl": "/casino/iconic21/crash-live/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "70ac7438-a92b-440c-b2b5-9b37d45781ac",
+            "name": "Live French Roulette",
+            "imageUrl": "/cdn/imported_games_images/RA_BETER/RA_BETER/launch_main_rofl_01/389785ee-0c30-42c0-b66d-579aeae2ec66.jpg",
+            "realPlayUrl": "/casino/iconic21/live-french-roulette/play",
+            "demoPlayUrl": "/casino/iconic21/live-french-roulette/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "26a953d1-9966-410f-ab73-9f7b9ca28e2f",
+            "name": "Fashiontv Roulette",
+            "imageUrl": "/cdn/51869690-ccd8-4958-854a-0002c379974b.jpg",
+            "realPlayUrl": "/casino/microgaming-live/fashiontv-roulette/play",
+            "demoPlayUrl": "/casino/microgaming-live/fashiontv-roulette/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "793ed2fd-330d-4d3b-9f15-17afa265b4af",
+            "name": "Roulette 1",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Live88/bbl_roulette1/2e7f2b1a-9052-46c7-93a6-31c1fdfd52bc.jpg",
+            "realPlayUrl": "/casino/live88/roulette-1/play",
+            "demoPlayUrl": "/casino/live88/roulette-1/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "6e07662a-1c3e-417a-b849-9d546661e474",
+            "name": "Gravity Roulette",
+            "imageUrl": "/cdn/imported_games_images/RA_BETER/RA_BETER/launch_mrol_gravity/9783fdd4-35e8-4071-ada5-6705c5a29117.jpg",
+            "realPlayUrl": "/casino/iconic21/gravity-roulette/play",
+            "demoPlayUrl": "/casino/iconic21/gravity-roulette/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "02be5cd6-9a95-4ffa-93c8-c88262ee2119",
+            "name": "Playboy Speed Baccarat 2",
+            "imageUrl": "/cdn/4d41db41-209d-433f-96ed-a92e77228beb.jpg",
+            "realPlayUrl": "/casino/microgaming-live/playboy-speed-baccarat-2/play",
+            "demoPlayUrl": "/casino/microgaming-live/playboy-speed-baccarat-2/demo",
+            "hasDemo": true
+          }
+        ],
+        "page": 1,
+        "size": 12
+      },
+      "title": "♾️ Top Games",
+      "fetchUrl": "cms-service/api/frontend/casino/category-games/5f976722-dd8e-47a3-bc17-b53be40a74d3",
+      "slug": "/casino/category/top-games-3",
+      "resolutionsConfig": {
+        "XS": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "SM": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "MD": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "LG": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "XL": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        }
+      },
+      "viewMoreConfig": {},
+      "aspectRatioPercentage": 127,
+      "iconParams": {},
+      "id": "5f976722-dd8e-47a3-bc17-b53be40a74d3"
+    },
+    "id": "ea2a16d3-a2b4-43b3-a30c-00fc19444fd0",
+    "children": [],
+    "appearance": {
+      "resolutionConfig": {
+        "XS": {
+          "background": {},
+          "isVisible": true
+        },
+        "SM": {
+          "background": {},
+          "isVisible": true
+        },
+        "MD": {
+          "background": {},
+          "isVisible": true
+        },
+        "LG": {
+          "background": {},
+          "isVisible": true
+        },
+        "XL": {
+          "background": {},
+          "isVisible": true
+        }
+      }
+    }
+  },
+  {
+    "container": "GamesCategoryContainer",
+    "data": {
+      "initialState": {
+        "totalItems": 16,
+        "data": [
+          {
+            "id": "095c2d43-1ddd-4602-99b4-07b9d04780ef",
+            "name": "Sweet Bonanza CandyLand",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/1101/ab8e4821-1699-46bc-bb6c-4e2619c18387.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/sweet-bonanza-candyland/play",
+            "demoPlayUrl": "/casino/pragmatic-play/sweet-bonanza-candyland/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "8faffb9f-1fe2-49b4-a1f5-2ae8ec764292",
+            "name": "Snake",
+            "imageUrl": "/cdn/e8e7fb96-c099-4495-8210-43b9e0562c2a.jpg",
+            "realPlayUrl": "/casino/155-io/snake/play",
+            "demoPlayUrl": "/casino/155-io/snake/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "3dc87937-478e-48d6-87e4-7d7c61c330a8",
+            "name": "War Of Bets",
+            "imageUrl": "/cdn/imported_games_images/HUB88/BetGames.TV/bgt_warofbets/774a6dc5-ea98-4dde-8394-57371b87fa30.jpg",
+            "realPlayUrl": "/casino/betgames-tv/war-of-bets/play",
+            "demoPlayUrl": "/casino/betgames-tv/war-of-bets/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "ea44cff3-32b4-4447-92ee-65bcc0ff4fa0",
+            "name": "Snakes & Ladders Live",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/1601/209db283-1169-41eb-a048-96e4fb5eaa41.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/snakes-ladders-live/play",
+            "demoPlayUrl": "/casino/pragmatic-play/snakes-ladders-live/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "8d2857c0-04e0-4569-beef-4941610a42f8",
+            "name": "Marble Plinko - Classic",
+            "imageUrl": "/cdn/25970626-9187-46b6-9ff5-f15f0452147c.jpg",
+            "realPlayUrl": "/casino/155-io/marble-plinko-classic/play",
+            "demoPlayUrl": "/casino/155-io/marble-plinko-classic/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "4ab68710-0421-474d-84e5-bb58ee3ca676",
+            "name": "Rolling Dunes",
+            "imageUrl": "/cdn/e8771a77-7fb7-488f-a4ff-e0c80ba744b6.jpg",
+            "realPlayUrl": "/casino/155-io/rolling-dunes/play",
+            "demoPlayUrl": "/casino/155-io/rolling-dunes/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "5c19e99c-d9fe-4582-a560-845227da9691",
+            "name": "Mega Roulette",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/204/0bd821a9-6666-482a-a4b0-59cd8c615314.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/mega-roulette/play",
+            "demoPlayUrl": "/casino/pragmatic-play/mega-roulette/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "d629af32-aec7-4740-8278-60528dfc8cde",
+            "name": "Bet-on-Poker",
+            "imageUrl": "/cdn/imported_games_images/HUB88/BetGames.TV/bgt_bet-on-poker/da41c78e-aeda-4a65-bc74-d8b0e25830c6.jpg",
+            "realPlayUrl": "/casino/betgames-tv/bet-on-poker/play",
+            "demoPlayUrl": "/casino/betgames-tv/bet-on-poker/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "67278aba-687e-49bc-809d-2c1b227f44ce",
+            "name": "Bet On Teen Patti ",
+            "imageUrl": "/cdn/imported_games_images/RA_BETER/RA_BETER/launch_in_botp_1/cb850fd0-00df-4cd9-8ab2-2d3c63673689.jpg",
+            "realPlayUrl": "/casino/iconic21/bet-on-teen-patti/play",
+            "demoPlayUrl": "/casino/iconic21/bet-on-teen-patti/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "e590ee84-a7a3-487a-816e-3fe1bb256f20",
+            "name": "Cash Wheel Carnival",
+            "imageUrl": "/cdn/c024d36a-73b2-49ce-abc6-7bf8c83b1ae3.jpg",
+            "realPlayUrl": "/casino/microgaming-live/cash-wheel-carnival/play",
+            "demoPlayUrl": "/casino/microgaming-live/cash-wheel-carnival/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "3d2d34c1-75f8-4740-bd42-7cb04f47efa9",
+            "name": "Agent Spinity",
+            "imageUrl": "/cdn/96922b84-0ef8-49f7-93c6-22942d57dc9a.jpg",
+            "realPlayUrl": "/casino/winfinity/agent-spinity/play",
+            "demoPlayUrl": "/casino/winfinity/agent-spinity/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "d73a7bba-d345-4442-8db7-f397f94dc3a6",
+            "name": "Wheel Of Fortune",
+            "imageUrl": "/cdn/imported_games_images/HUB88/BetGames.TV/bgt_wheeloffortune/f4894f93-93cb-4fb9-bfc4-84a281dac2be.jpg",
+            "realPlayUrl": "/casino/betgames-tv/wheel-of-fortune/play",
+            "demoPlayUrl": "/casino/betgames-tv/wheel-of-fortune/demo",
+            "hasDemo": true
+          }
+        ],
+        "page": 1,
+        "size": 12
+      },
+      "title": "🤵🏻‍♂️ Game Shows",
+      "fetchUrl": "cms-service/api/frontend/casino/category-games/c1c982ca-1d30-4067-b160-ff853bb86469",
+      "slug": "/casino/category/game-shows",
+      "resolutionsConfig": {
+        "XS": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "SM": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "MD": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "LG": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "XL": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        }
+      },
+      "viewMoreConfig": {},
+      "aspectRatioPercentage": 127,
+      "iconParams": {},
+      "id": "c1c982ca-1d30-4067-b160-ff853bb86469"
+    },
+    "id": "c4399bd5-b0e1-498a-852f-1cbfd7222121",
+    "children": [],
+    "appearance": {
+      "resolutionConfig": {
+        "XS": {
+          "background": {},
+          "isVisible": true
+        },
+        "SM": {
+          "background": {},
+          "isVisible": true
+        },
+        "MD": {
+          "background": {},
+          "isVisible": true
+        },
+        "LG": {
+          "background": {},
+          "isVisible": true
+        },
+        "XL": {
+          "background": {},
+          "isVisible": true
+        }
+      }
+    }
+  },
+  {
+    "container": "GamesCategoryContainer",
+    "data": {
+      "initialState": {
+        "totalItems": 50,
+        "data": [
+          {
+            "id": "149c6c42-aca6-4cd9-b3b7-9cab411ac764",
+            "name": "Privé Lounge Baccarat 5",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/458/a4299bd0-2bd3-4e10-8cbc-46803c9fa86a.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/priv%C3%A9-lounge-baccarat-5/play",
+            "demoPlayUrl": "/casino/pragmatic-play/priv%C3%A9-lounge-baccarat-5/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "7a789451-5a04-4fe8-8772-9fac5ee7b5df",
+            "name": "Privé Lounge Baccarat 1",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/454/c4106033-edc9-4bb3-98ba-20a3af5184a8.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/priv%C3%A9-lounge-baccarat-1/play",
+            "demoPlayUrl": "/casino/pragmatic-play/priv%C3%A9-lounge-baccarat-1/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "1322e73c-0820-4945-b0c5-021ff32e59dd",
+            "name": "Privé Lounge Baccarat 7",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/467/017ad8b5-f288-47d3-8c85-9850f9a59ff0.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/priv%C3%A9-lounge-baccarat-7/play",
+            "demoPlayUrl": "/casino/pragmatic-play/priv%C3%A9-lounge-baccarat-7/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "7f0f2ee4-4a6a-4a9f-809c-4c3ba764c74e",
+            "name": "Shangrila Baccarat 8",
+            "imageUrl": "/cdn/e77a34fe-a099-401d-9baf-b0cafb27625c.jpg",
+            "realPlayUrl": "/casino/winfinity/shangrila-baccarat-8/play",
+            "demoPlayUrl": "/casino/winfinity/shangrila-baccarat-8/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "877f5e58-7b3d-4649-a105-90d75f71ed0a",
+            "name": "Shangrila Baccarat 7 ",
+            "imageUrl": "/cdn/82f46bda-0ece-4c06-9bf5-f5889fe8259d.jpg",
+            "realPlayUrl": "/casino/winfinity/shangrila-baccarat-7/play",
+            "demoPlayUrl": "/casino/winfinity/shangrila-baccarat-7/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "716df631-15ea-4e6c-adc5-bd0d969603cd",
+            "name": "Tao Yuan Baccarat 3  ",
+            "imageUrl": "/cdn/df24187e-acc5-4e11-b9c8-5aae88ad3e63.jpg",
+            "realPlayUrl": "/casino/winfinity/tao-yuan-baccarat-3/play",
+            "demoPlayUrl": "/casino/winfinity/tao-yuan-baccarat-3/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "c086f54b-8786-4326-bd39-1ef176f1642e",
+            "name": "Baccarat 1",
+            "imageUrl": "/cdn/6d9e5f86-6384-4a20-8340-be58f04ddeeb.jpg",
+            "realPlayUrl": "/casino/microgaming-live/baccarat-1/play",
+            "demoPlayUrl": "/casino/microgaming-live/baccarat-1/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "0e2eb464-6370-46fa-8904-9186ae1c9584",
+            "name": "Baccarat 3",
+            "imageUrl": "/cdn/4534774f-b33c-46b9-948c-3f13e9e82a6b.jpg",
+            "realPlayUrl": "/casino/microgaming-live/baccarat-3/play",
+            "demoPlayUrl": "/casino/microgaming-live/baccarat-3/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "b8e06cc8-3e0d-4a62-9aec-1a9141c211e0",
+            "name": "Baccarat 6",
+            "imageUrl": "/cdn/48c67c0c-36cf-4782-a9d4-3ffaeda85dc4.jpg",
+            "realPlayUrl": "/casino/microgaming-live/baccarat-6/play",
+            "demoPlayUrl": "/casino/microgaming-live/baccarat-6/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "dadaa464-bea8-4f28-98ed-32d6bfb0345c",
+            "name": "Tao Yuan Baccarat 7",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Winfinity/wfnt_taoyuanbaccarat7/b31a2544-e47e-4bf2-a416-dc6527b38312.jpg",
+            "realPlayUrl": "/casino/winfinity/tao-yuan-baccarat-7/play",
+            "demoPlayUrl": "/casino/winfinity/tao-yuan-baccarat-7/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "9bcb6b2e-836d-4bda-8bb6-b4a107a6e687",
+            "name": "Baccarat 7",
+            "imageUrl": "/cdn/44ba85f8-39a3-4f69-9762-836c1f65b248.jpg",
+            "realPlayUrl": "/casino/microgaming-live/baccarat-7/play",
+            "demoPlayUrl": "/casino/microgaming-live/baccarat-7/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "79525ebf-2b0a-4769-bcdf-0b42b36cdbde",
+            "name": "Baccarat 2",
+            "imageUrl": "/cdn/be188427-dda7-426d-b106-5458aca8b441.jpg",
+            "realPlayUrl": "/casino/microgaming-live/baccarat-2/play",
+            "demoPlayUrl": "/casino/microgaming-live/baccarat-2/demo",
+            "hasDemo": true
+          }
+        ],
+        "page": 1,
+        "size": 12
+      },
+      "title": "♾️ Baccarat",
+      "fetchUrl": "cms-service/api/frontend/casino/category-games/3a3dbf89-1fe4-480c-893c-2cdfd1bd0de3",
+      "slug": "/casino/category/baccarat-1",
+      "resolutionsConfig": {
+        "XS": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "SM": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "MD": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "LG": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "XL": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        }
+      },
+      "viewMoreConfig": {},
+      "aspectRatioPercentage": 127,
+      "iconParams": {},
+      "id": "3a3dbf89-1fe4-480c-893c-2cdfd1bd0de3"
+    },
+    "id": "f667b87c-193d-44c0-a1c5-e4ce5bb1df62",
+    "children": [],
+    "appearance": {
+      "resolutionConfig": {
+        "XS": {
+          "background": {},
+          "isVisible": true
+        },
+        "SM": {
+          "background": {},
+          "isVisible": true
+        },
+        "MD": {
+          "background": {},
+          "isVisible": true
+        },
+        "LG": {
+          "background": {},
+          "isVisible": true
+        },
+        "XL": {
+          "background": {},
+          "isVisible": true
+        }
+      }
+    }
+  },
+  {
+    "container": "GamesCategoryContainer",
+    "data": {
+      "initialState": {
+        "totalItems": 83,
+        "data": [
+          {
+            "id": "ab43d0aa-63c6-461a-9765-b0187d50993b",
+            "name": "ONE Blackjack 2",
+            "imageUrl": "/cdn/decdac1a-a03a-4ffb-bede-5d3d734c9f2e.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/one-blackjack-2/play",
+            "demoPlayUrl": "/casino/pragmatic-play/one-blackjack-2/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "08e435fb-c57e-4ced-a43b-930cbb4c3c41",
+            "name": "Monaco Blackjack 3",
+            "imageUrl": "/cdn/16bfdf34-15b3-4660-be8c-623259c84f2c.jpg",
+            "realPlayUrl": "/casino/winfinity/monaco-blackjack-3/play",
+            "demoPlayUrl": "/casino/winfinity/monaco-blackjack-3/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "002ae5d7-ce67-42c1-8582-ebe500962d3e",
+            "name": "Speed Blackjack 62",
+            "imageUrl": "/cdn/89f9cd55-8ebc-42d7-897d-8dc70dd47793.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/speed-blackjack-62/play",
+            "demoPlayUrl": "/casino/pragmatic-play/speed-blackjack-62/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "b9958c92-f9a7-47b2-80b5-3c11d19e8a4d",
+            "name": "Speed Blackjack 2 - Ruby",
+            "imageUrl": "/cdn/f5e24c2e-90b8-43b2-b3ad-30c4588398ba.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/speed-blackjack-2-ruby/play",
+            "demoPlayUrl": "/casino/pragmatic-play/speed-blackjack-2-ruby/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "af939d67-7712-4688-9bd0-abb97ce650fe",
+            "name": "Speed Blackjack 5 - Ruby",
+            "imageUrl": "/cdn/7c7a2d4a-43c0-4e22-9266-2db1a07accef.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/speed-blackjack-5-ruby/play",
+            "demoPlayUrl": "/casino/pragmatic-play/speed-blackjack-5-ruby/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "615f0b74-3592-4a3a-8664-420f4c9da1a0",
+            "name": "Monaco Blackjack 4",
+            "imageUrl": "/cdn/86aa9946-9f2a-4064-a7e6-fbecc29fdf4a.jpg",
+            "realPlayUrl": "/casino/winfinity/monaco-blackjack-4/play",
+            "demoPlayUrl": "/casino/winfinity/monaco-blackjack-4/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "2fe0acf7-403e-4529-a5c2-1c73dbca96a8",
+            "name": "Speed Blackjack 1 - Ruby",
+            "imageUrl": "/cdn/a7de428f-7d88-4f89-9ae7-fc6b9e8677ed.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/speed-blackjack-1-ruby/play",
+            "demoPlayUrl": "/casino/pragmatic-play/speed-blackjack-1-ruby/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "9ae642f4-bf86-4608-bd5f-6a4ba1ea29a4",
+            "name": "Speed Blackjack 4 - Ruby",
+            "imageUrl": "/cdn/728a0698-beb6-4798-88ac-cdf55d34e5bc.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/speed-blackjack-4-ruby/play",
+            "demoPlayUrl": "/casino/pragmatic-play/speed-blackjack-4-ruby/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "695d1324-baa6-4894-92d9-a107c9225345",
+            "name": "Speed Blackjack 3 - Ruby",
+            "imageUrl": "/cdn/03037d48-12ec-41ec-8555-93e86f3aea9e.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/speed-blackjack-3-ruby/play",
+            "demoPlayUrl": "/casino/pragmatic-play/speed-blackjack-3-ruby/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "2d782959-0d1d-4f45-8ce6-b8aad8f2a3d6",
+            "name": "Monaco Blackjack 5",
+            "imageUrl": "/cdn/0f71eb10-2ad8-4480-833b-6e02d7985977.jpg",
+            "realPlayUrl": "/casino/winfinity/monaco-blackjack-5/play",
+            "demoPlayUrl": "/casino/winfinity/monaco-blackjack-5/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "0ea77b80-9489-4e2d-9d9e-b6cd9da75047",
+            "name": "Monaco VIP Blackjack 6",
+            "imageUrl": "/cdn/62dc31a5-4c5d-420a-b401-384647b03619.jpg",
+            "realPlayUrl": "/casino/winfinity/monaco-vip-blackjack-6/play",
+            "demoPlayUrl": "/casino/winfinity/monaco-vip-blackjack-6/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "64164454-552b-436c-810f-482a79c15701",
+            "name": "ONE Blackjack",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/901/03abbf6d-d337-4b9b-924c-6ef73f035a0b.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/one-blackjack/play",
+            "demoPlayUrl": "/casino/pragmatic-play/one-blackjack/demo",
+            "hasDemo": false
+          }
+        ],
+        "page": 1,
+        "size": 12
+      },
+      "title": "♾️ Blackjack",
+      "fetchUrl": "cms-service/api/frontend/casino/category-games/8b06252f-cb1d-4422-8765-087abdb6d0d1",
+      "slug": "/casino/category/blackjack-1",
+      "resolutionsConfig": {
+        "XS": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "SM": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "MD": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "LG": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "XL": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        }
+      },
+      "viewMoreConfig": {},
+      "aspectRatioPercentage": 127,
+      "iconParams": {},
+      "id": "8b06252f-cb1d-4422-8765-087abdb6d0d1"
+    },
+    "id": "3a8675bd-25d1-477c-b628-652a7d9fd58a",
+    "children": [],
+    "appearance": {
+      "resolutionConfig": {
+        "XS": {
+          "background": {},
+          "isVisible": true
+        },
+        "SM": {
+          "background": {},
+          "isVisible": true
+        },
+        "MD": {
+          "background": {},
+          "isVisible": true
+        },
+        "LG": {
+          "background": {},
+          "isVisible": true
+        },
+        "XL": {
+          "background": {},
+          "isVisible": true
+        }
+      }
+    }
+  },
+  {
+    "container": "GamesCategoryContainer",
+    "data": {
+      "initialState": {
+        "totalItems": 51,
+        "data": [
+          {
+            "id": "711a50e3-e13e-42f1-8abd-aa691b30a76a",
+            "name": "Immersive Roulette Deluxe",
+            "imageUrl": "/cdn/73906e01-155b-4685-89b9-3bde69a92534.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/immersive-roulette-deluxe/play",
+            "demoPlayUrl": "/casino/pragmatic-play/immersive-roulette-deluxe/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "9f34039b-8a47-41db-95bf-6b5050920b68",
+            "name": "American Roulette",
+            "imageUrl": "/cdn/8606ece3-745a-46cb-ad62-9b88f4294015.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/american-roulette/play",
+            "demoPlayUrl": "/casino/pragmatic-play/american-roulette/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "a1a8e8b6-d1a9-41a9-a680-ef55052bac83",
+            "name": "Clubhouse Roulette",
+            "imageUrl": "/cdn/ec7e2ae7-4f03-4901-accb-1afe2c438568.jpg",
+            "realPlayUrl": "/casino/microgaming-live/clubhouse-roulette/play",
+            "demoPlayUrl": "/casino/microgaming-live/clubhouse-roulette/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "b01153ba-8ca5-43b0-ae37-c950329a17c9",
+            "name": "Auto Roulette VIP",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/266/5ea33014-1bfb-415e-8990-5eba5307e124.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/auto-roulette-vip/play",
+            "demoPlayUrl": "/casino/pragmatic-play/auto-roulette-vip/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "84d5b59c-f421-4182-a970-b5e9a0660e5d",
+            "name": "Auto Roulette",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Winfinity/wfnt_autoroulette/f424e377-e766-4595-8fe4-413defed07ca.jpg",
+            "realPlayUrl": "/casino/winfinity/auto-roulette/play",
+            "demoPlayUrl": "/casino/winfinity/auto-roulette/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "3c19700f-74bf-45dd-9bc4-117539186bd5",
+            "name": "Triton Multiplier Roulette",
+            "imageUrl": "/cdn/918d6bf0-936c-493e-991c-b6aa70de83f7.jpg",
+            "realPlayUrl": "/casino/live88/triton-multiplier-roulette/play",
+            "demoPlayUrl": "/casino/live88/triton-multiplier-roulette/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "bf1e2c34-f109-458f-8afa-12bd02f5a546",
+            "name": "Bar Roulette 2000X",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Winfinity/wfnt_barroulette2000x/b4a64dff-c5ca-4d23-bf27-59237b493117.jpg",
+            "realPlayUrl": "/casino/winfinity/bar-roulette-2000x/play",
+            "demoPlayUrl": "/casino/winfinity/bar-roulette-2000x/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "f1362c04-2f85-4beb-8dbe-617a2f7fbaa2",
+            "name": "Roulette Ruby",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/230/f666c624-4844-46d3-8be1-361623ee5d6a.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/roulette-ruby/play",
+            "demoPlayUrl": "/casino/pragmatic-play/roulette-ruby/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "d3cca16d-a3a1-4163-a605-5aa715a6abc0",
+            "name": "VIP Auto Roulette",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Winfinity/wfnt_vipautoroulette/ac78936c-7c35-4671-a09e-5c2e149ceb4f.jpg",
+            "realPlayUrl": "/casino/winfinity/vip-auto-roulette/play",
+            "demoPlayUrl": "/casino/winfinity/vip-auto-roulette/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "c6eed0c2-d215-41ec-be0c-77b4a954ac44",
+            "name": "Auto Mega Roulette",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/210/f2f75970-ec26-41c8-a5f8-04026371e9ec.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/auto-mega-roulette/play",
+            "demoPlayUrl": "/casino/pragmatic-play/auto-mega-roulette/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "8d7e5d24-879a-45e5-b2f5-b839d13ec90d",
+            "name": "Diamond Roulette",
+            "imageUrl": "/cdn/1b8a6621-edc7-4a72-a1fd-7975ffec34ff.jpg",
+            "realPlayUrl": "/casino/microgaming-live/diamond-roulette/play",
+            "demoPlayUrl": "/casino/microgaming-live/diamond-roulette/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "1efff464-2351-406e-b7e7-a64331f825fe",
+            "name": "Venice Roulette",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Winfinity/wfnt_veniceroulette/d9909704-16a9-4ffc-ad4b-fef6386a6771.jpg",
+            "realPlayUrl": "/casino/winfinity/venice-roulette/play",
+            "demoPlayUrl": "/casino/winfinity/venice-roulette/demo",
+            "hasDemo": true
+          }
+        ],
+        "page": 1,
+        "size": 12
+      },
+      "title": "♾️ Roulette",
+      "fetchUrl": "cms-service/api/frontend/casino/category-games/09dcbecd-6955-4553-81e3-0eba0f3993ff",
+      "slug": "/casino/category/roulette-1",
+      "resolutionsConfig": {
+        "XS": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "SM": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "MD": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "LG": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "XL": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        }
+      },
+      "viewMoreConfig": {},
+      "aspectRatioPercentage": 127,
+      "iconParams": {},
+      "id": "09dcbecd-6955-4553-81e3-0eba0f3993ff"
+    },
+    "id": "55edb217-ccdb-400e-9d93-70e7e0978eba",
+    "children": [],
+    "appearance": {
+      "resolutionConfig": {
+        "XS": {
+          "background": {},
+          "isVisible": true
+        },
+        "SM": {
+          "background": {},
+          "isVisible": true
+        },
+        "MD": {
+          "background": {},
+          "isVisible": true
+        },
+        "LG": {
+          "background": {},
+          "isVisible": true
+        },
+        "XL": {
+          "background": {},
+          "isVisible": true
+        }
+      }
+    }
+  },
+  {
+    "container": "GamesCategoryContainer",
+    "data": {
+      "initialState": {
+        "totalItems": 4,
+        "data": [
+          {
+            "id": "0551866d-e87b-4b28-86ae-72bb5d66655f",
+            "name": "Casino Hold’em",
+            "imageUrl": "/cdn/8a68b4b6-128b-4edb-a0e0-332efd8b7c8a.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/casino-hold-em/play",
+            "demoPlayUrl": "/casino/pragmatic-play/casino-hold-em/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "d3da4b64-a7cf-492d-ba2b-6cbc85ef6f83",
+            "name": "Casino Holdem",
+            "imageUrl": "/cdn/3f100ec4-0b02-4252-8923-1cc1373e5fd0.jpg",
+            "realPlayUrl": "/casino/microgaming-live/casino-holdem/play",
+            "demoPlayUrl": "/casino/microgaming-live/casino-holdem/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "d629af32-aec7-4740-8278-60528dfc8cde",
+            "name": "Bet-on-Poker",
+            "imageUrl": "/cdn/imported_games_images/HUB88/BetGames.TV/bgt_bet-on-poker/da41c78e-aeda-4a65-bc74-d8b0e25830c6.jpg",
+            "realPlayUrl": "/casino/betgames-tv/bet-on-poker/play",
+            "demoPlayUrl": "/casino/betgames-tv/bet-on-poker/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "f051aaef-5784-4eeb-b02f-c3ae64376da7",
+            "name": "Poker 6+",
+            "imageUrl": "/cdn/imported_games_images/HUB88/BetGames.TV/bgt_poker6/8152a4de-bf6a-4712-95cb-290311254cc2.jpg",
+            "realPlayUrl": "/casino/betgames-tv/poker-6/play",
+            "demoPlayUrl": "/casino/betgames-tv/poker-6/demo",
+            "hasDemo": true
+          }
+        ],
+        "page": 1,
+        "size": 4
+      },
+      "title": "♾️ Poker",
+      "fetchUrl": "cms-service/api/frontend/casino/category-games/d40f66fd-f66c-4282-beb5-46572d723a92",
+      "slug": "/casino/category/poker-1",
+      "resolutionsConfig": {
+        "XS": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "SM": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "MD": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "LG": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "XL": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        }
+      },
+      "viewMoreConfig": {},
+      "aspectRatioPercentage": 127,
+      "iconParams": {},
+      "id": "d40f66fd-f66c-4282-beb5-46572d723a92"
+    },
+    "id": "fc2a12b4-b4be-4fe1-91bb-d9c0ee1e2999",
+    "children": [],
+    "appearance": {
+      "resolutionConfig": {
+        "XS": {
+          "background": {},
+          "isVisible": true
+        },
+        "SM": {
+          "background": {},
+          "isVisible": true
+        },
+        "MD": {
+          "background": {},
+          "isVisible": true
+        },
+        "LG": {
+          "background": {},
+          "isVisible": true
+        },
+        "XL": {
+          "background": {},
+          "isVisible": true
+        }
+      }
+    }
+  },
+  {
+    "container": "GamesCategoryContainer",
+    "data": {
+      "initialState": {
+        "totalItems": 35,
+        "data": [
+          {
+            "id": "6336790a-a3c1-49ee-9505-dcd2db5f61bc",
+            "name": "Lightspeed",
+            "imageUrl": "/cdn/147c0c00-c0a9-4ddb-ae16-5ea6fc3ae23b.jpg",
+            "realPlayUrl": "/casino/iconic21/lightspeed/play",
+            "demoPlayUrl": "/casino/iconic21/lightspeed/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "9ca094ec-c7ad-49f3-a59f-85742816f7b8",
+            "name": "Stairpong",
+            "imageUrl": "/cdn/1f133afa-1c67-4aee-8579-fda2d81852b3.jpg",
+            "realPlayUrl": "/casino/155-io/stairpong/play",
+            "demoPlayUrl": "/casino/155-io/stairpong/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "4ab68710-0421-474d-84e5-bb58ee3ca676",
+            "name": "Rolling Dunes",
+            "imageUrl": "/cdn/e8771a77-7fb7-488f-a4ff-e0c80ba744b6.jpg",
+            "realPlayUrl": "/casino/155-io/rolling-dunes/play",
+            "demoPlayUrl": "/casino/155-io/rolling-dunes/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "e590ee84-a7a3-487a-816e-3fe1bb256f20",
+            "name": "Cash Wheel Carnival",
+            "imageUrl": "/cdn/c024d36a-73b2-49ce-abc6-7bf8c83b1ae3.jpg",
+            "realPlayUrl": "/casino/microgaming-live/cash-wheel-carnival/play",
+            "demoPlayUrl": "/casino/microgaming-live/cash-wheel-carnival/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "3d2d34c1-75f8-4740-bd42-7cb04f47efa9",
+            "name": "Agent Spinity",
+            "imageUrl": "/cdn/96922b84-0ef8-49f7-93c6-22942d57dc9a.jpg",
+            "realPlayUrl": "/casino/winfinity/agent-spinity/play",
+            "demoPlayUrl": "/casino/winfinity/agent-spinity/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "8faffb9f-1fe2-49b4-a1f5-2ae8ec764292",
+            "name": "Snake",
+            "imageUrl": "/cdn/e8e7fb96-c099-4495-8210-43b9e0562c2a.jpg",
+            "realPlayUrl": "/casino/155-io/snake/play",
+            "demoPlayUrl": "/casino/155-io/snake/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "8d2857c0-04e0-4569-beef-4941610a42f8",
+            "name": "Marble Plinko - Classic",
+            "imageUrl": "/cdn/25970626-9187-46b6-9ff5-f15f0452147c.jpg",
+            "realPlayUrl": "/casino/155-io/marble-plinko-classic/play",
+            "demoPlayUrl": "/casino/155-io/marble-plinko-classic/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "d73a7bba-d345-4442-8db7-f397f94dc3a6",
+            "name": "Wheel Of Fortune",
+            "imageUrl": "/cdn/imported_games_images/HUB88/BetGames.TV/bgt_wheeloffortune/f4894f93-93cb-4fb9-bfc4-84a281dac2be.jpg",
+            "realPlayUrl": "/casino/betgames-tv/wheel-of-fortune/play",
+            "demoPlayUrl": "/casino/betgames-tv/wheel-of-fortune/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "c4f85612-c0d3-4302-af70-451540efdde6",
+            "name": "Dragon Tiger",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/1001/4792740e-d308-4fc6-83e9-7ed5d1e6c144.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/dragon-tiger/play",
+            "demoPlayUrl": "/casino/pragmatic-play/dragon-tiger/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "8b9f9a6b-2f66-4450-b427-a4ae3a46ce7c",
+            "name": "Lucky 7",
+            "imageUrl": "/cdn/imported_games_images/HUB88/BetGames.TV/bgt_lucky7/51c15deb-0a03-46c7-901c-5a122effee3e.jpg",
+            "realPlayUrl": "/casino/betgames-tv/lucky-7/play",
+            "demoPlayUrl": "/casino/betgames-tv/lucky-7/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "c515bcf9-efb2-47b4-8409-b57e983b1e62",
+            "name": "Russian Keno",
+            "imageUrl": "/cdn/imported_games_images/HUB88/SmartSoft/smrt_russiankeno/eadff6ca-fb28-4130-8909-03141ceabf45.jpg",
+            "realPlayUrl": "/casino/smartsoft/russian-keno/play",
+            "demoPlayUrl": "/casino/smartsoft/russian-keno/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "ea44cff3-32b4-4447-92ee-65bcc0ff4fa0",
+            "name": "Snakes & Ladders Live",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/1601/209db283-1169-41eb-a048-96e4fb5eaa41.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/snakes-ladders-live/play",
+            "demoPlayUrl": "/casino/pragmatic-play/snakes-ladders-live/demo",
+            "hasDemo": false
+          }
+        ],
+        "page": 1,
+        "size": 12
+      },
+      "title": "♾️ Other Games",
+      "fetchUrl": "cms-service/api/frontend/casino/category-games/5e41c1c5-f0f0-4432-88a6-f8b34782e3f8",
+      "slug": "/casino/category/other-games",
+      "resolutionsConfig": {
+        "XS": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "SM": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "MD": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "LG": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "XL": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        }
+      },
+      "viewMoreConfig": {},
+      "aspectRatioPercentage": 127,
+      "iconParams": {},
+      "id": "5e41c1c5-f0f0-4432-88a6-f8b34782e3f8"
+    },
+    "id": "4dae872b-12b7-4313-aff4-3fa1c45784dc",
+    "children": [],
+    "appearance": {
+      "resolutionConfig": {
+        "XS": {
+          "background": {},
+          "isVisible": true
+        },
+        "SM": {
+          "background": {},
+          "isVisible": true
+        },
+        "MD": {
+          "background": {},
+          "isVisible": true
+        },
+        "LG": {
+          "background": {},
+          "isVisible": true
+        },
+        "XL": {
+          "background": {},
+          "isVisible": true
+        }
+      }
+    }
+  },
+  {
+    "container": "GamesCategoryHeadlessContainer",
+    "data": {
+      "initialState": {
+        "totalItems": 335,
+        "data": [
+          {
+            "id": "bc05397b-e01a-4f7a-bbd8-ba2aa1ff1b57",
+            "name": "Blackjack 32 - Azure",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/540/9958bf25-aa30-464a-8202-6e92dfd94191.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/blackjack-32-azure/play",
+            "demoPlayUrl": "/casino/pragmatic-play/blackjack-32-azure/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "d3da4b64-a7cf-492d-ba2b-6cbc85ef6f83",
+            "name": "Casino Holdem",
+            "imageUrl": "/cdn/3f100ec4-0b02-4252-8923-1cc1373e5fd0.jpg",
+            "realPlayUrl": "/casino/microgaming-live/casino-holdem/play",
+            "demoPlayUrl": "/casino/microgaming-live/casino-holdem/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "f39fe067-d4e9-4793-96da-eaf9744a03a1",
+            "name": "Blackjack A",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Live88/bbl_blackjacka/89191629-8f94-497f-9311-e24a07d247ca.jpg",
+            "realPlayUrl": "/casino/live88/blackjack-a/play",
+            "demoPlayUrl": "/casino/live88/blackjack-a/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "c0c0fed6-40fa-4bdb-b872-b21ead512770",
+            "name": "Andar Bahar x5000",
+            "imageUrl": "/cdn/6c3fd5d1-e624-45be-b15e-0c5d08059df7.jpg",
+            "realPlayUrl": "/casino/winfinity/andar-bahar-x5000/play",
+            "demoPlayUrl": "/casino/winfinity/andar-bahar-x5000/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "b24fceda-0cf8-4666-a58b-7ebeb886f92a",
+            "name": "VIP Blackjack",
+            "imageUrl": "/cdn/imported_games_images/RA_BETER/RA_BETER/launch_rom_main_vip_bj_1/a7715675-8a5b-4fc3-87fc-8af462deed75.jpg",
+            "realPlayUrl": "/casino/iconic21/vip-blackjack/play",
+            "demoPlayUrl": "/casino/iconic21/vip-blackjack/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "cb009382-dece-4bf1-ab3d-62a9665afe41",
+            "name": "Bar Blackjack 4",
+            "imageUrl": "/cdn/2ad19711-169e-42b2-8641-805192062716.jpg",
+            "realPlayUrl": "/casino/winfinity/bar-blackjack-4/play",
+            "demoPlayUrl": "/casino/winfinity/bar-blackjack-4/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "dff7fdcb-42aa-4079-ae29-1e401c1c108f",
+            "name": "Andar Bahar",
+            "imageUrl": "/cdn/7da79a43-520f-4296-84db-0e767b4f1668.jpg",
+            "realPlayUrl": "/casino/winfinity/andar-bahar/play",
+            "demoPlayUrl": "/casino/winfinity/andar-bahar/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "e5a22828-d14f-4ed9-9ee5-7466eff30ca7",
+            "name": "VIP Baccarat",
+            "imageUrl": "/cdn/imported_games_images/RA_BETER/RA_BETER/launch_rom_main_vip_mbac_1/f730d7c9-791a-411d-8b6b-ea105e33edef.jpg",
+            "realPlayUrl": "/casino/iconic21/vip-baccarat/play",
+            "demoPlayUrl": "/casino/iconic21/vip-baccarat/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "0dbaf81e-d44d-4d47-8718-d7f690cb49ab",
+            "name": "Hyper Speed Baccarat",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Live88/bbl_hyperspeedbaccarat/01e2f527-0ecb-40f7-a97e-ce4a1ffc2eb8.jpg",
+            "realPlayUrl": "/casino/live88/hyper-speed-baccarat/play",
+            "demoPlayUrl": "/casino/live88/hyper-speed-baccarat/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "877f5e58-7b3d-4649-a105-90d75f71ed0a",
+            "name": "Shangrila Baccarat 7 ",
+            "imageUrl": "/cdn/82f46bda-0ece-4c06-9bf5-f5889fe8259d.jpg",
+            "realPlayUrl": "/casino/winfinity/shangrila-baccarat-7/play",
+            "demoPlayUrl": "/casino/winfinity/shangrila-baccarat-7/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "70ac7438-a92b-440c-b2b5-9b37d45781ac",
+            "name": "Live French Roulette",
+            "imageUrl": "/cdn/imported_games_images/RA_BETER/RA_BETER/launch_main_rofl_01/389785ee-0c30-42c0-b66d-579aeae2ec66.jpg",
+            "realPlayUrl": "/casino/iconic21/live-french-roulette/play",
+            "demoPlayUrl": "/casino/iconic21/live-french-roulette/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "0329f5ce-e66d-4acd-85fb-a17120f981da",
+            "name": "Speed Roulette",
+            "imageUrl": "/cdn/494e080a-e10a-4ca9-ac54-e30df891d64e.jpg",
+            "realPlayUrl": "/casino/microgaming-live/speed-roulette/play",
+            "demoPlayUrl": "/casino/microgaming-live/speed-roulette/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "b4982f99-2bcc-45bf-b517-481b7699a1cb",
+            "name": "Speed Blackjack 66",
+            "imageUrl": "/cdn/b0d29868-bff7-439f-a9c1-9d4ade524f2b.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/speed-blackjack-66/play",
+            "demoPlayUrl": "/casino/pragmatic-play/speed-blackjack-66/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "e590ee84-a7a3-487a-816e-3fe1bb256f20",
+            "name": "Cash Wheel Carnival",
+            "imageUrl": "/cdn/c024d36a-73b2-49ce-abc6-7bf8c83b1ae3.jpg",
+            "realPlayUrl": "/casino/microgaming-live/cash-wheel-carnival/play",
+            "demoPlayUrl": "/casino/microgaming-live/cash-wheel-carnival/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "9ca094ec-c7ad-49f3-a59f-85742816f7b8",
+            "name": "Stairpong",
+            "imageUrl": "/cdn/1f133afa-1c67-4aee-8579-fda2d81852b3.jpg",
+            "realPlayUrl": "/casino/155-io/stairpong/play",
+            "demoPlayUrl": "/casino/155-io/stairpong/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "4ab68710-0421-474d-84e5-bb58ee3ca676",
+            "name": "Rolling Dunes",
+            "imageUrl": "/cdn/e8771a77-7fb7-488f-a4ff-e0c80ba744b6.jpg",
+            "realPlayUrl": "/casino/155-io/rolling-dunes/play",
+            "demoPlayUrl": "/casino/155-io/rolling-dunes/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "3d2d34c1-75f8-4740-bd42-7cb04f47efa9",
+            "name": "Agent Spinity",
+            "imageUrl": "/cdn/96922b84-0ef8-49f7-93c6-22942d57dc9a.jpg",
+            "realPlayUrl": "/casino/winfinity/agent-spinity/play",
+            "demoPlayUrl": "/casino/winfinity/agent-spinity/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "8faffb9f-1fe2-49b4-a1f5-2ae8ec764292",
+            "name": "Snake",
+            "imageUrl": "/cdn/e8e7fb96-c099-4495-8210-43b9e0562c2a.jpg",
+            "realPlayUrl": "/casino/155-io/snake/play",
+            "demoPlayUrl": "/casino/155-io/snake/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "8d2857c0-04e0-4569-beef-4941610a42f8",
+            "name": "Marble Plinko - Classic",
+            "imageUrl": "/cdn/25970626-9187-46b6-9ff5-f15f0452147c.jpg",
+            "realPlayUrl": "/casino/155-io/marble-plinko-classic/play",
+            "demoPlayUrl": "/casino/155-io/marble-plinko-classic/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "d73a7bba-d345-4442-8db7-f397f94dc3a6",
+            "name": "Wheel Of Fortune",
+            "imageUrl": "/cdn/imported_games_images/HUB88/BetGames.TV/bgt_wheeloffortune/f4894f93-93cb-4fb9-bfc4-84a281dac2be.jpg",
+            "realPlayUrl": "/casino/betgames-tv/wheel-of-fortune/play",
+            "demoPlayUrl": "/casino/betgames-tv/wheel-of-fortune/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "7f0f2ee4-4a6a-4a9f-809c-4c3ba764c74e",
+            "name": "Shangrila Baccarat 8",
+            "imageUrl": "/cdn/e77a34fe-a099-401d-9baf-b0cafb27625c.jpg",
+            "realPlayUrl": "/casino/winfinity/shangrila-baccarat-8/play",
+            "demoPlayUrl": "/casino/winfinity/shangrila-baccarat-8/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "e15aa142-78bb-4298-98f9-e1f7a12d60ea",
+            "name": "Andar Bahar",
+            "imageUrl": "/cdn/c4a5f80e-6bef-4e7d-8a0c-a96252c66bd0.jpg",
+            "realPlayUrl": "/casino/iconic21/andar-bahar/play",
+            "demoPlayUrl": "/casino/iconic21/andar-bahar/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "c086f54b-8786-4326-bd39-1ef176f1642e",
+            "name": "Baccarat 1",
+            "imageUrl": "/cdn/6d9e5f86-6384-4a20-8340-be58f04ddeeb.jpg",
+            "realPlayUrl": "/casino/microgaming-live/baccarat-1/play",
+            "demoPlayUrl": "/casino/microgaming-live/baccarat-1/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "0e2eb464-6370-46fa-8904-9186ae1c9584",
+            "name": "Baccarat 3",
+            "imageUrl": "/cdn/4534774f-b33c-46b9-948c-3f13e9e82a6b.jpg",
+            "realPlayUrl": "/casino/microgaming-live/baccarat-3/play",
+            "demoPlayUrl": "/casino/microgaming-live/baccarat-3/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "b8e06cc8-3e0d-4a62-9aec-1a9141c211e0",
+            "name": "Baccarat 6",
+            "imageUrl": "/cdn/48c67c0c-36cf-4782-a9d4-3ffaeda85dc4.jpg",
+            "realPlayUrl": "/casino/microgaming-live/baccarat-6/play",
+            "demoPlayUrl": "/casino/microgaming-live/baccarat-6/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "9bcb6b2e-836d-4bda-8bb6-b4a107a6e687",
+            "name": "Baccarat 7",
+            "imageUrl": "/cdn/44ba85f8-39a3-4f69-9762-836c1f65b248.jpg",
+            "realPlayUrl": "/casino/microgaming-live/baccarat-7/play",
+            "demoPlayUrl": "/casino/microgaming-live/baccarat-7/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "79525ebf-2b0a-4769-bcdf-0b42b36cdbde",
+            "name": "Baccarat 2",
+            "imageUrl": "/cdn/be188427-dda7-426d-b106-5458aca8b441.jpg",
+            "realPlayUrl": "/casino/microgaming-live/baccarat-2/play",
+            "demoPlayUrl": "/casino/microgaming-live/baccarat-2/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "0c5b330f-c483-4ac9-905e-d2be417e4e73",
+            "name": "Baccarat 5",
+            "imageUrl": "/cdn/d7d0e35d-f9d4-43a0-b9d5-280dfc69496f.jpg",
+            "realPlayUrl": "/casino/microgaming-live/baccarat-5/play",
+            "demoPlayUrl": "/casino/microgaming-live/baccarat-5/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "15b2b2ff-da27-4b28-9af0-766e39efdd2d",
+            "name": "Baccarat 4",
+            "imageUrl": "/cdn/736c004f-fc17-4182-a127-63e6dec399ce.jpg",
+            "realPlayUrl": "/casino/microgaming-live/baccarat-4/play",
+            "demoPlayUrl": "/casino/microgaming-live/baccarat-4/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "f21b061b-5d07-41d1-979b-69d9b0d10154",
+            "name": "Playboy Speed Baccarat 3",
+            "imageUrl": "/cdn/d6ceeeb7-d802-4c93-b99a-71e38d4f8759.jpg",
+            "realPlayUrl": "/casino/microgaming-live/playboy-speed-baccarat-3/play",
+            "demoPlayUrl": "/casino/microgaming-live/playboy-speed-baccarat-3/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "02be5cd6-9a95-4ffa-93c8-c88262ee2119",
+            "name": "Playboy Speed Baccarat 2",
+            "imageUrl": "/cdn/4d41db41-209d-433f-96ed-a92e77228beb.jpg",
+            "realPlayUrl": "/casino/microgaming-live/playboy-speed-baccarat-2/play",
+            "demoPlayUrl": "/casino/microgaming-live/playboy-speed-baccarat-2/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "9f534264-663a-41e3-8c6c-9e7c08fdbefc",
+            "name": "Playboy Speed Baccarat 1",
+            "imageUrl": "/cdn/100147ed-04d4-45c0-99b6-cc839f376577.jpg",
+            "realPlayUrl": "/casino/microgaming-live/playboy-speed-baccarat-1/play",
+            "demoPlayUrl": "/casino/microgaming-live/playboy-speed-baccarat-1/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "5c799707-bd8b-4815-8186-84aa5510e76d",
+            "name": "Top Card",
+            "imageUrl": "/cdn/imported_games_images/RA_BETER/RA_BETER/launch_rom_sport_tc_1/51709e03-3f80-493a-ad0c-1cc8beaffbda.jpg",
+            "realPlayUrl": "/casino/iconic21/top-card/play",
+            "demoPlayUrl": "/casino/iconic21/top-card/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "ec1449f4-c0a0-42a0-9305-28d138a26157",
+            "name": "Live Baccarat 1",
+            "imageUrl": "/cdn/imported_games_images/RA_BETER/RA_BETER/launch_asia_mbal_01/9efc3cb5-cc38-4ec7-ac77-0798e421fbca.jpg",
+            "realPlayUrl": "/casino/iconic21/live-baccarat-1/play",
+            "demoPlayUrl": "/casino/iconic21/live-baccarat-1/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "cd633c9e-c06f-4132-a407-80647cc03569",
+            "name": "Virtual Dragon Tiger",
+            "imageUrl": "/cdn/imported_games_images/RA_BETER/RA_BETER/launch_rng_dt_1/333fea3d-f832-4e70-bced-24dc142b3aae.jpg",
+            "realPlayUrl": "/casino/iconic21/virtual-dragon-tiger/play",
+            "demoPlayUrl": "/casino/iconic21/virtual-dragon-tiger/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "2f80bc0c-6264-493e-8d0d-140bb9ade360",
+            "name": "Grand Bonus Baccarat",
+            "imageUrl": "/cdn/imported_games_images/RA_BETER/RA_BETER/launch_rom_main_gbb_1/e9ff328b-9f30-4559-9c73-40be587045d3.jpg",
+            "realPlayUrl": "/casino/iconic21/grand-bonus-baccarat/play",
+            "demoPlayUrl": "/casino/iconic21/grand-bonus-baccarat/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "3697a808-fe97-46a3-a814-be9a9011fad2",
+            "name": "Virtual Top Card",
+            "imageUrl": "/cdn/imported_games_images/RA_BETER/RA_BETER/launch_rng_tc_1/cd1a24eb-0f2d-44bd-af9f-b5aab62a2049.jpg",
+            "realPlayUrl": "/casino/iconic21/virtual-top-card/play",
+            "demoPlayUrl": "/casino/iconic21/virtual-top-card/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "9de63048-0660-4c82-bc0a-1023e154f619",
+            "name": "VIP Baccarat NC",
+            "imageUrl": "/cdn/imported_games_images/RA_BETER/RA_BETER/launch_rom_main_vip_ncmbac_1/0202efa0-08d0-4b6a-bd3b-b57ab78ce892.jpg",
+            "realPlayUrl": "/casino/iconic21/vip-baccarat-nc/play",
+            "demoPlayUrl": "/casino/iconic21/vip-baccarat-nc/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "66dcc3fa-0ddb-40b8-b7f0-728e58c70fd5",
+            "name": "Live Baccarat 1 NC",
+            "imageUrl": "/cdn/imported_games_images/RA_BETER/RA_BETER/launch_asia_ncmbal_01/76b16718-9b33-4a4f-9989-8652cb3b8dcc.jpg",
+            "realPlayUrl": "/casino/iconic21/live-baccarat-1-nc/play",
+            "demoPlayUrl": "/casino/iconic21/live-baccarat-1-nc/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "7cb99911-d73a-4d0d-bd8d-56cd13ac843d",
+            "name": "Baccarat 1",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Live88/bbl_baccarat1/c3217362-bc4c-4f19-aa0f-d0e6ed91d25a.jpg",
+            "realPlayUrl": "/casino/live88/baccarat-1/play",
+            "demoPlayUrl": "/casino/live88/baccarat-1/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "e818051b-15fd-4e2e-b1a5-573a610013da",
+            "name": "Baccarat",
+            "imageUrl": "/cdn/imported_games_images/HUB88/BetGames.TV/bgt_baccarat/c9a26b60-5665-43b8-9433-881c64c08c9d.jpg",
+            "realPlayUrl": "/casino/betgames-tv/baccarat/play",
+            "demoPlayUrl": "/casino/betgames-tv/baccarat/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "3f0267d6-3c43-4e43-9e19-ce4f60c33844",
+            "name": "Tokyo Baccarat",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Live88/bbl_bombaylivetokyobaccarat/1a2f11ab-e19b-4e0f-a359-915bf28ef531.jpg",
+            "realPlayUrl": "/casino/live88/tokyo-baccarat/play",
+            "demoPlayUrl": "/casino/live88/tokyo-baccarat/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "83f0c8ca-adca-427e-8f04-d6793101ee1c",
+            "name": "Baccarat Speed A",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Live88/bbl_baccaratspeeda/67add9bb-be2b-44ff-ae10-9b1bac1d6da2.jpg",
+            "realPlayUrl": "/casino/live88/baccarat-speed-a/play",
+            "demoPlayUrl": "/casino/live88/baccarat-speed-a/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "fd5677d1-7524-481b-927b-3de10e961d8c",
+            "name": "Baccarat Baruto",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Live88/bbl_baccaratbaruto/eeeb664e-bae8-4e20-a7dc-b18ad9a3750b.jpg",
+            "realPlayUrl": "/casino/live88/baccarat-baruto/play",
+            "demoPlayUrl": "/casino/live88/baccarat-baruto/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "e182d448-f44a-41ab-83f9-01f98f7afcf3",
+            "name": "Speed Baccarat 1",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Live88/bbl_speedbaccarat1/5a2e0d3a-9afb-420b-8caf-a543eced90f6.jpg",
+            "realPlayUrl": "/casino/live88/speed-baccarat-1/play",
+            "demoPlayUrl": "/casino/live88/speed-baccarat-1/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "2382b53e-afc9-4ba0-87c7-31026efd5e70",
+            "name": "Baccarat High Roller 2",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Live88/bbl_baccarathighroller2/be495293-1fe4-43ca-ac45-dc10c48bd76c.jpg",
+            "realPlayUrl": "/casino/live88/baccarat-high-roller-2/play",
+            "demoPlayUrl": "/casino/live88/baccarat-high-roller-2/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "4d917ac6-a762-4dac-9456-8926cd72fb27",
+            "name": "Baccarat High Roller 1",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Live88/bbl_baccarathighroller1/d5825020-8ea5-4f14-b0fb-90f4ab0331f8.jpg",
+            "realPlayUrl": "/casino/live88/baccarat-high-roller-1/play",
+            "demoPlayUrl": "/casino/live88/baccarat-high-roller-1/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "c9f87e15-2883-453e-9aa7-2ead1f84880d",
+            "name": "Speed Baccarat 2",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Live88/bbl_speedbaccarat2/b5f04a81-94f2-492c-a910-a916e820cf9c.jpg",
+            "realPlayUrl": "/casino/live88/speed-baccarat-2/play",
+            "demoPlayUrl": "/casino/live88/speed-baccarat-2/demo",
+            "hasDemo": true
+          }
+        ],
+        "page": 1,
+        "size": 48
+      },
+      "fetchUrl": "cms-service/api/frontend/casino/category-games/bc17c2f1-78a7-4fcf-b9ce-69787ee29e76",
+      "resolutionsConfig": {
+        "XS": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "SM": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "MD": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "LG": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "XL": {
+          "itemsPerRow": 8,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        }
+      },
+      "aspectRatioPercentage": 127,
+      "id": "bc17c2f1-78a7-4fcf-b9ce-69787ee29e76"
+    },
+    "id": "1fb3bb81-e3f2-4717-b465-984f7d42fc02",
+    "children": [],
+    "appearance": {
+      "resolutionConfig": {
+        "XS": {
+          "background": {},
+          "isVisible": true
+        },
+        "SM": {
+          "background": {},
+          "isVisible": true
+        },
+        "MD": {
+          "background": {},
+          "isVisible": true
+        },
+        "LG": {
+          "background": {},
+          "isVisible": true
+        },
+        "XL": {
+          "background": {},
+          "isVisible": true
+        }
+      }
+    }
+  }
+]

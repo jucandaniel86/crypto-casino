@@ -1,0 +1,66 @@
+.user-top-activator {
+  color: #fff !important;
+  font-size: 20px;
+  box-shadow: none;
+}
+
+.user-top-activator svg {
+  font-size: 20px;
+  fill: currentColor;
+}
+
+.user-top-activator .v-btn__overlay,
+.user-top-activator .v-btn__underlay,
+.user-top-activator .v-ripple__container {
+  display: none;
+}
+
+.v-menu > .v-overlay__content > .v-card,
+.v-menu > .v-overlay__content > .v-sheet,
+.v-menu > .v-overlay__content > .v-list {
+  background: #21242e !important;
+  padding: 8px 16px 16px;
+  border-radius: 4px !important;
+}
+
+.v-list-item--density-default.v-list-item--one-line {
+  min-height: auto !important;
+  padding: 7px 0 !important;
+  color: #fff;
+  cursor: pointer;
+}
+
+.user-profile-list .v-list-item__overlay,
+.user-profile-list .v-list-item__underlay {
+  display: none;
+}
+
+.user-profile-list .svg-icon {
+  font-size: 24px;
+  margin-right: 8px;
+  fill: currentColor;
+}
+
+.user-profile-list .v-list-item:hover .v-list-item-title::after {
+  border: 1px solid #9f36f1;
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  width: 100%;
+  left: 0;
+}
+
+.user-profile-list .v-list-item-title {
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  overflow: visible;
+}
+
+.user-profile-list .v-list-item__content {
+  overflow: visible !important;
+}
+
+.v-toolbar-title {
+  flex: none !important;
+}

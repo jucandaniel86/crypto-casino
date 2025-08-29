@@ -1,0 +1,283 @@
+.v-card.wallet-card {
+  background-color: rgb(18, 18, 18);
+  color: rgb(255, 255, 255);
+  box-shadow:
+    rgba(0, 0, 0, 0.2) 0px 11px 15px -7px,
+    rgba(0, 0, 0, 0.14) 0px 24px 38px 3px,
+    rgba(0, 0, 0, 0.12) 0px 9px 46px 8px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.16));
+  position: relative;
+  overflow-y: auto;
+  padding: 0 !important;
+}
+
+.arrow-down,
+.arrow-up {
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentcolor;
+  flex-shrink: 0;
+  font-size: 1.5rem;
+}
+
+.arrow-up {
+  transform: rotate(90deg);
+  transition: transform 0.1s linear !important;
+}
+
+.arrow-down {
+  transform: rotate(-90deg);
+  transition: transform 0.1s linear !important;
+}
+
+.v-btn.wallet_btn {
+  background-color: #343434;
+  border-radius: 9px;
+  box-shadow: none !important;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.v-btn.wallet_btn:hover {
+  background-color: #343434;
+}
+
+.v-btn.wallet_btn:hover .v-btn__overlay,
+.v-btn.wallet_btn:hover .v-btn__underlay,
+.v-btn.wallet_btn:hover .v-ripple__container,
+.v-btn.wallet_btn .v-btn__overlay {
+  display: none;
+}
+
+.v-btn.wallet_btn .svg-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.v-btn.wallet_btn .v-btn__append {
+  margin-left: 2px !important;
+}
+.wallet_trigger_btn {
+  border-radius: 9px !important;
+}
+
+.wallet_currencies_wrapper {
+  background: #181b22;
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: column;
+  height: calc(
+    100% - var(--balance-header-component-height) * 1px - var(--balance-footer-atom-height) * 1px
+  );
+  max-height: calc(
+    100% - var(--balance-header-component-height) * 1px - var(--balance-footer-atom-height) * 1px
+  );
+  overflow: auto;
+  padding: 0 16px;
+}
+
+.wallet_currencies_wrapper ul {
+  column-gap: 8px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-inline-start: 0;
+  width: 100%;
+  margin-block-start: 1em;
+}
+
+.wallet_currencies_wrapper ul > * {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: 4px;
+  width: 100%;
+}
+
+.balance-component {
+  border-radius: 8px;
+  background: #13151b;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  display: flex;
+  height: 42px;
+  justify-content: space-between;
+  padding: 8px;
+  align-items: center;
+}
+
+.balance-component.active {
+  background: #181b22;
+}
+
+.balance-component .amount {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.balance-component .amount.zero {
+  color: #929292;
+}
+
+.balance-component .balance {
+  align-items: center;
+  display: flex;
+  gap: 6px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.balance-component .balance svg {
+  width: 20px;
+  height: 20px;
+}
+
+.balance-component .balance span {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.wallet-currencies-modal {
+  padding: 0 !important;
+}
+.wallet_header {
+  display: flex;
+  flex-direction: column;
+}
+
+.wallet_header > .current-balance {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  align-items: center;
+}
+
+.current-balance .balance-label,
+.balance-data .balance-label {
+  color: #a3a3a3;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.current-balance .balance-value {
+  color: #9f36f1;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.wallet-currencies-modal .close-btn svg {
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentcolor;
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.wallet-currencies-modal .v-btn.close-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent !important;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  outline: 0px;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  margin: 0px;
+  text-decoration: none;
+  flex: 0 0 auto;
+  padding: 8px !important;
+  border-radius: 50%;
+  overflow: visible;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: none !important;
+  min-width: 0 !important;
+}
+
+.wallet-currencies-modal .v-btn.close-btn:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.wallet-currencies-modal .close-btn-wrapper {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 9;
+}
+
+.wallet-currencies-modal .balance-data {
+  flex-direction: row;
+  gap: 0;
+  justify-content: space-around;
+  background: #13151b;
+  display: flex;
+  padding: 16px;
+}
+
+.balance-data .balance-item {
+  align-items: center;
+  flex: 1 1 50%;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.balance-data .balance-item .balance-value {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.wallet-currencies-modal .wallet-footer {
+  background: #13151b;
+}
+
+.wallet-currencies-modal .v-card__loader,
+.wallet-currencies-modal .v-card__underlay {
+  display: none;
+}
+
+.wallet-currencies-modal .wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.wallet-currencies-modal > .content {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+  height: 100%;
+}
+
+.v-card.wallet-currencies-modal {
+  overflow: hidden !important;
+  margin-top: 56px !important;
+}
+
+.wallet-balance-footer {
+  color: #fff;
+  justify-content: right;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}

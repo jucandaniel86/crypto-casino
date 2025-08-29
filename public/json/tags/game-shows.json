@@ -1,0 +1,656 @@
+[
+  {
+    "container": "GamesCategoryContainer",
+    "data": {
+      "initialState": {
+        "totalItems": 3,
+        "data": [
+          {
+            "id": "095c2d43-1ddd-4602-99b4-07b9d04780ef",
+            "name": "Sweet Bonanza CandyLand",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/1101/ab8e4821-1699-46bc-bb6c-4e2619c18387.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/sweet-bonanza-candyland/play",
+            "demoPlayUrl": "/casino/pragmatic-play/sweet-bonanza-candyland/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "ea44cff3-32b4-4447-92ee-65bcc0ff4fa0",
+            "name": "Snakes & Ladders Live",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/1601/209db283-1169-41eb-a048-96e4fb5eaa41.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/snakes-ladders-live/play",
+            "demoPlayUrl": "/casino/pragmatic-play/snakes-ladders-live/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "ea6a0c9b-8043-4ac0-8cba-beaa177f86ff",
+            "name": "Big Bass Crash",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/1320/cfedcde6-4a62-4c9d-b77b-0315f3a11d5a.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/big-bass-crash/play",
+            "demoPlayUrl": "/casino/pragmatic-play/big-bass-crash/demo",
+            "hasDemo": true
+          }
+        ],
+        "page": 1,
+        "size": 3
+      },
+      "title": "🤵🏻‍♂️ Featured",
+      "fetchUrl": "cms-service/api/frontend/casino/category-games/e7b8e835-5a13-421f-8c2d-81544dcbc50a",
+      "slug": "/casino/category/featured-1",
+      "resolutionsConfig": {
+        "XS": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "SM": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "MD": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "LG": {
+          "itemsPerRow": 8,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "XL": {
+          "itemsPerRow": 8,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        }
+      },
+      "viewMoreConfig": {},
+      "aspectRatioPercentage": 127,
+      "iconParams": {},
+      "id": "e7b8e835-5a13-421f-8c2d-81544dcbc50a"
+    },
+    "id": "1e7d05c0-c817-4984-8c1a-1aa5b3138921",
+    "children": [],
+    "appearance": {
+      "resolutionConfig": {
+        "XS": {
+          "background": {},
+          "isVisible": true
+        },
+        "SM": {
+          "background": {},
+          "isVisible": true
+        },
+        "MD": {
+          "background": {},
+          "isVisible": true
+        },
+        "LG": {
+          "background": {},
+          "isVisible": true
+        },
+        "XL": {
+          "background": {},
+          "isVisible": true
+        }
+      }
+    }
+  },
+  {
+    "container": "GamesCategoryContainer",
+    "data": {
+      "initialState": {
+        "totalItems": 7,
+        "data": [
+          {
+            "id": "ed3c9ced-8474-426a-bd0e-5d5e5f699d3d",
+            "name": "Crash Live",
+            "imageUrl": "/cdn/imported_games_images/RA_BETER/RA_BETER/launch_rom_sport_crash_1/5f936316-d0fb-4615-b631-5dc70b9d2e82.jpg",
+            "realPlayUrl": "/casino/iconic21/crash-live/play",
+            "demoPlayUrl": "/casino/iconic21/crash-live/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "01a671cb-7dd0-4e75-8969-18c742bfba35",
+            "name": "Mega Wheel",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/801/1fa0fc9b-83ae-41f2-9ded-9cb62cbc940d.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/mega-wheel/play",
+            "demoPlayUrl": "/casino/pragmatic-play/mega-wheel/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "3c3fec7b-9553-420a-ba16-a958633afaa4",
+            "name": "Football Blitz",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/4001/11aa3036-9b97-4f9e-a319-c906255abfac.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/football-blitz/play",
+            "demoPlayUrl": "/casino/pragmatic-play/football-blitz/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "1ce68abd-ee1a-44b9-8bd2-70c2c3a54347",
+            "name": "Spaceman",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/1301/c432734f-b3aa-4aa4-bdf7-7cb9d65cb125.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/spaceman/play",
+            "demoPlayUrl": "/casino/pragmatic-play/spaceman/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "2d5ae671-70f0-4157-ac63-0e4309ec1e28",
+            "name": "Mega Sic Bo",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/701/fa9d8657-249d-4f71-8b78-973268fdf747.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/mega-sic-bo/play",
+            "demoPlayUrl": "/casino/pragmatic-play/mega-sic-bo/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "2b3a6292-2882-4253-a65b-11964e7b1997",
+            "name": "Power Ball",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/123/dd9a22c2-bdcf-4b96-826c-f7d6805d7820.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/power-ball/play",
+            "demoPlayUrl": "/casino/pragmatic-play/power-ball/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "d73a7bba-d345-4442-8db7-f397f94dc3a6",
+            "name": "Wheel Of Fortune",
+            "imageUrl": "/cdn/imported_games_images/HUB88/BetGames.TV/bgt_wheeloffortune/f4894f93-93cb-4fb9-bfc4-84a281dac2be.jpg",
+            "realPlayUrl": "/casino/betgames-tv/wheel-of-fortune/play",
+            "demoPlayUrl": "/casino/betgames-tv/wheel-of-fortune/demo",
+            "hasDemo": true
+          }
+        ],
+        "page": 1,
+        "size": 7
+      },
+      "title": "🤵🏻‍♂️ Top Games",
+      "fetchUrl": "cms-service/api/frontend/casino/category-games/20b26b6d-7e55-4934-bc13-91627d231b91",
+      "slug": "/casino/category/top-games-2",
+      "resolutionsConfig": {
+        "XS": {
+          "itemsPerRow": 3,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "SM": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "MD": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "LG": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "XL": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        }
+      },
+      "viewMoreConfig": {},
+      "aspectRatioPercentage": 127,
+      "id": "20b26b6d-7e55-4934-bc13-91627d231b91"
+    },
+    "id": "3938486c-0694-43bf-a7ce-4102b86a5360",
+    "children": [],
+    "appearance": {
+      "resolutionConfig": {
+        "XS": {
+          "background": {},
+          "isVisible": true
+        },
+        "SM": {
+          "background": {},
+          "isVisible": true
+        },
+        "MD": {
+          "background": {},
+          "isVisible": true
+        },
+        "LG": {
+          "background": {},
+          "isVisible": true
+        },
+        "XL": {
+          "background": {},
+          "isVisible": true
+        }
+      }
+    }
+  },
+  {
+    "container": "GamesCategoryContainer",
+    "data": {
+      "initialState": {
+        "totalItems": 8,
+        "data": [
+          {
+            "id": "095c2d43-1ddd-4602-99b4-07b9d04780ef",
+            "name": "Sweet Bonanza CandyLand",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/1101/ab8e4821-1699-46bc-bb6c-4e2619c18387.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/sweet-bonanza-candyland/play",
+            "demoPlayUrl": "/casino/pragmatic-play/sweet-bonanza-candyland/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "3c3fec7b-9553-420a-ba16-a958633afaa4",
+            "name": "Football Blitz",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/4001/11aa3036-9b97-4f9e-a319-c906255abfac.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/football-blitz/play",
+            "demoPlayUrl": "/casino/pragmatic-play/football-blitz/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "2b3a6292-2882-4253-a65b-11964e7b1997",
+            "name": "Power Ball",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/123/dd9a22c2-bdcf-4b96-826c-f7d6805d7820.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/power-ball/play",
+            "demoPlayUrl": "/casino/pragmatic-play/power-ball/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "769df148-05d0-4c6a-bf8b-0b0b915ed2bc",
+            "name": "Dragon Tiger ",
+            "imageUrl": "/cdn/5cc646d3-f9e9-4873-9a38-8b032f837930.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/dragon-tiger-1/play",
+            "demoPlayUrl": "/casino/pragmatic-play/dragon-tiger-1/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "fd505424-4736-498e-a257-1efef8bfcc5e",
+            "name": "PowerUP Roulette",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/240/7c45c4a2-421b-41c0-9ad1-04f0b8ac577d.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/powerup-roulette/play",
+            "demoPlayUrl": "/casino/pragmatic-play/powerup-roulette/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "ea44cff3-32b4-4447-92ee-65bcc0ff4fa0",
+            "name": "Snakes & Ladders Live",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/1601/209db283-1169-41eb-a048-96e4fb5eaa41.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/snakes-ladders-live/play",
+            "demoPlayUrl": "/casino/pragmatic-play/snakes-ladders-live/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "01a671cb-7dd0-4e75-8969-18c742bfba35",
+            "name": "Mega Wheel",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/801/1fa0fc9b-83ae-41f2-9ded-9cb62cbc940d.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/mega-wheel/play",
+            "demoPlayUrl": "/casino/pragmatic-play/mega-wheel/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "c4f85612-c0d3-4302-af70-451540efdde6",
+            "name": "Dragon Tiger",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/1001/4792740e-d308-4fc6-83e9-7ed5d1e6c144.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/dragon-tiger/play",
+            "demoPlayUrl": "/casino/pragmatic-play/dragon-tiger/demo",
+            "hasDemo": false
+          }
+        ],
+        "page": 1,
+        "size": 8
+      },
+      "title": "🤵🏻‍♂️ Pragmatic Play",
+      "fetchUrl": "cms-service/api/frontend/casino/category-games/ebb0b766-51c6-472b-a4dd-bf0a1b9782ed",
+      "slug": "/casino/category/pragmatic-play",
+      "resolutionsConfig": {
+        "XS": {
+          "itemsPerRow": 3,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "SM": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "MD": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "LG": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "XL": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        }
+      },
+      "viewMoreConfig": {},
+      "aspectRatioPercentage": 127,
+      "id": "ebb0b766-51c6-472b-a4dd-bf0a1b9782ed"
+    },
+    "id": "e3a4765e-b9d4-4854-aeda-f3254c691cf3",
+    "children": [],
+    "appearance": {
+      "resolutionConfig": {
+        "XS": {
+          "background": {},
+          "isVisible": true
+        },
+        "SM": {
+          "background": {},
+          "isVisible": true
+        },
+        "MD": {
+          "background": {},
+          "isVisible": true
+        },
+        "LG": {
+          "background": {},
+          "isVisible": true
+        },
+        "XL": {
+          "background": {},
+          "isVisible": true
+        }
+      }
+    }
+  },
+  {
+    "container": "GamesCategoryHeadlessContainer",
+    "data": {
+      "initialState": {
+        "totalItems": 16,
+        "data": [
+          {
+            "id": "095c2d43-1ddd-4602-99b4-07b9d04780ef",
+            "name": "Sweet Bonanza CandyLand",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/1101/ab8e4821-1699-46bc-bb6c-4e2619c18387.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/sweet-bonanza-candyland/play",
+            "demoPlayUrl": "/casino/pragmatic-play/sweet-bonanza-candyland/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "8faffb9f-1fe2-49b4-a1f5-2ae8ec764292",
+            "name": "Snake",
+            "imageUrl": "/cdn/e8e7fb96-c099-4495-8210-43b9e0562c2a.jpg",
+            "realPlayUrl": "/casino/155-io/snake/play",
+            "demoPlayUrl": "/casino/155-io/snake/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "3dc87937-478e-48d6-87e4-7d7c61c330a8",
+            "name": "War Of Bets",
+            "imageUrl": "/cdn/imported_games_images/HUB88/BetGames.TV/bgt_warofbets/774a6dc5-ea98-4dde-8394-57371b87fa30.jpg",
+            "realPlayUrl": "/casino/betgames-tv/war-of-bets/play",
+            "demoPlayUrl": "/casino/betgames-tv/war-of-bets/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "ea44cff3-32b4-4447-92ee-65bcc0ff4fa0",
+            "name": "Snakes & Ladders Live",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/1601/209db283-1169-41eb-a048-96e4fb5eaa41.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/snakes-ladders-live/play",
+            "demoPlayUrl": "/casino/pragmatic-play/snakes-ladders-live/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "8d2857c0-04e0-4569-beef-4941610a42f8",
+            "name": "Marble Plinko - Classic",
+            "imageUrl": "/cdn/25970626-9187-46b6-9ff5-f15f0452147c.jpg",
+            "realPlayUrl": "/casino/155-io/marble-plinko-classic/play",
+            "demoPlayUrl": "/casino/155-io/marble-plinko-classic/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "4ab68710-0421-474d-84e5-bb58ee3ca676",
+            "name": "Rolling Dunes",
+            "imageUrl": "/cdn/e8771a77-7fb7-488f-a4ff-e0c80ba744b6.jpg",
+            "realPlayUrl": "/casino/155-io/rolling-dunes/play",
+            "demoPlayUrl": "/casino/155-io/rolling-dunes/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "5c19e99c-d9fe-4582-a560-845227da9691",
+            "name": "Mega Roulette",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/204/0bd821a9-6666-482a-a4b0-59cd8c615314.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/mega-roulette/play",
+            "demoPlayUrl": "/casino/pragmatic-play/mega-roulette/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "d629af32-aec7-4740-8278-60528dfc8cde",
+            "name": "Bet-on-Poker",
+            "imageUrl": "/cdn/imported_games_images/HUB88/BetGames.TV/bgt_bet-on-poker/da41c78e-aeda-4a65-bc74-d8b0e25830c6.jpg",
+            "realPlayUrl": "/casino/betgames-tv/bet-on-poker/play",
+            "demoPlayUrl": "/casino/betgames-tv/bet-on-poker/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "67278aba-687e-49bc-809d-2c1b227f44ce",
+            "name": "Bet On Teen Patti ",
+            "imageUrl": "/cdn/imported_games_images/RA_BETER/RA_BETER/launch_in_botp_1/cb850fd0-00df-4cd9-8ab2-2d3c63673689.jpg",
+            "realPlayUrl": "/casino/iconic21/bet-on-teen-patti/play",
+            "demoPlayUrl": "/casino/iconic21/bet-on-teen-patti/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "e590ee84-a7a3-487a-816e-3fe1bb256f20",
+            "name": "Cash Wheel Carnival",
+            "imageUrl": "/cdn/c024d36a-73b2-49ce-abc6-7bf8c83b1ae3.jpg",
+            "realPlayUrl": "/casino/microgaming-live/cash-wheel-carnival/play",
+            "demoPlayUrl": "/casino/microgaming-live/cash-wheel-carnival/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "3d2d34c1-75f8-4740-bd42-7cb04f47efa9",
+            "name": "Agent Spinity",
+            "imageUrl": "/cdn/96922b84-0ef8-49f7-93c6-22942d57dc9a.jpg",
+            "realPlayUrl": "/casino/winfinity/agent-spinity/play",
+            "demoPlayUrl": "/casino/winfinity/agent-spinity/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "d73a7bba-d345-4442-8db7-f397f94dc3a6",
+            "name": "Wheel Of Fortune",
+            "imageUrl": "/cdn/imported_games_images/HUB88/BetGames.TV/bgt_wheeloffortune/f4894f93-93cb-4fb9-bfc4-84a281dac2be.jpg",
+            "realPlayUrl": "/casino/betgames-tv/wheel-of-fortune/play",
+            "demoPlayUrl": "/casino/betgames-tv/wheel-of-fortune/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "2d5ae671-70f0-4157-ac63-0e4309ec1e28",
+            "name": "Mega Sic Bo",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/701/fa9d8657-249d-4f71-8b78-973268fdf747.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/mega-sic-bo/play",
+            "demoPlayUrl": "/casino/pragmatic-play/mega-sic-bo/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "2b3a6292-2882-4253-a65b-11964e7b1997",
+            "name": "Power Ball",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/123/dd9a22c2-bdcf-4b96-826c-f7d6805d7820.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/power-ball/play",
+            "demoPlayUrl": "/casino/pragmatic-play/power-ball/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "3c3fec7b-9553-420a-ba16-a958633afaa4",
+            "name": "Football Blitz",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/4001/11aa3036-9b97-4f9e-a319-c906255abfac.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/football-blitz/play",
+            "demoPlayUrl": "/casino/pragmatic-play/football-blitz/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "01a671cb-7dd0-4e75-8969-18c742bfba35",
+            "name": "Mega Wheel",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/801/1fa0fc9b-83ae-41f2-9ded-9cb62cbc940d.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/mega-wheel/play",
+            "demoPlayUrl": "/casino/pragmatic-play/mega-wheel/demo",
+            "hasDemo": false
+          }
+        ],
+        "page": 1,
+        "size": 16
+      },
+      "fetchUrl": "cms-service/api/frontend/casino/category-games/c1c982ca-1d30-4067-b160-ff853bb86469",
+      "resolutionsConfig": {
+        "XS": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "SM": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "MD": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "LG": {
+          "itemsPerRow": 8,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "XL": {
+          "itemsPerRow": 8,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        }
+      },
+      "aspectRatioPercentage": 127,
+      "id": "c1c982ca-1d30-4067-b160-ff853bb86469"
+    },
+    "id": "4d08dd66-1684-4c69-bff9-a411950c95cf",
+    "children": [],
+    "appearance": {
+      "resolutionConfig": {
+        "XS": {
+          "background": {},
+          "isVisible": true
+        },
+        "SM": {
+          "background": {},
+          "isVisible": true
+        },
+        "MD": {
+          "background": {},
+          "isVisible": true
+        },
+        "LG": {
+          "background": {},
+          "isVisible": true
+        },
+        "XL": {
+          "background": {},
+          "isVisible": true
+        }
+      }
+    }
+  }
+]

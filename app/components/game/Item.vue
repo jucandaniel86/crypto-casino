@@ -1,0 +1,26 @@
+<script setup lang="ts">
+import type { GameType } from '~/core/types/Game'
+
+//props
+const props = defineProps<{ game: GameType }>()
+
+//models
+const reveal = ref(false)
+
+//computed
+const image = computed(() => `https://play.coincasino.com${props.game.imageUrl}?w=400`)
+</script>
+<template>
+  <div class="game__item" @mouseout="reveal = false" @mouseover="reveal = true">
+    <div class="wrapper">
+      <img class="mx-auto" width="100%" :src="image" />
+      <h2 v-show="reveal" class="game__title">{{ props.game.name }}</h2>
+      <div class="real-play">
+        <button class="">
+          <IconPlay />
+        </button>
+      </div>
+      <div v-show="reveal" class="demo-play">Play for fun</div>
+    </div>
+  </div>
+</template>

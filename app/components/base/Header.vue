@@ -1,0 +1,33 @@
+<script setup lang="ts">
+import { useAuthStore } from '~/core/store/auth'
+import { OverlaysTypes } from '~/core/types/Overlays'
+
+//composables
+const { replace } = useRouter()
+const { isLogged } = storeToRefs(useAuthStore())
+
+//methods
+const login = () => replace({ query: { overlay: OverlaysTypes.LOGIN } })
+const register = () => replace({ query: { overlay: OverlaysTypes.REGISTER } })
+</script>
+<template>
+  <v-app-bar color="primary" height="48" class="layout-header d-flex align-center justify-center">
+    <v-container>
+      <div class="d-flex justify-space-between align-center">
+        <v-app-bar-title class="d-flex align-center">
+          <nuxt-link :to="'/'">
+            <icon-logo class="layout-logo" />
+          </nuxt-link>
+        </v-app-bar-title>
+
+        <auth-wallet v-if="isLogged" />
+
+        <div v-if="!isLogged" class="d-flex ga-2">
+          <v-btn color="primary" variant="flat" @click.prevent="login"> Log In </v-btn>
+          <v-btn color="purple" variant="flat" @click.prevent="register"> Sign Up </v-btn>
+        </div>
+        <auth-profile v-else />
+      </div>
+    </v-container>
+  </v-app-bar>
+</template>

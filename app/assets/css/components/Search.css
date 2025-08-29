@@ -1,0 +1,54 @@
+.app-search {
+  /* background: var(--background-hover-color);
+    border: var(--input-hover-focus-border); */
+  --v-input-control-height: 46px !important;
+  /* background-color: var(--input-background-color); */
+  margin-top: 4px;
+}
+
+.app-search .v-input--density-default .v-field--no-label {
+  --v-input-control-height: 42px;
+}
+
+.app-search .v-field--variant-solo,
+.app-search .v-field--variant-solo-filled {
+  background-color: var(--input-background-color);
+  min-height: auto !important;
+  padding: 8px var(--input-padding);
+}
+
+.app-search:hover .v-field--variant-solo,
+.app-search:hover .v-field--variant-solo-filled {
+  background-color: var(--input-hover-background-color);
+}
+
+.v-field--rounded {
+  border-radius: var(--input-border-radius) !important;
+}
+
+.app-search .v-field--variant-solo,
+.v-field--variant-solo-filled {
+  box-shadow: none;
+}
+
+.v-autocomplete.app-search .v-field__input {
+  padding-bottom: 0 !important;
+  min-height: auto !important;
+}
+
+.v-autocomplete.app-search .v-field .v-field__input > input,
+.v-autocomplete.app-search .v-field .v-field__input > input::placeholder {
+  top: 0;
+  color: var(--text-color);
+  font-weight: var(--input-font-weight);
+  font-size: var(--input-font-size);
+  line-height: var(--input-height);
+}
+
+.v-autocomplete.app-search .v-field__prepend-inner {
+  color: #fff;
+}
+
+.v-autocomplete.app-search .v-field__prepend-inner .v-icon {
+  opacity: 1 !important;
+}

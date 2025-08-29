@@ -1,0 +1,81 @@
+.v-btn {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
+  text-transform: none !important;
+  height: 42px !important;
+  min-height: 42px !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+}
+
+.v-btn.bg-purple {
+  background: #9f36f1 !important;
+}
+.v-btn.bg-purple:hover {
+  background: #9f36f1 !important;
+  color: #000 !important;
+}
+
+.v-btn.bg-primary {
+  background: #21242e !important;
+  border: 1px solid #494f65 !important;
+  text-shadow: none !important;
+  color: #fff !important;
+}
+.v-btn.v-btn.bg-primary:hover,
+.v-btn.v-btn.bg-primary:focus {
+  background: #14151a !important;
+  border: 1px solid 1px #494f65 !important;
+}
+
+/** FORM INPUTS **/
+.v-field__input {
+  background: #21242e;
+  color: rgb(172, 176, 195) !important;
+  border-radius: 6px;
+}
+
+.v-input:hover .v-field__input {
+  background: #2c303f;
+}
+.v-input .v-field__outline {
+  display: none;
+}
+
+.v-field--error .v-field__input {
+  border: 1px solid #ff2e2e;
+}
+
+.v-input--error .v-messages__message {
+  color: #ff2e2e;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.v-text-field .v-input__details {
+  padding-left: 7px !important;
+}
+
+a.purple {
+  color: #9f36f1;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.mdi-checkbox-blank-outline {
+  color: #fff;
+  opacity: 1 !important;
+}
+
+.mdi-checkbox-marked {
+  color: #9f36f1;
+  opacity: 1 !important;
+}
+a.purple:hover {
+  color: #fff;
+}
+
+.v-label--clickable p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}

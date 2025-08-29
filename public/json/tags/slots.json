@@ -1,0 +1,2313 @@
+[
+  {
+    "container": "GamesCategoryContainer",
+    "data": {
+      "initialState": {
+        "totalItems": 50,
+        "data": [
+          {
+            "id": "1f400c04-dbc0-4606-9573-47a254ee255f",
+            "name": "Coin's Casino Bonanza 1000",
+            "imageUrl": "/cdn/f663d9ca-344a-4cb2-bab2-db3d0866317a.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/coin-s-casino-bonanza-1000/play",
+            "demoPlayUrl": "/casino/pragmatic-play/coin-s-casino-bonanza-1000/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "4f5fa572-5725-489b-963a-a09faf8560ab",
+            "name": "Gates of Olympus 1000",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/vs20olympx/952c60fc-9da4-480a-be0b-0cb8ef8156af.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/gates-of-olympus-1000/play",
+            "demoPlayUrl": "/casino/pragmatic-play/gates-of-olympus-1000/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "f0db9366-60a6-4556-99a0-5e8037510498",
+            "name": "Sugar Rush 1000",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/vs20sugarrushx/f9e763b6-dc82-406e-9a52-3c297e6a26ea.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/sugar-rush-1000/play",
+            "demoPlayUrl": "/casino/pragmatic-play/sugar-rush-1000/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "b68a5a09-c51d-4973-8698-abe9cc4fc174",
+            "name": "Le King",
+            "imageUrl": "/cdn/eca48aa7-c692-4d75-a124-2c21737bc3cc.jpg",
+            "realPlayUrl": "/casino/hacksaw/le-king/play",
+            "demoPlayUrl": "/casino/hacksaw/le-king/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "97b0066f-bd96-4b04-9f92-c027986d9bd9",
+            "name": "Coin Joker",
+            "imageUrl": "/cdn/d0aba4cb-b156-4374-bee1-adb4526b9a06.jpg",
+            "realPlayUrl": "/casino/spinomenal/coin-joker/play",
+            "demoPlayUrl": "/casino/spinomenal/coin-joker/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "ff7c1266-6112-442e-8d36-f98de2f5282f",
+            "name": "Gates of Olympus Super Scatter",
+            "imageUrl": "/cdn/42c8164e-97b4-44f6-a9e7-85d4e1dd01d3.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/gates-of-olympus-super-scatter/play",
+            "demoPlayUrl": "/casino/pragmatic-play/gates-of-olympus-super-scatter/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "df20c0e4-fa1c-4b53-be97-a7eef2be4d46",
+            "name": "Sweet Bonanza 1000",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/vs20fruitswx/323f5231-6821-48fa-bcc0-e379766f7d53.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/sweet-bonanza-1000/play",
+            "demoPlayUrl": "/casino/pragmatic-play/sweet-bonanza-1000/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "7accaaaa-fb62-40e7-9eb2-a305580074c3",
+            "name": "Wanted Dead or a Wild",
+            "imageUrl": "/cdn/20c5f940-1140-4bc9-9ef1-bd4bcb579a86.jpg",
+            "realPlayUrl": "/casino/hacksaw/wanted-dead-or-a-wild/play",
+            "demoPlayUrl": "/casino/hacksaw/wanted-dead-or-a-wild/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "d204ea04-f8b8-4077-a279-fd4bffab4781",
+            "name": "Sweet Bonanza Super Scatter",
+            "imageUrl": "/cdn/5e2892f6-889f-46cb-be06-f16344c534d9.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/sweet-bonanza-super-scatter/play",
+            "demoPlayUrl": "/casino/pragmatic-play/sweet-bonanza-super-scatter/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "9bb62b44-868b-4cb9-bea6-cbea97905290",
+            "name": "Ze Zeus",
+            "imageUrl": "/cdn/29eb28b0-7456-488d-86d2-1659f57e8bed.jpg",
+            "realPlayUrl": "/casino/hacksaw/ze-zeus/play",
+            "demoPlayUrl": "/casino/hacksaw/ze-zeus/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "6e1d18f4-8ee5-4ff1-b803-0981cf50a32b",
+            "name": "3 Pyramids of Gold: Hold & Win",
+            "imageUrl": "/cdn/imported_games_images/N2/Octoplay/103087/b90a2f75-8900-4539-a57d-271bdc768683.jpg",
+            "realPlayUrl": "/casino/penguin-king/3-pyramids-of-gold-hold-win/play",
+            "demoPlayUrl": "/casino/penguin-king/3-pyramids-of-gold-hold-win/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "8393a3e3-b038-4fff-989b-d84e1545a255",
+            "name": "Legacy of Dead",
+            "imageUrl": "/cdn/64bd200e-72b8-44aa-a730-9798874ee916.jpg",
+            "realPlayUrl": "/casino/play-n-go/legacy-of-dead/play",
+            "demoPlayUrl": "/casino/play-n-go/legacy-of-dead/demo",
+            "hasDemo": true
+          }
+        ],
+        "page": 1,
+        "size": 12
+      },
+      "title": "❤️ Player favourites",
+      "fetchUrl": "cms-service/api/frontend/casino/category-games/dfec4566-9080-4ab5-8b0b-df87d59445c4",
+      "slug": "/casino/category/player-favourites",
+      "resolutionsConfig": {
+        "XS": {
+          "itemsPerRow": 3,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "SM": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "MD": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "LG": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "XL": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        }
+      },
+      "viewMoreConfig": {},
+      "aspectRatioPercentage": 127,
+      "iconParams": {},
+      "id": "dfec4566-9080-4ab5-8b0b-df87d59445c4"
+    },
+    "id": "9a5682cd-cbec-435e-a266-61a3c298f125",
+    "children": [],
+    "appearance": {
+      "resolutionConfig": {
+        "XS": { "background": {}, "isVisible": true },
+        "SM": { "background": {}, "isVisible": true },
+        "MD": { "background": {}, "isVisible": true },
+        "LG": { "background": {}, "isVisible": true },
+        "XL": { "background": {}, "isVisible": true }
+      }
+    }
+  },
+  {
+    "container": "ProviderLogosContainer",
+    "data": {
+      "providerLogos": [
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/ff8c5883-b872-4594-ab67-0da3211f84a5.png",
+          "slug": "/casino/providers/spinplay-games",
+          "name": "SpinPlay Games"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/ba3d04e9-482b-4746-b846-645e9cd5c2c6.png",
+          "slug": "/casino/providers/slotmill-games",
+          "name": "SlotMill Games"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/c2458147-c370-41cb-8ee7-5931bc3e335f.png",
+          "slug": "/casino/providers/g-games",
+          "name": "G Games"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/05781841-f6b7-4f0f-83e3-7ab996c3698f.png",
+          "slug": "/casino/providers/gamzix",
+          "name": "Gamzix"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_original/7de6c868-dd93-4c8b-9001-ecc50638e83c.png",
+          "slug": "/casino/providers/rogue",
+          "name": "Rogue"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/95c8eb01-f691-4da9-b869-1d0e80a7665b.png",
+          "slug": "/casino/providers/blueprint-gaming",
+          "name": "Blueprint Gaming"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/1e7de0f9-5400-497e-b816-527c6a6a8b5a.png",
+          "slug": "/casino/providers/microgaming",
+          "name": "Microgaming"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/39c2aa72-e70f-43cc-9f3b-aeaed8600879.png",
+          "slug": "/casino/providers/vivogaming",
+          "name": "VivoGaming"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/ced4048b-dba4-487e-981f-e065428eb7e2.png",
+          "slug": "/casino/providers/retro-gaming",
+          "name": "Retro Gaming"
+        },
+        {
+          "imageUrl": "/cdn/39f7feb1-23f6-4a75-a455-f67e38ee5284.png",
+          "slug": "/casino/providers/egt-digital",
+          "name": "EGT"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/80b01ba2-12a5-4ef5-818f-24b5d6590099.png",
+          "slug": "/casino/providers/live88",
+          "name": "Live88"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/0d54ea26-b267-4830-bd14-666f5fc655a6.png",
+          "slug": "/casino/providers/alchemy-gaming",
+          "name": "Alchemy Gaming"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/c5135358-be9f-443a-b25f-4267194338d5.png",
+          "slug": "/casino/providers/topspin-games",
+          "name": "TopSpin Games"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/1d93759e-0089-4a6d-b426-d5bdeb168bff.png",
+          "slug": "/casino/providers/yolted",
+          "name": "Yolted"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/4a3ffe26-ae5e-4924-b189-2ff07cba34ad.png",
+          "slug": "/casino/providers/platipus",
+          "name": "Platipus"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/66d11ac4-07dc-4dd7-b207-9bc1d1b4ecec.png",
+          "slug": "/casino/providers/slingshot",
+          "name": "Slingshot"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/3cff31c9-80de-426f-9ea0-e592879cfbf1.png",
+          "slug": "/casino/providers/apparat-gaming",
+          "name": "Apparat Gaming"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/4150134a-d4b3-447e-b238-8259235ab311.png",
+          "slug": "/casino/providers/spribe",
+          "name": "Spribe"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/3cf31e90-6374-4a46-b302-eb0dc9db5016.png",
+          "slug": "/casino/providers/mascot-gaming",
+          "name": "Mascot Gaming"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/c88f1832-8cf6-430b-9e45-1db5bf689ae4.png",
+          "slug": "/casino/providers/onetouch",
+          "name": "ONETOUCH"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_original/701e34a8-b090-401d-ae1a-f7212808054a.png",
+          "slug": "/casino/providers/lambda-gaming",
+          "name": "RA_LAMBDA"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/ae56da89-8e81-4455-9d55-0c5ef138af96.png",
+          "slug": "/casino/providers/play-n-go",
+          "name": "Play'n Go"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_original/4bf9acf5-c195-4987-b07b-94e4ee32d9d8.png",
+          "slug": "/casino/providers/snowborn-studios",
+          "name": "Snowborn Studios"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/eca4fb6d-aaa9-4373-a3c9-3fe9aa8bfd0d.png",
+          "slug": "/casino/providers/novomatic",
+          "name": "Novomatic"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/451b501e-4da3-4749-9f88-75c42cd494e7.png",
+          "slug": "/casino/providers/formula-spin",
+          "name": "RA_FORMULA_SPIN"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_original/f8c57d26-2fb5-48f2-be12-63d7a0b07ff6.png",
+          "slug": "/casino/providers/iconic21",
+          "name": "RA_BETER"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/cd946fe1-0674-4f86-94ee-b8d0257a6988.png",
+          "slug": "/casino/providers/felix-gaming",
+          "name": "Felix Gaming"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/7c438596-09ed-4cf8-a278-c2f045cd343a.png",
+          "slug": "/casino/providers/xgg",
+          "name": "RA_XGG"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/d578aa65-915b-4b67-a021-a3a0857189eb.png",
+          "slug": "/casino/providers/caleta-gaming",
+          "name": "Caleta Gaming"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/f031e620-788c-4e5b-8c77-160c5f1def51.png",
+          "slug": "/casino/providers/foxium",
+          "name": "Foxium"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/076ab3fb-057f-4dea-8e9c-e283a9ea6efa.png",
+          "slug": "/casino/providers/red-rake-gaming",
+          "name": "Red Rake Gaming"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/1a673423-84f4-42b7-a6a2-140e8196e8e8.png",
+          "slug": "/casino/providers/bgaming-1",
+          "name": "BGAMING_RGS"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/5fb8dba2-f864-4a2e-91fb-0c97128927fb.png",
+          "slug": "/casino/providers/avatarux-1",
+          "name": "RA_AVATAR_UX"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/a1c683b5-4645-47f8-ae34-49d7333441fa.png",
+          "slug": "/casino/providers/all41",
+          "name": "All41"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/0faa475d-2fc3-4f16-a9e6-c86a3a71422d.png",
+          "slug": "/casino/providers/jftw",
+          "name": "JFTW"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/47d4249a-1a83-4910-b21d-1eba9afe5794.png",
+          "slug": "/casino/providers/smartsoft",
+          "name": "SmartSoft"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/e86b0273-227c-47f9-b859-296b089e149e.png",
+          "slug": "/casino/providers/mancala-gaming",
+          "name": "Mancala Gaming"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/8d1cc3d4-0257-4bc0-8796-32ba65e774a9.png",
+          "slug": "/casino/providers/hacksaw",
+          "name": "HACKSAW"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/4c1a153b-a1cc-490f-86f7-773cc16b9ede.png",
+          "slug": "/casino/providers/voltent-1",
+          "name": "VoltEnt"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/8ba9d6b0-6724-4bcb-bcff-1c92badbfd50.png",
+          "slug": "/casino/providers/1x2gaming",
+          "name": "1x2gaming"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/96ce9fac-f053-4625-8343-5354dc61aacc.png",
+          "slug": "/casino/providers/peter-sons",
+          "name": "Peter & Sons"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/f9556bc0-492b-4854-86ff-2c860d512b5f.png",
+          "slug": "/casino/providers/gamomat",
+          "name": "Gamomat"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/66aa5a28-31ab-4ed0-b2ef-40474bd65642.png",
+          "slug": "/casino/providers/gamebeat",
+          "name": "RA_GAME_BEAT"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/dd40a8e3-2117-4a50-befc-5fb9a25e88a6.png",
+          "slug": "/casino/providers/airdice",
+          "name": "AirDice"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/e0189f0d-4fe1-4ea2-a755-1faa0dd71d0c.png",
+          "slug": "/casino/providers/northern-lights-gaming",
+          "name": "Northern Lights Gaming"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/7038cb00-91d2-4de9-ba90-a0c9ce691283.png",
+          "slug": "/casino/providers/elagames",
+          "name": "ElaGames"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/c471dd04-2a17-4177-b414-2969ceb30afa.png",
+          "slug": "/casino/providers/rubyplay",
+          "name": "RUBYPLAY_RGS"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/a70f5e3c-3350-4bec-ab0e-ae19d525f9ca.png",
+          "slug": "/casino/providers/triple-edge",
+          "name": "Triple Edge"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/ce48b87a-b136-469d-8843-0d0508d360db.png",
+          "slug": "/casino/providers/onlyplay",
+          "name": "Onlyplay"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/16536f95-cb69-4fa1-9418-188e8543058d.png",
+          "slug": "/casino/providers/jvl",
+          "name": "JVL"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/ea9ede57-f546-4459-bf91-0b3212b0948b.png",
+          "slug": "/casino/providers/pragmatic-play",
+          "name": "PRAGMATIC"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/84e108bb-94f3-4554-8807-3a3aa6937998.png",
+          "slug": "/casino/providers/neon-valley",
+          "name": "Neon Valley"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/adada7e4-ccc4-48e5-a5dd-2eecea7a2feb.png",
+          "slug": "/casino/providers/darwin-gaming",
+          "name": "Darwin Gaming"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/7439b89f-872e-4653-84a3-6c8cbcb6ae12.png",
+          "slug": "/casino/providers/truelab",
+          "name": "TrueLab"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/568e897b-6581-4e4d-b4f0-a772b5dfe6dc.png",
+          "slug": "/casino/providers/turbogames",
+          "name": "Turbogames"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_original/72c79dc2-b679-48af-9fea-641448a4191c.png",
+          "slug": "/casino/providers/games-global",
+          "name": "Games Global"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/a5321109-d50f-45b9-97a7-ac9cd825289d.png",
+          "slug": "/casino/providers/gameburger",
+          "name": "Gameburger"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/6970dad8-f53b-4199-a54c-75d1202a0837.png",
+          "slug": "/casino/providers/pascal",
+          "name": "Pascal"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/d0bdc0b7-a3bd-4944-a979-26b81288ff90.png",
+          "slug": "/casino/providers/gameart",
+          "name": "GameArt"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/a0efc5a0-6b85-4bed-a430-fcfc491d9864.png",
+          "slug": "/casino/providers/fbastards",
+          "name": "FBastards"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/abee2d21-086b-439c-9705-f0354d651676.png",
+          "slug": "/casino/providers/stormcraft",
+          "name": "Stormcraft"
+        },
+        {
+          "imageUrl": "/cdn/d509e8ca-fa05-44d9-9210-1d7880976eb6.png",
+          "slug": "/casino/providers/microgaming-live",
+          "name": "Microgaming Live"
+        },
+        {
+          "imageUrl": "/cdn/9559bd89-29be-4fe6-a193-6bd9019c85a5.png",
+          "slug": "/casino/providers/galaxsys",
+          "name": "GALAXSYS_RGS"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/f8527f73-0044-4d0e-807c-bec791650a6b.png",
+          "slug": "/casino/providers/ka-gaming",
+          "name": "KA Gaming"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/699f3f64-4c07-4026-b7cd-aef443e7a2b8.png",
+          "slug": "/casino/providers/fantasma",
+          "name": "Fantasma"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/a7f4a2ac-e3af-413d-840c-24f93933e93f.png",
+          "slug": "/casino/providers/evoplay-entertainment",
+          "name": "Evoplay Entertainment"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/f4d97263-a613-48ab-ae2d-0ce2e89fdebb.png",
+          "slug": "/casino/providers/betgames-tv",
+          "name": "BetGames.TV"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_original/34cdca4b-6782-4558-9d09-b9e62fd23b29.png",
+          "slug": "/casino/providers/swinttpremium",
+          "name": "SwinttPremium"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/6db77521-953b-4ffc-bc26-83eb951ea680.png",
+          "slug": "/casino/providers/netgaming",
+          "name": "NetGaming"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/561a41cc-545a-40e5-a277-917a0d28f5f6.png",
+          "slug": "/casino/providers/7777gaming",
+          "name": "7777Gaming"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/b8166854-f64f-4eb0-93d6-823b11a31c23.png",
+          "slug": "/casino/providers/3oaks",
+          "name": "3Oaks"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/9bec3ed0-5294-4431-a379-66ee3a9cd5ed.png",
+          "slug": "/casino/providers/pgsoft",
+          "name": "PGSoft"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_original/05cd39a0-8992-4123-93fb-a945686b48ff.png",
+          "slug": "/casino/providers/winfinity",
+          "name": "Winfinity"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/c99c79c5-dbc8-43fd-9c4f-2381582b883a.png",
+          "slug": "/casino/providers/habanero",
+          "name": "Habanero"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/1a3504e5-6ca2-4b13-b32b-14796e03b3da.png",
+          "slug": "/casino/providers/swinttgames",
+          "name": "SwinttGames"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/a7f22754-f3f9-442d-bae8-cf1037d15cbf.png",
+          "slug": "/casino/providers/winfast",
+          "name": "WinFast"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/1485eb40-8e47-4b36-98c4-ff898ad0b579.png",
+          "slug": "/casino/providers/slotmatrix",
+          "name": "SlotMatrix"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_original/16ff9d58-e4c6-4f18-8e02-c89603a2121f.png",
+          "slug": "/casino/providers/fazi",
+          "name": "Fazi"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/afb4f6db-ea0c-47ae-afad-1d778ab33663.png",
+          "slug": "/casino/providers/spinomenal",
+          "name": "Spinomenal"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/57c148b6-4719-48d5-a9ab-cfb978fb4b2e.png",
+          "slug": "/casino/providers/betsoft",
+          "name": "Betsoft"
+        },
+        {
+          "imageUrl": "/cdn/Logos/provider_logos_white/64e8a076-10c8-4034-9bc1-aa07defb3b18.png",
+          "slug": "/casino/providers/kingmidas",
+          "name": "KingMidas"
+        }
+      ],
+      "width": "154px",
+      "height": "74px"
+    },
+    "id": "3b61ddf8-1ce2-4c8d-ab42-088c022ae5fd",
+    "children": [],
+    "appearance": {
+      "resolutionConfig": {
+        "XS": { "background": {}, "isVisible": true },
+        "SM": { "background": {}, "isVisible": true },
+        "MD": { "background": {}, "isVisible": true },
+        "LG": { "background": {}, "isVisible": true },
+        "XL": { "background": {}, "isVisible": true }
+      }
+    }
+  },
+  {
+    "container": "GamesCategoryContainer",
+    "data": {
+      "initialState": {
+        "totalItems": 24,
+        "data": [
+          {
+            "id": "5078ac94-48ee-4272-a2a4-c7880ed41a66",
+            "name": "Rise of Olympus Origin",
+            "imageUrl": "/cdn/2269dfea-1d89-4f88-831b-895bd84712cc.jpg",
+            "realPlayUrl": "/casino/play-n-go/rise-of-olympus-origin/play",
+            "demoPlayUrl": "/casino/play-n-go/rise-of-olympus-origin/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "25d1c693-6885-4646-ba80-a79ef39f4fe8",
+            "name": "BARREL BONANZA",
+            "imageUrl": "/cdn/7c636553-2d55-47e9-8de9-a7eb056721f7.jpg",
+            "realPlayUrl": "/casino/hacksaw/barrel-bonanza/play",
+            "demoPlayUrl": "/casino/hacksaw/barrel-bonanza/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "97b0066f-bd96-4b04-9f92-c027986d9bd9",
+            "name": "Coin Joker",
+            "imageUrl": "/cdn/d0aba4cb-b156-4374-bee1-adb4526b9a06.jpg",
+            "realPlayUrl": "/casino/spinomenal/coin-joker/play",
+            "demoPlayUrl": "/casino/spinomenal/coin-joker/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "b54d4d27-3163-4663-baa5-628c163a0cb2",
+            "name": "Book of Ra",
+            "imageUrl": "/cdn/imported_games_images/N2/Novomatic/102014/a8d29d45-7f1e-4475-953e-7c219a3cf6bf.jpg",
+            "realPlayUrl": "/casino/novomatic/book-of-ra/play",
+            "demoPlayUrl": "/casino/novomatic/book-of-ra/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "e2aaefd4-d4f3-4ada-aa50-9546fb8ce919",
+            "name": "Break the Piggy Bank",
+            "imageUrl": "/cdn/77467820-451b-4fb1-b4da-542d83716f92.jpg",
+            "realPlayUrl": "/casino/penguin-king/break-the-piggy-bank/play",
+            "demoPlayUrl": "/casino/penguin-king/break-the-piggy-bank/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "6fdfedad-35c3-469d-935e-9f51a9b8aca3",
+            "name": "Bill and Coin",
+            "imageUrl": "/cdn/814c0837-bbef-439a-83e9-e6ad57553a30.jpg",
+            "realPlayUrl": "/casino/relax-gaming/bill-and-coin/play",
+            "demoPlayUrl": "/casino/relax-gaming/bill-and-coin/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "299c60d8-2813-4aa5-b850-d94c7c17b779",
+            "name": "Snoop Dogg Dollars",
+            "imageUrl": "/cdn/imported_games_images/CASIMBA/BGAMING_RGS/snoop-dogg-dollars/c79c447f-9bdc-48fa-8a77-7c98b912c59f.jpg",
+            "realPlayUrl": "/casino/bgaming-1/snoop-dogg-dollars/play",
+            "demoPlayUrl": "/casino/bgaming-1/snoop-dogg-dollars/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "4c3e6315-3c45-4c5d-8eed-bead17968ff9",
+            "name": "Sweet Gummy",
+            "imageUrl": "/cdn/imported_games_images/RA_AVATAR_UX/RA_AVATAR_UX/sweet-gummy/2cd0265d-bfb0-4c3a-8144-3bc0dab56fdf.jpg",
+            "realPlayUrl": "/casino/avatarux-1/sweet-gummy/play",
+            "demoPlayUrl": "/casino/avatarux-1/sweet-gummy/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "5d02f3c6-ff5f-4421-82fd-392052e09e48",
+            "name": "Hot Slot: 777 Diamond Crown",
+            "imageUrl": "/cdn/7fcceb62-a272-425b-8cb7-6ef58d1681e6.jpg",
+            "realPlayUrl": "/casino/voltent-1/hot-slot-777-diamond-crown/play",
+            "demoPlayUrl": "/casino/voltent-1/hot-slot-777-diamond-crown/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "83d8e86b-7ac8-4618-90ca-2073c480db5f",
+            "name": "Patrick vs Joker",
+            "imageUrl": "/cdn/ada8b0d8-9547-48a5-9650-34f3327651ca.jpg",
+            "realPlayUrl": "/casino/playnetic/patrick-vs-joker/play",
+            "demoPlayUrl": "/casino/playnetic/patrick-vs-joker/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "0506fb87-8bba-4334-97c9-d965be8e0e24",
+            "name": "Blood Club",
+            "imageUrl": "/cdn/92fa132c-205e-4a0c-8467-f7091d016686.jpg",
+            "realPlayUrl": "/casino/peter-sons/blood-club/play",
+            "demoPlayUrl": "/casino/peter-sons/blood-club/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "ac13d93c-f4cb-4b8e-a02f-5d9c04545ba8",
+            "name": "Coin Pusher",
+            "imageUrl": "/cdn/ba81886a-2fe3-4d96-bbc9-c22a11b60ddb.jpg",
+            "realPlayUrl": "/casino/kingmidas/coin-pusher/play",
+            "demoPlayUrl": "/casino/kingmidas/coin-pusher/demo",
+            "hasDemo": true
+          }
+        ],
+        "page": 1,
+        "size": 12
+      },
+      "title": "\uD83D\uDD25Featured",
+      "fetchUrl": "cms-service/api/frontend/casino/category-games/74f24cc4-e136-4b64-b203-9bb6b52bd697",
+      "slug": "/casino/category/featured-3",
+      "resolutionsConfig": {
+        "XS": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "SM": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "MD": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "LG": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "XL": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        }
+      },
+      "viewMoreConfig": {},
+      "aspectRatioPercentage": 127,
+      "iconParams": {},
+      "id": "74f24cc4-e136-4b64-b203-9bb6b52bd697"
+    },
+    "id": "55a18426-6f69-4ef3-9568-cc9183eb3f25",
+    "children": [],
+    "appearance": {
+      "resolutionConfig": {
+        "XS": { "background": {}, "isVisible": true },
+        "SM": { "background": {}, "isVisible": true },
+        "MD": { "background": {}, "isVisible": true },
+        "LG": { "background": {}, "isVisible": true },
+        "XL": { "background": {}, "isVisible": true }
+      }
+    }
+  },
+  {
+    "container": "GamesCategoryContainer",
+    "data": {
+      "initialState": {
+        "totalItems": 17,
+        "data": [
+          {
+            "id": "549bed4c-1b2d-4f79-a04d-1e79b09f5653",
+            "name": "Red Hot 100",
+            "imageUrl": "/cdn/imported_games_images/HUB88/TrueLab/trf_redhot100/b9facbb8-1220-4ef0-9f8b-66a98f9a4568.jpg",
+            "realPlayUrl": "/casino/truelab/red-hot-100/play",
+            "demoPlayUrl": "/casino/truelab/red-hot-100/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "ac3b2fd0-2df9-4391-ab50-52f07a5cce11",
+            "name": " Wild Easter Gifts",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Spinomenal/spm_wildeastergifts/49f7485d-8229-474b-ab61-62f7508a63bc.jpg",
+            "realPlayUrl": "/casino/spinomenal/wild-easter-gifts/play",
+            "demoPlayUrl": "/casino/spinomenal/wild-easter-gifts/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "cad77a64-f8ef-4518-8f4b-725d075a4946",
+            "name": "Ignis Rex",
+            "imageUrl": "/cdn/c5abda16-2475-4835-8401-1b856e2a0dee.jpg",
+            "realPlayUrl": "/casino/evoplay-entertainment/ignis-rex/play",
+            "demoPlayUrl": "/casino/evoplay-entertainment/ignis-rex/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "abd46abe-ce92-4586-960c-7e1e9dbb9887",
+            "name": "Book of Ra Magic",
+            "imageUrl": "/cdn/imported_games_images/N2/Novomatic/102047/b76181f5-5aba-4638-9017-7a506937e603.jpg",
+            "realPlayUrl": "/casino/novomatic/book-of-ra-magic/play",
+            "demoPlayUrl": "/casino/novomatic/book-of-ra-magic/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "ce53fce9-3c2b-45b7-885f-60a17fcaf2fa",
+            "name": "40 Super Hot",
+            "imageUrl": "/cdn/e3844b98-2674-4c65-b8f8-3fa60bc45a25.jpg",
+            "realPlayUrl": "/casino/egt-digital/40-super-hot/play",
+            "demoPlayUrl": "/casino/egt-digital/40-super-hot/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "0330c5a1-d3da-4048-8637-d62e7f295b92",
+            "name": "Lucky Fruity Coin",
+            "imageUrl": "/cdn/632fc1ba-3e68-45d7-9d47-f816a96c3051.jpg",
+            "realPlayUrl": "/casino/mascot-gaming/lucky-fruity-coin/play",
+            "demoPlayUrl": "/casino/mascot-gaming/lucky-fruity-coin/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "db5e45d4-888b-4c30-a48e-5e32b382b9fc",
+            "name": "Cash Strike Triple Fire",
+            "imageUrl": "/cdn/90f21832-7166-4dde-8676-50f3848aec9f.jpg",
+            "realPlayUrl": "/casino/blueprint-gaming/cash-strike-triple-fire/play",
+            "demoPlayUrl": "/casino/blueprint-gaming/cash-strike-triple-fire/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "48b9e73f-374e-4f20-bae1-205dc9f9fed7",
+            "name": "Buffalo Bounty XL",
+            "imageUrl": "/cdn/a95cd052-695a-4f75-8c6c-44decbec5527.jpg",
+            "realPlayUrl": "/casino/dragon-gaming/buffalo-bounty-xl/play",
+            "demoPlayUrl": "/casino/dragon-gaming/buffalo-bounty-xl/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "0faead77-1081-428d-8b80-8027dd8d09bf",
+            "name": "Biergarten",
+            "imageUrl": "/cdn/imported_games_images/HUB88/SwinttPremium/swt_biergarten/30e46f34-d03b-4f89-984b-019a6b6d7eee.jpg",
+            "realPlayUrl": "/casino/swinttpremium/biergarten/play",
+            "demoPlayUrl": "/casino/swinttpremium/biergarten/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "24483955-f419-446e-9a72-2bb957c3ada6",
+            "name": "Go High Safari",
+            "imageUrl": "/cdn/6380b309-5c7c-4045-9d2d-12d157b8573f.jpg",
+            "realPlayUrl": "/casino/rubyplay/go-high-safari/play",
+            "demoPlayUrl": "/casino/rubyplay/go-high-safari/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "ebb801d7-3f97-4d9b-9dec-788836f6fa0c",
+            "name": "3 Pots of Lunar Wolf: Hold and Win",
+            "imageUrl": "/cdn/ff8e25ac-5041-42e1-a5b5-b297ac6c8003.jpg",
+            "realPlayUrl": "/casino/betsoft/3-pots-of-lunar-wolf-hold-and-win/play",
+            "demoPlayUrl": "/casino/betsoft/3-pots-of-lunar-wolf-hold-and-win/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "b3703076-91fc-4a88-857c-0877a39de37d",
+            "name": "Blades of Rome",
+            "imageUrl": "/cdn/198e6b73-214a-4bd2-b1e1-84d91351b099.jpg",
+            "realPlayUrl": "/casino/popiplay/blades-of-rome/play",
+            "demoPlayUrl": "/casino/popiplay/blades-of-rome/demo",
+            "hasDemo": true
+          }
+        ],
+        "page": 1,
+        "size": 12
+      },
+      "title": "\uD83D\uDC51 Games of the Week",
+      "fetchUrl": "cms-service/api/frontend/casino/category-games/f8334414-7c07-4ce0-8a49-c55d0fa2ccd0",
+      "slug": "/casino/category/games-of-the-week",
+      "resolutionsConfig": {
+        "XS": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "SM": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "MD": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "LG": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "XL": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        }
+      },
+      "viewMoreConfig": {},
+      "aspectRatioPercentage": 127,
+      "iconParams": {},
+      "id": "f8334414-7c07-4ce0-8a49-c55d0fa2ccd0"
+    },
+    "id": "89c5310c-b7cb-468c-a790-4d6c13d4a65f",
+    "children": [],
+    "appearance": {
+      "resolutionConfig": {
+        "XS": { "background": {}, "isVisible": true },
+        "SM": { "background": {}, "isVisible": true },
+        "MD": { "background": {}, "isVisible": true },
+        "LG": { "background": {}, "isVisible": true },
+        "XL": { "background": {}, "isVisible": true }
+      }
+    }
+  },
+  {
+    "container": "GamesCategoryContainer",
+    "data": {
+      "initialState": {
+        "totalItems": 50,
+        "data": [
+          {
+            "id": "ff7c1266-6112-442e-8d36-f98de2f5282f",
+            "name": "Gates of Olympus Super Scatter",
+            "imageUrl": "/cdn/42c8164e-97b4-44f6-a9e7-85d4e1dd01d3.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/gates-of-olympus-super-scatter/play",
+            "demoPlayUrl": "/casino/pragmatic-play/gates-of-olympus-super-scatter/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "4f5fa572-5725-489b-963a-a09faf8560ab",
+            "name": "Gates of Olympus 1000",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/vs20olympx/952c60fc-9da4-480a-be0b-0cb8ef8156af.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/gates-of-olympus-1000/play",
+            "demoPlayUrl": "/casino/pragmatic-play/gates-of-olympus-1000/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "7accaaaa-fb62-40e7-9eb2-a305580074c3",
+            "name": "Wanted Dead or a Wild",
+            "imageUrl": "/cdn/20c5f940-1140-4bc9-9ef1-bd4bcb579a86.jpg",
+            "realPlayUrl": "/casino/hacksaw/wanted-dead-or-a-wild/play",
+            "demoPlayUrl": "/casino/hacksaw/wanted-dead-or-a-wild/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "b22abf87-5a76-44c4-943e-e13931da6cb5",
+            "name": "HipHopPop",
+            "imageUrl": "/cdn/imported_games_images/RA_AVATAR_UX/RA_AVATAR_UX/hip-hop-pop/5bede54c-4598-4c40-b8eb-8f9468e76126.jpg",
+            "realPlayUrl": "/casino/avatarux-1/hiphoppop/play",
+            "demoPlayUrl": "/casino/avatarux-1/hiphoppop/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "f0db9366-60a6-4556-99a0-5e8037510498",
+            "name": "Sugar Rush 1000",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/vs20sugarrushx/f9e763b6-dc82-406e-9a52-3c297e6a26ea.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/sugar-rush-1000/play",
+            "demoPlayUrl": "/casino/pragmatic-play/sugar-rush-1000/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "380ef023-86aa-473e-b9e3-61f175dd8cbb",
+            "name": "Hot Slot: 777 Platinum Crown",
+            "imageUrl": "/cdn/44bbb34a-feda-40fa-a865-8d0c3e516409.jpg",
+            "realPlayUrl": "/casino/voltent-1/hot-slot-777-platinum-crown/play",
+            "demoPlayUrl": "/casino/voltent-1/hot-slot-777-platinum-crown/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "b68a5a09-c51d-4973-8698-abe9cc4fc174",
+            "name": "Le King",
+            "imageUrl": "/cdn/eca48aa7-c692-4d75-a124-2c21737bc3cc.jpg",
+            "realPlayUrl": "/casino/hacksaw/le-king/play",
+            "demoPlayUrl": "/casino/hacksaw/le-king/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "9c7feb2a-27a8-46e5-aec8-5033aeb2b2fc",
+            "name": "AVIATOR",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Spribe/sbe_aviator/08a51398-9a16-4c62-851f-d34def73aefd.jpg",
+            "realPlayUrl": "/casino/spribe/aviator/play",
+            "demoPlayUrl": "/casino/spribe/aviator/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "df20c0e4-fa1c-4b53-be97-a7eef2be4d46",
+            "name": "Sweet Bonanza 1000",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/vs20fruitswx/323f5231-6821-48fa-bcc0-e379766f7d53.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/sweet-bonanza-1000/play",
+            "demoPlayUrl": "/casino/pragmatic-play/sweet-bonanza-1000/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "1f400c04-dbc0-4606-9573-47a254ee255f",
+            "name": "Coin's Casino Bonanza 1000",
+            "imageUrl": "/cdn/f663d9ca-344a-4cb2-bab2-db3d0866317a.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/coin-s-casino-bonanza-1000/play",
+            "demoPlayUrl": "/casino/pragmatic-play/coin-s-casino-bonanza-1000/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "d181d44f-0979-4af9-9ce5-3966e45afb31",
+            "name": "Double Rainbow",
+            "imageUrl": "/cdn/cae2d945-2e36-4761-a369-f3bd6b93c34e.jpg",
+            "realPlayUrl": "/casino/hacksaw/double-rainbow/play",
+            "demoPlayUrl": "/casino/hacksaw/double-rainbow/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "6e1d18f4-8ee5-4ff1-b803-0981cf50a32b",
+            "name": "3 Pyramids of Gold: Hold & Win",
+            "imageUrl": "/cdn/imported_games_images/N2/Octoplay/103087/b90a2f75-8900-4539-a57d-271bdc768683.jpg",
+            "realPlayUrl": "/casino/penguin-king/3-pyramids-of-gold-hold-win/play",
+            "demoPlayUrl": "/casino/penguin-king/3-pyramids-of-gold-hold-win/demo",
+            "hasDemo": true
+          }
+        ],
+        "page": 1,
+        "size": 12
+      },
+      "title": "\uD83D\uDD25Top Games",
+      "fetchUrl": "cms-service/api/frontend/casino/category-games/80e54b3c-c165-471f-906e-6fb7625dd312",
+      "slug": "/casino/category/top-games-4",
+      "resolutionsConfig": {
+        "XS": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "SM": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "MD": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "LG": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "XL": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        }
+      },
+      "viewMoreConfig": {},
+      "aspectRatioPercentage": 127,
+      "iconParams": {},
+      "id": "80e54b3c-c165-471f-906e-6fb7625dd312"
+    },
+    "id": "053d4ab0-fe10-4512-ab03-d9b40487f8bd",
+    "children": [],
+    "appearance": {
+      "resolutionConfig": {
+        "XS": { "background": {}, "isVisible": true },
+        "SM": { "background": {}, "isVisible": true },
+        "MD": { "background": {}, "isVisible": true },
+        "LG": { "background": {}, "isVisible": true },
+        "XL": { "background": {}, "isVisible": true }
+      }
+    }
+  },
+  {
+    "container": "GamesCategoryContainer",
+    "data": {
+      "initialState": {
+        "totalItems": 23,
+        "data": [
+          {
+            "id": "d204ea04-f8b8-4077-a279-fd4bffab4781",
+            "name": "Sweet Bonanza Super Scatter",
+            "imageUrl": "/cdn/5e2892f6-889f-46cb-be06-f16344c534d9.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/sweet-bonanza-super-scatter/play",
+            "demoPlayUrl": "/casino/pragmatic-play/sweet-bonanza-super-scatter/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "252dd874-78a9-455d-9494-d640f1e1a399",
+            "name": " Rise of Orpheus",
+            "imageUrl": "/cdn/ee3804a8-62d9-4f0f-95ae-aeb3f4abc376.jpg",
+            "realPlayUrl": "/casino/play-n-go/rise-of-orpheus/play",
+            "demoPlayUrl": "/casino/play-n-go/rise-of-orpheus/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "0f47ab1b-22a8-43eb-9732-ae7fe42e4a7f",
+            "name": "Invictus",
+            "imageUrl": "/cdn/9eb7a2c9-f6a7-4d70-a045-f77a853c9c5e.jpg",
+            "realPlayUrl": "/casino/hacksaw/invictus/play",
+            "demoPlayUrl": "/casino/hacksaw/invictus/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "a9cdcfb1-acff-444a-a486-0b9143964b54",
+            "name": "Mega Wild Fruits and Chillies",
+            "imageUrl": "/cdn/9f3fe2d6-9a3a-4e7a-9716-83023c229b9f.jpg",
+            "realPlayUrl": "/casino/spinomenal/mega-wild-fruits-and-chillies/play",
+            "demoPlayUrl": "/casino/spinomenal/mega-wild-fruits-and-chillies/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "e57c5b01-484e-45a1-bd0a-b0d0c1c5a8a8",
+            "name": "Storm vs Fire",
+            "imageUrl": "/cdn/0e154af7-dc06-4d45-bbdf-10a5dfa8121f.jpg",
+            "realPlayUrl": "/casino/truelab/storm-vs-fire/play",
+            "demoPlayUrl": "/casino/truelab/storm-vs-fire/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "2ca10e1b-53fe-4030-9aaf-76c18bba12a8",
+            "name": "Super Triple Fortune",
+            "imageUrl": "/cdn/8a057f23-e5a5-4db8-b182-fb9374ddad55.jpg",
+            "realPlayUrl": "/casino/novomatic/super-triple-fortune/play",
+            "demoPlayUrl": "/casino/novomatic/super-triple-fortune/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "e0640dcb-8b56-4aa0-9eff-e7ab8746ff53",
+            "name": "Street Ninja",
+            "imageUrl": "/cdn/771bf2df-77f2-4006-accd-2ada2be189af.jpg",
+            "realPlayUrl": "/casino/peter-sons/street-ninja/play",
+            "demoPlayUrl": "/casino/peter-sons/street-ninja/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "101f77ca-4276-457e-aba7-f60b5311f8bf",
+            "name": "The Big Bark: Golden Jackpots",
+            "imageUrl": "/cdn/1831f8fa-ca9a-40d4-8097-066b10d1bccd.jpg",
+            "realPlayUrl": "/casino/penguin-king/the-big-bark-golden-jackpots/play",
+            "demoPlayUrl": "/casino/penguin-king/the-big-bark-golden-jackpots/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "24f70671-b664-4a93-944c-f88434782858",
+            "name": "Lady Lucky Gun",
+            "imageUrl": "/cdn/6f1e88b7-581c-4706-b9fb-977e7ce86823.jpg",
+            "realPlayUrl": "/casino/bgaming-1/lady-lucky-gun/play",
+            "demoPlayUrl": "/casino/bgaming-1/lady-lucky-gun/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "11a6a328-875c-4afe-8ff7-7adfd73df80d",
+            "name": "Sky Rocket",
+            "imageUrl": "/cdn/71c287df-de8e-4121-bba1-c0d5efcedf69.jpg",
+            "realPlayUrl": "/casino/mascot-gaming/sky-rocket/play",
+            "demoPlayUrl": "/casino/mascot-gaming/sky-rocket/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "db5e45d4-888b-4c30-a48e-5e32b382b9fc",
+            "name": "Cash Strike Triple Fire",
+            "imageUrl": "/cdn/90f21832-7166-4dde-8676-50f3848aec9f.jpg",
+            "realPlayUrl": "/casino/blueprint-gaming/cash-strike-triple-fire/play",
+            "demoPlayUrl": "/casino/blueprint-gaming/cash-strike-triple-fire/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "5e4ae401-4092-4753-a26e-898796902d8c",
+            "name": "The Vault Chase",
+            "imageUrl": "/cdn/e502bf67-3306-4d67-84a8-04690decdf4f.jpg",
+            "realPlayUrl": "/casino/avatarux-1/the-vault-chase/play",
+            "demoPlayUrl": "/casino/avatarux-1/the-vault-chase/demo",
+            "hasDemo": true
+          }
+        ],
+        "page": 1,
+        "size": 12
+      },
+      "title": "☄️ New & Popular",
+      "fetchUrl": "cms-service/api/frontend/casino/category-games/221e47ee-3417-495d-afc1-eceb2d077bab",
+      "slug": "/casino/category/new-popular",
+      "resolutionsConfig": {
+        "XS": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "SM": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "MD": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "LG": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "XL": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        }
+      },
+      "viewMoreConfig": {},
+      "aspectRatioPercentage": 127,
+      "iconParams": {},
+      "id": "221e47ee-3417-495d-afc1-eceb2d077bab"
+    },
+    "id": "6e74500a-de4b-45d0-8477-f597059258c4",
+    "children": [],
+    "appearance": {
+      "resolutionConfig": {
+        "XS": { "background": {}, "isVisible": true },
+        "SM": { "background": {}, "isVisible": true },
+        "MD": { "background": {}, "isVisible": true },
+        "LG": { "background": {}, "isVisible": true },
+        "XL": { "background": {}, "isVisible": true }
+      }
+    }
+  },
+  {
+    "container": "GamesCategoryContainer",
+    "data": {
+      "initialState": {
+        "totalItems": 45,
+        "data": [
+          {
+            "id": "4f5fa572-5725-489b-963a-a09faf8560ab",
+            "name": "Gates of Olympus 1000",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/vs20olympx/83b9851a-9b5e-44a8-9929-b59ceb8f017b.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/gates-of-olympus-1000/play",
+            "demoPlayUrl": "/casino/pragmatic-play/gates-of-olympus-1000/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "f0db9366-60a6-4556-99a0-5e8037510498",
+            "name": "Sugar Rush 1000",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/vs20sugarrushx/001626dc-dcdf-44aa-9ed6-158e22d61852.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/sugar-rush-1000/play",
+            "demoPlayUrl": "/casino/pragmatic-play/sugar-rush-1000/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "ff7c1266-6112-442e-8d36-f98de2f5282f",
+            "name": "Gates of Olympus Super Scatter",
+            "imageUrl": "/cdn/2b2a4a89-ec41-4e5d-b77c-41d550a4e815.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/gates-of-olympus-super-scatter/play",
+            "demoPlayUrl": "/casino/pragmatic-play/gates-of-olympus-super-scatter/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "f0fd7af8-ee93-4653-a267-167cd25c337a",
+            "name": "Big Bass Bonanza 1000",
+            "imageUrl": "/cdn/9f8538bc-2b0d-4c2b-bd40-62057b549d5e.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/big-bass-bonanza-1000/play",
+            "demoPlayUrl": "/casino/pragmatic-play/big-bass-bonanza-1000/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "2bd48ac0-174c-49b4-b967-4cd9737cafb6",
+            "name": "Joker's Jewels Cash",
+            "imageUrl": "/cdn/6e585ba1-7e90-442f-a349-02e6ce99ddc5.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/joker-s-jewels-cash/play",
+            "demoPlayUrl": "/casino/pragmatic-play/joker-s-jewels-cash/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "e65d84d8-1207-4d99-b05a-6b393782cb96",
+            "name": "The Dog House - Royal Hunt",
+            "imageUrl": "/cdn/60ee833e-65f9-4046-8ffd-bcd5dbd2112d.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/the-dog-house-royal-hunt/play",
+            "demoPlayUrl": "/casino/pragmatic-play/the-dog-house-royal-hunt/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "df1ef456-7b33-41ee-9d83-a3b763121189",
+            "name": "Triple Pot Gold",
+            "imageUrl": "/cdn/3d6b17d5-e5ca-425f-af39-c668a6004f19.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/triple-pot-gold/play",
+            "demoPlayUrl": "/casino/pragmatic-play/triple-pot-gold/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "7695a1eb-f555-491b-9216-ea71e6166e4e",
+            "name": "Book of Fallen",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/vs10bookfallen/5d588fc5-1fc3-435d-922e-875dd87e91a1.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/book-of-fallen/play",
+            "demoPlayUrl": "/casino/pragmatic-play/book-of-fallen/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "587e3b26-e56c-410c-a26c-60fdfc5ab8ce",
+            "name": "Big Bass Return to the Races",
+            "imageUrl": "/cdn/31041946-944f-4157-b800-a9b7e2f28b41.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/big-bass-return-to-the-races/play",
+            "demoPlayUrl": "/casino/pragmatic-play/big-bass-return-to-the-races/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "895d0ff7-796b-4424-8185-0bdde791c729",
+            "name": "Bigger Bass Splash",
+            "imageUrl": "/cdn/8058cabb-413e-4164-94bc-c5b3f579aefc.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/bigger-bass-splash/play",
+            "demoPlayUrl": "/casino/pragmatic-play/bigger-bass-splash/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "4d338eed-2d34-4c92-93a5-dfef18c6fd4d",
+            "name": "Gates of Olympus",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/vs20olympgate/44547422-cc65-44a7-9178-e4f2cb8d676e.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/gates-of-olympus/play",
+            "demoPlayUrl": "/casino/pragmatic-play/gates-of-olympus/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "7a17401b-878c-4522-969d-c8aeb6a77361",
+            "name": "Brick House Bonanza",
+            "imageUrl": "/cdn/1afad592-512b-497c-b1f6-42c335b2d18a.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/brick-house-bonanza/play",
+            "demoPlayUrl": "/casino/pragmatic-play/brick-house-bonanza/demo",
+            "hasDemo": true
+          }
+        ],
+        "page": 1,
+        "size": 12
+      },
+      "title": "\uD83C\uDFB0 Pragmatic Play Drops & Wins",
+      "fetchUrl": "cms-service/api/frontend/casino/category-games/8f4f8f97-1897-4919-bf89-e780383cd6ab",
+      "slug": "/casino/category/pragmatic-play-drops-wins",
+      "resolutionsConfig": {
+        "XS": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "SM": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "MD": {
+          "itemsPerRow": 4,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "LG": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "XL": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        }
+      },
+      "viewMoreConfig": {},
+      "aspectRatioPercentage": 127,
+      "iconParams": {},
+      "id": "8f4f8f97-1897-4919-bf89-e780383cd6ab"
+    },
+    "id": "2654456f-73cb-4c1d-ae3b-51fcaee99d20",
+    "children": [],
+    "appearance": {
+      "resolutionConfig": {
+        "XS": { "background": {}, "isVisible": true },
+        "SM": { "background": {}, "isVisible": true },
+        "MD": { "background": {}, "isVisible": true },
+        "LG": { "background": {}, "isVisible": true },
+        "XL": { "background": {}, "isVisible": true }
+      }
+    }
+  },
+  {
+    "container": "GamesCategoryContainer",
+    "data": {
+      "initialState": {
+        "totalItems": 265,
+        "data": [
+          {
+            "id": "9b3b1535-2ae7-4a10-984b-5909322e5794",
+            "name": "Grand Link Express: Hold & Win",
+            "imageUrl": "/cdn/57bb4930-7da4-4f29-ac72-f5e02dcc0089.jpg",
+            "realPlayUrl": "/casino/penguin-king/grand-link-express-hold-win/play",
+            "demoPlayUrl": "/casino/penguin-king/grand-link-express-hold-win/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "661a7a2e-cca8-45a7-b658-5fde44dc03c0",
+            "name": "Empire of Wealth",
+            "imageUrl": "/cdn/imported_games_images/HUB88/GameArt/grt_empireofwealth/9fd69b89-fe98-4cab-a63e-c75b27e06686.jpg",
+            "realPlayUrl": "/casino/gameart/empire-of-wealth/play",
+            "demoPlayUrl": "/casino/gameart/empire-of-wealth/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "6e8500ef-adce-4343-be2c-8c4aea8dbe4c",
+            "name": "Take the Vault Hold and Win",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Betsoft/bst_takethevaultholdandwin/5d024a3d-b0ba-4bc4-a988-c3f079639032.jpg",
+            "realPlayUrl": "/casino/betsoft/take-the-vault-hold-and-win/play",
+            "demoPlayUrl": "/casino/betsoft/take-the-vault-hold-and-win/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "8b1222c1-65a1-4e9b-b3c5-e77ee9c2ac55",
+            "name": "Epic Hellas",
+            "imageUrl": "/cdn/58a2b5bb-e6aa-4fa9-8333-a57d0c846aea.jpg",
+            "realPlayUrl": "/casino/peter-sons/epic-hellas/play",
+            "demoPlayUrl": "/casino/peter-sons/epic-hellas/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "5a01b3c4-c418-4504-92b2-a8143be865f0",
+            "name": "Gold Rush with Johnny Cash",
+            "imageUrl": "/cdn/64012cf4-5e37-4117-bd7e-f7d23ab0acb5.jpg",
+            "realPlayUrl": "/casino/bgaming-1/gold-rush-with-johnny-cash/play",
+            "demoPlayUrl": "/casino/bgaming-1/gold-rush-with-johnny-cash/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "cbd566fb-a01a-49bd-b4a7-953c018056d2",
+            "name": "Depths of Fortune",
+            "imageUrl": "/cdn/imported_games_images/RA_AVATAR_UX/RA_AVATAR_UX/depths-of-fortune/8bc40cfe-e418-4e61-be2e-de29073517a0.jpg",
+            "realPlayUrl": "/casino/avatarux-1/depths-of-fortune/play",
+            "demoPlayUrl": "/casino/avatarux-1/depths-of-fortune/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "4ad83da1-c0d0-4d2b-bbfb-b19d5d298dcc",
+            "name": "DREAMSHOCK: JACKPOT X ",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Mascot-Gaming/mscg_dreamshockjackpotx/2d65a6bb-c596-4e41-9a15-e97d7618052f.jpg",
+            "realPlayUrl": "/casino/mascot-gaming/dreamshock-jackpot-x/play",
+            "demoPlayUrl": "/casino/mascot-gaming/dreamshock-jackpot-x/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "cb13ff83-08ef-48d7-8acf-73c918d6aaa3",
+            "name": "25 Coins Grand Gold Edition",
+            "imageUrl": "/cdn/6293dc0d-1a2a-4bc0-b717-c42ef076cafc.jpg",
+            "realPlayUrl": "/casino/voltent-1/25-coins-grand-gold-edition/play",
+            "demoPlayUrl": "/casino/voltent-1/25-coins-grand-gold-edition/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "af1edcb2-b75d-42ec-b603-9262b8148764",
+            "name": "Epic Clover 100 Booster",
+            "imageUrl": "/cdn/f0013cb4-364d-40e9-a577-4ed818f798b9.jpg",
+            "realPlayUrl": "/casino/fazi/epic-clover-100-booster/play",
+            "demoPlayUrl": "/casino/fazi/epic-clover-100-booster/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "085ecca2-eb3f-446f-8a4b-693ec86a9418",
+            "name": "5 Sevens Hold & Win",
+            "imageUrl": "/cdn/imported_games_images/N2/Novomatic/101007/ca0f6ec2-2ff7-40c6-914f-6cc316707c34.jpg",
+            "realPlayUrl": "/casino/novomatic/5-sevens-hold-win/play",
+            "demoPlayUrl": "/casino/novomatic/5-sevens-hold-win/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "c378bf8f-7ccc-40fd-89d9-35c0b8f8b7c7",
+            "name": "Queen of Sirens",
+            "imageUrl": "/cdn/edd16097-463e-4d4b-bda3-cfd92f0bf650.jpg",
+            "realPlayUrl": "/casino/evoplay-entertainment/queen-of-sirens/play",
+            "demoPlayUrl": "/casino/evoplay-entertainment/queen-of-sirens/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "c6e94c16-b516-4515-9742-673e1b6ef211",
+            "name": "Fishy Business",
+            "imageUrl": "/cdn/imported_games_images/HUB88/TrueLab/trf_fishybusiness/73dfb4d6-93b6-4246-9836-149bd133a82a.jpg",
+            "realPlayUrl": "/casino/truelab/fishy-business/play",
+            "demoPlayUrl": "/casino/truelab/fishy-business/demo",
+            "hasDemo": true
+          }
+        ],
+        "page": 1,
+        "size": 12
+      },
+      "title": "\uD83C\uDFB0 Jackpots",
+      "fetchUrl": "cms-service/api/frontend/casino/category-games/1ab0d346-b5ac-4e91-bc03-76b752795c0f",
+      "slug": "/casino/category/jackpots",
+      "resolutionsConfig": {
+        "XS": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "SM": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "MD": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "LG": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "XL": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        }
+      },
+      "viewMoreConfig": {},
+      "aspectRatioPercentage": 127,
+      "iconParams": {},
+      "id": "1ab0d346-b5ac-4e91-bc03-76b752795c0f"
+    },
+    "id": "5981e5f0-289e-4840-87ee-a2b987833918",
+    "children": [],
+    "appearance": {
+      "resolutionConfig": {
+        "XS": { "background": {}, "isVisible": true },
+        "SM": { "background": {}, "isVisible": true },
+        "MD": { "background": {}, "isVisible": true },
+        "LG": { "background": {}, "isVisible": true },
+        "XL": { "background": {}, "isVisible": true }
+      }
+    }
+  },
+  {
+    "container": "GamesCategoryContainer",
+    "data": {
+      "initialState": {
+        "totalItems": 65,
+        "data": [
+          {
+            "id": "c6059a4d-e137-46e5-9d64-7a8388d4e06e",
+            "name": "The Legend of Musashi",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Peter-Sons/pets_thelegendofmusashi/ff718f68-8ae1-4432-a02b-e4af10312b21.jpg",
+            "realPlayUrl": "/casino/peter-sons/the-legend-of-musashi/play",
+            "demoPlayUrl": "/casino/peter-sons/the-legend-of-musashi/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "294cc1fc-8818-4d2b-a68e-31231810cb10",
+            "name": "6 in the Chamber",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Blueprint-Gaming/bpt_6inthechamber/59e843d9-d383-453e-9aea-36918252b7c9.jpg",
+            "realPlayUrl": "/casino/blueprint-gaming/6-in-the-chamber/play",
+            "demoPlayUrl": "/casino/blueprint-gaming/6-in-the-chamber/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "241b06f3-d1fb-4ea1-8832-7a6e656f5b3d",
+            "name": "A Tale of Elves",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Microgaming/mg_slots_ataleofelves/b6d846a2-c7e9-4974-84f3-72d8a397ae2f.jpg",
+            "realPlayUrl": "/casino/microgaming/a-tale-of-elves/play",
+            "demoPlayUrl": "/casino/microgaming/a-tale-of-elves/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "f89f63c3-c9b8-4f8d-be1e-d1780e81ff0c",
+            "name": "Aladdin and the Sorcerer",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/vs20aladdinsorc/83aa9a84-3201-4ce2-9b56-ca39becc4caa.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/aladdin-and-the-sorcerer/play",
+            "demoPlayUrl": "/casino/pragmatic-play/aladdin-and-the-sorcerer/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "0e29a678-1233-40b8-9949-902a96ffc317",
+            "name": "Hammer of Gods",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Peter-Sons/pets_hammerofgods/f6887c18-904b-4c0c-b40d-73d75dbe3e6b.jpg",
+            "realPlayUrl": "/casino/peter-sons/hammer-of-gods/play",
+            "demoPlayUrl": "/casino/peter-sons/hammer-of-gods/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "9c7feb2a-27a8-46e5-aec8-5033aeb2b2fc",
+            "name": "AVIATOR",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Spribe/sbe_aviator/08a51398-9a16-4c62-851f-d34def73aefd.jpg",
+            "realPlayUrl": "/casino/spribe/aviator/play",
+            "demoPlayUrl": "/casino/spribe/aviator/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "95823ab9-ab41-4a10-8cbe-71e0f41b80bb",
+            "name": "Beast Mode",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Relax-Gaming/rlx_beastmode/7c0c47cf-d672-4cba-9e0f-f89e76d3ec38.jpg",
+            "realPlayUrl": "/casino/relax-gaming/beast-mode/play",
+            "demoPlayUrl": "/casino/relax-gaming/beast-mode/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "0faead77-1081-428d-8b80-8027dd8d09bf",
+            "name": "Biergarten",
+            "imageUrl": "/cdn/imported_games_images/HUB88/SwinttPremium/swt_biergarten/30e46f34-d03b-4f89-984b-019a6b6d7eee.jpg",
+            "realPlayUrl": "/casino/swinttpremium/biergarten/play",
+            "demoPlayUrl": "/casino/swinttpremium/biergarten/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "42b6bf3f-5db7-4a0f-8231-468ccd1c57a0",
+            "name": "Book of Charms",
+            "imageUrl": "/cdn/imported_games_images/CASIMBA/REALISTIC_RGS/book-of-charms/d720f4e8-e829-495e-9cfa-9bf5d2aadf8a.jpg",
+            "realPlayUrl": "/casino/realistic/book-of-charms/play",
+            "demoPlayUrl": "/casino/realistic/book-of-charms/demo",
+            "hasDemo": false
+          },
+          {
+            "id": "116a05c9-4c1d-490b-b202-3e8c7052e114",
+            "name": "BountyPop",
+            "imageUrl": "/cdn/imported_games_images/RA_AVATAR_UX/RA_AVATAR_UX/bounty-pop/2307976f-dc53-4651-ba02-a19ce936b696.jpg",
+            "realPlayUrl": "/casino/avatarux-1/bountypop/play",
+            "demoPlayUrl": "/casino/avatarux-1/bountypop/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "32dace7c-8fb2-4f39-9e8b-ba7409428e7e",
+            "name": "Buffalo Trail",
+            "imageUrl": "/cdn/imported_games_images/RA_GAME_BEAT/RA_GAME_BEAT/buffalo_trail/127eba68-3454-45d5-b9fa-3a13832ccc6d.jpg",
+            "realPlayUrl": "/casino/gamebeat/buffalo-trail/play",
+            "demoPlayUrl": "/casino/gamebeat/buffalo-trail/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "91960864-37f2-4352-958f-7a8e65be46d3",
+            "name": "Cash Elevator",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/vs20terrorv/519407b7-c6f2-4bfb-9b35-18b0de4453f8.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/cash-elevator/play",
+            "demoPlayUrl": "/casino/pragmatic-play/cash-elevator/demo",
+            "hasDemo": true
+          }
+        ],
+        "page": 1,
+        "size": 12
+      },
+      "title": "\uD83C\uDFB0 High Volatility",
+      "fetchUrl": "cms-service/api/frontend/casino/category-games/c73481eb-52f1-4b84-a9f1-56828f24dcdd",
+      "slug": "/casino/category/high-volatility",
+      "resolutionsConfig": {
+        "XS": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "SM": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "MD": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "LG": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "XL": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        }
+      },
+      "viewMoreConfig": {},
+      "aspectRatioPercentage": 127,
+      "iconParams": {},
+      "id": "c73481eb-52f1-4b84-a9f1-56828f24dcdd"
+    },
+    "id": "fe41d1d7-8e92-4a2e-97a1-6977d9533b41",
+    "children": [],
+    "appearance": {
+      "resolutionConfig": {
+        "XS": { "background": {}, "isVisible": true },
+        "SM": { "background": {}, "isVisible": true },
+        "MD": { "background": {}, "isVisible": true },
+        "LG": { "background": {}, "isVisible": true },
+        "XL": { "background": {}, "isVisible": true }
+      }
+    }
+  },
+  {
+    "container": "GamesCategoryHeadlessContainer",
+    "data": {
+      "initialState": {
+        "totalItems": 340,
+        "data": [
+          {
+            "id": "1f400c04-dbc0-4606-9573-47a254ee255f",
+            "name": "Coin's Casino Bonanza 1000",
+            "imageUrl": "/cdn/f663d9ca-344a-4cb2-bab2-db3d0866317a.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/coin-s-casino-bonanza-1000/play",
+            "demoPlayUrl": "/casino/pragmatic-play/coin-s-casino-bonanza-1000/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "d353c03b-3f25-4a05-905a-3ae103f25b87",
+            "name": "Book of Dead",
+            "imageUrl": "/cdn/62c52fc4-13c6-47a4-8465-d1c9bf2982f3.jpg",
+            "realPlayUrl": "/casino/play-n-go/book-of-dead/play",
+            "demoPlayUrl": "/casino/play-n-go/book-of-dead/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "75e3cbe6-52da-4650-9e2b-421e0af9ea52",
+            "name": "Ultimate Golden Dragon Inferno",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Betsoft/bst_ultimategoldendragoninferno/d7ad9560-425f-43cd-9f98-9a6b7e6b090c.jpg",
+            "realPlayUrl": "/casino/betsoft/ultimate-golden-dragon-inferno/play",
+            "demoPlayUrl": "/casino/betsoft/ultimate-golden-dragon-inferno/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "bca49083-0a2d-4e8e-b453-002d7041e89b",
+            "name": "Cashin' Joker",
+            "imageUrl": "/cdn/73eb77c4-696c-4edb-9cce-e467841c96ef.jpg",
+            "realPlayUrl": "/casino/play-n-go/cashin-joker/play",
+            "demoPlayUrl": "/casino/play-n-go/cashin-joker/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "d4f23acd-8e0f-4a86-8b94-5f433c2e9f90",
+            "name": "King Kong Cash Even Bigger Bananas 4",
+            "imageUrl": "/cdn/1f51fbce-4d32-4c83-a36c-92baf0dc8639.jpg",
+            "realPlayUrl": "/casino/blueprint-gaming/king-kong-cash-even-bigger-bananas-4/play",
+            "demoPlayUrl": "/casino/blueprint-gaming/king-kong-cash-even-bigger-bananas-4/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "9646e8ef-7e26-41aa-b58a-5ea7ba374442",
+            "name": "Hell Hot 100",
+            "imageUrl": "/cdn/01045e04-5c57-4cda-bc23-494f7648589e.jpg",
+            "realPlayUrl": "/casino/endorphina/hell-hot-100/play",
+            "demoPlayUrl": "/casino/endorphina/hell-hot-100/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "2d1648f2-96e8-4c0c-915d-e8c1e235d37f",
+            "name": "Tomb of Gold II",
+            "imageUrl": "/cdn/5357e0f0-15f9-4332-9712-86cef472e6d8.jpg",
+            "realPlayUrl": "/casino/play-n-go/tomb-of-gold-ii/play",
+            "demoPlayUrl": "/casino/play-n-go/tomb-of-gold-ii/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "b582c9d1-75e2-493a-bf81-26daaf6ed9b7",
+            "name": "Pho Sho",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Betsoft/bst_phosho/cea9ca3f-eefa-4a48-b255-a80d0a41abe0.jpg",
+            "realPlayUrl": "/casino/betsoft/pho-sho/play",
+            "demoPlayUrl": "/casino/betsoft/pho-sho/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "5bd67f22-bba5-49c3-a369-5156d91fb09b",
+            "name": "The Tipsy Tourist: Beach Bonanza",
+            "imageUrl": "/cdn/780fe263-fa16-48b1-810a-01b497f2a8ca.jpg",
+            "realPlayUrl": "/casino/betsoft/the-tipsy-tourist-beach-bonanza/play",
+            "demoPlayUrl": "/casino/betsoft/the-tipsy-tourist-beach-bonanza/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "4f5fa572-5725-489b-963a-a09faf8560ab",
+            "name": "Gates of Olympus 1000",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/vs20olympx/952c60fc-9da4-480a-be0b-0cb8ef8156af.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/gates-of-olympus-1000/play",
+            "demoPlayUrl": "/casino/pragmatic-play/gates-of-olympus-1000/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "8393a3e3-b038-4fff-989b-d84e1545a255",
+            "name": "Legacy of Dead",
+            "imageUrl": "/cdn/64bd200e-72b8-44aa-a730-9798874ee916.jpg",
+            "realPlayUrl": "/casino/play-n-go/legacy-of-dead/play",
+            "demoPlayUrl": "/casino/play-n-go/legacy-of-dead/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "c029af08-f1ea-43ed-9b8d-6545ad532e7d",
+            "name": "Moon Princess 100",
+            "imageUrl": "/cdn/7373ce0b-0793-466c-9f60-fe66b247cec7.jpg",
+            "realPlayUrl": "/casino/play-n-go/moon-princess-100/play",
+            "demoPlayUrl": "/casino/play-n-go/moon-princess-100/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "8d4dac6e-d4e6-4625-850d-4939124b2392",
+            "name": "Crystal Chef",
+            "imageUrl": "/cdn/0e3d1e73-5929-4743-8da1-f4cfcc125edd.jpg",
+            "realPlayUrl": "/casino/fbastards/crystal-chef/play",
+            "demoPlayUrl": "/casino/fbastards/crystal-chef/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "b68a5a09-c51d-4973-8698-abe9cc4fc174",
+            "name": "Le King",
+            "imageUrl": "/cdn/eca48aa7-c692-4d75-a124-2c21737bc3cc.jpg",
+            "realPlayUrl": "/casino/hacksaw/le-king/play",
+            "demoPlayUrl": "/casino/hacksaw/le-king/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "e15a37d4-a2e1-4c8e-bf37-2c5a62086299",
+            "name": "Titan’s Rising 15 Lines",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Spinomenal/spm_titansrising15lines/7b69f727-83a3-4688-bf92-4f095547d5ee.jpg",
+            "realPlayUrl": "/casino/spinomenal/titan-s-rising-15-lines/play",
+            "demoPlayUrl": "/casino/spinomenal/titan-s-rising-15-lines/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "b1c2a9bc-fd9f-46a8-ac23-3341df2f24f2",
+            "name": "Majestic Wild Buffalo - Dusk Till Dawn",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Spinomenal/spm_majesticwildbuffalo-dusktilldawn/840deefa-003c-4c2d-9a9e-a476e89a4703.jpg",
+            "realPlayUrl": "/casino/spinomenal/majestic-wild-buffalo-dusk-till-dawn/play",
+            "demoPlayUrl": "/casino/spinomenal/majestic-wild-buffalo-dusk-till-dawn/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "7a4a7eb2-32bd-46ec-a4bf-8d57a01eaf07",
+            "name": "Midgard’s Fortune Megaways",
+            "imageUrl": "/cdn/d956d6e5-b779-4b6d-87ce-da40beba1afa.jpg",
+            "realPlayUrl": "/casino/gameart/midgard-s-fortune-megaways/play",
+            "demoPlayUrl": "/casino/gameart/midgard-s-fortune-megaways/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "7accaaaa-fb62-40e7-9eb2-a305580074c3",
+            "name": "Wanted Dead or a Wild",
+            "imageUrl": "/cdn/20c5f940-1140-4bc9-9ef1-bd4bcb579a86.jpg",
+            "realPlayUrl": "/casino/hacksaw/wanted-dead-or-a-wild/play",
+            "demoPlayUrl": "/casino/hacksaw/wanted-dead-or-a-wild/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "b150f170-48bc-4e50-b66f-9fd50bffc4ea",
+            "name": "3 Aztec Temples",
+            "imageUrl": "/cdn/0e99a726-30f6-4806-bb1d-87df47069971.jpg",
+            "realPlayUrl": "/casino/3oaks/3-aztec-temples/play",
+            "demoPlayUrl": "/casino/3oaks/3-aztec-temples/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "f6806894-9091-4559-b22f-07ab40c7d338",
+            "name": "Fortuna De Los Muertos 3",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Spinomenal/spm_fortunadelosmuertos3/5bdb3479-8edf-4d30-b01d-98918ffd2b8e.jpg",
+            "realPlayUrl": "/casino/spinomenal/fortuna-de-los-muertos-3/play",
+            "demoPlayUrl": "/casino/spinomenal/fortuna-de-los-muertos-3/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "1ac0a509-7d53-4f08-9159-0b5f80574d3e",
+            "name": "Le Bandit",
+            "imageUrl": "/cdn/646822e9-4e6e-4a6c-a24f-453f6eff2f87.jpg",
+            "realPlayUrl": "/casino/hacksaw/le-bandit/play",
+            "demoPlayUrl": "/casino/hacksaw/le-bandit/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "9bb62b44-868b-4cb9-bea6-cbea97905290",
+            "name": "Ze Zeus",
+            "imageUrl": "/cdn/29eb28b0-7456-488d-86d2-1659f57e8bed.jpg",
+            "realPlayUrl": "/casino/hacksaw/ze-zeus/play",
+            "demoPlayUrl": "/casino/hacksaw/ze-zeus/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "97b0066f-bd96-4b04-9f92-c027986d9bd9",
+            "name": "Coin Joker",
+            "imageUrl": "/cdn/d0aba4cb-b156-4374-bee1-adb4526b9a06.jpg",
+            "realPlayUrl": "/casino/spinomenal/coin-joker/play",
+            "demoPlayUrl": "/casino/spinomenal/coin-joker/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "ff7c1266-6112-442e-8d36-f98de2f5282f",
+            "name": "Gates of Olympus Super Scatter",
+            "imageUrl": "/cdn/42c8164e-97b4-44f6-a9e7-85d4e1dd01d3.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/gates-of-olympus-super-scatter/play",
+            "demoPlayUrl": "/casino/pragmatic-play/gates-of-olympus-super-scatter/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "4d338eed-2d34-4c92-93a5-dfef18c6fd4d",
+            "name": "Gates of Olympus",
+            "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/vs20olympgate/16c25296-f12a-4f12-b7d0-9f13f373ab2e.jpg",
+            "realPlayUrl": "/casino/pragmatic-play/gates-of-olympus/play",
+            "demoPlayUrl": "/casino/pragmatic-play/gates-of-olympus/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "b52a8d96-9f32-4fe7-a0b2-62bdbbf0b710",
+            "name": "Le Viking",
+            "imageUrl": "/cdn/7a072325-5ffb-48e5-ac65-c293e85e843c.jpg",
+            "realPlayUrl": "/casino/hacksaw/le-viking/play",
+            "demoPlayUrl": "/casino/hacksaw/le-viking/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "ac3b2fd0-2df9-4391-ab50-52f07a5cce11",
+            "name": " Wild Easter Gifts",
+            "imageUrl": "/cdn/imported_games_images/HUB88/Spinomenal/spm_wildeastergifts/49f7485d-8229-474b-ab61-62f7508a63bc.jpg",
+            "realPlayUrl": "/casino/spinomenal/wild-easter-gifts/play",
+            "demoPlayUrl": "/casino/spinomenal/wild-easter-gifts/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "e7893501-3e49-49de-8e10-c2ab0744c249",
+            "name": "Hades’ Infernal Blaze",
+            "imageUrl": "/cdn/0e24e0fe-bb9a-4f40-a77d-86dd837ac4e3.jpg",
+            "realPlayUrl": "/casino/spinomenal/hades-infernal-blaze/play",
+            "demoPlayUrl": "/casino/spinomenal/hades-infernal-blaze/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "1a18fb7b-6804-4c22-bc76-dfd5355298d7",
+            "name": "Crystal Fortune",
+            "imageUrl": "/cdn/a0d76452-9d08-488d-b208-df8ffe054f9b.jpg",
+            "realPlayUrl": "/casino/xgg/crystal-fortune/play",
+            "demoPlayUrl": "/casino/xgg/crystal-fortune/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "e522ce5c-6990-4d95-84cd-2705bf705439",
+            "name": "Boozy Bonanza",
+            "imageUrl": "/cdn/3467e4e3-e28d-44bd-b66f-09b127785069.jpg",
+            "realPlayUrl": "/casino/xgg/boozy-bonanza/play",
+            "demoPlayUrl": "/casino/xgg/boozy-bonanza/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "ef5375c6-1d0c-44c2-a9c8-a173488422a8",
+            "name": "Incan Wilds",
+            "imageUrl": "/cdn/15dc0a05-c030-47dd-96b6-987c898bb280.jpg",
+            "realPlayUrl": "/casino/playnetic/incan-wilds/play",
+            "demoPlayUrl": "/casino/playnetic/incan-wilds/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "22a3316b-1a39-405d-acbc-464b5456b6c2",
+            "name": "Nefertiti's Ring",
+            "imageUrl": "/cdn/830df4a6-17a1-4cf3-8bf7-e812cccd00c3.jpg",
+            "realPlayUrl": "/casino/playnetic/nefertiti-s-ring/play",
+            "demoPlayUrl": "/casino/playnetic/nefertiti-s-ring/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "74546771-6a07-4cd5-8a94-7811b953d0a7",
+            "name": "Hysteria",
+            "imageUrl": "/cdn/45bba7e4-4e4b-4eda-a518-164ed0627b33.jpg",
+            "realPlayUrl": "/casino/playnetic/hysteria/play",
+            "demoPlayUrl": "/casino/playnetic/hysteria/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "c909ef71-2cc8-49ce-8681-9351326a0f1b",
+            "name": "Big Salmon Run",
+            "imageUrl": "/cdn/f17caf69-7bf5-4ac1-9fab-34913b2fd558.jpg",
+            "realPlayUrl": "/casino/ra-arrows-edge/big-salmon-run/play",
+            "demoPlayUrl": "/casino/ra-arrows-edge/big-salmon-run/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "d277b007-8217-4b74-80b2-eecc38841589",
+            "name": "Mad Road",
+            "imageUrl": "/cdn/3385bcd6-2fb6-4189-9d25-ab7e16391aa6.jpg",
+            "realPlayUrl": "/casino/ra-arrows-edge/mad-road/play",
+            "demoPlayUrl": "/casino/ra-arrows-edge/mad-road/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "2b79d3b0-dd01-41a1-a0c8-c348a40009e4",
+            "name": "Arcade Fortunes",
+            "imageUrl": "/cdn/5d23719c-58a6-4ad9-8897-86b5483c08e2.jpg",
+            "realPlayUrl": "/casino/ra-arrows-edge/arcade-fortunes/play",
+            "demoPlayUrl": "/casino/ra-arrows-edge/arcade-fortunes/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "6cdaa72a-6864-474b-bc1d-8ac34f4ffe60",
+            "name": "Junkrat Max",
+            "imageUrl": "/cdn/e93499bb-af71-4576-8907-b3e050e14861.jpg",
+            "realPlayUrl": "/casino/popiplay/junkrat-max/play",
+            "demoPlayUrl": "/casino/popiplay/junkrat-max/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "3046796b-e3f3-4923-915b-4d1854f05f55",
+            "name": "Detective Donut Kickback",
+            "imageUrl": "/cdn/55f1db35-88b7-484e-945a-c424cb0bcacb.jpg",
+            "realPlayUrl": "/casino/popiplay/detective-donut-kickback/play",
+            "demoPlayUrl": "/casino/popiplay/detective-donut-kickback/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "0ce16367-bc19-4c25-9d75-c7eb22898af3",
+            "name": "Tiki Trip",
+            "imageUrl": "/cdn/09488701-b0a4-48dd-9f52-2823a0809e24.jpg",
+            "realPlayUrl": "/casino/popiplay/tiki-trip/play",
+            "demoPlayUrl": "/casino/popiplay/tiki-trip/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "142d71b8-709b-44b0-95a1-312ffd38702d",
+            "name": "Lion Gems 3 Pots: Hold and Win",
+            "imageUrl": "/cdn/09c36a83-bd6f-4f4d-91b3-8b290fcdde61.jpg",
+            "realPlayUrl": "/casino/playson/lion-gems-3-pots-hold-and-win/play",
+            "demoPlayUrl": "/casino/playson/lion-gems-3-pots-hold-and-win/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "58d096ed-4002-4598-a499-ae5a02133763",
+            "name": "Piggy Power: Hit the Bonus™",
+            "imageUrl": "/cdn/7a60eb5c-9d26-4127-bd80-6aeb7f481e08.jpg",
+            "realPlayUrl": "/casino/playson/piggy-power-hit-the-bonus/play",
+            "demoPlayUrl": "/casino/playson/piggy-power-hit-the-bonus/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "a31f5ba9-9152-454e-9917-aee1a85e8006",
+            "name": "Super Pink Joker: Hold and Win",
+            "imageUrl": "/cdn/a7582154-48c4-41e0-8ddb-7649e69cff00.jpg",
+            "realPlayUrl": "/casino/playson/super-pink-joker-hold-and-win/play",
+            "demoPlayUrl": "/casino/playson/super-pink-joker-hold-and-win/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "7186439a-50fb-49e7-8b71-4748441ba0d4",
+            "name": "Oops",
+            "imageUrl": "/cdn/b19c6cf2-5241-420f-a64a-3c792f6bea25.jpg",
+            "realPlayUrl": "/casino/shady-lady/oops/play",
+            "demoPlayUrl": "/casino/shady-lady/oops/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "3f032c37-f52d-426f-9f48-f561a81709ee",
+            "name": "Orphan Organ",
+            "imageUrl": "/cdn/a3f07f1e-463e-470d-a674-4a8d4eb14f50.jpg",
+            "realPlayUrl": "/casino/shady-lady/orphan-organ/play",
+            "demoPlayUrl": "/casino/shady-lady/orphan-organ/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "b4e0394a-e926-4208-8058-15d39b9ea1a9",
+            "name": "Teslamania",
+            "imageUrl": "/cdn/bffe99e8-bcf0-4978-a8bf-b0b7327a61cc.jpg",
+            "realPlayUrl": "/casino/gamebeat/teslamania/play",
+            "demoPlayUrl": "/casino/gamebeat/teslamania/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "04d41f0c-60ee-46ea-b593-4d47ab54a544",
+            "name": "Lucky Wildano",
+            "imageUrl": "/cdn/bb28de14-28db-41fa-988b-91032c3d818b.jpg",
+            "realPlayUrl": "/casino/gamebeat/lucky-wildano/play",
+            "demoPlayUrl": "/casino/gamebeat/lucky-wildano/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "a9f6ee0b-9ed9-48ea-b7b5-b710e47df5be",
+            "name": "Spin 4 Dead 2: Zombietown",
+            "imageUrl": "/cdn/49567a3f-7454-45d0-8afe-184ebc0e0792.jpg",
+            "realPlayUrl": "/casino/gamebeat/spin-4-dead-2-zombietown/play",
+            "demoPlayUrl": "/casino/gamebeat/spin-4-dead-2-zombietown/demo",
+            "hasDemo": true
+          },
+          {
+            "id": "61e54db6-4733-4ac8-8018-8c39e2d46c42",
+            "name": "Coin Era 2: Hold to Win",
+            "imageUrl": "/cdn/a9e307aa-714f-4d52-a8a8-2ab68637a916.jpg",
+            "realPlayUrl": "/casino/formula-spin/coin-era-2-hold-to-win/play",
+            "demoPlayUrl": "/casino/formula-spin/coin-era-2-hold-to-win/demo",
+            "hasDemo": true
+          }
+        ],
+        "page": 1,
+        "size": 48
+      },
+      "fetchUrl": "cms-service/api/frontend/casino/category-games/ae9c80a5-b5b8-4f5c-8d68-5ea5d841a856",
+      "resolutionsConfig": {
+        "XS": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "SM": {
+          "itemsPerRow": 5,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "MD": {
+          "itemsPerRow": 6,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "LG": {
+          "itemsPerRow": 8,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        },
+        "XL": {
+          "itemsPerRow": 8,
+          "aspectRatioPercentage": 0,
+          "headingFontFamily": "SECONDARY",
+          "headingFontSize": 16,
+          "headingFontWeight": "BOLD",
+          "viewMoreFontFamily": "PRIMARY",
+          "viewMoreFontSize": 15,
+          "viewMoreFontWeight": "BOLD"
+        }
+      },
+      "aspectRatioPercentage": 127,
+      "id": "ae9c80a5-b5b8-4f5c-8d68-5ea5d841a856"
+    },
+    "id": "594cd8c1-a087-4bdd-9e2f-a6f92b5e9fb3",
+    "children": [],
+    "appearance": {
+      "resolutionConfig": {
+        "XS": { "background": {}, "isVisible": true },
+        "SM": { "background": {}, "isVisible": true },
+        "MD": { "background": {}, "isVisible": true },
+        "LG": { "background": {}, "isVisible": true },
+        "XL": { "background": {}, "isVisible": true }
+      }
+    }
+  }
+]
