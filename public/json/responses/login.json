@@ -1,0 +1,17 @@
+{
+  "Data": {
+    "JwtToken": "eyJhbGciOiJIUzI1NiIsImFwcF9pZCI6IkZ1c2lvbkFQSSIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6ZmFsc2UsImF1dGhUb2tlbiI6IjNmZjcxOWU0LTg3M2ItNDU0MS05ZjhiLThlY2VkODUyMWY1YiIsImV4cCI6MTc1NjU5MTE4MywiaWF0IjoxNzU2NTg1NzgzLCJpZCI6IjExMDEyMTAiLCJwZXJtaXNzaW9ucyI6bnVsbCwicm9sZSI6IiIsInN1YiI6MTEwMTIxMCwidXNlcl9pZCI6IjExMDEyMTAifQ.UnMhSd-IR4KVWx1jlT5-gpdijZ6a2iY9uHTrPr01QLo",
+    "Authentication": {
+      "IsAuthenticated:": true,
+      "AuthToken": "3ff719e4-873b-4541-9f8b-8eced8521f5b",
+      "LoginIP": "52.50.76.251"
+    },
+    "User": {
+      "UserId": 1101210,
+      "BrandId": 270,
+      "IsTestUser": false
+    }
+  },
+  "Success": true,
+  "Errors": null
+}

@@ -2,6 +2,7 @@
 <!-- eslint-disable vue/no-v-text-v-html-on-component -->
 <!-- eslint-disable @typescript-eslint/no-explicit-any -->
 <script setup lang="ts">
+import { useAppStore } from '~/core/store/app'
 import type { ContainerType } from '~/core/types/Container'
 
 useHead({
@@ -10,21 +11,20 @@ useHead({
 
 //models
 const content = ref<ContainerType[]>([])
-const isLoading = ref<boolean>(true)
+const { wait } = useUtils()
+const { setPageLoading } = useAppStore()
 
 const loadPage = async (page: string) => {
-  isLoading.value = true
+  setPageLoading(true)
   const { data: data }: any = await useAsyncData('page', () => $fetch(`/json/pages/${page}.json`))
-
+  await wait(700)
   if (data) {
-    isLoading.value = false
     content.value = data.value.children.main
   }
+  setPageLoading(false)
 }
 
-onMounted(() => {
-  loadPage('home')
-})
+loadPage('home')
 </script>
 <template>
   <Container :content="content" />

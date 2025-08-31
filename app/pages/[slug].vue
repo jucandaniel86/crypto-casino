@@ -1,12 +1,24 @@
 <!-- eslint-disable @typescript-eslint/no-explicit-any -->
 <script setup lang="ts">
-const { data }: any = await useAsyncData(
+import { useAppStore } from '~/core/store/app'
+
+const { wait } = useUtils()
+const { setPageLoading } = useAppStore()
+const renderID = ref('')
+
+const { data } = await useAsyncData(
   'data',
   async () => {
+    setPageLoading(true)
     const route = useRoute()
-    const data: any = await $fetch(`/json/pages/${route.params.slug}.json`)
-    useSeoContainer(data.seo)
-    return data
+    const pageData: any = await $fetch(`/json/pages/${route.params.slug}.json`)
+    await wait(700)
+    useSeoContainer(pageData.seo)
+
+    renderID.value = route.params.slug + '_' + new Date().getTime()
+
+    setPageLoading(false)
+    return pageData
   },
   {
     lazy: true,
@@ -14,5 +26,5 @@ const { data }: any = await useAsyncData(
 )
 </script>
 <template>
-  <Container v-if="data" :content="data.children.main" />
+  <Container v-if="data" :key="renderID" :content="data.children.main" />
 </template>

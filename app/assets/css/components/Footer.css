@@ -1,8 +1,10 @@
 .v-footer {
   background: var(--footer-background) !important;
   flex: 1 1 auto !important;
-  padding: var(--mainLayoutGutter);
+  padding: var(--mainLayoutGutter) !important;
   box-shadow: none !important;
+  width: calc(100% + var(--mainLayoutGutter) * 2px) !important;
+  margin: 0 calc(var(--mainLayoutGutter) * -1);
 }
 
 .v-footer .footer-layout {
@@ -114,4 +116,8 @@
 
 .v-footer .v-select .v-field__outline {
   display: none;
+}
+
+.v-footer .v-container {
+  padding: 16px var(--mainLayoutGutter);
 }

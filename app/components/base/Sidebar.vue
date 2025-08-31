@@ -20,7 +20,7 @@ onClickOutside(target, () => {})
     :width="240"
     :class="{ extended: !rail }"
   >
-    <div class="sidebar-arrow-container d-flex justify-center align-center" v-if="!rail" />
+    <div v-if="!rail" class="sidebar-arrow-container d-flex justify-center align-center" />
     <div
       class="sidebar-arrow-container d-flex justify-center align-center"
       :class="{ expanded: !rail }"
@@ -46,7 +46,7 @@ onClickOutside(target, () => {})
           variant="plain"
           link
           :to="item.linkName"
-          :class="{ active: route.name === item.linkName }"
+          :class="{ active: route.path.replace('/', '') === item.linkName }"
         >
           <template #prepend>
             <v-tooltip :text="item.title" color="white" :disabled="!rail">

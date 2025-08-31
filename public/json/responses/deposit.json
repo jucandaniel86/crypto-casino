@@ -1,0 +1,1890 @@
+[
+  {
+    "container": "PendingWithdrawsContainer",
+    "data": {
+      "displayCurrenciesLimit": 20,
+      "cancelWithdrawURL": "customer-service/api/frontend/payment/v2/crypto/withdraw/cancel",
+      "pendingWithdraws": [],
+      "emailVerificationData": {
+        "requireEmailVerification": false
+      }
+    },
+    "id": "228b9fe0-f492-4a0d-8345-7c2fe4d23c53",
+    "children": [],
+    "appearance": {
+      "resolutionConfig": {
+        "XS": {
+          "background": {},
+          "isVisible": true
+        },
+        "SM": {
+          "background": {},
+          "isVisible": true
+        },
+        "MD": {
+          "background": {},
+          "isVisible": true
+        },
+        "LG": {
+          "background": {},
+          "isVisible": true
+        },
+        "XL": {
+          "background": {},
+          "isVisible": true
+        }
+      }
+    }
+  },
+  {
+    "container": "DepositContainer",
+    "data": {
+      "displayCurrenciesLimit": 4,
+      "depositURL": "payment-service/api/frontend/crypto/address-new",
+      "depositCurrencies": {
+        "USD": {
+          "code": "USD",
+          "name": "United States dollar",
+          "symbol": "$",
+          "balance": "0.000000000000000000",
+          "isFiat": true,
+          "precision": 2,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "EUR": {
+          "code": "EUR",
+          "name": "Euro",
+          "symbol": "€",
+          "balance": "0.000000000000000000",
+          "isFiat": true,
+          "precision": 2,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "NOK": {
+          "code": "NOK",
+          "name": "Norwegian Krone",
+          "balance": "0.000000000000000000",
+          "isFiat": true,
+          "precision": 2,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "NZD": {
+          "code": "NZD",
+          "name": "New Zealand dollar",
+          "symbol": "$",
+          "balance": "0.000000000000000000",
+          "isFiat": true,
+          "precision": 2,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "PLN": {
+          "code": "PLN",
+          "name": "Polish Zloty",
+          "balance": "0.000000000000000000",
+          "isFiat": true,
+          "precision": 2,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "BRL": {
+          "code": "BRL",
+          "name": "Brazilian real",
+          "symbol": "R$",
+          "balance": "0.000000000000000000",
+          "isFiat": true,
+          "precision": 2,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "ETH": {
+          "code": "ETH",
+          "name": "Ethereum",
+          "symbol": "Ξ",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 12,
+          "minAmount": "0.001000000000000000",
+          "supportsTag": false,
+          "networkData": {
+            "ETH": {
+              "name": "Ethereum (ERC20)",
+              "minAmount": "0.001000000000000000"
+            },
+            "ETH-BSC": {
+              "name": "BNB Smart Chain (BEP20)",
+              "minAmount": "0.001000000000000000"
+            }
+          }
+        },
+        "BTC": {
+          "code": "BTC",
+          "name": "Bitcoin",
+          "symbol": "₿",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 12,
+          "minAmount": "0.000100000000000000",
+          "supportsTag": false
+        },
+        "USDT": {
+          "code": "USDT",
+          "name": "Tether",
+          "balance": "30.000000000000000000",
+          "isFiat": false,
+          "precision": 6,
+          "minAmount": "5.000000000000000000",
+          "supportsTag": false,
+          "networkData": {
+            "USDTB": {
+              "name": "BNB Smart Chain (BEP20)",
+              "minAmount": "0.000000000000000000"
+            },
+            "USDTT": {
+              "name": "Tron (TRC20)",
+              "minAmount": "1.000000000000000000"
+            },
+            "USDTE": {
+              "name": "Ethereum (ERC20)",
+              "minAmount": "5.000000000000000000"
+            },
+            "USDTP": {
+              "name": "Polygon",
+              "minAmount": "0.000000000000000000"
+            }
+          }
+        },
+        "SOL": {
+          "code": "SOL",
+          "name": "Solana",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 6,
+          "minAmount": "0.010000000000000000",
+          "supportsTag": false
+        },
+        "AVAX": {
+          "code": "AVAX",
+          "name": "Avalanche",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 6,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "BABY": {
+          "code": "BABY",
+          "name": "Baby Doge Coin",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 12,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false,
+          "networkData": {
+            "BABY-BSC": {
+              "name": "BNB Smart Chain (BEP20)",
+              "minAmount": "0.000000000000000000"
+            }
+          }
+        },
+        "BCH": {
+          "code": "BCH",
+          "name": "Bitcoin Cash",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 6,
+          "minAmount": "0.001000000000000000",
+          "supportsTag": false
+        },
+        "BONK": {
+          "code": "BONK",
+          "name": "Bonk",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 8,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "BRET": {
+          "code": "BRET",
+          "name": "Brett",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 5,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "CAD": {
+          "code": "CAD",
+          "name": "Canadian Dollar",
+          "symbol": "$",
+          "balance": "0.000000000000000000",
+          "isFiat": true,
+          "precision": 2,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "ADA": {
+          "code": "ADA",
+          "name": "Cardano",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 6,
+          "minAmount": "1.000000000000000000",
+          "supportsTag": false
+        },
+        "DOGE": {
+          "code": "DOGE",
+          "name": "Dogecoin",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 6,
+          "minAmount": "1.000000000000000000",
+          "supportsTag": false
+        },
+        "FLOK": {
+          "code": "FLOK",
+          "name": "FLOKI",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 12,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "LTC": {
+          "code": "LTC",
+          "name": "Litecoin",
+          "symbol": "Ł",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 6,
+          "minAmount": "0.010000000000000000",
+          "supportsTag": false
+        },
+        "PEPE": {
+          "code": "PEPE",
+          "name": "Pepe",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 12,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "MTIC": {
+          "code": "MTIC",
+          "name": "Polygon",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 6,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false,
+          "networkData": {
+            "MTIC": {
+              "name": "Ethereum (ERC20)",
+              "minAmount": "0.000000000000000000"
+            },
+            "MATIC-POLY": {
+              "name": "Polygon",
+              "minAmount": "0.000000000000000000"
+            },
+            "MATIC-BSC": {
+              "name": "BNB Smart Chain (BEP20)",
+              "minAmount": "0.000000000000000000"
+            }
+          }
+        },
+        "POPC": {
+          "code": "POPC",
+          "name": "POPCAT",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 4,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "SHIB": {
+          "code": "SHIB",
+          "name": "Shiba Inu",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 12,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "TON": {
+          "code": "TON",
+          "name": "Toncoin",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 4,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": true
+        },
+        "TRX": {
+          "code": "TRX",
+          "name": "TRON",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 6,
+          "minAmount": "10.000000000000000000",
+          "supportsTag": false
+        },
+        "USDC": {
+          "code": "USDC",
+          "name": "USD Coin",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 6,
+          "minAmount": "5.000000000000000000",
+          "supportsTag": false,
+          "networkData": {
+            "USDC": {
+              "name": "Ethereum (ERC20)",
+              "minAmount": "5.000000000000000000"
+            },
+            "USDC-POLY": {
+              "name": "Polygon",
+              "minAmount": "5.000000000000000000"
+            },
+            "USDC-BSC": {
+              "name": "BNB Smart Chain (BEP20)",
+              "minAmount": "5.000000000000000000"
+            }
+          }
+        },
+        "XRP": {
+          "code": "XRP",
+          "name": "XRP",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 6,
+          "minAmount": "0.001000000000000000",
+          "supportsTag": true
+        }
+      },
+      "paymentIQData": {
+        "paymentIQSessionURL": "cms-service/api/frontend/customer/paymentiq/session",
+        "environment": "production"
+      },
+      "kycVerification": {
+        "checkPlayerKycInfoUrl": "customer-service/api/frontend/kyc/info",
+        "kycIdv": {
+          "playerKycStatus": "NOT_VERIFIED",
+          "startPlayerKycVerificationUrl": "customer-service/api/frontend/kyc/idv/trigger",
+          "finishPlayerKycVerificationUrl": "customer-service/api/frontend/kyc/idv/complete"
+        },
+        "kycPoa": {
+          "playerKycStatus": "NOT_VERIFIED",
+          "startPlayerKycVerificationUrl": "customer-service/api/frontend/kyc/poa/trigger",
+          "finishPlayerKycVerificationUrl": "customer-service/api/frontend/kyc/poa/complete"
+        },
+        "kycSof": {
+          "playerKycStatus": "NOT_VERIFIED",
+          "startPlayerKycVerificationUrl": "customer-service/api/frontend/kyc/sof/trigger",
+          "finishPlayerKycVerificationUrl": "customer-service/api/frontend/kyc/sof/complete"
+        },
+        "uploadFilesUrl": "customer-service/api/frontend/customer/verification-files"
+      },
+      "emailVerificationData": {
+        "requireEmailVerification": false
+      },
+      "playerFieldsMetadata": [
+        {
+          "fieldName": "firstName",
+          "type": "INPUT",
+          "required": true,
+          "regex": null,
+          "min": null,
+          "max": null,
+          "options": [],
+          "validationUrl": null,
+          "validationUrlV2": null,
+          "userEditable": false,
+          "autoGenerated": false
+        },
+        {
+          "fieldName": "lastName",
+          "type": "INPUT",
+          "required": true,
+          "regex": null,
+          "min": null,
+          "max": null,
+          "options": [],
+          "validationUrl": null,
+          "validationUrlV2": null,
+          "userEditable": false,
+          "autoGenerated": false
+        },
+        {
+          "fieldName": "dateOfBirth",
+          "type": "DATE",
+          "required": true,
+          "regex": null,
+          "min": "1900-01-01",
+          "max": "2025-08-31",
+          "options": [],
+          "validationUrl": null,
+          "validationUrlV2": null,
+          "userEditable": false,
+          "autoGenerated": false
+        },
+        {
+          "fieldName": "phoneNumber",
+          "type": "INPUT",
+          "required": true,
+          "regex": null,
+          "min": null,
+          "max": null,
+          "options": [],
+          "validationUrl": null,
+          "validationUrlV2": null,
+          "userEditable": false,
+          "autoGenerated": false
+        },
+        {
+          "fieldName": "address",
+          "type": "INPUT",
+          "required": true,
+          "regex": null,
+          "min": null,
+          "max": null,
+          "options": [],
+          "validationUrl": null,
+          "validationUrlV2": null,
+          "userEditable": false,
+          "autoGenerated": false
+        },
+        {
+          "fieldName": "city",
+          "type": "INPUT",
+          "required": true,
+          "regex": null,
+          "min": null,
+          "max": null,
+          "options": [],
+          "validationUrl": null,
+          "validationUrlV2": null,
+          "userEditable": false,
+          "autoGenerated": false
+        },
+        {
+          "fieldName": "zip",
+          "type": "INPUT",
+          "required": true,
+          "regex": null,
+          "min": null,
+          "max": null,
+          "options": [],
+          "validationUrl": null,
+          "validationUrlV2": null,
+          "userEditable": false,
+          "autoGenerated": false
+        }
+      ],
+      "countriesStates": [
+        {
+          "countryCode": "AL",
+          "states": []
+        },
+        {
+          "countryCode": "DZ",
+          "states": []
+        },
+        {
+          "countryCode": "AD",
+          "states": []
+        },
+        {
+          "countryCode": "AO",
+          "states": []
+        },
+        {
+          "countryCode": "AI",
+          "states": []
+        },
+        {
+          "countryCode": "AQ",
+          "states": []
+        },
+        {
+          "countryCode": "AG",
+          "states": []
+        },
+        {
+          "countryCode": "AR",
+          "states": []
+        },
+        {
+          "countryCode": "AM",
+          "states": []
+        },
+        {
+          "countryCode": "AU",
+          "states": []
+        },
+        {
+          "countryCode": "AT",
+          "states": []
+        },
+        {
+          "countryCode": "AZ",
+          "states": []
+        },
+        {
+          "countryCode": "BS",
+          "states": []
+        },
+        {
+          "countryCode": "BH",
+          "states": []
+        },
+        {
+          "countryCode": "BD",
+          "states": []
+        },
+        {
+          "countryCode": "BB",
+          "states": []
+        },
+        {
+          "countryCode": "BY",
+          "states": []
+        },
+        {
+          "countryCode": "BE",
+          "states": []
+        },
+        {
+          "countryCode": "BZ",
+          "states": []
+        },
+        {
+          "countryCode": "BJ",
+          "states": []
+        },
+        {
+          "countryCode": "BM",
+          "states": []
+        },
+        {
+          "countryCode": "BT",
+          "states": []
+        },
+        {
+          "countryCode": "BO",
+          "states": []
+        },
+        {
+          "countryCode": "BA",
+          "states": []
+        },
+        {
+          "countryCode": "BW",
+          "states": []
+        },
+        {
+          "countryCode": "BR",
+          "states": []
+        },
+        {
+          "countryCode": "IO",
+          "states": []
+        },
+        {
+          "countryCode": "VG",
+          "states": []
+        },
+        {
+          "countryCode": "BN",
+          "states": []
+        },
+        {
+          "countryCode": "BF",
+          "states": []
+        },
+        {
+          "countryCode": "BI",
+          "states": []
+        },
+        {
+          "countryCode": "KH",
+          "states": []
+        },
+        {
+          "countryCode": "CM",
+          "states": []
+        },
+        {
+          "countryCode": "CA",
+          "states": []
+        },
+        {
+          "countryCode": "CV",
+          "states": []
+        },
+        {
+          "countryCode": "KY",
+          "states": []
+        },
+        {
+          "countryCode": "CF",
+          "states": []
+        },
+        {
+          "countryCode": "TD",
+          "states": []
+        },
+        {
+          "countryCode": "CL",
+          "states": []
+        },
+        {
+          "countryCode": "CN",
+          "states": []
+        },
+        {
+          "countryCode": "CX",
+          "states": []
+        },
+        {
+          "countryCode": "CC",
+          "states": []
+        },
+        {
+          "countryCode": "CO",
+          "states": []
+        },
+        {
+          "countryCode": "KM",
+          "states": []
+        },
+        {
+          "countryCode": "CK",
+          "states": []
+        },
+        {
+          "countryCode": "CR",
+          "states": []
+        },
+        {
+          "countryCode": "HR",
+          "states": []
+        },
+        {
+          "countryCode": "CY",
+          "states": []
+        },
+        {
+          "countryCode": "CZ",
+          "states": []
+        },
+        {
+          "countryCode": "CD",
+          "states": []
+        },
+        {
+          "countryCode": "DK",
+          "states": []
+        },
+        {
+          "countryCode": "DJ",
+          "states": []
+        },
+        {
+          "countryCode": "DM",
+          "states": []
+        },
+        {
+          "countryCode": "DO",
+          "states": []
+        },
+        {
+          "countryCode": "TL",
+          "states": []
+        },
+        {
+          "countryCode": "EC",
+          "states": []
+        },
+        {
+          "countryCode": "EG",
+          "states": []
+        },
+        {
+          "countryCode": "SV",
+          "states": []
+        },
+        {
+          "countryCode": "GQ",
+          "states": []
+        },
+        {
+          "countryCode": "ER",
+          "states": []
+        },
+        {
+          "countryCode": "EE",
+          "states": []
+        },
+        {
+          "countryCode": "ET",
+          "states": []
+        },
+        {
+          "countryCode": "FK",
+          "states": []
+        },
+        {
+          "countryCode": "FO",
+          "states": []
+        },
+        {
+          "countryCode": "FJ",
+          "states": []
+        },
+        {
+          "countryCode": "FI",
+          "states": []
+        },
+        {
+          "countryCode": "FR",
+          "states": []
+        },
+        {
+          "countryCode": "GA",
+          "states": []
+        },
+        {
+          "countryCode": "GM",
+          "states": []
+        },
+        {
+          "countryCode": "GE",
+          "states": []
+        },
+        {
+          "countryCode": "DE",
+          "states": []
+        },
+        {
+          "countryCode": "GH",
+          "states": []
+        },
+        {
+          "countryCode": "GI",
+          "states": []
+        },
+        {
+          "countryCode": "GR",
+          "states": []
+        },
+        {
+          "countryCode": "GL",
+          "states": []
+        },
+        {
+          "countryCode": "GD",
+          "states": []
+        },
+        {
+          "countryCode": "GT",
+          "states": []
+        },
+        {
+          "countryCode": "GG",
+          "states": []
+        },
+        {
+          "countryCode": "GN",
+          "states": []
+        },
+        {
+          "countryCode": "GW",
+          "states": []
+        },
+        {
+          "countryCode": "HT",
+          "states": []
+        },
+        {
+          "countryCode": "HN",
+          "states": []
+        },
+        {
+          "countryCode": "HK",
+          "states": []
+        },
+        {
+          "countryCode": "HU",
+          "states": []
+        },
+        {
+          "countryCode": "IS",
+          "states": []
+        },
+        {
+          "countryCode": "IN",
+          "states": []
+        },
+        {
+          "countryCode": "ID",
+          "states": []
+        },
+        {
+          "countryCode": "IE",
+          "states": []
+        },
+        {
+          "countryCode": "IM",
+          "states": []
+        },
+        {
+          "countryCode": "IL",
+          "states": []
+        },
+        {
+          "countryCode": "IT",
+          "states": []
+        },
+        {
+          "countryCode": "JM",
+          "states": []
+        },
+        {
+          "countryCode": "JP",
+          "states": []
+        },
+        {
+          "countryCode": "JE",
+          "states": []
+        },
+        {
+          "countryCode": "JO",
+          "states": []
+        },
+        {
+          "countryCode": "KZ",
+          "states": []
+        },
+        {
+          "countryCode": "KE",
+          "states": []
+        },
+        {
+          "countryCode": "KI",
+          "states": []
+        },
+        {
+          "countryCode": "XK",
+          "states": []
+        },
+        {
+          "countryCode": "KW",
+          "states": []
+        },
+        {
+          "countryCode": "KG",
+          "states": []
+        },
+        {
+          "countryCode": "LA",
+          "states": []
+        },
+        {
+          "countryCode": "LV",
+          "states": []
+        },
+        {
+          "countryCode": "LB",
+          "states": []
+        },
+        {
+          "countryCode": "LS",
+          "states": []
+        },
+        {
+          "countryCode": "LI",
+          "states": []
+        },
+        {
+          "countryCode": "LU",
+          "states": []
+        },
+        {
+          "countryCode": "MO",
+          "states": []
+        },
+        {
+          "countryCode": "MK",
+          "states": []
+        },
+        {
+          "countryCode": "MG",
+          "states": []
+        },
+        {
+          "countryCode": "MW",
+          "states": []
+        },
+        {
+          "countryCode": "MY",
+          "states": []
+        },
+        {
+          "countryCode": "MV",
+          "states": []
+        },
+        {
+          "countryCode": "ML",
+          "states": []
+        },
+        {
+          "countryCode": "MH",
+          "states": []
+        },
+        {
+          "countryCode": "MR",
+          "states": []
+        },
+        {
+          "countryCode": "MU",
+          "states": []
+        },
+        {
+          "countryCode": "YT",
+          "states": []
+        },
+        {
+          "countryCode": "MX",
+          "states": []
+        },
+        {
+          "countryCode": "FM",
+          "states": []
+        },
+        {
+          "countryCode": "MD",
+          "states": []
+        },
+        {
+          "countryCode": "MC",
+          "states": []
+        },
+        {
+          "countryCode": "MN",
+          "states": []
+        },
+        {
+          "countryCode": "ME",
+          "states": []
+        },
+        {
+          "countryCode": "MS",
+          "states": []
+        },
+        {
+          "countryCode": "MA",
+          "states": []
+        },
+        {
+          "countryCode": "MZ",
+          "states": []
+        },
+        {
+          "countryCode": "NA",
+          "states": []
+        },
+        {
+          "countryCode": "NR",
+          "states": []
+        },
+        {
+          "countryCode": "NP",
+          "states": []
+        },
+        {
+          "countryCode": "NL",
+          "states": []
+        },
+        {
+          "countryCode": "AN",
+          "states": []
+        },
+        {
+          "countryCode": "NZ",
+          "states": []
+        },
+        {
+          "countryCode": "NI",
+          "states": []
+        },
+        {
+          "countryCode": "NE",
+          "states": []
+        },
+        {
+          "countryCode": "NG",
+          "states": []
+        },
+        {
+          "countryCode": "NU",
+          "states": []
+        },
+        {
+          "countryCode": "NO",
+          "states": []
+        },
+        {
+          "countryCode": "OM",
+          "states": []
+        },
+        {
+          "countryCode": "PK",
+          "states": []
+        },
+        {
+          "countryCode": "PW",
+          "states": []
+        },
+        {
+          "countryCode": "PS",
+          "states": []
+        },
+        {
+          "countryCode": "PA",
+          "states": []
+        },
+        {
+          "countryCode": "PG",
+          "states": []
+        },
+        {
+          "countryCode": "PY",
+          "states": []
+        },
+        {
+          "countryCode": "PE",
+          "states": []
+        },
+        {
+          "countryCode": "PH",
+          "states": []
+        },
+        {
+          "countryCode": "PN",
+          "states": []
+        },
+        {
+          "countryCode": "PL",
+          "states": []
+        },
+        {
+          "countryCode": "PT",
+          "states": []
+        },
+        {
+          "countryCode": "QA",
+          "states": []
+        },
+        {
+          "countryCode": "CG",
+          "states": []
+        },
+        {
+          "countryCode": "RE",
+          "states": []
+        },
+        {
+          "countryCode": "RO",
+          "states": []
+        },
+        {
+          "countryCode": "RU",
+          "states": []
+        },
+        {
+          "countryCode": "RW",
+          "states": []
+        },
+        {
+          "countryCode": "SH",
+          "states": []
+        },
+        {
+          "countryCode": "KN",
+          "states": []
+        },
+        {
+          "countryCode": "LC",
+          "states": []
+        },
+        {
+          "countryCode": "VC",
+          "states": []
+        },
+        {
+          "countryCode": "WS",
+          "states": []
+        },
+        {
+          "countryCode": "SM",
+          "states": []
+        },
+        {
+          "countryCode": "ST",
+          "states": []
+        },
+        {
+          "countryCode": "SA",
+          "states": []
+        },
+        {
+          "countryCode": "SN",
+          "states": []
+        },
+        {
+          "countryCode": "RS",
+          "states": []
+        },
+        {
+          "countryCode": "SC",
+          "states": []
+        },
+        {
+          "countryCode": "SL",
+          "states": []
+        },
+        {
+          "countryCode": "SG",
+          "states": []
+        },
+        {
+          "countryCode": "SK",
+          "states": []
+        },
+        {
+          "countryCode": "SI",
+          "states": []
+        },
+        {
+          "countryCode": "SB",
+          "states": []
+        },
+        {
+          "countryCode": "SO",
+          "states": []
+        },
+        {
+          "countryCode": "ZA",
+          "states": []
+        },
+        {
+          "countryCode": "KR",
+          "states": []
+        },
+        {
+          "countryCode": "ES",
+          "states": []
+        },
+        {
+          "countryCode": "LK",
+          "states": []
+        },
+        {
+          "countryCode": "SR",
+          "states": []
+        },
+        {
+          "countryCode": "SJ",
+          "states": []
+        },
+        {
+          "countryCode": "SZ",
+          "states": []
+        },
+        {
+          "countryCode": "SE",
+          "states": []
+        },
+        {
+          "countryCode": "CH",
+          "states": []
+        },
+        {
+          "countryCode": "TW",
+          "states": []
+        },
+        {
+          "countryCode": "TJ",
+          "states": []
+        },
+        {
+          "countryCode": "TZ",
+          "states": []
+        },
+        {
+          "countryCode": "TH",
+          "states": []
+        },
+        {
+          "countryCode": "TG",
+          "states": []
+        },
+        {
+          "countryCode": "TK",
+          "states": []
+        },
+        {
+          "countryCode": "TO",
+          "states": []
+        },
+        {
+          "countryCode": "TT",
+          "states": []
+        },
+        {
+          "countryCode": "TN",
+          "states": []
+        },
+        {
+          "countryCode": "TR",
+          "states": []
+        },
+        {
+          "countryCode": "TM",
+          "states": []
+        },
+        {
+          "countryCode": "TC",
+          "states": []
+        },
+        {
+          "countryCode": "TV",
+          "states": []
+        },
+        {
+          "countryCode": "UG",
+          "states": []
+        },
+        {
+          "countryCode": "UA",
+          "states": []
+        },
+        {
+          "countryCode": "AE",
+          "states": []
+        },
+        {
+          "countryCode": "UY",
+          "states": []
+        },
+        {
+          "countryCode": "UZ",
+          "states": []
+        },
+        {
+          "countryCode": "VU",
+          "states": []
+        },
+        {
+          "countryCode": "VA",
+          "states": []
+        },
+        {
+          "countryCode": "VE",
+          "states": []
+        },
+        {
+          "countryCode": "VN",
+          "states": []
+        },
+        {
+          "countryCode": "EH",
+          "states": []
+        },
+        {
+          "countryCode": "ZM",
+          "states": []
+        }
+      ],
+      "countriesToPhoneCodes": {
+        "PS": ["970"],
+        "PT": ["351"],
+        "PW": ["680"],
+        "PY": ["595"],
+        "QA": ["974"],
+        "AD": ["376"],
+        "AE": ["971"],
+        "AG": ["1-268"],
+        "AI": ["1-264"],
+        "AL": ["355"],
+        "AM": ["374"],
+        "AN": ["599"],
+        "AO": ["244"],
+        "AQ": ["672"],
+        "AR": ["54"],
+        "AT": ["43"],
+        "RE": ["262"],
+        "AU": ["61"],
+        "AZ": ["994"],
+        "RO": ["40"],
+        "BA": ["387"],
+        "BB": ["1-246"],
+        "RS": ["381"],
+        "BD": ["880"],
+        "BE": ["32"],
+        "RU": ["7"],
+        "BF": ["226"],
+        "RW": ["250"],
+        "BH": ["973"],
+        "BI": ["257"],
+        "BJ": ["229"],
+        "BM": ["1-441"],
+        "BN": ["673"],
+        "BO": ["591"],
+        "SA": ["966"],
+        "SB": ["677"],
+        "BR": ["55"],
+        "SC": ["248"],
+        "BS": ["1-242"],
+        "BT": ["975"],
+        "SE": ["46"],
+        "SG": ["65"],
+        "BW": ["267"],
+        "SH": ["290"],
+        "SI": ["386"],
+        "BY": ["375"],
+        "SJ": ["47"],
+        "BZ": ["501"],
+        "SK": ["421"],
+        "SL": ["232"],
+        "SM": ["378"],
+        "SN": ["221"],
+        "SO": ["252"],
+        "CA": ["1"],
+        "SR": ["597"],
+        "CC": ["61"],
+        "CD": ["243"],
+        "ST": ["239"],
+        "CF": ["236"],
+        "SV": ["503"],
+        "CG": ["242"],
+        "CH": ["41"],
+        "SZ": ["268"],
+        "CK": ["682"],
+        "CL": ["56"],
+        "CM": ["237"],
+        "CN": ["86"],
+        "CO": ["57"],
+        "CR": ["506"],
+        "TC": ["1-649"],
+        "TD": ["235"],
+        "CV": ["238"],
+        "TG": ["228"],
+        "TH": ["66"],
+        "CX": ["61"],
+        "CY": ["357"],
+        "TJ": ["992"],
+        "CZ": ["420"],
+        "TK": ["690"],
+        "TL": ["670"],
+        "TM": ["993"],
+        "TN": ["216"],
+        "TO": ["676"],
+        "TR": ["90"],
+        "TT": ["1-868"],
+        "DE": ["49"],
+        "TV": ["688"],
+        "TW": ["886"],
+        "DJ": ["253"],
+        "TZ": ["255"],
+        "DK": ["45"],
+        "DM": ["1-767"],
+        "DO": ["1-809", "1-829", "1-849"],
+        "UA": ["380"],
+        "UG": ["256"],
+        "DZ": ["213"],
+        "EC": ["593"],
+        "EE": ["372"],
+        "EG": ["20"],
+        "EH": ["212"],
+        "UY": ["598"],
+        "UZ": ["998"],
+        "VA": ["379"],
+        "ER": ["291"],
+        "VC": ["1-784"],
+        "ES": ["34"],
+        "ET": ["251"],
+        "VE": ["58"],
+        "VG": ["1-284"],
+        "VN": ["84"],
+        "VU": ["678"],
+        "FI": ["358"],
+        "FJ": ["679"],
+        "FK": ["500"],
+        "FM": ["691"],
+        "FO": ["298"],
+        "FR": ["33"],
+        "GA": ["241"],
+        "WS": ["685"],
+        "GD": ["1-473"],
+        "GE": ["995"],
+        "GG": ["44-1481"],
+        "GH": ["233"],
+        "GI": ["350"],
+        "GL": ["299"],
+        "GM": ["220"],
+        "GN": ["224"],
+        "GQ": ["240"],
+        "GR": ["30"],
+        "GT": ["502"],
+        "GW": ["245"],
+        "XK": ["383"],
+        "HK": ["852"],
+        "HN": ["504"],
+        "HR": ["385"],
+        "HT": ["509"],
+        "HU": ["36"],
+        "ID": ["62"],
+        "YT": ["262"],
+        "IE": ["353"],
+        "IL": ["972"],
+        "IM": ["44-1624"],
+        "IN": ["91"],
+        "IO": ["246"],
+        "ZA": ["27"],
+        "IS": ["354"],
+        "IT": ["39"],
+        "ZM": ["260"],
+        "JE": ["44-1534"],
+        "JM": ["1-876"],
+        "JO": ["962"],
+        "JP": ["81"],
+        "KE": ["254"],
+        "KG": ["996"],
+        "KH": ["855"],
+        "KI": ["686"],
+        "KM": ["269"],
+        "KN": ["1-869"],
+        "KR": ["82"],
+        "KW": ["965"],
+        "KY": ["1-345"],
+        "KZ": ["7"],
+        "LA": ["856"],
+        "LB": ["961"],
+        "LC": ["1-758"],
+        "LI": ["423"],
+        "LK": ["94"],
+        "LS": ["266"],
+        "LU": ["352"],
+        "LV": ["371"],
+        "MA": ["212"],
+        "MC": ["377"],
+        "MD": ["373"],
+        "ME": ["382"],
+        "MG": ["261"],
+        "MH": ["692"],
+        "MK": ["389"],
+        "ML": ["223"],
+        "MN": ["976"],
+        "MO": ["853"],
+        "MR": ["222"],
+        "MS": ["1-664"],
+        "MU": ["230"],
+        "MV": ["960"],
+        "MW": ["265"],
+        "MX": ["52"],
+        "MY": ["60"],
+        "MZ": ["258"],
+        "NA": ["264"],
+        "NE": ["227"],
+        "NG": ["234"],
+        "NI": ["505"],
+        "NL": ["31"],
+        "NO": ["47"],
+        "NP": ["977"],
+        "NR": ["674"],
+        "NU": ["683"],
+        "NZ": ["64"],
+        "OM": ["968"],
+        "PA": ["507"],
+        "PE": ["51"],
+        "PG": ["675"],
+        "PH": ["63"],
+        "PK": ["92"],
+        "PL": ["48"],
+        "PN": ["64"]
+      },
+      "playerEditUrl": "customer-service/api/frontend/customer/update",
+      "successUrl": "/deposit-success",
+      "failureUrl": "/deposit-failure",
+      "qrCodeConfig": {
+        "displayLogo": false
+      }
+    },
+    "id": "96e2345d-b5b3-4a82-ace7-d041fb061d9c",
+    "children": [],
+    "appearance": {
+      "resolutionConfig": {
+        "XS": {
+          "background": {},
+          "isVisible": true
+        },
+        "SM": {
+          "background": {},
+          "isVisible": true
+        },
+        "MD": {
+          "background": {},
+          "isVisible": true
+        },
+        "LG": {
+          "background": {},
+          "isVisible": true
+        },
+        "XL": {
+          "background": {},
+          "isVisible": true
+        }
+      }
+    }
+  },
+  {
+    "container": "WalletConnectDepositContainer",
+    "data": {
+      "depositAddressURL": "payment-service/api/frontend/crypto/address-new",
+      "depositCurrencies": {
+        "FLOK": {
+          "code": "FLOK",
+          "name": "FLOKI",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 12,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "SHIB": {
+          "code": "SHIB",
+          "name": "Shiba Inu",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 12,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "BABY": {
+          "code": "BABY",
+          "name": "Baby Doge Coin",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 12,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false,
+          "networkData": {
+            "BABY-BSC": {
+              "name": "BNB Smart Chain (BEP20)",
+              "minAmount": "0.000000000000000000"
+            }
+          }
+        },
+        "DOGE": {
+          "code": "DOGE",
+          "name": "Dogecoin",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 6,
+          "minAmount": "1.000000000000000000",
+          "supportsTag": false
+        },
+        "USDT": {
+          "code": "USDT",
+          "name": "Tether",
+          "balance": "30.000000000000000000",
+          "isFiat": false,
+          "precision": 6,
+          "minAmount": "5.000000000000000000",
+          "supportsTag": false,
+          "networkData": {
+            "USDTB": {
+              "name": "BNB Smart Chain (BEP20)",
+              "minAmount": "0.000000000000000000"
+            },
+            "USDTT": {
+              "name": "Tron (TRC20)",
+              "minAmount": "1.000000000000000000"
+            },
+            "USDTE": {
+              "name": "Ethereum (ERC20)",
+              "minAmount": "5.000000000000000000"
+            },
+            "USDTP": {
+              "name": "Polygon",
+              "minAmount": "0.000000000000000000"
+            }
+          }
+        },
+        "PEPE": {
+          "code": "PEPE",
+          "name": "Pepe",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 12,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "PLN": {
+          "code": "PLN",
+          "name": "Polish Zloty",
+          "balance": "0.000000000000000000",
+          "isFiat": true,
+          "precision": 2,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "BONK": {
+          "code": "BONK",
+          "name": "Bonk",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 8,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "POPC": {
+          "code": "POPC",
+          "name": "POPCAT",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 4,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "XRP": {
+          "code": "XRP",
+          "name": "XRP",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 6,
+          "minAmount": "0.001000000000000000",
+          "supportsTag": true
+        },
+        "TRX": {
+          "code": "TRX",
+          "name": "TRON",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 6,
+          "minAmount": "10.000000000000000000",
+          "supportsTag": false
+        },
+        "BRET": {
+          "code": "BRET",
+          "name": "Brett",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 5,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "EUR": {
+          "code": "EUR",
+          "name": "Euro",
+          "symbol": "€",
+          "balance": "0.000000000000000000",
+          "isFiat": true,
+          "precision": 2,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "MTIC": {
+          "code": "MTIC",
+          "name": "Polygon",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 6,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false,
+          "networkData": {
+            "MTIC": {
+              "name": "Ethereum (ERC20)",
+              "minAmount": "0.000000000000000000"
+            },
+            "MATIC-POLY": {
+              "name": "Polygon",
+              "minAmount": "0.000000000000000000"
+            },
+            "MATIC-BSC": {
+              "name": "BNB Smart Chain (BEP20)",
+              "minAmount": "0.000000000000000000"
+            }
+          }
+        },
+        "BCH": {
+          "code": "BCH",
+          "name": "Bitcoin Cash",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 6,
+          "minAmount": "0.001000000000000000",
+          "supportsTag": false
+        },
+        "CAD": {
+          "code": "CAD",
+          "name": "Canadian Dollar",
+          "symbol": "$",
+          "balance": "0.000000000000000000",
+          "isFiat": true,
+          "precision": 2,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "USD": {
+          "code": "USD",
+          "name": "United States dollar",
+          "symbol": "$",
+          "balance": "0.000000000000000000",
+          "isFiat": true,
+          "precision": 2,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "NOK": {
+          "code": "NOK",
+          "name": "Norwegian Krone",
+          "balance": "0.000000000000000000",
+          "isFiat": true,
+          "precision": 2,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "BTC": {
+          "code": "BTC",
+          "name": "Bitcoin",
+          "symbol": "₿",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 12,
+          "minAmount": "0.000100000000000000",
+          "supportsTag": false
+        },
+        "SOL": {
+          "code": "SOL",
+          "name": "Solana",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 6,
+          "minAmount": "0.010000000000000000",
+          "supportsTag": false
+        },
+        "TON": {
+          "code": "TON",
+          "name": "Toncoin",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 4,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": true
+        },
+        "AVAX": {
+          "code": "AVAX",
+          "name": "Avalanche",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 6,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "ETH": {
+          "code": "ETH",
+          "name": "Ethereum",
+          "symbol": "Ξ",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 12,
+          "minAmount": "0.001000000000000000",
+          "supportsTag": false,
+          "networkData": {
+            "ETH": {
+              "name": "Ethereum (ERC20)",
+              "minAmount": "0.001000000000000000"
+            },
+            "ETH-BSC": {
+              "name": "BNB Smart Chain (BEP20)",
+              "minAmount": "0.001000000000000000"
+            }
+          }
+        },
+        "NZD": {
+          "code": "NZD",
+          "name": "New Zealand dollar",
+          "symbol": "$",
+          "balance": "0.000000000000000000",
+          "isFiat": true,
+          "precision": 2,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "LTC": {
+          "code": "LTC",
+          "name": "Litecoin",
+          "symbol": "Ł",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 6,
+          "minAmount": "0.010000000000000000",
+          "supportsTag": false
+        },
+        "USDC": {
+          "code": "USDC",
+          "name": "USD Coin",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 6,
+          "minAmount": "5.000000000000000000",
+          "supportsTag": false,
+          "networkData": {
+            "USDC": {
+              "name": "Ethereum (ERC20)",
+              "minAmount": "5.000000000000000000"
+            },
+            "USDC-POLY": {
+              "name": "Polygon",
+              "minAmount": "5.000000000000000000"
+            },
+            "USDC-BSC": {
+              "name": "BNB Smart Chain (BEP20)",
+              "minAmount": "5.000000000000000000"
+            }
+          }
+        },
+        "BRL": {
+          "code": "BRL",
+          "name": "Brazilian real",
+          "symbol": "R$",
+          "balance": "0.000000000000000000",
+          "isFiat": true,
+          "precision": 2,
+          "minAmount": "0.000000000000000000",
+          "supportsTag": false
+        },
+        "ADA": {
+          "code": "ADA",
+          "name": "Cardano",
+          "balance": "0.000000000000000000",
+          "isFiat": false,
+          "precision": 6,
+          "minAmount": "1.000000000000000000",
+          "supportsTag": false
+        }
+      },
+      "emailVerificationData": {
+        "requireEmailVerification": false
+      }
+    },
+    "id": "f0ee5a1e-b5c1-4261-960c-46652de1b478",
+    "children": []
+  }
+]

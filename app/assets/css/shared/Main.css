@@ -53,6 +53,10 @@ html ::-webkit-scrollbar-track {
   border-radius: 6px;
 }
 
+svg {
+  outline: 0;
+}
+
 .root-container {
   display: flex;
   flex-direction: column;
@@ -68,4 +72,8 @@ html ::-webkit-scrollbar-track {
   display: inline-block;
   height: 1em;
   width: 1em;
+}
+
+.v-main {
+  margin: 0 var(--mainLayoutGutter);
 }

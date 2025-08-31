@@ -1,0 +1,17 @@
+[
+  {
+    "status": "EXPIRED",
+    "bonusName": "Wanted Dead or a Wild 20 FS x $0.2",
+    "initialAmount": "0.000000000000000000",
+    "remainingWageringAmount": "0.000000000000000000",
+    "lostFromCapAmount": "0.000000000000000000",
+    "type": "FREE_SPINS",
+    "expiryDate": "2025-08-26T13:17:29Z",
+    "bonusCreateTime": "2025-08-19T13:17:29Z",
+    "freeSpinCurrency": "EUR",
+    "freeSpinCount": 20,
+    "freeSpinValue": "0.200000000000000000",
+    "cbid": "16210127047240136",
+    "cancellable": false
+  }
+]

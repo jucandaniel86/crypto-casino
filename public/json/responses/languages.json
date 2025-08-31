@@ -1,0 +1,54 @@
+[
+  {
+    "name": "English",
+    "code": "en"
+  },
+  {
+    "name": "German",
+    "code": "de"
+  },
+  {
+    "name": "Spanish",
+    "code": "es"
+  },
+  {
+    "name": "French",
+    "code": "fr"
+  },
+  {
+    "name": "Italian",
+    "code": "it"
+  },
+  {
+    "name": "Portuguese",
+    "code": "pt"
+  },
+  {
+    "name": "Romanian",
+    "code": "ro"
+  },
+  {
+    "name": "Russian",
+    "code": "ru"
+  },
+  {
+    "name": "Japanese",
+    "code": "ja"
+  },
+  {
+    "name": "Chinese",
+    "code": "zh"
+  },
+  {
+    "name": "Korean",
+    "code": "ko"
+  },
+  {
+    "name": "Vietnamese           ",
+    "code": "vi"
+  },
+  {
+    "name": "Thai",
+    "code": "th"
+  }
+]

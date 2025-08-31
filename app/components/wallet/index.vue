@@ -23,10 +23,10 @@ const closeModal = () => replace({ query: {} })
       </v-tabs>
       <v-btn size="x-small" class="overlay-close" @click.prevent="closeModal"><IconClose /></v-btn>
     </v-card-title>
-    <v-card-text>
+    <v-card-text class="pt-0">
       <v-tabs-window v-model="currentTab">
-        <v-tabs-window-item value="deposit"> DEPOSIT </v-tabs-window-item>
-        <v-tabs-window-item value="withdraw"> WITHDRAW </v-tabs-window-item>
+        <v-tabs-window-item value="deposit"> <wallet-deposit /> </v-tabs-window-item>
+        <v-tabs-window-item value="withdraw"> <wallet-withdraw /> </v-tabs-window-item>
       </v-tabs-window>
     </v-card-text>
   </v-card>

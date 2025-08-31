@@ -1,0 +1,100 @@
+[
+  {
+    "container": "ActivityContainer",
+    "data": {
+      "casinoBetsFetchUrlV2": "cms-service/api/frontend/customer/bet-history",
+      "sportBetsFetchUrl": "customer-service/api/frontend/customer/sportsbook-bet-history",
+      "sportEnabled": true,
+      "transactionsFetchUrl": "customer-service/api/frontend/customer/transaction-history",
+      "transactionTypes": [
+        "DEPOSIT",
+        "WITHDRAWAL",
+        "VAULT_DEPOSIT",
+        "VAULT_WITHDRAW",
+        "MANUAL_DEPOSIT",
+        "MANUAL_WITHDRAWAL",
+        "MANUAL_VAULT_DEPOSIT",
+        "MANUAL_VAULT_WITHDRAW"
+      ],
+      "games": [],
+      "initialDataV2": {
+        "nextRangeId": -30610224000,
+        "content": []
+      },
+      "filterConfigBets": {
+        "type": {
+          "visible": true
+        },
+        "currency": {
+          "visible": true
+        },
+        "timeframe": {
+          "visible": true
+        }
+      },
+      "filterConfigCasinoBets": {
+        "type": {
+          "visible": true
+        },
+        "currency": {
+          "visible": true
+        },
+        "timeframe": {
+          "visible": true
+        }
+      },
+      "filterConfigSportBets": {
+        "type": {
+          "visible": true
+        },
+        "currency": {
+          "visible": true
+        },
+        "timeframe": {
+          "visible": true
+        }
+      },
+      "filterConfigTransactions": {
+        "type": {
+          "visible": true,
+          "values": ["DEPOSIT", "WITHDRAWAL", "MANUAL_DEPOSIT", "MANUAL_WITHDRAWAL"]
+        },
+        "currency": {
+          "visible": true
+        },
+        "timeframe": {
+          "visible": true
+        }
+      },
+      "casinoBetFieldsToShowInTable": [],
+      "sportBetFieldsToShowInTable": [],
+      "transactionsFieldsToShowInTable": []
+    },
+    "id": "ca4b9049-7307-425b-8df4-211927bd564d",
+    "children": [],
+    "appearance": {
+      "resolutionConfig": {
+        "XS": {
+          "background": {},
+          "isVisible": true
+        },
+        "SM": {
+          "background": {},
+          "isVisible": true
+        },
+        "MD": {
+          "background": {},
+          "isVisible": true
+        },
+        "LG": {
+          "background": {},
+          "isVisible": true
+        },
+        "XL": {
+          "background": {},
+          "isVisible": true
+        }
+      }
+    }
+  }
+]

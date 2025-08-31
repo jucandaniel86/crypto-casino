@@ -1,0 +1,38 @@
+[
+  {
+    "code": "USD",
+    "symbol": "$"
+  },
+  {
+    "code": "EUR",
+    "symbol": "€"
+  },
+  {
+    "code": "CAD",
+    "symbol": "$"
+  },
+  {
+    "code": "DKK",
+    "symbol": null
+  },
+  {
+    "code": "NOK",
+    "symbol": null
+  },
+  {
+    "code": "PLN",
+    "symbol": null
+  },
+  {
+    "code": "BRL",
+    "symbol": "R$"
+  },
+  {
+    "code": "NZD",
+    "symbol": "$"
+  },
+  {
+    "code": "JPY",
+    "symbol": "¥"
+  }
+]

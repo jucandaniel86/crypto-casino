@@ -1,6 +1,3 @@
-<script setup lang="ts">
-console.log('base layout')
-</script>
 <template>
   <v-layout class="rounded rounded-md border">
     <icons />
@@ -8,7 +5,7 @@ console.log('base layout')
     <base-overlays />
     <base-sidebar />
     <base-header />
-    <v-main class="w-100">
+    <v-main>
       <v-container>
         <slot />
       </v-container>

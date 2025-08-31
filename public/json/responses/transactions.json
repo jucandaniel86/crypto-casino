@@ -1,0 +1,14 @@
+[
+  {
+    "type": "DEPOSIT",
+    "currency": "USDT",
+    "transactionCurrency": "USDT",
+    "amount": "30.000000000000000000",
+    "transactionAmount": "30.000000000000000000",
+    "timestamp": "2025-08-19T13:17:27.404Z",
+    "status": "PAID",
+    "confirmation": "N/A",
+    "transactionId": "328e723e-3785-45b7-8d59-4c9188536c44",
+    "paymentMethodAccountIdentifier": "0xf977adAd470808A92C2765F6fB37DF211Db4e823"
+  }
+]

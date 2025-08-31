@@ -64,3 +64,130 @@
 .v-toolbar-title {
   flex: none !important;
 }
+
+hr.desp {
+  background: #434343 !important;
+  border: none;
+  height: 1px;
+  margin: 24px 0;
+  opacity: 0.5;
+  width: 100%;
+}
+
+.settings-title {
+  line-height: 1.5;
+  font-size: 16px;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+}
+
+.settings-title::after {
+  border-bottom: 2px solid #9f36f1;
+  bottom: -0;
+  content: '';
+  left: 0;
+  position: absolute;
+  width: 56px;
+}
+
+.v-input__control .v-label {
+  color: #fff;
+}
+
+.v-selection-control__input {
+  width: 20px !important;
+  height: 20px;
+}
+
+.v-selection-control--density-default.custom-select {
+  --v-selection-control-size: 20px !important;
+}
+
+.v-selection-control__wrapper {
+  justify-content: flex-start !important;
+}
+
+.password-wrapper .v-expansion-panel-text__wrapper {
+  padding-right: 0 !important;
+}
+
+.no-results-wrapper {
+  display: flex;
+  width: 100%;
+  height: 240px;
+  background-color: #181b22;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.transactions-table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  color: #fff;
+}
+
+.transactions-table thead {
+  display: table-header-group;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  font-size: 16px;
+}
+
+.transactions-table thead tr {
+  color: inherit;
+  display: table-row;
+  vertical-align: middle;
+  outline: 0px;
+}
+
+.transactions-table thead th {
+  background-color: #212338;
+  max-width: 200px !important;
+  padding: 24px 8px !important;
+  word-break: break-all !important;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.transactions-table thead tr th:first-of-type {
+  border-top-left-radius: 8px;
+}
+
+.transactions-table thead tr th:last-of-type {
+  border-top-right-radius: 8px;
+}
+
+.transactions-table tbody {
+  display: table-row-group;
+}
+
+.transactions-table tbody td {
+  color: inherit;
+  display: table-row;
+  vertical-align: middle;
+  outline: 0px;
+  position: relative;
+  max-width: 200px !important;
+  overflow-wrap: break-word !important;
+  padding: 24px 8px !important;
+  font-weight: 700;
+  font-size: 16px !important;
+  line-height: 1.43;
+  display: table-cell;
+  text-align: center;
+}
+
+.transaction-text-overlay {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 10ch;
+}

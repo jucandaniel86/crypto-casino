@@ -1,0 +1,53 @@
+.gameplay-wrapper {
+  height: unset;
+  max-height: calc(100vh - 64px);
+  display: flex;
+  flex: 1;
+  gap: 24px;
+}
+
+.gameplay-content {
+  aspect-ratio: 16 / 9;
+  min-height: 400px;
+  display: flex;
+  flex: 1;
+}
+
+.gameplay-overlay {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.gameplay-currencymessage {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 16px;
+  height: 100%;
+  justify-content: center;
+  opacity: 0.9;
+  padding: 40px;
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  background-color: #0d0e12;
+}
+
+.game-wrapper {
+  display: flex;
+  flex: 1;
+}
+.game-wrapper.blurred {
+  filter: blur(4px);
+}
+
+.game-iframe {
+  border: none;
+  height: 100%;
+  width: 100%;
+}

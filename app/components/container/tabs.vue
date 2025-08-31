@@ -1,13 +1,30 @@
+<!-- eslint-disable @typescript-eslint/no-explicit-any -->
 <script setup lang="ts">
 import { ContainerSection, type ContainerType } from '~/core/types/Container'
 
-const { options } = defineProps<{ options: ContainerType }>()
-const { display } = useContainerOptions(options)
+const props = defineProps<{ options: ContainerType }>()
+const { display } = useContainerOptions(props.options)
+const { wait } = useUtils()
 
-const currentTab = ref(options.data.tabs[0].internalName)
+const currentTab = ref(props.options.data.tabs[0].internalName)
+const currentContent = ref(props.options.children)
 const disabled = ref<boolean>(false)
+const isLoading = ref<boolean>(false)
 
-console.log(options.data.tabs)
+const onTabsChanged = async (tag: string) => {
+  disabled.value = true
+  isLoading.value = true
+
+  const data: any = await $fetch(`/json/tags/${tag}.json`)
+  await wait(700)
+  currentContent.value = data
+  disabled.value = false
+  isLoading.value = false
+}
+
+watch(currentTab, async () => {
+  await onTabsChanged(currentTab.value)
+})
 </script>
 <template>
   <v-tabs
@@ -27,7 +44,11 @@ console.log(options.data.tabs)
       />
     </v-tab>
   </v-tabs>
-  <template v-for="(section, i) in options.children" :key="`Container${i}`">
+  <div v-if="isLoading" class="d-flex mt-3 mb-3 justify-center align-center">
+    <v-progress-circular color="purple" indeterminate />
+  </div>
+
+  <template v-for="(section, i) in currentContent" :key="`Container${i}`">
     <container-category
       v-if="section.container === ContainerSection.GAMES_CATEGORY"
       :options="section"

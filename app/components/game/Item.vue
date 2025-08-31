@@ -4,14 +4,22 @@ import type { GameType } from '~/core/types/Game'
 //props
 const props = defineProps<{ game: GameType }>()
 
+//composables
+const router = useRouter()
+
 //models
 const reveal = ref(false)
 
 //computed
 const image = computed(() => `https://play.coincasino.com${props.game.imageUrl}?w=400`)
+
+//methods
+const goToGame = () => {
+  router.push({ name: 'game-slug', params: { slug: props.game.realPlayUrl } })
+}
 </script>
 <template>
-  <div class="game__item" @mouseout="reveal = false" @mouseover="reveal = true">
+  <div class="game__item" @mouseout="reveal = false" @mouseover="reveal = true" @click="goToGame">
     <div class="wrapper">
       <img class="mx-auto" width="100%" :src="image" />
       <h2 v-show="reveal" class="game__title">{{ props.game.name }}</h2>
