@@ -1,4 +1,4 @@
-<!-- eslint-disable @typescript-eslint/no-explicit-any -->
+<!-- nt-disable @typescript-eslint/no-explicit-any -->
 <script setup lang="ts">
 import { ContainerSection, type ContainerType } from '~/core/types/Container'
 
@@ -24,6 +24,11 @@ console.log('re-rendered')
       />
       <container-flex
         v-if="section.container === ContainerSection.FLEX_COLUMN"
+        :key="section.id"
+        :options="section"
+      />
+      <container-slider
+        v-if="section.container === ContainerSection.SLIDER"
         :key="section.id"
         :options="section"
       />

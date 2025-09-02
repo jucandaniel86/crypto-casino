@@ -3,7 +3,10 @@
   flex: 1 1 auto !important;
   padding: var(--mainLayoutGutter) !important;
   box-shadow: none !important;
-  width: calc(100% + var(--mainLayoutGutter) * 2px) !important;
+}
+
+.v-footer.desktop {
+  width: calc(100% - var(--mainLayoutGutter) * 2px) !important;
   margin: 0 calc(var(--mainLayoutGutter) * -1);
 }
 
@@ -16,7 +19,8 @@
   justify-content: space-between;
 }
 
-.v-footer .footer-layout-lg {
+.v-footer .footer-layout-lg,
+.v-footer .footer-layout-md {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   place-items: normal;

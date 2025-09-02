@@ -5,17 +5,13 @@ const { options } = defineProps<{ options: ContainerType }>()
 const { display } = useContainerOptions(options)
 </script>
 <template>
-  <v-slide-group v-if="display" show-arrows :id="options.id">
-    <v-slide-group-item v-for="(provider, i) in options.data.providerLogos" :key="`Provider${i}`">
-      <button
-        class="provider-link"
-        :style="{
-          width: options.data.width,
-          height: options.data.height,
-        }"
-      >
-        <img :src="`https://play.coincasino.com${provider.imageUrl}`" />
-      </button>
+  <v-slide-group v-if="display" :id="options.id" show-arrows>
+    <v-slide-group-item
+      v-for="(child, i) in options.children"
+      :key="`${options.id}_${i}`"
+      style="max-width: calc(100% / 3)"
+    >
+      <container-html :options="child" style="max-width: calc(100% / 3)" />
     </v-slide-group-item>
     <template #next="{ next }">
       <button class="carousel_btn next" @click.prevent="next">

@@ -51,7 +51,7 @@ const currentImage = computed(() => {
 })
 </script>
 <template>
-  <div>
-    <v-img :src="currentImage" />
+  <div classs="d-flex justify-center align-center">
+    <img :src="currentImage" style="min-width: 100%" />
   </div>
 </template>

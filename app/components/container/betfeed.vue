@@ -11,11 +11,13 @@ const TABS: BetFeedTab[] = [
   { id: 'highRollers', label: 'High Rollers' },
 ]
 
+const { name } = useDisplay()
 const { options } = defineProps<{ options: ContainerType }>()
 const { display } = useContainerOptions(options)
 const DEFAULT_TAB = 'allBets'
 
 const currentTab = ref<string>(DEFAULT_TAB)
+const isDesktop = computed(() => ['lg', 'md', 'xl'].indexOf(name.value) !== -1)
 
 const convertDate = (date: string) => new Date(date).getHours() + ':' + new Date(date).getMinutes()
 const convertAmount = (amount: number, decimals = 8) => new Number(amount).toFixed(decimals)
@@ -32,19 +34,19 @@ const convertAmount = (amount: number, decimals = 8) => new Number(amount).toFix
         <table class="betfeed__table">
           <thead>
             <th>Game</th>
-            <th>User</th>
-            <th>Time</th>
-            <th>Bet Amount</th>
-            <th>Multiplier</th>
+            <th v-if="isDesktop">User</th>
+            <th v-if="isDesktop">Time</th>
+            <th v-if="isDesktop">Bet Amount</th>
+            <th v-if="isDesktop">Multiplier</th>
             <th>Payout</th>
           </thead>
           <tbody>
             <tr v-for="(feed, i) in options.data.feed" :key="`${options.id}_feed${i}`">
               <td>{{ feed.gameName }}</td>
-              <td>{{ feed.username }}</td>
-              <td>{{ convertDate(feed.eventTime) }}</td>
-              <td>{{ convertAmount(feed.stakeSystem) }} {{ feed.currency }}</td>
-              <td>{{ convertAmount(feed.multiplier, 2) }}x</td>
+              <td v-if="isDesktop">{{ feed.username }}</td>
+              <td v-if="isDesktop">{{ convertDate(feed.eventTime) }}</td>
+              <td v-if="isDesktop">{{ convertAmount(feed.stakeSystem) }} {{ feed.currency }}</td>
+              <td v-if="isDesktop">{{ convertAmount(feed.multiplier, 2) }}x</td>
               <td>{{ convertAmount(feed.payout) }} {{ feed.currency }}</td>
             </tr>
           </tbody>
@@ -54,19 +56,19 @@ const convertAmount = (amount: number, decimals = 8) => new Number(amount).toFix
         <table class="betfeed__table">
           <thead>
             <th>Game</th>
-            <th>User</th>
-            <th>Time</th>
-            <th>Bet Amount</th>
-            <th>Multiplier</th>
+            <th v-if="isDesktop">User</th>
+            <th v-if="isDesktop">Time</th>
+            <th v-if="isDesktop">Bet Amount</th>
+            <th v-if="isDesktop">Multiplier</th>
             <th>Payout</th>
           </thead>
           <tbody>
             <tr v-for="(feed, i) in options.data.highStakesFeed" :key="`${options.id}_feed${i}`">
               <td>{{ feed.gameName }}</td>
-              <td>{{ feed.username }}</td>
-              <td>{{ convertDate(feed.eventTime) }}</td>
-              <td>{{ convertAmount(feed.stakeSystem) }} {{ feed.currency }}</td>
-              <td>{{ convertAmount(feed.multiplier, 2) }}x</td>
+              <td v-if="isDesktop">{{ feed.username }}</td>
+              <td v-if="isDesktop">{{ convertDate(feed.eventTime) }}</td>
+              <td v-if="isDesktop">{{ convertAmount(feed.stakeSystem) }} {{ feed.currency }}</td>
+              <td v-if="isDesktop">{{ convertAmount(feed.multiplier, 2) }}x</td>
               <td>{{ convertAmount(feed.payout) }} {{ feed.currency }}</td>
             </tr>
           </tbody>

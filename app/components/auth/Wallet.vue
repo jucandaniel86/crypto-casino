@@ -6,6 +6,7 @@ import { OverlaysTypes } from '~/core/types/Overlays'
 const { currentWallet } = storeToRefs(useWalletStore())
 const { setWallet } = useWalletStore()
 const { replace } = useRouter()
+const { name } = useDisplay()
 const menu = ref<boolean>(false)
 const walletButton = ref()
 
@@ -14,6 +15,8 @@ const openWalletModal = () => {
 }
 
 const convertBalance = (balance: number, decimal: number) => Number(balance).toFixed(decimal)
+const isMobile = computed(() => ['xs', 'sm'].indexOf(name.value) !== -1)
+const isDesktop = computed(() => ['lg', 'md', 'xl'].indexOf(name.value) !== -1)
 
 onMounted(() => {
   if (!currentWallet.value) {
@@ -107,11 +110,15 @@ onMounted(() => {
       </v-card>
     </v-menu>
     <v-btn
+      v-if="isDesktop"
       color="primary"
       variant="flat"
       class="wallet_trigger_btn"
       @click.prevent="openWalletModal"
       >Wallet</v-btn
     >
+    <v-btn v-if="isMobile" class="mobile-wallet-button ml-2" @click.prevent="openWalletModal">
+      <shared-icon icon="brand-ico-wallet2" class="svg-icon" />
+    </v-btn>
   </div>
 </template>

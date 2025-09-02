@@ -8,12 +8,6 @@
   --interactive-layout-bottombar-box-shadow: -3px -2px 5px #0a1c2766;
 }
 
-@media screen and (min-width: 768px) {
-  html {
-    --mainLayoutGutter: 40px;
-  }
-}
-
 html ::-webkit-scrollbar-thumb {
   background: #ffffff0d;
   border-radius: 6px;
@@ -53,6 +47,16 @@ html ::-webkit-scrollbar-track {
   border-radius: 6px;
 }
 
+html {
+  --mainLayoutGutter: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    --mainLayoutGutter: 40px;
+  }
+}
+
 svg {
   outline: 0;
 }
@@ -74,6 +78,12 @@ svg {
   width: 1em;
 }
 
-.v-main {
-  margin: 0 var(--mainLayoutGutter);
+.v-container {
+  max-width: 1200px !important;
+  padding: 16px var(--mainLayoutGutter) !important;
+}
+
+#__nuxt {
+  height: 100%;
+  overflow-y: scroll;
 }

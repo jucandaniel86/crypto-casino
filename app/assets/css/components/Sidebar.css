@@ -80,6 +80,10 @@
   right: auto;
 }
 
+.sidebar-arrow-container.expandedMobile {
+  right: 0 !important;
+}
+
 .sidebar-arrow-container {
   position: relative;
   height: var(--interactive-layout-header-height);

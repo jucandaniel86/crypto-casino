@@ -2,12 +2,11 @@
 const { name } = useDisplay()
 const layoutClass = computed(() => `footer-layout-${name.value}`)
 const lang = ref('English')
-watch(name, () => {
-  console.log(name.value)
-})
+
+const isDesktop = computed(() => ['lg', 'md', 'xl'].indexOf(name.value) !== -1)
 </script>
 <template>
-  <v-footer class="w-100 flex-column">
+  <v-footer class="w-100 flex-column" :class="{ desktop: isDesktop }">
     <v-container>
       <div :class="layoutClass">
         <div class="links">

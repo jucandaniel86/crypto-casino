@@ -7983,7 +7983,7 @@
               "name": "VIP Status Match",
               "contentRules": {
                 "XS": {
-                  "imageUrl": "/imgs/sliders/slide3.png",
+                  "imageUrl": "/imgs/sliders/slide3.jpg",
                   "alignment": "CENTER",
                   "headingFontSize": 26,
                   "secondaryFontSize": 16,
@@ -7991,7 +7991,7 @@
                   "verticalAlignment": "MIDDLE"
                 },
                 "SM": {
-                  "imageUrl": "/imgs/sliders/slide3.png",
+                  "imageUrl": "/imgs/sliders/slide3.jpg",
                   "alignment": "CENTER",
                   "headingFontSize": 26,
                   "secondaryFontSize": 16,
@@ -7999,7 +7999,7 @@
                   "verticalAlignment": "MIDDLE"
                 },
                 "MD": {
-                  "imageUrl": "/imgs/sliders/slide3.png",
+                  "imageUrl": "/imgs/sliders/slide3.jpg",
                   "alignment": "CENTER",
                   "headingFontSize": 26,
                   "secondaryFontSize": 16,
@@ -8007,7 +8007,7 @@
                   "verticalAlignment": "MIDDLE"
                 },
                 "LG": {
-                  "imageUrl": "/imgs/sliders/slide3.png",
+                  "imageUrl": "/imgs/sliders/slide3.jpg",
                   "alignment": "CENTER",
                   "headingFontSize": 26,
                   "secondaryFontSize": 16,
@@ -8015,7 +8015,7 @@
                   "verticalAlignment": "MIDDLE"
                 },
                 "XL": {
-                  "imageUrl": "/imgs/sliders/slide3.png",
+                  "imageUrl": "/imgs/sliders/slide3.jpg",
                   "alignment": "CENTER",
                   "headingFontSize": 26,
                   "secondaryFontSize": 16,
@@ -8090,7 +8090,7 @@
           {
             "container": "HTMLContainer",
             "data": {
-              "html": "<div style=\"width: auto; border-radius: 20px; overflow: hidden; text-align: center; border: 1px solid #494F65;\"><!-- Image Banner --> <img style=\"width: 100%; display: block;\" src=\"/cdn/984a710e-69db-4d55-9001-65160fe6c4fe.jpg\" alt=\"25% Cashback\"> <!-- Text Section -->\n<div style=\"background-color: #12151b; padding: 1px 15px;\">\n<p style=\"font-weight: 400; font-size: 16.04px; text-align: centеr; vertical-align: middle; color: #dddddd; height: 70px;\">Unlock up to 40% cashback, custom bonuses, and your own personal VIP Concierge!</p>\n</div>\n</div>"
+              "html": "<div style=\"width: auto; border-radius: 20px; overflow: hidden; text-align: center; border: 1px solid #494F65;\"><!-- Image Banner --> <img style=\"width: 100%; display: block;\" src=\"/imgs/home/offer1.png\" alt=\"25% Cashback\"> <!-- Text Section -->\n<div style=\"background-color: #12151b; padding: 1px 15px;\">\n<p style=\"font-weight: 400; font-size: 16.04px; text-align: centеr; vertical-align: middle; color: #dddddd; height: 70px;\">Unlock up to 40% cashback, custom bonuses, and your own personal VIP Concierge!</p>\n</div>\n</div>"
             },
             "id": "generated-ea25944d-e44d-4ce2-9540-45f82bb5ed67",
             "children": [],
@@ -8122,7 +8122,7 @@
           {
             "container": "HTMLContainer",
             "data": {
-              "html": "<div style=\"width: auto; border-radius: 20px; overflow: hidden; text-align: center; border: 1px solid #494F65;\"><!-- Image Banner --> <img style=\"width: 100%; display: block;\" src=\"/cdn/371bcc69-e381-48b1-bcd3-ffb00d4334aa.png\" alt=\"25% Cashback\"> <!-- Text Section -->\n<div style=\"background-color: #12151b; padding: 1px 15px;\">\n<p style=\"font-weight: 400; font-size: 16.04px; text-align: centеr; vertical-align: middle; color: #dddddd; height: 70px;\">Get in fast, cash out faster &mdash; enjoy instant deposits and withdrawals, anytime</p>\n</div>\n</div>"
+              "html": "<div style=\"width: auto; border-radius: 20px; overflow: hidden; text-align: center; border: 1px solid #494F65;\"><!-- Image Banner --> <img style=\"width: 100%; display: block;\" src=\"/imgs/home/offer2.png\" alt=\"25% Cashback\"> <!-- Text Section -->\n<div style=\"background-color: #12151b; padding: 1px 15px;\">\n<p style=\"font-weight: 400; font-size: 16.04px; text-align: centеr; vertical-align: middle; color: #dddddd; height: 70px;\">Get in fast, cash out faster &mdash; enjoy instant deposits and withdrawals, anytime</p>\n</div>\n</div>"
             },
             "id": "generated-4f198ed2-1202-4ef1-8aed-9dd74421b24a",
             "children": [],
@@ -8154,7 +8154,7 @@
           {
             "container": "HTMLContainer",
             "data": {
-              "html": "<div style=\"width: auto; border-radius: 20px; overflow: hidden; text-align: center; border: 1px solid #494F65;\"><!-- Image Banner --> <img style=\"width: 100%; display: block;\" src=\"/cdn/e9e62aba-e2d5-4cf5-8a5d-10f3d8d85a04.png\" alt=\"25% Cashback\"> <!-- Text Section -->\n<div style=\"background-color: #12151b; padding: 3px 15px;\">\n<p style=\"font-weight: 400; font-size: 16.04px; text-align: centеr; vertical-align: middle; color: #dddddd; height: 70px;\">Get more from your deposit &mdash; free spins when you use Best Wallet</p>\n</div>\n</div>"
+              "html": "<div style=\"width: auto; border-radius: 20px; overflow: hidden; text-align: center; border: 1px solid #494F65;\"><!-- Image Banner --> <img style=\"width: 100%; display: block;\" src=\"/imgs/home/offer3.png\" alt=\"25% Cashback\"> <!-- Text Section -->\n<div style=\"background-color: #12151b; padding: 3px 15px;\">\n<p style=\"font-weight: 400; font-size: 16.04px; text-align: centеr; vertical-align: middle; color: #dddddd; height: 70px;\">Get more from your deposit &mdash; free spins when you use Best Wallet</p>\n</div>\n</div>"
             },
             "id": "generated-0c708d65-ef9c-471f-9c0d-02045c62a117",
             "children": [],

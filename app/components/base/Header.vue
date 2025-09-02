@@ -5,6 +5,7 @@ import { OverlaysTypes } from '~/core/types/Overlays'
 //composables
 const { replace } = useRouter()
 const { isLogged } = storeToRefs(useAuthStore())
+const { name } = useDisplay()
 
 //methods
 const login = () => replace({ query: { overlay: OverlaysTypes.LOGIN } })
@@ -16,7 +17,8 @@ const register = () => replace({ query: { overlay: OverlaysTypes.REGISTER } })
       <div class="d-flex justify-space-between align-center">
         <v-app-bar-title class="d-flex align-center">
           <nuxt-link :to="'/'">
-            <icon-logo class="layout-logo" />
+            <icon-logo v-if="['lg', 'md', 'xl'].indexOf(name) !== -1" class="layout-logo" />
+            <icon-logo-sm v-if="['sm', 'xs'].indexOf(name) !== -1" class="layout-logo" />
           </nuxt-link>
         </v-app-bar-title>
 
