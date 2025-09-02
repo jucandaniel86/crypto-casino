@@ -123,5 +123,5 @@
 }
 
 .v-footer .v-container {
-  padding: 16px var(--mainLayoutGutter);
+  /* padding: 16px var(--mainLayoutGutter); */
 }

@@ -5,6 +5,7 @@ export enum ContainerSection {
   COLUMN = 'ColumnContainer',
   GAMES_CATEGORY = 'GamesCategoryContainer',
   FLEX_COLUMN = 'FlexColumnContainer',
+  FLEX_ROW = 'FlexRowContainer',
   CAROUSEL = 'CarouselContainer',
   HTML = 'HTMLContainer',
   BET_FEED = 'BetFeedContainer',
@@ -15,6 +16,7 @@ export enum ContainerSection {
   PROVIDER_LOGOS = 'ProviderLogosContainer',
   CATEGORY_HEADLESS = 'GamesCategoryHeadlessContainer',
   ACCORDION = 'AccordionContainer',
+  BUTTON = 'GenericButtonContainer',
 }
 
 export type ResolutionConfig = {

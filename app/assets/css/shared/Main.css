@@ -80,7 +80,7 @@ svg {
 
 .v-container {
   max-width: 1200px !important;
-  padding: 16px var(--mainLayoutGutter) !important;
+  /* padding: 16px var(--mainLayoutGutter) !important; */
 }
 
 #__nuxt {

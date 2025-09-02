@@ -23,7 +23,7 @@
               "iconColor": "#e0e6ff",
               "textColor": "#ffffff"
             },
-            "id": "generated-249655c6-1c5c-423f-b87d-1352d1bce6ca",
+            "id": "generated-c4d04ae6-c811-4e47-a3bc-cfae5abbbc36",
             "children": [],
             "appearance": {
               "resolutionConfig": {
@@ -62,7 +62,7 @@
               "iconColor": "#e0e6ff",
               "textColor": "#ffffff"
             },
-            "id": "generated-321bffbb-b9c9-4890-9fae-7eb29db5d87e",
+            "id": "generated-9947608d-b190-4b48-bdac-4b50ef9ebb91",
             "children": [],
             "appearance": {
               "resolutionConfig": {
@@ -101,7 +101,7 @@
               "iconColor": "#e0e6ff",
               "textColor": "#ffffff"
             },
-            "id": "generated-9c877229-8ed6-486a-b2e6-2c23668f4ebd",
+            "id": "generated-7db6791f-8f1a-4ccc-8bee-b03c71b83451",
             "children": [],
             "appearance": {
               "resolutionConfig": {
@@ -140,7 +140,7 @@
               "iconColor": "#e0e6ff",
               "textColor": "#ffffff"
             },
-            "id": "generated-57804c56-7d03-4841-9a74-9328390c6bec",
+            "id": "generated-4809f275-3698-4a27-847e-876fe9bc6eb2",
             "children": [],
             "appearance": {
               "resolutionConfig": {
@@ -496,7 +496,8 @@
             "XL": {
               "viewType": "TITLE"
             }
-          }
+          },
+          "buttonVariant": "contained"
         },
         "id": "5f22ae8f-3e3d-4d3d-8b12-49b59f593444",
         "children": [],
@@ -7633,8 +7634,8 @@
           "alignItems": "center",
           "justifyContent": "space-between",
           "childrenConfig": {
-            "generated-f9b6f01f-a563-40b4-918d-de3f8403ec07": {},
-            "generated-7c1577f9-42e8-4850-9c35-a0a6b292fd49": {}
+            "generated-a3ac6039-96a9-4280-918f-5707116f205e": {},
+            "generated-d156e924-64d2-4837-bae0-a2f277c45b0d": {}
           }
         },
         "id": "e48ef091-681c-4e51-a95c-32fd5f412169",
@@ -7657,7 +7658,7 @@
                 }
               }
             },
-            "id": "generated-f9b6f01f-a563-40b4-918d-de3f8403ec07",
+            "id": "generated-d156e924-64d2-4837-bae0-a2f277c45b0d",
             "children": [],
             "appearance": {
               "resolutionConfig": {
@@ -7690,11 +7691,11 @@
               "justifyContent": "end",
               "gap": "8px",
               "childrenConfig": {
-                "generated-9d285d8b-3f1c-4d69-aef5-5b44d3230a51": {},
-                "generated-9331003a-3445-44f3-ab18-eee67900bf0f": {}
+                "generated-fdc8cffa-a440-443b-ab8a-e74834f60c21": {},
+                "generated-a765196f-8b83-45f6-aa79-3822a0068680": {}
               }
             },
-            "id": "generated-7c1577f9-42e8-4850-9c35-a0a6b292fd49",
+            "id": "generated-a3ac6039-96a9-4280-918f-5707116f205e",
             "children": [
               {
                 "container": "GenericButtonContainer",
@@ -7726,7 +7727,7 @@
                     }
                   }
                 },
-                "id": "generated-9d285d8b-3f1c-4d69-aef5-5b44d3230a51",
+                "id": "generated-fdc8cffa-a440-443b-ab8a-e74834f60c21",
                 "children": [],
                 "appearance": {
                   "resolutionConfig": {
@@ -7783,7 +7784,7 @@
                     }
                   }
                 },
-                "id": "generated-9331003a-3445-44f3-ab18-eee67900bf0f",
+                "id": "generated-a765196f-8b83-45f6-aa79-3822a0068680",
                 "children": [],
                 "appearance": {
                   "resolutionConfig": {
@@ -7876,7 +7877,7 @@
           "banners": [
             {
               "type": "SUPER_BANNER",
-              "name": "Become a Vip EN",
+              "name": "Welcome Offer Logged Out",
               "contentRules": {
                 "XS": {
                   "imageUrl": "/imgs/sliders/slide1.png",
@@ -7921,60 +7922,7 @@
               },
               "primaryCta": {
                 "type": "OPEN_OVERLAY",
-                "overlayClass": "cashier",
-                "overlayParams": "deposit",
-                "loggedOutVisible": false
-              }
-            },
-            {
-              "type": "SUPER_BANNER",
-              "name": "Welcome Offer",
-              "contentRules": {
-                "XS": {
-                  "imageUrl": "/imgs/sliders/slide2.png",
-                  "alignment": "CENTER",
-                  "headingFontSize": 26,
-                  "secondaryFontSize": 16,
-                  "bannerTextFontShadow": false,
-                  "verticalAlignment": "MIDDLE"
-                },
-                "SM": {
-                  "imageUrl": "/imgs/sliders/slide2.png",
-                  "alignment": "CENTER",
-                  "headingFontSize": 26,
-                  "secondaryFontSize": 16,
-                  "bannerTextFontShadow": false,
-                  "verticalAlignment": "MIDDLE"
-                },
-                "MD": {
-                  "imageUrl": "/imgs/sliders/slide2.png",
-                  "alignment": "CENTER",
-                  "headingFontSize": 26,
-                  "secondaryFontSize": 16,
-                  "bannerTextFontShadow": false,
-                  "verticalAlignment": "MIDDLE"
-                },
-                "LG": {
-                  "imageUrl": "/imgs/sliders/slide2.png",
-                  "alignment": "CENTER",
-                  "headingFontSize": 26,
-                  "secondaryFontSize": 16,
-                  "bannerTextFontShadow": false,
-                  "verticalAlignment": "MIDDLE"
-                },
-                "XL": {
-                  "imageUrl": "/imgs/sliders/slide2.png",
-                  "alignment": "CENTER",
-                  "headingFontSize": 26,
-                  "secondaryFontSize": 16,
-                  "bannerTextFontShadow": false,
-                  "verticalAlignment": "MIDDLE"
-                }
-              },
-              "primaryCta": {
-                "type": "OPEN_OVERLAY",
-                "overlayClass": "wallet",
-                "overlayParams": "FIRST",
+                "overlayClass": "register",
                 "loggedOutVisible": false
               }
             },
@@ -7983,7 +7931,7 @@
               "name": "VIP Status Match",
               "contentRules": {
                 "XS": {
-                  "imageUrl": "/imgs/sliders/slide3.jpg",
+                  "imageUrl": "/imgs/sliders/slide2.png",
                   "alignment": "CENTER",
                   "headingFontSize": 26,
                   "secondaryFontSize": 16,
@@ -7991,7 +7939,7 @@
                   "verticalAlignment": "MIDDLE"
                 },
                 "SM": {
-                  "imageUrl": "/imgs/sliders/slide3.jpg",
+                  "imageUrl": "/imgs/sliders/slide2.png",
                   "alignment": "CENTER",
                   "headingFontSize": 26,
                   "secondaryFontSize": 16,
@@ -7999,7 +7947,7 @@
                   "verticalAlignment": "MIDDLE"
                 },
                 "MD": {
-                  "imageUrl": "/imgs/sliders/slide3.jpg",
+                  "imageUrl": "/imgs/sliders/slide2.png",
                   "alignment": "CENTER",
                   "headingFontSize": 26,
                   "secondaryFontSize": 16,
@@ -8007,7 +7955,7 @@
                   "verticalAlignment": "MIDDLE"
                 },
                 "LG": {
-                  "imageUrl": "/imgs/sliders/slide3.jpg",
+                  "imageUrl": "/imgs/sliders/slide2.png",
                   "alignment": "CENTER",
                   "headingFontSize": 26,
                   "secondaryFontSize": 16,
@@ -8015,7 +7963,7 @@
                   "verticalAlignment": "MIDDLE"
                 },
                 "XL": {
-                  "imageUrl": "/imgs/sliders/slide3.jpg",
+                  "imageUrl": "/imgs/sliders/slide2.png",
                   "alignment": "CENTER",
                   "headingFontSize": 26,
                   "secondaryFontSize": 16,
@@ -8092,7 +8040,7 @@
             "data": {
               "html": "<div style=\"width: auto; border-radius: 20px; overflow: hidden; text-align: center; border: 1px solid #494F65;\"><!-- Image Banner --> <img style=\"width: 100%; display: block;\" src=\"/imgs/home/offer1.png\" alt=\"25% Cashback\"> <!-- Text Section -->\n<div style=\"background-color: #12151b; padding: 1px 15px;\">\n<p style=\"font-weight: 400; font-size: 16.04px; text-align: centеr; vertical-align: middle; color: #dddddd; height: 70px;\">Unlock up to 40% cashback, custom bonuses, and your own personal VIP Concierge!</p>\n</div>\n</div>"
             },
-            "id": "generated-ea25944d-e44d-4ce2-9540-45f82bb5ed67",
+            "id": "generated-53aa0aeb-6236-49ad-a09a-0b35525f8394",
             "children": [],
             "appearance": {
               "resolutionConfig": {
@@ -8124,7 +8072,7 @@
             "data": {
               "html": "<div style=\"width: auto; border-radius: 20px; overflow: hidden; text-align: center; border: 1px solid #494F65;\"><!-- Image Banner --> <img style=\"width: 100%; display: block;\" src=\"/imgs/home/offer2.png\" alt=\"25% Cashback\"> <!-- Text Section -->\n<div style=\"background-color: #12151b; padding: 1px 15px;\">\n<p style=\"font-weight: 400; font-size: 16.04px; text-align: centеr; vertical-align: middle; color: #dddddd; height: 70px;\">Get in fast, cash out faster &mdash; enjoy instant deposits and withdrawals, anytime</p>\n</div>\n</div>"
             },
-            "id": "generated-4f198ed2-1202-4ef1-8aed-9dd74421b24a",
+            "id": "generated-724f594b-942c-4ebe-b126-b04c9f6a518b",
             "children": [],
             "appearance": {
               "resolutionConfig": {
@@ -8156,7 +8104,7 @@
             "data": {
               "html": "<div style=\"width: auto; border-radius: 20px; overflow: hidden; text-align: center; border: 1px solid #494F65;\"><!-- Image Banner --> <img style=\"width: 100%; display: block;\" src=\"/imgs/home/offer3.png\" alt=\"25% Cashback\"> <!-- Text Section -->\n<div style=\"background-color: #12151b; padding: 3px 15px;\">\n<p style=\"font-weight: 400; font-size: 16.04px; text-align: centеr; vertical-align: middle; color: #dddddd; height: 70px;\">Get more from your deposit &mdash; free spins when you use Best Wallet</p>\n</div>\n</div>"
             },
-            "id": "generated-0c708d65-ef9c-471f-9c0d-02045c62a117",
+            "id": "generated-a509f09d-80e1-48f2-b86d-b1dcc20e2419",
             "children": [],
             "appearance": {
               "resolutionConfig": {
@@ -8270,8 +8218,7 @@
           {
             "container": "HTMLContainer",
             "data": {
-              "content": "Unlock up to 40% cashback, custom bonuses, and your own personal VIP Concierge!",
-              "thumbnail": "offer1.png"
+              "html": "<div style=\"width: auto; border-radius: 20px; overflow: hidden; text-align: center; border: 1px solid #494F65; background-color: #12151b;\"><!-- Image Banner --> <img style=\"width: 100%; display: block;\" src=\"/imgs/home/offer1.png\" alt=\"25% Cashback\"> <!-- Text Section -->\n<div style=\"background-color: #12151b; padding: 0px 25px;\">\n<p style=\"font-weight: 400; font-size: 19.04px; text-align: centеr; vertical-align: middle; color: #dddddd; padding: 0px 15px 0px 15px; height: 93px;\">Unlock up to 40% cashback, custom bonuses, and your own personal VIP Concierge!</p>\n</div>\n</div>"
             },
             "id": "cd53e052-62c3-44b5-8b0b-1bd10046441b",
             "children": [],
@@ -8303,8 +8250,7 @@
           {
             "container": "HTMLContainer",
             "data": {
-              "content": "Get in fast, cash out faster — enjoy instant deposits and withdrawals, anytime",
-              "thumbnail": "offer2.png"
+              "html": "<div style=\"width: auto; border-radius: 20px; overflow: hidden; text-align: center; border: 1px solid #494F65; background-color: #12151b;\"><!-- Image Banner --> <img style=\"width: 100%; display: block;\" src=\"/imgs/home/offer2.png\" alt=\"25% Cashback\"> <!-- Text Section -->\n<div style=\"background-color: #12151b; padding: 0px 25px;\">\n<p style=\"font-weight: 400; font-size: 19.04px; text-align: centеr; vertical-align: middle; color: #dddddd; padding: 0px 15px 0px 15px; height: 93px;\">Get in fast, cash out faster &mdash; enjoy instant deposits and withdrawals, anytime</p>\n</div>\n</div>"
             },
             "id": "9c627828-c943-4d9a-863b-e10569b5eb27",
             "children": [],
@@ -8336,8 +8282,7 @@
           {
             "container": "HTMLContainer",
             "data": {
-              "content": "Get more from your deposit — free spins when you use Best Wallet",
-              "thumbnail": "offer3.png"
+              "html": "<div style=\"width: auto; border-radius: 20px; overflow: hidden; text-align: center; border: 1px solid #494F65; background-color: #12151b;\"><!-- Image Banner --> <img style=\"width: 100%; display: block;\" src=\"imgs/home/offer3.png\" alt=\"25% Cashback\"> <!-- Text Section -->\n<div style=\"background-color: #12151b; padding: 0px 20px;\">\n<p style=\"font-weight: 400; font-size: 19.04px; text-align: centеr; vertical-align: middle; color: #dddddd; min-height: 70px; padding: 0px 10px 0px 10px; height: 93px;\">Get more from your deposit &mdash; free spins when you use Best Wallet</p>\n</div>\n</div>"
             },
             "id": "2b16b22f-869b-495d-8405-fc24a2a6bddc",
             "children": [],
@@ -8396,25 +8341,460 @@
         }
       },
       {
+        "container": "FlexColumnContainer",
+        "data": {
+          "alignItems": "center",
+          "justifyContent": "space-evenly",
+          "gap": "5px",
+          "resolutionsConfig": {
+            "XS": {
+              "sticky": false
+            },
+            "SM": {
+              "sticky": false
+            },
+            "MD": {
+              "sticky": false
+            },
+            "LG": {
+              "sticky": false
+            },
+            "XL": {
+              "sticky": false
+            }
+          }
+        },
+        "id": "a522b967-cfad-46cf-b704-2e559fc5c35b",
+        "children": [
+          {
+            "container": "HTMLContainer",
+            "data": {
+              "html": "<div style=\"display: flex; align-items: center;\"><img style=\"width: 55px; height: 39px;\" src=\"/cdn/2eaecbff-e89e-4dab-989a-c50dba15a404.svg\" alt=\"Bonus Icon\"> <span style=\"font-size: 18px; font-weight: 800;\"> <span style=\"color: #00ef8b;\">200%</span> Deposit Bonus 22 </span></div>"
+            },
+            "id": "generated-36c09a69-445d-4c7b-a180-b5f8053cafac",
+            "children": [],
+            "appearance": {
+              "resolutionConfig": {
+                "XS": {
+                  "background": {},
+                  "isVisible": true
+                },
+                "SM": {
+                  "background": {},
+                  "isVisible": true
+                },
+                "MD": {
+                  "background": {},
+                  "isVisible": true
+                },
+                "LG": {
+                  "background": {},
+                  "isVisible": true
+                },
+                "XL": {
+                  "background": {},
+                  "isVisible": true
+                }
+              }
+            }
+          },
+          {
+            "container": "LogosContainer",
+            "data": {
+              "images": [
+                {
+                  "src": "/img/currencies/ipay.svg"
+                },
+                {
+                  "src": "/cdn/7ee5180f-7f32-4d12-802c-7282c4998a8d.svg"
+                },
+                {
+                  "src": "/cdn/Logos/for-cashier/4a66e33e-1613-4dc9-bc09-f96de05a57e1.svg"
+                },
+                {
+                  "src": "/cdn/Logos/for-cashier/438da982-946b-4119-b882-70ffd42d355c.svg"
+                }
+              ],
+              "columnGapsMap": {
+                "XS": null,
+                "SM": null,
+                "MD": null,
+                "LG": null,
+                "XL": null
+              }
+            },
+            "id": "generated-2ec44c3b-1519-4578-b990-25d4dfcdd301",
+            "children": [],
+            "appearance": {
+              "resolutionConfig": {
+                "XS": {
+                  "background": {},
+                  "isVisible": true
+                },
+                "SM": {
+                  "background": {},
+                  "isVisible": true
+                },
+                "MD": {
+                  "background": {},
+                  "isVisible": true
+                },
+                "LG": {
+                  "background": {},
+                  "isVisible": true
+                },
+                "XL": {
+                  "background": {},
+                  "isVisible": true
+                }
+              }
+            }
+          },
+          {
+            "container": "HTMLContainer",
+            "data": {
+              "html": "<div style=\"display: flex; flex-wrap: wrap; margin-top: 5px;\"><img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/5bd3c879-281e-4051-8324-593a87838f3b.svg\"> <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/25a237c0-5aae-4b0f-b5b0-67115b8023ac.svg\"> <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/2be044db-4272-402c-9989-96f4ce098536.svg\"> <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/cd6ed18f-7036-4686-90e7-73018e1fc9bd.svg\"> <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/a8a78aeb-057b-4dde-a809-bbfc28270676.svg\"> <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/09e25c55-3536-470b-ad17-8a0a86dac5e0.svg\"> <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/a9be8fec-b4c7-4c86-904e-06abee045b46.svg\"> <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/1163e0b6-3b0f-4a62-88ea-50744c1dbe52.svg\"> <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/a131d54c-bcc1-4c82-abd0-030e29242032.svg\"> <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/9410bc78-3fa6-4b61-b070-f7d540c9c7f8.svg\"></div>"
+            },
+            "id": "generated-84fedfb4-a2f6-4f00-9f2f-4c12d8531ca6",
+            "children": [],
+            "appearance": {
+              "resolutionConfig": {
+                "XS": {
+                  "padding": "0px 0px 10px 0px",
+                  "background": {},
+                  "isVisible": true
+                },
+                "SM": {
+                  "padding": "0px 0px 10px 0px",
+                  "background": {},
+                  "isVisible": true
+                },
+                "MD": {
+                  "background": {},
+                  "isVisible": true
+                },
+                "LG": {
+                  "background": {},
+                  "isVisible": true
+                },
+                "XL": {
+                  "background": {},
+                  "isVisible": true
+                }
+              }
+            }
+          },
+          {
+            "container": "GenericButtonContainer",
+            "data": {
+              "title": "Deposit Now",
+              "color": "primary",
+              "width": "full",
+              "height": "medium",
+              "action": {
+                "type": "OPEN_OVERLAY",
+                "overlayClass": "wallet",
+                "overlayParams": "FIRST",
+                "loggedOutVisible": true
+              },
+              "resolutionConfig": {
+                "XS": {
+                  "viewType": "TITLE"
+                },
+                "SM": {
+                  "viewType": "TITLE"
+                },
+                "MD": {
+                  "viewType": "TITLE"
+                },
+                "LG": {
+                  "viewType": "TITLE"
+                },
+                "XL": {
+                  "viewType": "TITLE"
+                }
+              },
+              "buttonVariant": "contained"
+            },
+            "id": "generated-45822468-2c2e-46fe-9420-153a25a96ffd",
+            "children": [],
+            "appearance": {
+              "resolutionConfig": {
+                "XS": {
+                  "background": {},
+                  "isVisible": true
+                },
+                "SM": {
+                  "background": {},
+                  "isVisible": true
+                },
+                "MD": {
+                  "padding": "0px 30px 0px 30px",
+                  "background": {},
+                  "isVisible": true
+                },
+                "LG": {
+                  "padding": "0px 30px 0px 30px",
+                  "background": {},
+                  "isVisible": true
+                },
+                "XL": {
+                  "padding": "0px 30px 0px 30px",
+                  "background": {},
+                  "isVisible": true
+                }
+              }
+            }
+          }
+        ],
+        "appearance": {
+          "resolutionConfig": {
+            "XS": {
+              "margin": "-45px 0px 0px 0px",
+              "padding": "10px",
+              "background": {
+                "color": "linear-gradient(180deg, rgba(27, 42, 65, 0.7) -0.26%, rgba(71, 81, 112, 0.7) 99.74%)"
+              },
+              "border": "1px solid #494F65",
+              "borderRadius": "8px",
+              "isVisible": true
+            },
+            "SM": {
+              "margin": "-70px 0px 0px 0px",
+              "padding": "15px 10px 15px 10px ",
+              "background": {
+                "color": "linear-gradient(180deg, rgba(27, 42, 65, 0.7) -0.26%, rgba(71, 81, 112, 0.7) 99.74%)"
+              },
+              "border": "1px solid #494F65",
+              "borderRadius": "8px",
+              "isVisible": true
+            },
+            "MD": {
+              "padding": "15px 0px 15px 0px ",
+              "background": {
+                "color": "linear-gradient(180deg, rgba(27, 42, 65, 0.7) -0.26%, rgba(71, 81, 112, 0.7) 99.74%)"
+              },
+              "isVisible": false
+            },
+            "LG": {
+              "background": {
+                "color": "linear-gradient(180deg, rgba(27, 42, 65, 0.7) -0.26%, rgba(71, 81, 112, 0.7) 99.74%)"
+              },
+              "isVisible": false
+            },
+            "XL": {
+              "background": {
+                "color": "linear-gradient(180deg, rgba(27, 42, 65, 0.7) -0.26%, rgba(71, 81, 112, 0.7) 99.74%)"
+              },
+              "isVisible": false
+            }
+          }
+        }
+      },
+      {
+        "container": "FlexRowContainer",
+        "data": {
+          "alignItems": "center",
+          "justifyContent": "space-evenly",
+          "childrenConfig": {
+            "generated-c6152e79-1797-4f26-9931-3552f62ff1b2": {
+              "flex": "1"
+            },
+            "generated-3eb43c8c-3036-44e1-a4c3-e99ee18ae6f7": {
+              "flex": "1"
+            },
+            "generated-f9123847-2991-4dee-9702-d966fe8c8172": {}
+          }
+        },
+        "id": "5f91ffe8-6938-42d1-a258-6549c4fddcdc",
+        "children": [
+          {
+            "container": "HTMLContainer",
+            "data": {
+              "html": "<div style=\"display: flex; flex-wrap: wrap; align-items: center;\"><!-- Bonus icon and text --> <img style=\"width: 55px; height: 39px;\" src=\"imgs/currencies/bonus.svg\" alt=\"Bonus Icon\"> <span style=\"font-size: 18px; font-weight: 800; padding-right: 10px;\"> <span style=\"color: #00ef8b;\">200%</span> Deposit Bonus aa</span> <!-- First payment logos (now with fixed size) --> <span style=\"padding-right: 20px;\"> <img style=\"width: 42px; height: 28px; margin-left: 10px;\" src=\"/imgs/currencies/ipay.svg\"> <img style=\"width: 42px; height: 28px;\" src=\"/cdn/Logos/for-cashier/438da982-946b-4119-b882-70ffd42d355c.svg\"> <img style=\"width: 42px; height: 28px;\" src=\"/cdn/Logos/for-cashier/4a66e33e-1613-4dc9-bc09-f96de05a57e1.svg\"> <img style=\"width: 42px; height: 28px;\" src=\"/img/currencies/ipay.svg\"> <img style=\"width: 42px; height: 28px;\" src=\"/imgs/currencies/ipay.svg\"> </span> <!-- Last 10 cryptocurrency logos (won't break line) --> <span style=\"white-space: nowrap; display: inline-block; margin-top: 8px;\"> <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/5bd3c879-281e-4051-8324-593a87838f3b.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/25a237c0-5aae-4b0f-b5b0-67115b8023ac.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/2be044db-4272-402c-9989-96f4ce098536.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/cd6ed18f-7036-4686-90e7-73018e1fc9bd.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/a8a78aeb-057b-4dde-a809-bbfc28270676.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/09e25c55-3536-470b-ad17-8a0a86dac5e0.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/a9be8fec-b4c7-4c86-904e-06abee045b46.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/1163e0b6-3b0f-4a62-88ea-50744c1dbe52.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/a131d54c-bcc1-4c82-abd0-030e29242032.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/9410bc78-3fa6-4b61-b070-f7d540c9c7f8.svg\"> </span></div>"
+            },
+            "id": "generated-3eb43c8c-3036-44e1-a4c3-e99ee18ae6f7",
+            "children": [],
+            "appearance": {
+              "resolutionConfig": {
+                "XS": {
+                  "background": {},
+                  "isVisible": false
+                },
+                "SM": {
+                  "background": {},
+                  "isVisible": false
+                },
+                "MD": {
+                  "background": {},
+                  "isVisible": true
+                },
+                "LG": {
+                  "background": {},
+                  "isVisible": false
+                },
+                "XL": {
+                  "background": {},
+                  "isVisible": false
+                }
+              }
+            }
+          },
+          {
+            "container": "HTMLContainer",
+            "data": {
+              "html": "<div style=\"display: flex; flex-wrap: wrap; align-items: center;\"><!-- Bonus icon and text --> <img style=\"width: auto; height: 35px;\" src=\"/imgs/currencies/bonus.svg\" alt=\"Bonus Icon\"> <span style=\"font-size: 18px; font-weight: 800; padding-right: 30px; height: 22px;\"> <span style=\"color: #00ef8b;\">200%</span> Deposit Bonus </span> <!-- First payment logos (now with fixed size) --> <span style=\"padding-right: 60px;\"> <img style=\"width: 42px; height: 28px; margin-left: 10px;\" src=\"/imgs/currencies/ipay.svg\"> <img style=\"width: 42px; height: 28px;\" src=\"/imgs/currencies/picpay.svg\"> <img style=\"width: 42px; height: 28px;\" src=\"/imgs/currencies/gpay.svg\"> <img style=\"width: 42px; height: 28px;\" src=\"/imgs/currencies/visa.svg\"> <img style=\"width: 42px; height: 28px;\" src=\"/imgs/currencies/visa-2.svg\"> </span> <!-- Last 10 cryptocurrency logos (won't break line) --> <span style=\"white-space: nowrap; display: inline-block; margin-top: 8px;\"> <img style=\"height: auto; width: auto;\" src=\"/imgs/currencies/btc.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/imgs/currencies/eth.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/imgs/currencies/usdt.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/imgs/currencies/s.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/imgs/currencies/t.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/imgs/currencies/dollar.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/imgs/currencies/x.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/imgs/currencies/d.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/imgs/currencies/m.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/imgs/currencies/k.svg\"> </span></div>"
+            },
+            "id": "generated-c6152e79-1797-4f26-9931-3552f62ff1b2",
+            "children": [],
+            "appearance": {
+              "resolutionConfig": {
+                "XS": {
+                  "background": {},
+                  "isVisible": false
+                },
+                "SM": {
+                  "background": {},
+                  "isVisible": false
+                },
+                "MD": {
+                  "background": {},
+                  "isVisible": false
+                },
+                "LG": {
+                  "background": {},
+                  "isVisible": true
+                },
+                "XL": {
+                  "background": {},
+                  "isVisible": true
+                }
+              }
+            }
+          },
+          {
+            "container": "GenericButtonContainer",
+            "data": {
+              "title": "Deposit Now",
+              "color": "primary",
+              "width": "auto",
+              "height": "medium",
+              "action": {
+                "type": "OPEN_OVERLAY",
+                "overlayClass": "wallet",
+                "overlayParams": "FIRST",
+                "loggedOutVisible": true
+              },
+              "resolutionConfig": {
+                "XS": {
+                  "viewType": "TITLE"
+                },
+                "SM": {
+                  "viewType": "TITLE"
+                },
+                "MD": {
+                  "viewType": "TITLE"
+                },
+                "LG": {
+                  "viewType": "TITLE"
+                },
+                "XL": {
+                  "viewType": "TITLE"
+                }
+              }
+            },
+            "id": "generated-f9123847-2991-4dee-9702-d966fe8c8172",
+            "children": [],
+            "appearance": {
+              "resolutionConfig": {
+                "XS": {
+                  "padding": "15px 0px 0px 0px",
+                  "background": {},
+                  "isVisible": true
+                },
+                "SM": {
+                  "padding": "15px 0px 0px 0px",
+                  "background": {},
+                  "isVisible": true
+                },
+                "MD": {
+                  "background": {},
+                  "isVisible": true
+                },
+                "LG": {
+                  "background": {},
+                  "isVisible": true
+                },
+                "XL": {
+                  "background": {},
+                  "isVisible": true
+                }
+              }
+            }
+          }
+        ],
+        "appearance": {
+          "resolutionConfig": {
+            "XS": {
+              "background": "linear-gradient(180deg, rgba(27, 42, 65, 0.7) -0.26%, rgba(71, 81, 112, 0.7) 99.74%)",
+              "isVisible": false
+            },
+            "SM": {
+              "background": "linear-gradient(180deg, rgba(27, 42, 65, 0.7) -0.26%, rgba(71, 81, 112, 0.7) 99.74%)",
+              "isVisible": false
+            },
+            "MD": {
+              "padding": "10px 15px 10px 25px",
+              "background": "linear-gradient(180deg, rgba(27, 42, 65, 0.7) -0.26%, rgba(71, 81, 112, 0.7) 99.74%)",
+              "border": "1px solid #494F65",
+              "borderRadius": "8px",
+              "isVisible": true
+            },
+            "LG": {
+              "padding": "10px 10px 10px 25px",
+              "background": "linear-gradient(180deg, rgba(27, 42, 65, 0.7) -0.26%, rgba(71, 81, 112, 0.7) 99.74%)",
+              "border": "1px solid #494F65",
+              "borderRadius": "8px",
+              "isVisible": true
+            },
+            "XL": {
+              "padding": "10px 10px 10px 10px",
+              "background": "linear-gradient(180deg, rgba(27, 42, 65, 0.7) -0.26%, rgba(71, 81, 112, 0.7) 99.74%)",
+              "border": "1px solid #494F65",
+              "borderRadius": "8px",
+              "isVisible": true
+            }
+          }
+        }
+      },
+      {
         "container": "GamesCategoryContainer",
         "data": {
           "initialState": {
-            "totalItems": 24,
+            "totalItems": 23,
             "data": [
               {
-                "id": "5078ac94-48ee-4272-a2a4-c7880ed41a66",
-                "name": "Rise of Olympus Origin",
-                "imageUrl": "/cdn/2269dfea-1d89-4f88-831b-895bd84712cc.jpg",
-                "realPlayUrl": "/casino/play-n-go/rise-of-olympus-origin/play",
-                "demoPlayUrl": "/casino/play-n-go/rise-of-olympus-origin/demo",
+                "id": "7e0d6b17-2d2c-4c62-a3bb-d65825377df5",
+                "name": "Rich Wilde and the Tome of Dead",
+                "imageUrl": "/cdn/4cf5835f-30a0-4a52-a0fa-9d21e5941f7a.jpg",
+                "realPlayUrl": "/casino/play-n-go/rich-wilde-and-the-tome-of-dead/play",
+                "demoPlayUrl": "/casino/play-n-go/rich-wilde-and-the-tome-of-dead/demo",
                 "hasDemo": true
               },
               {
-                "id": "25d1c693-6885-4646-ba80-a79ef39f4fe8",
-                "name": "BARREL BONANZA",
-                "imageUrl": "/cdn/7c636553-2d55-47e9-8de9-a7eb056721f7.jpg",
-                "realPlayUrl": "/casino/hacksaw/barrel-bonanza/play",
-                "demoPlayUrl": "/casino/hacksaw/barrel-bonanza/demo",
+                "id": "b9651981-254b-4b5b-bc4a-7a44c2e7e54f",
+                "name": "Le Pharaoh",
+                "imageUrl": "/cdn/a4d8809e-9b23-4c91-bdf6-a0d3fbcd2879.jpg",
+                "realPlayUrl": "/casino/hacksaw/le-pharaoh/play",
+                "demoPlayUrl": "/casino/hacksaw/le-pharaoh/demo",
+                "hasDemo": true
+              },
+              {
+                "id": "0c3c6c39-41b5-4f25-8a46-7b8ccf20fb92",
+                "name": "3 Super Hot Chillies",
+                "imageUrl": "/cdn/047e9053-3c4d-40bb-8ac6-95939b032d4d.jpg",
+                "realPlayUrl": "/casino/3oaks/3-super-hot-chillies/play",
+                "demoPlayUrl": "/casino/3oaks/3-super-hot-chillies/demo",
                 "hasDemo": true
               },
               {
@@ -8426,75 +8806,67 @@
                 "hasDemo": true
               },
               {
-                "id": "b54d4d27-3163-4663-baa5-628c163a0cb2",
-                "name": "Book of Ra",
-                "imageUrl": "/cdn/imported_games_images/N2/Novomatic/102014/a8d29d45-7f1e-4475-953e-7c219a3cf6bf.jpg",
-                "realPlayUrl": "/casino/novomatic/book-of-ra/play",
-                "demoPlayUrl": "/casino/novomatic/book-of-ra/demo",
+                "id": "4f31d907-0a45-4887-bf0a-7c75fddeffd7",
+                "name": "Cosmic Jokers",
+                "imageUrl": "/cdn/9b4b8249-7874-4d6d-a682-476d18b3c045.jpg",
+                "realPlayUrl": "/casino/avatarux-1/cosmic-jokers/play",
+                "demoPlayUrl": "/casino/avatarux-1/cosmic-jokers/demo",
                 "hasDemo": true
               },
               {
-                "id": "e2aaefd4-d4f3-4ada-aa50-9546fb8ce919",
-                "name": "Break the Piggy Bank",
-                "imageUrl": "/cdn/77467820-451b-4fb1-b4da-542d83716f92.jpg",
-                "realPlayUrl": "/casino/penguin-king/break-the-piggy-bank/play",
-                "demoPlayUrl": "/casino/penguin-king/break-the-piggy-bank/demo",
+                "id": "6cfa803e-1442-4230-a0b7-cfd698e98f80",
+                "name": "777 Hot Reels: Supercharged",
+                "imageUrl": "/cdn/ddb0217b-412d-4018-8008-f4171651ac26.jpg",
+                "realPlayUrl": "/casino/penguin-king/777-hot-reels-supercharged/play",
+                "demoPlayUrl": "/casino/penguin-king/777-hot-reels-supercharged/demo",
                 "hasDemo": true
               },
               {
-                "id": "6fdfedad-35c3-469d-935e-9f51a9b8aca3",
-                "name": "Bill and Coin",
-                "imageUrl": "/cdn/814c0837-bbef-439a-83e9-e6ad57553a30.jpg",
-                "realPlayUrl": "/casino/relax-gaming/bill-and-coin/play",
-                "demoPlayUrl": "/casino/relax-gaming/bill-and-coin/demo",
+                "id": "2a3326b4-ffd4-41ba-8cc4-7cf7bd09e49c",
+                "name": "Unholy Mystery",
+                "imageUrl": "/cdn/59f39a2b-645c-4d2b-9ffa-1bf3eb5a4682.jpg",
+                "realPlayUrl": "/casino/justslots/unholy-mystery/play",
+                "demoPlayUrl": "/casino/justslots/unholy-mystery/demo",
                 "hasDemo": true
               },
               {
-                "id": "299c60d8-2813-4aa5-b850-d94c7c17b779",
-                "name": "Snoop Dogg Dollars",
-                "imageUrl": "/cdn/imported_games_images/CASIMBA/BGAMING_RGS/snoop-dogg-dollars/c79c447f-9bdc-48fa-8a77-7c98b912c59f.jpg",
-                "realPlayUrl": "/casino/bgaming-1/snoop-dogg-dollars/play",
-                "demoPlayUrl": "/casino/bgaming-1/snoop-dogg-dollars/demo",
+                "id": "1ac5597a-d0b8-4690-8897-b78b1a4d7764",
+                "name": "Crystal Hot 40 Free",
+                "imageUrl": "/cdn/imported_games_images/HUB88/Fazi/fzi_crystalhot40free/78551fb8-8411-4e3d-b545-5459d1887ecb.jpg",
+                "realPlayUrl": "/casino/fazi/crystal-hot-40-free/play",
+                "demoPlayUrl": "/casino/fazi/crystal-hot-40-free/demo",
                 "hasDemo": true
               },
               {
-                "id": "4c3e6315-3c45-4c5d-8eed-bead17968ff9",
-                "name": "Sweet Gummy",
-                "imageUrl": "/cdn/imported_games_images/RA_AVATAR_UX/RA_AVATAR_UX/sweet-gummy/2cd0265d-bfb0-4c3a-8144-3bc0dab56fdf.jpg",
-                "realPlayUrl": "/casino/avatarux-1/sweet-gummy/play",
-                "demoPlayUrl": "/casino/avatarux-1/sweet-gummy/demo",
+                "id": "fa5789d0-dc0f-48f2-8a22-6792c5ce3f75",
+                "name": "Clumsy Cowboys",
+                "imageUrl": "/cdn/3e1cb7e3-3b32-4e0d-b445-e14d93bdcee6.jpg",
+                "realPlayUrl": "/casino/hacksaw/clumsy-cowboys/play",
+                "demoPlayUrl": "/casino/hacksaw/clumsy-cowboys/demo",
                 "hasDemo": true
               },
               {
-                "id": "5d02f3c6-ff5f-4421-82fd-392052e09e48",
-                "name": "Hot Slot: 777 Diamond Crown",
-                "imageUrl": "/cdn/7fcceb62-a272-425b-8cb7-6ef58d1681e6.jpg",
-                "realPlayUrl": "/casino/voltent-1/hot-slot-777-diamond-crown/play",
-                "demoPlayUrl": "/casino/voltent-1/hot-slot-777-diamond-crown/demo",
+                "id": "c527afe5-b3de-4d78-a848-ac33f3095eb2",
+                "name": "Big Tuna Bonanza",
+                "imageUrl": "/cdn/ce8cbd8a-28c5-48b9-849f-6545a077382f.jpg",
+                "realPlayUrl": "/casino/bgaming-1/big-tuna-bonanza/play",
+                "demoPlayUrl": "/casino/bgaming-1/big-tuna-bonanza/demo",
+                "hasDemo": false
+              },
+              {
+                "id": "7cd85672-1734-47eb-bbee-ee87832afb29",
+                "name": "9 Coins Grand Diamond Edition",
+                "imageUrl": "/cdn/imported_games_images/HUB88/Wazdan/wzn_9coinsgranddiamondedition/c760087e-0266-4689-a9e2-b05796a7d573.jpg",
+                "realPlayUrl": "/casino/voltent-1/9-coins-grand-diamond-edition/play",
+                "demoPlayUrl": "/casino/voltent-1/9-coins-grand-diamond-edition/demo",
                 "hasDemo": true
               },
               {
-                "id": "83d8e86b-7ac8-4618-90ca-2073c480db5f",
-                "name": "Patrick vs Joker",
-                "imageUrl": "/cdn/ada8b0d8-9547-48a5-9650-34f3327651ca.jpg",
-                "realPlayUrl": "/casino/playnetic/patrick-vs-joker/play",
-                "demoPlayUrl": "/casino/playnetic/patrick-vs-joker/demo",
-                "hasDemo": true
-              },
-              {
-                "id": "0506fb87-8bba-4334-97c9-d965be8e0e24",
-                "name": "Blood Club",
-                "imageUrl": "/cdn/92fa132c-205e-4a0c-8467-f7091d016686.jpg",
-                "realPlayUrl": "/casino/peter-sons/blood-club/play",
-                "demoPlayUrl": "/casino/peter-sons/blood-club/demo",
-                "hasDemo": true
-              },
-              {
-                "id": "ac13d93c-f4cb-4b8e-a02f-5d9c04545ba8",
-                "name": "Coin Pusher",
-                "imageUrl": "/cdn/ba81886a-2fe3-4d96-bbc9-c22a11b60ddb.jpg",
-                "realPlayUrl": "/casino/kingmidas/coin-pusher/play",
-                "demoPlayUrl": "/casino/kingmidas/coin-pusher/demo",
+                "id": "5bd67f22-bba5-49c3-a369-5156d91fb09b",
+                "name": "The Tipsy Tourist: Beach Bonanza",
+                "imageUrl": "/cdn/780fe263-fa16-48b1-810a-01b497f2a8ca.jpg",
+                "realPlayUrl": "/casino/betsoft/the-tipsy-tourist-beach-bonanza/play",
+                "demoPlayUrl": "/casino/betsoft/the-tipsy-tourist-beach-bonanza/demo",
                 "hasDemo": true
               }
             ],
@@ -9361,884 +9733,6 @@
         }
       },
       {
-        "container": "FlexColumnContainer",
-        "data": {
-          "alignItems": "center",
-          "justifyContent": "space-evenly",
-          "gap": "5px",
-          "resolutionsConfig": {
-            "XS": {
-              "sticky": false
-            },
-            "SM": {
-              "sticky": false
-            },
-            "MD": {
-              "sticky": false
-            },
-            "LG": {
-              "sticky": false
-            },
-            "XL": {
-              "sticky": false
-            }
-          }
-        },
-        "id": "a522b967-cfad-46cf-b704-2e559fc5c35b",
-        "children": [
-          {
-            "container": "HTMLContainer",
-            "data": {
-              "html": "<div style=\"display: flex; align-items: center;\"><img style=\"width: 55px; height: 39px;\" src=\"/cdn/2eaecbff-e89e-4dab-989a-c50dba15a404.svg\" alt=\"Bonus Icon\"> <span style=\"font-size: 18px; font-weight: 800;\"> <span style=\"color: #00ef8b;\">200%</span> Deposit Bonus </span></div>"
-            },
-            "id": "generated-f48019b5-d456-423a-b037-e42a4df993ba",
-            "children": [],
-            "appearance": {
-              "resolutionConfig": {
-                "XS": {
-                  "background": {},
-                  "isVisible": true
-                },
-                "SM": {
-                  "background": {},
-                  "isVisible": true
-                },
-                "MD": {
-                  "background": {},
-                  "isVisible": true
-                },
-                "LG": {
-                  "background": {},
-                  "isVisible": true
-                },
-                "XL": {
-                  "background": {},
-                  "isVisible": true
-                }
-              }
-            }
-          },
-          {
-            "container": "LogosContainer",
-            "data": {
-              "images": [
-                {
-                  "src": "/cdn/Logos/for-cashier/2feaa413-a53d-46c1-8377-acfbc7c160b9.svg"
-                },
-                {
-                  "src": "/cdn/7ee5180f-7f32-4d12-802c-7282c4998a8d.svg"
-                },
-                {
-                  "src": "/cdn/Logos/for-cashier/4a66e33e-1613-4dc9-bc09-f96de05a57e1.svg"
-                },
-                {
-                  "src": "/cdn/Logos/for-cashier/438da982-946b-4119-b882-70ffd42d355c.svg"
-                }
-              ],
-              "columnGapsMap": {
-                "XS": null,
-                "SM": null,
-                "MD": null,
-                "LG": null,
-                "XL": null
-              }
-            },
-            "id": "generated-5f5a3976-4d01-4ce8-9d0c-9270ab18649d",
-            "children": [],
-            "appearance": {
-              "resolutionConfig": {
-                "XS": {
-                  "background": {},
-                  "isVisible": true
-                },
-                "SM": {
-                  "background": {},
-                  "isVisible": true
-                },
-                "MD": {
-                  "background": {},
-                  "isVisible": true
-                },
-                "LG": {
-                  "background": {},
-                  "isVisible": true
-                },
-                "XL": {
-                  "background": {},
-                  "isVisible": true
-                }
-              }
-            }
-          },
-          {
-            "container": "HTMLContainer",
-            "data": {
-              "html": "<div style=\"display: flex; flex-wrap: wrap; margin-top: 5px;\"><img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/5bd3c879-281e-4051-8324-593a87838f3b.svg\"> <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/25a237c0-5aae-4b0f-b5b0-67115b8023ac.svg\"> <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/2be044db-4272-402c-9989-96f4ce098536.svg\"> <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/cd6ed18f-7036-4686-90e7-73018e1fc9bd.svg\"> <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/a8a78aeb-057b-4dde-a809-bbfc28270676.svg\"> <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/09e25c55-3536-470b-ad17-8a0a86dac5e0.svg\"> <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/a9be8fec-b4c7-4c86-904e-06abee045b46.svg\"> <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/1163e0b6-3b0f-4a62-88ea-50744c1dbe52.svg\"> <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/a131d54c-bcc1-4c82-abd0-030e29242032.svg\"> <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/9410bc78-3fa6-4b61-b070-f7d540c9c7f8.svg\"></div>"
-            },
-            "id": "generated-fa74d092-8a38-48ca-8ac6-5b295c985aec",
-            "children": [],
-            "appearance": {
-              "resolutionConfig": {
-                "XS": {
-                  "padding": "0px 0px 10px 0px",
-                  "background": {},
-                  "isVisible": true
-                },
-                "SM": {
-                  "padding": "0px 0px 10px 0px",
-                  "background": {},
-                  "isVisible": true
-                },
-                "MD": {
-                  "background": {},
-                  "isVisible": true
-                },
-                "LG": {
-                  "background": {},
-                  "isVisible": true
-                },
-                "XL": {
-                  "background": {},
-                  "isVisible": true
-                }
-              }
-            }
-          },
-          {
-            "container": "GenericButtonContainer",
-            "data": {
-              "title": "Deposit Now",
-              "color": "primary",
-              "width": "full",
-              "height": "medium",
-              "action": {
-                "type": "OPEN_OVERLAY",
-                "overlayClass": "wallet",
-                "overlayParams": "FIRST",
-                "loggedOutVisible": true
-              },
-              "resolutionConfig": {
-                "XS": {
-                  "viewType": "TITLE"
-                },
-                "SM": {
-                  "viewType": "TITLE"
-                },
-                "MD": {
-                  "viewType": "TITLE"
-                },
-                "LG": {
-                  "viewType": "TITLE"
-                },
-                "XL": {
-                  "viewType": "TITLE"
-                }
-              },
-              "buttonVariant": "contained"
-            },
-            "id": "generated-05983b4f-a069-457b-8685-9797ef29bada",
-            "children": [],
-            "appearance": {
-              "resolutionConfig": {
-                "XS": {
-                  "background": {},
-                  "isVisible": true
-                },
-                "SM": {
-                  "background": {},
-                  "isVisible": true
-                },
-                "MD": {
-                  "padding": "0px 30px 0px 30px",
-                  "background": {},
-                  "isVisible": true
-                },
-                "LG": {
-                  "padding": "0px 30px 0px 30px",
-                  "background": {},
-                  "isVisible": true
-                },
-                "XL": {
-                  "padding": "0px 30px 0px 30px",
-                  "background": {},
-                  "isVisible": true
-                }
-              }
-            }
-          }
-        ],
-        "appearance": {
-          "resolutionConfig": {
-            "XS": {
-              "margin": "-45px 0px 0px 0px",
-              "padding": "10px",
-              "background": "linear-gradient(180deg, rgba(27, 42, 65, 0.7) -0.26%, rgba(71, 81, 112, 0.7) 99.74%)",
-              "border": "1px solid #494F65",
-              "borderRadius": "8px",
-              "isVisible": true
-            },
-            "SM": {
-              "margin": "-70px 0px 0px 0px",
-              "padding": "15px 10px 15px 10px ",
-              "background": "linear-gradient(180deg, rgba(27, 42, 65, 0.7) -0.26%, rgba(71, 81, 112, 0.7) 99.74%)",
-              "border": "1px solid #494F65",
-              "borderRadius": "8px",
-              "isVisible": true
-            },
-            "MD": {
-              "padding": "15px 0px 15px 0px ",
-              "background": "linear-gradient(180deg, rgba(27, 42, 65, 0.7) -0.26%, rgba(71, 81, 112, 0.7) 99.74%)",
-              "isVisible": false
-            },
-            "LG": {
-              "background": {
-                "color": "linear-gradient(180deg, rgba(27, 42, 65, 0.7) -0.26%, rgba(71, 81, 112, 0.7) 99.74%)"
-              },
-              "isVisible": false
-            },
-            "XL": {
-              "background": "linear-gradient(180deg, rgba(27, 42, 65, 0.7) -0.26%, rgba(71, 81, 112, 0.7) 99.74%)",
-              "isVisible": false
-            }
-          }
-        }
-      },
-      {
-        "container": "FlexRowContainer",
-        "data": {
-          "alignItems": "center",
-          "justifyContent": "space-evenly",
-          "childrenConfig": {
-            "generated-3ad1ba3c-25ee-4b17-874e-4782c628da35": {
-              "flex": "1"
-            },
-            "generated-2c167142-fb67-40ac-9a47-4eceb2ee93cc": {},
-            "generated-f2790722-cda4-487b-86e4-50868779a2ce": {
-              "flex": "1"
-            }
-          }
-        },
-        "id": "5f91ffe8-6938-42d1-a258-6549c4fddcdc",
-        "children": [
-          {
-            "container": "HTMLContainer",
-            "data": {
-              "html": "<div style=\"display: flex; flex-wrap: wrap; align-items: center;\"><!-- Bonus icon and text --> <img style=\"width: 55px; height: 39px;\" src=\"/imgs/home/icon.svg\" alt=\"Bonus Icon\"> <span style=\"font-size: 18px; font-weight: 800; padding-right: 10px;\"> <span style=\"color: #00ef8b;\">200%</span> Deposit Bonus </span> <!-- First payment logos (now with fixed size) --> <span style=\"padding-right: 20px;\"> <img style=\"width: 42px; height: 28px; margin-left: 10px;\" src=\"/cdn/Logos/for-cashier/0fc6a86e-5c28-4c9b-a70c-6839a448899f.svg\"> <img style=\"width: 42px; height: 28px;\" src=\"/cdn/Logos/for-cashier/438da982-946b-4119-b882-70ffd42d355c.svg\"> <img style=\"width: 42px; height: 28px;\" src=\"/cdn/Logos/for-cashier/4a66e33e-1613-4dc9-bc09-f96de05a57e1.svg\"> <img style=\"width: 42px; height: 28px;\" src=\"/cdn/7ee5180f-7f32-4d12-802c-7282c4998a8d.svg\"> <img style=\"width: 42px; height: 28px;\" src=\"/cdn/Logos/for-cashier/2feaa413-a53d-46c1-8377-acfbc7c160b9.svg\"> </span> <!-- Last 10 cryptocurrency logos (won't break line) --> <span style=\"white-space: nowrap; display: inline-block; margin-top: 8px;\"> <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/5bd3c879-281e-4051-8324-593a87838f3b.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/25a237c0-5aae-4b0f-b5b0-67115b8023ac.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/2be044db-4272-402c-9989-96f4ce098536.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/cd6ed18f-7036-4686-90e7-73018e1fc9bd.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/a8a78aeb-057b-4dde-a809-bbfc28270676.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/09e25c55-3536-470b-ad17-8a0a86dac5e0.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/a9be8fec-b4c7-4c86-904e-06abee045b46.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/1163e0b6-3b0f-4a62-88ea-50744c1dbe52.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/a131d54c-bcc1-4c82-abd0-030e29242032.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/9410bc78-3fa6-4b61-b070-f7d540c9c7f8.svg\"> </span></div>"
-            },
-            "id": "generated-f2790722-cda4-487b-86e4-50868779a2ce",
-            "children": [],
-            "appearance": {
-              "resolutionConfig": {
-                "XS": {
-                  "background": {},
-                  "isVisible": false
-                },
-                "SM": {
-                  "background": {},
-                  "isVisible": false
-                },
-                "MD": {
-                  "background": {},
-                  "isVisible": true
-                },
-                "LG": {
-                  "background": {},
-                  "isVisible": false
-                },
-                "XL": {
-                  "background": {},
-                  "isVisible": false
-                }
-              }
-            }
-          },
-          {
-            "container": "HTMLContainer",
-            "data": {
-              "html": "<div style=\"display: flex; flex-wrap: wrap; align-items: center;\"><!-- Bonus icon and text --> <img style=\"width: auto; height: 35px;\" src=\"/cdn/2eaecbff-e89e-4dab-989a-c50dba15a404.svg\" alt=\"Bonus Icon\"> <span style=\"font-size: 18px; font-weight: 800; padding-right: 30px; height: 22px;\"> <span style=\"color: #00ef8b;\">200%</span> Deposit Bonus </span> <!-- First payment logos (now with fixed size) --> <span style=\"padding-right: 60px;\"> <img style=\"width: 42px; height: 28px; margin-left: 10px;\" src=\"/cdn/Logos/for-cashier/2feaa413-a53d-46c1-8377-acfbc7c160b9.svg\"> <img style=\"width: 42px; height: 28px;\" src=\"/cdn/7ee5180f-7f32-4d12-802c-7282c4998a8d.svg\"> <img style=\"width: 42px; height: 28px;\" src=\"/cdn/Logos/for-cashier/4a66e33e-1613-4dc9-bc09-f96de05a57e1.svg\"> <img style=\"width: 42px; height: 28px;\" src=\"/cdn/Logos/for-cashier/438da982-946b-4119-b882-70ffd42d355c.svg\"> <img style=\"width: 42px; height: 28px;\" src=\"/cdn/Logos/for-cashier/0fc6a86e-5c28-4c9b-a70c-6839a448899f.svg\"> </span> <!-- Last 10 cryptocurrency logos (won't break line) --> <span style=\"white-space: nowrap; display: inline-block; margin-top: 8px;\"> <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/5bd3c879-281e-4051-8324-593a87838f3b.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/25a237c0-5aae-4b0f-b5b0-67115b8023ac.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/2be044db-4272-402c-9989-96f4ce098536.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/cd6ed18f-7036-4686-90e7-73018e1fc9bd.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/a8a78aeb-057b-4dde-a809-bbfc28270676.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/09e25c55-3536-470b-ad17-8a0a86dac5e0.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/a9be8fec-b4c7-4c86-904e-06abee045b46.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/1163e0b6-3b0f-4a62-88ea-50744c1dbe52.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/a131d54c-bcc1-4c82-abd0-030e29242032.svg\">&nbsp; <img style=\"height: auto; width: auto;\" src=\"/cdn/Logos/Cryptocurrencies/9410bc78-3fa6-4b61-b070-f7d540c9c7f8.svg\"> </span></div>"
-            },
-            "id": "generated-3ad1ba3c-25ee-4b17-874e-4782c628da35",
-            "children": [],
-            "appearance": {
-              "resolutionConfig": {
-                "XS": {
-                  "background": {},
-                  "isVisible": false
-                },
-                "SM": {
-                  "background": {},
-                  "isVisible": false
-                },
-                "MD": {
-                  "background": {},
-                  "isVisible": false
-                },
-                "LG": {
-                  "background": {},
-                  "isVisible": true
-                },
-                "XL": {
-                  "background": {},
-                  "isVisible": true
-                }
-              }
-            }
-          },
-          {
-            "container": "GenericButtonContainer",
-            "data": {
-              "title": "Deposit Now",
-              "color": "primary",
-              "width": "auto",
-              "height": "medium",
-              "action": {
-                "type": "OPEN_OVERLAY",
-                "overlayClass": "wallet",
-                "overlayParams": "FIRST",
-                "loggedOutVisible": true
-              },
-              "resolutionConfig": {
-                "XS": {
-                  "viewType": "TITLE"
-                },
-                "SM": {
-                  "viewType": "TITLE"
-                },
-                "MD": {
-                  "viewType": "TITLE"
-                },
-                "LG": {
-                  "viewType": "TITLE"
-                },
-                "XL": {
-                  "viewType": "TITLE"
-                }
-              }
-            },
-            "id": "generated-2c167142-fb67-40ac-9a47-4eceb2ee93cc",
-            "children": [],
-            "appearance": {
-              "resolutionConfig": {
-                "XS": {
-                  "padding": "15px 0px 0px 0px",
-                  "background": {},
-                  "isVisible": true
-                },
-                "SM": {
-                  "padding": "15px 0px 0px 0px",
-                  "background": {},
-                  "isVisible": true
-                },
-                "MD": {
-                  "background": {},
-                  "isVisible": true
-                },
-                "LG": {
-                  "background": {},
-                  "isVisible": true
-                },
-                "XL": {
-                  "background": {},
-                  "isVisible": true
-                }
-              }
-            }
-          }
-        ],
-        "appearance": {
-          "resolutionConfig": {
-            "XS": {
-              "background": {
-                "color": "linear-gradient(180deg, rgba(27, 42, 65, 0.7) -0.26%, rgba(71, 81, 112, 0.7) 99.74%)"
-              },
-              "isVisible": false
-            },
-            "SM": {
-              "background": {
-                "color": "linear-gradient(180deg, rgba(27, 42, 65, 0.7) -0.26%, rgba(71, 81, 112, 0.7) 99.74%)"
-              },
-              "isVisible": false
-            },
-            "MD": {
-              "padding": "10px 15px 10px 25px",
-              "background": {
-                "color": "linear-gradient(180deg, rgba(27, 42, 65, 0.7) -0.26%, rgba(71, 81, 112, 0.7) 99.74%)"
-              },
-              "border": "1px solid #494F65",
-              "borderRadius": "8px",
-              "isVisible": true
-            },
-            "LG": {
-              "padding": "10px 10px 10px 25px",
-              "background": {
-                "color": "linear-gradient(180deg, rgba(27, 42, 65, 0.7) -0.26%, rgba(71, 81, 112, 0.7) 99.74%)"
-              },
-              "border": "1px solid #494F65",
-              "borderRadius": "8px",
-              "isVisible": true
-            },
-            "XL": {
-              "padding": "10px 10px 10px 10px",
-              "background": {
-                "color": "linear-gradient(180deg, rgba(27, 42, 65, 0.7) -0.26%, rgba(71, 81, 112, 0.7) 99.74%)"
-              },
-              "border": "1px solid #494F65",
-              "borderRadius": "8px",
-              "isVisible": true
-            }
-          }
-        }
-      },
-      {
-        "container": "ColumnContainer",
-        "data": {
-          "columns": [
-            {
-              "l10nReferenceId": "c5646361-d144-4c07-b20f-6d70c0b4fee3",
-              "containers": [
-                "5ad7df1b-b886-4205-9cbd-cdb48079f2fb",
-                "eb562932-08ef-42d6-a278-63ceff4198e7"
-              ]
-            }
-          ],
-          "justifyColumnContent": false,
-          "resolutionConfig": {
-            "XS": {
-              "titleFontSize": 16,
-              "horizontalAlignment": "CENTER",
-              "verticalSpacing": 10.0,
-              "justifyContent": "SPACE_EVENLY",
-              "columnCount": 1
-            },
-            "SM": {
-              "titleFontSize": 16,
-              "horizontalAlignment": "CENTER",
-              "verticalSpacing": 10.0,
-              "justifyContent": "SPACE_EVENLY",
-              "columnCount": 1
-            },
-            "MD": {
-              "titleFontSize": 16,
-              "horizontalAlignment": "CENTER",
-              "verticalSpacing": 10.0,
-              "justifyContent": "SPACE_EVENLY",
-              "columnCount": 1
-            },
-            "LG": {
-              "titleFontSize": 16,
-              "horizontalAlignment": "CENTER",
-              "verticalSpacing": 10.0,
-              "justifyContent": "SPACE_EVENLY",
-              "columnCount": 1
-            },
-            "XL": {
-              "titleFontSize": 16,
-              "horizontalAlignment": "CENTER",
-              "verticalSpacing": 10.0,
-              "justifyContent": "SPACE_EVENLY",
-              "columnCount": 1
-            }
-          }
-        },
-        "id": "ed5b9181-9eaf-4478-ade7-fb461bca9730",
-        "children": [
-          {
-            "container": "HTMLContainer",
-            "data": {
-              "html": "<h1 style=\"font-size: 34px; font-weight: bold; line-height: 41.15px; text-align: center;\">Over 4,000 Crypto Casino Games!</h1>\n<p style=\"font-size: 16px; font-weight: 400; line-height: 24px; text-align: center;\">We've partnered with leading crypto casino game providers to offer the thrill of 4,000+ casino slots, live tables, and much more.</p>"
-            },
-            "id": "5ad7df1b-b886-4205-9cbd-cdb48079f2fb",
-            "children": [],
-            "appearance": {
-              "resolutionConfig": {
-                "XS": {
-                  "background": {},
-                  "isVisible": true
-                },
-                "SM": {
-                  "background": {},
-                  "isVisible": true
-                },
-                "MD": {
-                  "background": {},
-                  "isVisible": true
-                },
-                "LG": {
-                  "background": {},
-                  "isVisible": true
-                },
-                "XL": {
-                  "background": {},
-                  "isVisible": true
-                }
-              }
-            }
-          },
-          {
-            "container": "GamesCategoryHeadlessContainer",
-            "data": {
-              "initialState": {
-                "totalItems": 30,
-                "data": [
-                  {
-                    "id": "1f400c04-dbc0-4606-9573-47a254ee255f",
-                    "name": "Coin's Casino Bonanza 1000",
-                    "imageUrl": "/cdn/f663d9ca-344a-4cb2-bab2-db3d0866317a.jpg",
-                    "realPlayUrl": "/casino/pragmatic-play/coin-s-casino-bonanza-1000/play",
-                    "demoPlayUrl": "/casino/pragmatic-play/coin-s-casino-bonanza-1000/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "dcec1adc-400d-4a44-acf0-ce38e1d0e0a7",
-                    "name": "Dolphin's Pearl Deluxe Buy Bonus",
-                    "imageUrl": "/cdn/093e9d36-3954-4ce0-93d6-d57f8ac4c430.jpg",
-                    "realPlayUrl": "/casino/novomatic/dolphin-s-pearl-deluxe-buy-bonus/play",
-                    "demoPlayUrl": "/casino/novomatic/dolphin-s-pearl-deluxe-buy-bonus/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "97b0066f-bd96-4b04-9f92-c027986d9bd9",
-                    "name": "Coin Joker",
-                    "imageUrl": "/cdn/d0aba4cb-b156-4374-bee1-adb4526b9a06.jpg",
-                    "realPlayUrl": "/casino/spinomenal/coin-joker/play",
-                    "demoPlayUrl": "/casino/spinomenal/coin-joker/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "7accaaaa-fb62-40e7-9eb2-a305580074c3",
-                    "name": "Wanted Dead or a Wild",
-                    "imageUrl": "/cdn/20c5f940-1140-4bc9-9ef1-bd4bcb579a86.jpg",
-                    "realPlayUrl": "/casino/hacksaw/wanted-dead-or-a-wild/play",
-                    "demoPlayUrl": "/casino/hacksaw/wanted-dead-or-a-wild/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "4f5fa572-5725-489b-963a-a09faf8560ab",
-                    "name": "Gates of Olympus 1000",
-                    "imageUrl": "/cdn/imported_games_images/PRAGMATIC/PRAGMATIC/vs20olympx/952c60fc-9da4-480a-be0b-0cb8ef8156af.jpg",
-                    "realPlayUrl": "/casino/pragmatic-play/gates-of-olympus-1000/play",
-                    "demoPlayUrl": "/casino/pragmatic-play/gates-of-olympus-1000/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "84db728d-86de-491a-9262-e92dbdbaaedc",
-                    "name": "Vulcan's Gold",
-                    "imageUrl": "/cdn/imported_games_images/HUB88/Fantasma/fan_vulcansgold/4194089d-68d4-4d19-91a6-960641039d5a.jpg",
-                    "realPlayUrl": "/casino/fantasma/vulcan-s-gold/play",
-                    "demoPlayUrl": "/casino/fantasma/vulcan-s-gold/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "9bb62b44-868b-4cb9-bea6-cbea97905290",
-                    "name": "Ze Zeus",
-                    "imageUrl": "/cdn/29eb28b0-7456-488d-86d2-1659f57e8bed.jpg",
-                    "realPlayUrl": "/casino/hacksaw/ze-zeus/play",
-                    "demoPlayUrl": "/casino/hacksaw/ze-zeus/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "61000268-11ad-47e2-9a06-e2dca80f84d2",
-                    "name": "Gemhalla",
-                    "imageUrl": "/cdn/77af28f4-c0ed-4f1b-b5fb-9b795946174e.jpg",
-                    "realPlayUrl": "/casino/bgaming-1/gemhalla/play",
-                    "demoPlayUrl": "/casino/bgaming-1/gemhalla/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "6e1d18f4-8ee5-4ff1-b803-0981cf50a32b",
-                    "name": "3 Pyramids of Gold: Hold & Win",
-                    "imageUrl": "/cdn/imported_games_images/N2/Octoplay/103087/b90a2f75-8900-4539-a57d-271bdc768683.jpg",
-                    "realPlayUrl": "/casino/penguin-king/3-pyramids-of-gold-hold-win/play",
-                    "demoPlayUrl": "/casino/penguin-king/3-pyramids-of-gold-hold-win/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "d353c03b-3f25-4a05-905a-3ae103f25b87",
-                    "name": "Book of Dead",
-                    "imageUrl": "/cdn/62c52fc4-13c6-47a4-8465-d1c9bf2982f3.jpg",
-                    "realPlayUrl": "/casino/play-n-go/book-of-dead/play",
-                    "demoPlayUrl": "/casino/play-n-go/book-of-dead/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "b52a8d96-9f32-4fe7-a0b2-62bdbbf0b710",
-                    "name": "Le Viking",
-                    "imageUrl": "/cdn/7a072325-5ffb-48e5-ac65-c293e85e843c.jpg",
-                    "realPlayUrl": "/casino/hacksaw/le-viking/play",
-                    "demoPlayUrl": "/casino/hacksaw/le-viking/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "af5c2b27-f7d6-4207-a69a-7ab163a824e1",
-                    "name": "Book of Ra deluxe",
-                    "imageUrl": "/cdn/imported_games_images/N2/Novomatic/102016/d7c7b5bd-6cf5-4561-bfe0-e6f046a4a3fe.jpg",
-                    "realPlayUrl": "/casino/novomatic/book-of-ra-deluxe/play",
-                    "demoPlayUrl": "/casino/novomatic/book-of-ra-deluxe/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "695cd7a1-afde-4c8b-8b60-4bc6c86083e3",
-                    "name": "Live Roulette",
-                    "imageUrl": "/cdn/imported_games_images/RA_BETER/RA_BETER/launch_main_rol_01/08668aff-e18c-42f0-88d1-b96a33fc3353.jpg",
-                    "realPlayUrl": "/casino/iconic21/live-roulette/play",
-                    "demoPlayUrl": "/casino/iconic21/live-roulette/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "e590ee84-a7a3-487a-816e-3fe1bb256f20",
-                    "name": "Cash Wheel Carnival",
-                    "imageUrl": "/cdn/c024d36a-73b2-49ce-abc6-7bf8c83b1ae3.jpg",
-                    "realPlayUrl": "/casino/microgaming-live/cash-wheel-carnival/play",
-                    "demoPlayUrl": "/casino/microgaming-live/cash-wheel-carnival/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "85a511fc-da9f-44b3-928e-9d592bf57003",
-                    "name": "Oasis VIP Blackjack",
-                    "imageUrl": "/cdn/f52e6587-6cfc-4fba-b801-bc17ec8da82a.jpg",
-                    "realPlayUrl": "/casino/iconic21/oasis-vip-blackjack/play",
-                    "demoPlayUrl": "/casino/iconic21/oasis-vip-blackjack/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "b24fceda-0cf8-4666-a58b-7ebeb886f92a",
-                    "name": "VIP Blackjack",
-                    "imageUrl": "/cdn/imported_games_images/RA_BETER/RA_BETER/launch_rom_main_vip_bj_1/a7715675-8a5b-4fc3-87fc-8af462deed75.jpg",
-                    "realPlayUrl": "/casino/iconic21/vip-blackjack/play",
-                    "demoPlayUrl": "/casino/iconic21/vip-blackjack/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "793ed2fd-330d-4d3b-9f15-17afa265b4af",
-                    "name": "Roulette 1",
-                    "imageUrl": "/cdn/imported_games_images/HUB88/Live88/bbl_roulette1/2e7f2b1a-9052-46c7-93a6-31c1fdfd52bc.jpg",
-                    "realPlayUrl": "/casino/live88/roulette-1/play",
-                    "demoPlayUrl": "/casino/live88/roulette-1/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "3d2d34c1-75f8-4740-bd42-7cb04f47efa9",
-                    "name": "Agent Spinity",
-                    "imageUrl": "/cdn/96922b84-0ef8-49f7-93c6-22942d57dc9a.jpg",
-                    "realPlayUrl": "/casino/winfinity/agent-spinity/play",
-                    "demoPlayUrl": "/casino/winfinity/agent-spinity/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "4a76e03f-c358-4bfa-a86d-e57746dc5bab",
-                    "name": "3 Coin Volcanoеs",
-                    "imageUrl": "/cdn/imported_games_images/HUB88/3Oaks/oak_3coinvolcanos/c0cc8c44-443d-46b3-a433-ba10209af55d.jpg",
-                    "realPlayUrl": "/casino/3oaks/3-coin-volcano%D0%B5s/play",
-                    "demoPlayUrl": "/casino/3oaks/3-coin-volcano%D0%B5s/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "af902de4-9d63-4512-abec-f2492f1841ec",
-                    "name": "Reactoonz",
-                    "imageUrl": "/cdn/298867f7-480a-4ab3-8655-937a98089ec1.jpg",
-                    "realPlayUrl": "/casino/play-n-go/reactoonz/play",
-                    "demoPlayUrl": "/casino/play-n-go/reactoonz/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "9c7feb2a-27a8-46e5-aec8-5033aeb2b2fc",
-                    "name": "AVIATOR",
-                    "imageUrl": "/cdn/imported_games_images/HUB88/Spribe/sbe_aviator/08a51398-9a16-4c62-851f-d34def73aefd.jpg",
-                    "realPlayUrl": "/casino/spribe/aviator/play",
-                    "demoPlayUrl": "/casino/spribe/aviator/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "350cc839-c0f1-448d-9597-289edf21d3fa",
-                    "name": "Lucky Lady's Charm deluxe",
-                    "imageUrl": "/cdn/imported_games_images/N2/Novomatic/102000/35edc867-aef4-4ad5-a34f-8479ef0398da.jpg",
-                    "realPlayUrl": "/casino/novomatic/lucky-lady-s-charm-deluxe/play",
-                    "demoPlayUrl": "/casino/novomatic/lucky-lady-s-charm-deluxe/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "b68a5a09-c51d-4973-8698-abe9cc4fc174",
-                    "name": "Le King",
-                    "imageUrl": "/cdn/eca48aa7-c692-4d75-a124-2c21737bc3cc.jpg",
-                    "realPlayUrl": "/casino/hacksaw/le-king/play",
-                    "demoPlayUrl": "/casino/hacksaw/le-king/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "5e749418-1919-4ffe-a274-8547e5cbc023",
-                    "name": "Moon Princess Trinity",
-                    "imageUrl": "/cdn/bef5ce97-9b9f-4047-9719-0ba6b4a8bff8.jpg",
-                    "realPlayUrl": "/casino/play-n-go/moon-princess-trinity/play",
-                    "demoPlayUrl": "/casino/play-n-go/moon-princess-trinity/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "b22abf87-5a76-44c4-943e-e13931da6cb5",
-                    "name": "HipHopPop",
-                    "imageUrl": "/cdn/imported_games_images/RA_AVATAR_UX/RA_AVATAR_UX/hip-hop-pop/5bede54c-4598-4c40-b8eb-8f9468e76126.jpg",
-                    "realPlayUrl": "/casino/avatarux-1/hiphoppop/play",
-                    "demoPlayUrl": "/casino/avatarux-1/hiphoppop/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "093dc486-61dc-4646-85fb-831590557b18",
-                    "name": "Hand of Anubis",
-                    "imageUrl": "/cdn/20a2bd00-19d8-401d-aa87-25d82a10f86b.jpg",
-                    "realPlayUrl": "/casino/hacksaw/hand-of-anubis/play",
-                    "demoPlayUrl": "/casino/hacksaw/hand-of-anubis/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "269c0c62-e289-44f4-a5cc-11292fc24012",
-                    "name": "Craps",
-                    "imageUrl": "/cdn/f23edb6d-ecf7-4a04-920d-3d6898c4237e.jpg",
-                    "realPlayUrl": "/casino/play-n-go/craps/play",
-                    "demoPlayUrl": "/casino/play-n-go/craps/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "db8fc6d5-06a0-4c6e-b0c2-1cf426cf2eb4",
-                    "name": "TikiPop",
-                    "imageUrl": "/cdn/imported_games_images/RA_AVATAR_UX/RA_AVATAR_UX/tiki-pop/5849e854-0ac9-4e4a-87c3-d3c187d799d4.jpg",
-                    "realPlayUrl": "/casino/avatarux-1/tikipop/play",
-                    "demoPlayUrl": "/casino/avatarux-1/tikipop/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "4c3987b3-d0bf-4946-8576-752e71ccc70a",
-                    "name": "Rocket Chimp Jackpot",
-                    "imageUrl": "/cdn/imported_games_images/HUB88/Mascot-Gaming/mscg_rocketchimpjackpot/c77a6619-e415-471e-8ed0-b7c679b83d53.jpg",
-                    "realPlayUrl": "/casino/mascot-gaming/rocket-chimp-jackpot/play",
-                    "demoPlayUrl": "/casino/mascot-gaming/rocket-chimp-jackpot/demo",
-                    "hasDemo": true
-                  },
-                  {
-                    "id": "13152f34-875b-4e1c-9ebe-d8e46605332b",
-                    "name": "Viking Runecraft",
-                    "imageUrl": "/cdn/232fdecf-0f46-4c72-9736-4d9af1cf7279.jpg",
-                    "realPlayUrl": "/casino/play-n-go/viking-runecraft/play",
-                    "demoPlayUrl": "/casino/play-n-go/viking-runecraft/demo",
-                    "hasDemo": true
-                  }
-                ],
-                "page": 1,
-                "size": 30
-              },
-              "fetchUrl": "cms-service/api/frontend/casino/category-games/21b75e58-be9b-4fe8-a729-3b2dd1880190",
-              "resolutionsConfig": {
-                "XS": {
-                  "itemsPerRow": 4,
-                  "aspectRatioPercentage": 0,
-                  "headingFontFamily": "SECONDARY",
-                  "headingFontSize": 16,
-                  "headingFontWeight": "BOLD",
-                  "viewMoreFontFamily": "PRIMARY",
-                  "viewMoreFontSize": 15,
-                  "viewMoreFontWeight": "BOLD"
-                },
-                "SM": {
-                  "itemsPerRow": 4,
-                  "aspectRatioPercentage": 0,
-                  "headingFontFamily": "SECONDARY",
-                  "headingFontSize": 16,
-                  "headingFontWeight": "BOLD",
-                  "viewMoreFontFamily": "PRIMARY",
-                  "viewMoreFontSize": 15,
-                  "viewMoreFontWeight": "BOLD"
-                },
-                "MD": {
-                  "itemsPerRow": 6,
-                  "aspectRatioPercentage": 0,
-                  "headingFontFamily": "SECONDARY",
-                  "headingFontSize": 16,
-                  "headingFontWeight": "BOLD",
-                  "viewMoreFontFamily": "PRIMARY",
-                  "viewMoreFontSize": 15,
-                  "viewMoreFontWeight": "BOLD"
-                },
-                "LG": {
-                  "itemsPerRow": 6,
-                  "aspectRatioPercentage": 0,
-                  "headingFontFamily": "SECONDARY",
-                  "headingFontSize": 16,
-                  "headingFontWeight": "BOLD",
-                  "viewMoreFontFamily": "PRIMARY",
-                  "viewMoreFontSize": 15,
-                  "viewMoreFontWeight": "BOLD"
-                },
-                "XL": {
-                  "itemsPerRow": 6,
-                  "aspectRatioPercentage": 0,
-                  "headingFontFamily": "SECONDARY",
-                  "headingFontSize": 16,
-                  "headingFontWeight": "BOLD",
-                  "viewMoreFontFamily": "PRIMARY",
-                  "viewMoreFontSize": 15,
-                  "viewMoreFontWeight": "BOLD"
-                }
-              },
-              "aspectRatioPercentage": 127,
-              "id": "21b75e58-be9b-4fe8-a729-3b2dd1880190"
-            },
-            "id": "eb562932-08ef-42d6-a278-63ceff4198e7",
-            "children": [],
-            "appearance": {
-              "resolutionConfig": {
-                "XS": {
-                  "background": {},
-                  "isVisible": true
-                },
-                "SM": {
-                  "background": {},
-                  "isVisible": true
-                },
-                "MD": {
-                  "background": {},
-                  "isVisible": true
-                },
-                "LG": {
-                  "background": {},
-                  "width": "100%",
-                  "isVisible": true
-                },
-                "XL": {
-                  "background": {},
-                  "width": "100%",
-                  "isVisible": true
-                }
-              }
-            }
-          }
-        ],
-        "appearance": {
-          "resolutionConfig": {
-            "XS": {
-              "background": {},
-              "width": "",
-              "isVisible": true
-            },
-            "SM": {
-              "background": {},
-              "isVisible": true
-            },
-            "MD": {
-              "background": {},
-              "isVisible": true
-            },
-            "LG": {
-              "background": {},
-              "width": "100%",
-              "isVisible": true
-            },
-            "XL": {
-              "background": {},
-              "width": "100%",
-              "isVisible": true
-            }
-          }
-        }
-      },
-      {
         "container": "CarouselContainer",
         "data": {
           "rotationTime": 4,
@@ -10268,10 +9762,7 @@
               "columns": [
                 {
                   "id": "313817f9-f8da-4950-8e74-6de4bcbe4f6e",
-                  "containers": [
-                    "63cc37d2-45ab-4897-bbef-5c22eaf39892",
-                    "8e4e2888-35a2-4539-b157-b58e617418c6"
-                  ]
+                  "containers": ["63cc37d2-45ab-4897-bbef-5c22eaf39892"]
                 }
               ],
               "resolutionConfig": {
@@ -10302,7 +9793,7 @@
                 }
               }
             },
-            "id": "generated-66566f27-c83a-4a72-b278-02728c2d70cd",
+            "id": "generated-132aa6b4-a4b4-451b-aa1d-190e3ad86067",
             "children": [
               {
                 "container": "HTMLContainer",
@@ -10318,67 +9809,6 @@
                       "isVisible": true
                     },
                     "SM": {
-                      "background": {},
-                      "isVisible": true
-                    },
-                    "MD": {
-                      "background": {},
-                      "isVisible": true
-                    },
-                    "LG": {
-                      "background": {},
-                      "isVisible": true
-                    },
-                    "XL": {
-                      "background": {},
-                      "isVisible": true
-                    }
-                  }
-                }
-              },
-              {
-                "container": "GenericButtonContainer",
-                "data": {
-                  "title": "Deposit Now",
-                  "color": "primary",
-                  "width": "full",
-                  "height": "medium",
-                  "action": {
-                    "type": "OPEN_OVERLAY",
-                    "overlayClass": "wallet",
-                    "overlayParams": "FIRST",
-                    "loggedOutVisible": true
-                  },
-                  "resolutionConfig": {
-                    "XS": {
-                      "viewType": "TITLE"
-                    },
-                    "SM": {
-                      "viewType": "TITLE"
-                    },
-                    "MD": {
-                      "viewType": "TITLE"
-                    },
-                    "LG": {
-                      "viewType": "TITLE"
-                    },
-                    "XL": {
-                      "viewType": "TITLE"
-                    }
-                  },
-                  "buttonVariant": "contained"
-                },
-                "id": "8e4e2888-35a2-4539-b157-b58e617418c6",
-                "children": [],
-                "appearance": {
-                  "resolutionConfig": {
-                    "XS": {
-                      "padding": "0px 20px",
-                      "background": {},
-                      "isVisible": true
-                    },
-                    "SM": {
-                      "padding": "0px 20px",
                       "background": {},
                       "isVisible": true
                     },
@@ -10447,10 +9877,7 @@
               "columns": [
                 {
                   "id": "3b36713c-3eb0-469d-818b-9662705afa87",
-                  "containers": [
-                    "e7ccdc7d-af83-449e-b89b-e3fb71ba36b6",
-                    "bffe7ea9-97ad-4edf-986a-b8ff50a3ba27"
-                  ]
+                  "containers": ["e7ccdc7d-af83-449e-b89b-e3fb71ba36b6"]
                 }
               ],
               "resolutionConfig": {
@@ -10481,7 +9908,7 @@
                 }
               }
             },
-            "id": "generated-3a16aee6-4079-414d-acd9-218698287662",
+            "id": "generated-58739041-3c7e-4fce-8c89-c0e2a79f3ea1",
             "children": [
               {
                 "container": "HTMLContainer",
@@ -10497,67 +9924,6 @@
                       "isVisible": true
                     },
                     "SM": {
-                      "background": {},
-                      "isVisible": true
-                    },
-                    "MD": {
-                      "background": {},
-                      "isVisible": true
-                    },
-                    "LG": {
-                      "background": {},
-                      "isVisible": true
-                    },
-                    "XL": {
-                      "background": {},
-                      "isVisible": true
-                    }
-                  }
-                }
-              },
-              {
-                "container": "GenericButtonContainer",
-                "data": {
-                  "title": "Deposit Now",
-                  "color": "primary",
-                  "width": "full",
-                  "height": "medium",
-                  "action": {
-                    "type": "OPEN_OVERLAY",
-                    "overlayClass": "wallet",
-                    "overlayParams": "FIRST",
-                    "loggedOutVisible": true
-                  },
-                  "resolutionConfig": {
-                    "XS": {
-                      "viewType": "TITLE"
-                    },
-                    "SM": {
-                      "viewType": "TITLE"
-                    },
-                    "MD": {
-                      "viewType": "TITLE"
-                    },
-                    "LG": {
-                      "viewType": "TITLE"
-                    },
-                    "XL": {
-                      "viewType": "TITLE"
-                    }
-                  },
-                  "buttonVariant": "contained"
-                },
-                "id": "bffe7ea9-97ad-4edf-986a-b8ff50a3ba27",
-                "children": [],
-                "appearance": {
-                  "resolutionConfig": {
-                    "XS": {
-                      "padding": "0px 20px",
-                      "background": {},
-                      "isVisible": true
-                    },
-                    "SM": {
-                      "padding": "0px 20px",
                       "background": {},
                       "isVisible": true
                     },
@@ -10626,10 +9992,7 @@
               "columns": [
                 {
                   "id": "ff1a39fb-19ca-4169-aa49-23af19c125a7",
-                  "containers": [
-                    "7dc6124d-540b-453a-8fcb-fc23f34dfe0b",
-                    "9352724d-2675-4154-b475-cf30d017d1b7"
-                  ]
+                  "containers": ["7dc6124d-540b-453a-8fcb-fc23f34dfe0b"]
                 }
               ],
               "resolutionConfig": {
@@ -10660,7 +10023,7 @@
                 }
               }
             },
-            "id": "generated-d5c6dfca-1c3a-4434-b57f-83e83e862615",
+            "id": "generated-a8022c2f-03ac-48d4-a17c-769458c6f90f",
             "children": [
               {
                 "container": "HTMLContainer",
@@ -10676,67 +10039,6 @@
                       "isVisible": true
                     },
                     "SM": {
-                      "background": {},
-                      "isVisible": true
-                    },
-                    "MD": {
-                      "background": {},
-                      "isVisible": true
-                    },
-                    "LG": {
-                      "background": {},
-                      "isVisible": true
-                    },
-                    "XL": {
-                      "background": {},
-                      "isVisible": true
-                    }
-                  }
-                }
-              },
-              {
-                "container": "GenericButtonContainer",
-                "data": {
-                  "title": "Deposit Now",
-                  "color": "primary",
-                  "width": "full",
-                  "height": "medium",
-                  "action": {
-                    "type": "OPEN_OVERLAY",
-                    "overlayClass": "wallet",
-                    "overlayParams": "FIRST",
-                    "loggedOutVisible": true
-                  },
-                  "resolutionConfig": {
-                    "XS": {
-                      "viewType": "TITLE"
-                    },
-                    "SM": {
-                      "viewType": "TITLE"
-                    },
-                    "MD": {
-                      "viewType": "TITLE"
-                    },
-                    "LG": {
-                      "viewType": "TITLE"
-                    },
-                    "XL": {
-                      "viewType": "TITLE"
-                    }
-                  },
-                  "buttonVariant": "contained"
-                },
-                "id": "9352724d-2675-4154-b475-cf30d017d1b7",
-                "children": [],
-                "appearance": {
-                  "resolutionConfig": {
-                    "XS": {
-                      "padding": "0px 20px",
-                      "background": {},
-                      "isVisible": true
-                    },
-                    "SM": {
-                      "padding": "0px 20px",
                       "background": {},
                       "isVisible": true
                     },
@@ -10902,12 +10204,15 @@
           {
             "container": "GenericColumnContainer",
             "data": {
-              "content": "Choose from hundreds of sports markets!",
-              "thumbnail": "offer4.png",
-              "button": {
-                "label": "Deposit Now",
-                "color": "purple"
-              },
+              "columns": [
+                {
+                  "id": "3b895d8a-36a8-4068-b639-7d0a248d3121",
+                  "containers": [
+                    "333cee7a-8baa-4b51-9f00-6d2fb5e2ee0a",
+                    "1979d745-7c8f-49c7-9207-16bbb0ec8ce4"
+                  ]
+                }
+              ],
               "resolutionConfig": {
                 "XS": {
                   "alignItems": "CENTER",
@@ -10941,12 +10246,7 @@
               {
                 "container": "HTMLContainer",
                 "data": {
-                  "content": "Choose from hundreds of sports markets!",
-                  "thumbnail": "offer4.png",
-                  "button": {
-                    "label": "Deposit Now",
-                    "color": "purple"
-                  }
+                  "html": "<table style=\"border-collapse: collapse; width: 100%;\" border=\"0\"><colgroup><col style=\"width: 100%;\"></colgroup>\n<tbody>\n<tr>\n<td>\n<p style=\"margin: auto;\"><a><img style=\"border-top-left-radius: 12px; border-top-right-radius: 12px;\" src=\"/cdn/ef4b6ef7-4623-42ff-a526-aceef0f50071.png\" width=\"100%\"></a></p>\n</td>\n</tr>\n<tr>\n<td style=\"height: 20px; vertical-align: top;\">\n<p style=\"font-weight: 400; font-size: 19.04px; text-align: center; vertical-align: middle; color: #dddddd; padding: 0px 10px 0px 10px; height: 69px;\">Choose from hundreds of sports markets!</p>\n</td>\n</tr>\n</tbody>\n</table>"
                 },
                 "id": "333cee7a-8baa-4b51-9f00-6d2fb5e2ee0a",
                 "children": [],
@@ -11085,12 +10385,15 @@
           {
             "container": "GenericColumnContainer",
             "data": {
-              "content": "Play over 4,000 slots from your favorite providers!",
-              "thumbnail": "offer5.png",
-              "button": {
-                "color": "purple",
-                "label": "Deposit Now"
-              },
+              "columns": [
+                {
+                  "id": "ee2a3013-90d0-4e46-91e4-8374701cef5c",
+                  "containers": [
+                    "ebad8653-d7b6-4878-89aa-b455a3602e70",
+                    "95b07366-73ca-4d1a-82b2-3b82e64270ce"
+                  ]
+                }
+              ],
               "resolutionConfig": {
                 "XS": {
                   "alignItems": "CENTER",
@@ -11263,12 +10566,15 @@
           {
             "container": "GenericColumnContainer",
             "data": {
-              "content": "100s of live tables and dealers!",
-              "thumbnail": "offer6.png",
-              "button": {
-                "color": "purple",
-                "label": "Deposit Now"
-              },
+              "columns": [
+                {
+                  "id": "1d45ee4a-dbfc-4935-b656-3e065b65989e",
+                  "containers": [
+                    "62b71813-ee1a-4cb5-88f8-c99ab8384480",
+                    "25fe77ab-d0b7-4253-b25b-9c7b524ec7b6"
+                  ]
+                }
+              ],
               "resolutionConfig": {
                 "XS": {
                   "alignItems": "CENTER",
@@ -12016,27 +11322,36 @@
             "appearance": {
               "resolutionConfig": {
                 "XS": {
-                  "backgroundColor": "#12151B",
-
+                  "background": {
+                    "color": "#12151B"
+                  },
                   "isVisible": true
                 },
                 "SM": {
-                  "backgroundColor": "#12151B",
+                  "background": {
+                    "color": "#12151B"
+                  },
                   "isVisible": true
                 },
                 "MD": {
                   "padding": "0px 0px 20px 0px",
-                  "backgroundColor": "#12151B",
+                  "background": {
+                    "color": "#12151B"
+                  },
                   "border": "1px solid #494F65",
                   "borderRadius": "20px ",
                   "isVisible": true
                 },
                 "LG": {
-                  "backgroundColor": "#12151B",
+                  "background": {
+                    "color": "#12151B"
+                  },
                   "isVisible": true
                 },
                 "XL": {
-                  "backgroundColor": "#12151B",
+                  "background": {
+                    "color": "#12151B"
+                  },
                   "isVisible": true
                 }
               }
@@ -12099,7 +11414,7 @@
             "data": {
               "html": "<h3 style=\"text-align: center;\">Trusted By</h3>"
             },
-            "id": "generated-adc134f7-6118-48f4-932d-a572fa896dce",
+            "id": "generated-0a9b2de0-1d12-49b4-945f-2f767961e067",
             "children": [],
             "appearance": {
               "resolutionConfig": {
@@ -12134,7 +11449,7 @@
             "data": {
               "html": "<p style=\"text-align: center;\"><span style=\"font-size: 20px; font-weight: 600;\">Trusted by</span></p>"
             },
-            "id": "generated-e297cbb1-8bac-48de-9e99-6f36f79d485e",
+            "id": "generated-1518c7c7-ecfe-4f1e-86a4-055b164088be",
             "children": [],
             "appearance": {
               "resolutionConfig": {
@@ -12194,7 +11509,7 @@
                 "XL": 10
               }
             },
-            "id": "generated-858e0723-bce6-44e9-942d-bfc6a5960989",
+            "id": "generated-5b8165e1-907a-4006-ad59-594cb42121de",
             "children": [],
             "appearance": {
               "resolutionConfig": {
@@ -12226,31 +11541,41 @@
           "resolutionConfig": {
             "XS": {
               "padding": "32px 0px",
-              "backgroundColor": "#12151B",
+              "background": {
+                "color": "#12151B"
+              },
               "width": "100%",
               "isVisible": true
             },
             "SM": {
               "padding": "32px 0px",
-              "backgroundColor": "#12151B",
+              "background": {
+                "color": "#12151B"
+              },
               "width": "100%",
               "isVisible": true
             },
             "MD": {
               "padding": "20px 0px",
-              "backgroundColor": "#12151B",
+              "background": {
+                "color": "#12151B"
+              },
               "width": "100%",
               "isVisible": true
             },
             "LG": {
               "padding": "20px 0px",
-              "backgroundColor": "#12151B",
+              "background": {
+                "color": "#12151B"
+              },
               "width": "100%",
               "isVisible": true
             },
             "XL": {
               "padding": "20px 5px",
-              "backgroundColor": "#12151B",
+              "background": {
+                "color": "#12151B"
+              },
               "width": "100%",
               "isVisible": true
             }
@@ -12294,226 +11619,226 @@
         "data": {
           "feed": [
             {
-              "referenceId": "9521070d-e45d-4373-8a7b-68391087b037",
-              "gameName": "Vegas Kingmaker 40",
-              "username": "w3r*****nT5",
-              "eventTime": "2025-08-27T08:25:52.926Z",
-              "stake": "0.000102732724000000",
-              "multiplier": "5.250000019467993470",
-              "payout": "0.000436614079000000",
-              "currency": "ETH",
-              "stakeSystem": "0.399650702038157960"
+              "referenceId": "d68a0133-7f13-49bf-bf9b-7647c1ecfe44",
+              "gameName": "Plinko Pop",
+              "username": "to****ud",
+              "eventTime": "2025-09-02T13:53:42.798Z",
+              "stake": "0.007520000000000000",
+              "multiplier": "1.000000000000000000",
+              "payout": "0.000000000000000000",
+              "currency": "SOL",
+              "stakeSystem": "1.289166174474106878"
             },
             {
-              "referenceId": "151af1b3-33dc-4f5d-bbeb-727c434f159c",
-              "gameName": "Go High Safari",
-              "username": "Rm****yy",
-              "eventTime": "2025-08-27T08:25:50.135Z",
-              "stake": "0.000005298871000000",
-              "multiplier": "3.000000188719446086",
-              "payout": "0.000010597743000000",
-              "currency": "BTC",
-              "stakeSystem": "0.499636847984532968"
+              "referenceId": "57fcf5ce-f1a0-410f-962b-c4e7c049d5c5",
+              "gameName": "Lucky Fruity Coin",
+              "username": "Ign*****oul",
+              "eventTime": "2025-09-02T13:53:41.246Z",
+              "stake": "0.001821000000000000",
+              "multiplier": "1.000000000000000000",
+              "payout": "0.000000000000000000",
+              "currency": "LTC",
+              "stakeSystem": "0.171744533055484616"
             },
             {
-              "referenceId": "738b7b5a-bcfa-4fbc-8ab0-ffe047c4276a",
-              "gameName": "5 Burning Heart",
-              "username": "Ove*****ed",
-              "eventTime": "2025-08-27T08:25:48.583Z",
-              "stake": "0.000110221541000000",
-              "multiplier": "6.000000036290546872",
-              "payout": "0.000551107709000000",
-              "currency": "ETH",
-              "stakeSystem": "0.428783687662926285"
+              "referenceId": "a8af5e35-6584-4d0c-bf15-c41408be95e3",
+              "gameName": "Legacy of Dead",
+              "username": "DR***RY",
+              "eventTime": "2025-09-02T13:53:38.875Z",
+              "stake": "0.003179000000000000",
+              "multiplier": "3.000314564328405159",
+              "payout": "0.006359000000000000",
+              "currency": "LTC",
+              "stakeSystem": "0.299822004713556065"
             },
             {
-              "referenceId": "91f66b91-130c-4f9e-896d-688bbb1c1620",
-              "gameName": "Soccer Solo Striker",
-              "username": "St***3",
-              "eventTime": "2025-08-27T08:25:47.847Z",
-              "stake": "1.000000000000000000",
-              "multiplier": "8.000000000000000000",
-              "payout": "7.000000000000000000",
+              "referenceId": "05330ee2-f694-4dc8-82a6-f194ff1dc74a",
+              "gameName": "Cosmic Jokers",
+              "username": "",
+              "eventTime": "2025-09-02T13:53:37.024Z",
+              "stake": "0.199672000000000000",
+              "multiplier": "5.000000000000000000",
+              "payout": "0.798688000000000000",
+              "currency": "USDT",
+              "stakeSystem": "0.171630812511141055"
+            },
+            {
+              "referenceId": "64368502-b5f2-4344-aedd-309bc2cbdf73",
+              "gameName": "Lucky Lady's Charm deluxe",
+              "username": "Ta***oi",
+              "eventTime": "2025-09-02T13:53:34.383Z",
+              "stake": "2.000000000000000000",
+              "multiplier": "0.400000000000000000",
+              "payout": "-1.200000000000000000",
               "currency": "EUR",
-              "stakeSystem": "1.000000000000000000"
+              "stakeSystem": "2.000000000000000000"
             },
             {
-              "referenceId": "0b474b05-a9c3-496f-b88c-cbfa4087be16",
-              "gameName": "Sweet Bonanza",
-              "username": "oB***1",
-              "eventTime": "2025-08-27T08:25:44.016Z",
-              "stake": "0.000002274560000000",
-              "multiplier": "0.000000000000000000",
-              "payout": "-0.000002274560000000",
-              "currency": "BTC",
-              "stakeSystem": "0.214470967296939161"
-            },
-            {
-              "referenceId": "e73a6071-6839-49ae-9d97-988d8e865d61",
-              "gameName": "City Heat",
-              "username": "1**80",
-              "eventTime": "2025-08-27T08:25:43.276Z",
-              "stake": "0.002204430835000000",
-              "multiplier": "4.200000000000000000",
-              "payout": "0.007054178672000000",
+              "referenceId": "b7a21797-9364-4825-89f4-21410d58ad81",
+              "gameName": "Age of Seth",
+              "username": "Ri****yg",
+              "eventTime": "2025-09-02T13:53:33.185Z",
+              "stake": "0.000046413840000000",
+              "multiplier": "5.000000000000000000",
+              "payout": "0.000185655360000000",
               "currency": "ETH",
-              "stakeSystem": "8.575673811611505141"
+              "stakeSystem": "0.171773260060905189"
             },
             {
-              "referenceId": "09722660-849f-4c3e-b5a1-cb596713b6e8",
-              "gameName": "Rad Maxx",
-              "username": "plo*****pe",
-              "eventTime": "2025-08-27T08:25:41.088Z",
-              "stake": "0.400000000000000000",
-              "multiplier": "0.500000000000000000",
-              "payout": "-0.200000000000000000",
+              "referenceId": "ce78178b-c77f-4e21-95ed-c2dcd06ea642",
+              "gameName": "3x3: 27 Ways",
+              "username": "Re***et",
+              "eventTime": "2025-09-02T13:53:30.826Z",
+              "stake": "0.999857000000000000",
+              "multiplier": "12.000002000286040904",
+              "payout": "10.998429000000000000",
+              "currency": "USDC",
+              "stakeSystem": "0.859320451797052445"
+            },
+            {
+              "referenceId": "e2509647-a1b7-4dba-b161-bee8e3cd0786",
+              "gameName": "Le King",
+              "username": "Luc******828",
+              "eventTime": "2025-09-02T13:53:28.415Z",
+              "stake": "5.000000000000000000",
+              "multiplier": "7.100000000000000000",
+              "payout": "30.500000000000000000",
               "currency": "EUR",
-              "stakeSystem": "0.400000000000000000"
+              "stakeSystem": "5.000000000000000000"
             },
             {
-              "referenceId": "9d6bfcdb-e7a5-47f5-8f64-9b363f4ee759",
-              "gameName": "The Legend of Musashi",
-              "username": "PG***Zy",
-              "eventTime": "2025-08-27T08:25:39.073Z",
-              "stake": "0.000513663622000000",
-              "multiplier": "2.000000001946799339",
-              "payout": "0.000513663623000000",
-              "currency": "ETH",
-              "stakeSystem": "1.998253517971187056"
+              "referenceId": "8eb3da7f-5d3c-4960-b7f0-45c35b25ca40",
+              "gameName": "Lucky Fruity Coin",
+              "username": "Ign*****oul",
+              "eventTime": "2025-09-02T13:53:27.679Z",
+              "stake": "0.001821000000000000",
+              "multiplier": "1.400329489291598023",
+              "payout": "0.000729000000000000",
+              "currency": "LTC",
+              "stakeSystem": "0.171744533055484616"
             },
             {
-              "referenceId": "7989e6b5-2214-4d38-9fb8-db4cfb8f7d0c",
-              "gameName": "5 Burning Heart",
-              "username": "Ove*****ed",
-              "eventTime": "2025-08-27T08:25:37.607Z",
-              "stake": "0.000110221541000000",
-              "multiplier": "12.000000081653730463",
-              "payout": "0.001212436960000000",
-              "currency": "ETH",
-              "stakeSystem": "0.428783687662926285"
-            },
-            {
-              "referenceId": "d4894c39-18c4-4155-bf06-d9708f8a9d5c",
-              "gameName": "Rise of Olympus Origin",
-              "username": "Ka***k",
-              "eventTime": "2025-08-27T08:25:34.608Z",
-              "stake": "0.000013647362000000",
-              "multiplier": "0.099999985345153151",
-              "payout": "-0.000012282626000000",
-              "currency": "BTC",
-              "stakeSystem": "1.286825992364013357"
+              "referenceId": "6b679996-5c34-485a-bbf9-648f502a0e15",
+              "gameName": "AVIATOR",
+              "username": "To****el",
+              "eventTime": "2025-09-02T13:53:25.998Z",
+              "stake": "0.011668000000000000",
+              "multiplier": "2.110044566335275968",
+              "payout": "0.012952000000000000",
+              "currency": "SOL",
+              "stakeSystem": "2.000264750500515831"
             }
           ],
           "highStakesFeed": [
             {
-              "referenceId": "e73a6071-6839-49ae-9d97-988d8e865d61",
-              "gameName": "City Heat",
-              "username": "1**80",
-              "eventTime": "2025-08-27T08:25:43.276Z",
-              "stake": "0.002204430835000000",
-              "multiplier": "4.200000000000000000",
-              "payout": "0.007054178672000000",
+              "referenceId": "baf3a178-c2e1-4549-8067-e23d1fa3572e",
+              "gameName": "Coin Era 2: Hold to Win",
+              "username": "d7***8",
+              "eventTime": "2025-09-02T13:53:23.073Z",
+              "stake": "0.004641384008000000",
+              "multiplier": "47.000000009910836923",
+              "payout": "0.213503664414000000",
               "currency": "ETH",
-              "stakeSystem": "8.575673811611505141"
+              "stakeSystem": "17.177326035697767052"
             },
             {
-              "referenceId": "42d0a825-a9f1-485f-a359-09e730f1e4e7",
-              "gameName": "City Heat",
-              "username": "1**80",
-              "eventTime": "2025-08-27T08:25:09.345Z",
-              "stake": "0.002204430835000000",
-              "multiplier": "2.200000000000000000",
-              "payout": "0.002645317002000000",
-              "currency": "ETH",
-              "stakeSystem": "8.575673811611505141"
-            },
-            {
-              "referenceId": "9d7d9337-e627-455e-8e09-7ae24ef055c9",
-              "gameName": "City Heat",
-              "username": "1**80",
-              "eventTime": "2025-08-27T08:25:04.556Z",
-              "stake": "0.002204430835000000",
-              "multiplier": "1.200000000000000000",
-              "payout": "0.000440886167000000",
-              "currency": "ETH",
-              "stakeSystem": "8.575673811611505141"
-            },
-            {
-              "referenceId": "2f2e768b-6659-4603-9267-223faf8e207d",
-              "gameName": "City Heat",
-              "username": "1**80",
-              "eventTime": "2025-08-27T08:24:40.462Z",
-              "stake": "0.002204430835000000",
-              "multiplier": "1.200000000000000000",
-              "payout": "0.000440886167000000",
-              "currency": "ETH",
-              "stakeSystem": "8.575673811611505141"
-            },
-            {
-              "referenceId": "0f90936c-fb37-45f8-8f1b-06d96af926c5",
-              "gameName": "City Heat",
-              "username": "1**80",
-              "eventTime": "2025-08-27T08:24:24.074Z",
-              "stake": "0.002204430835000000",
+              "referenceId": "a064698e-22be-4365-9122-876ca302b53e",
+              "gameName": "Coin Era 2: Hold to Win",
+              "username": "d7***8",
+              "eventTime": "2025-09-02T13:52:40.087Z",
+              "stake": "0.002784830405000000",
               "multiplier": "0.000000000000000000",
-              "payout": "-0.002204430835000000",
+              "payout": "-0.002784830405000000",
               "currency": "ETH",
-              "stakeSystem": "8.575673811611505141"
+              "stakeSystem": "10.306395622158841436"
             },
             {
-              "referenceId": "80ca3590-403d-44e3-bb71-f7e93d5cac8e",
-              "gameName": "City Heat",
-              "username": "1**80",
-              "eventTime": "2025-08-27T08:24:20.071Z",
-              "stake": "0.002204430835000000",
-              "multiplier": "1.299999999773184084",
-              "payout": "0.000661329250000000",
+              "referenceId": "bcf82f89-f1eb-420d-9656-7f5f7e39e7dd",
+              "gameName": "Coin Era 2: Hold to Win",
+              "username": "d7***8",
+              "eventTime": "2025-09-02T13:52:09.748Z",
+              "stake": "0.003481038006000000",
+              "multiplier": "1.200000000229816508",
+              "payout": "0.000696207602000000",
               "currency": "ETH",
-              "stakeSystem": "8.575673811611505141"
+              "stakeSystem": "12.882994526773325289"
             },
             {
-              "referenceId": "e37000d3-4e8f-4d0d-9824-534403b2dff9",
-              "gameName": "City Heat",
-              "username": "1**80",
-              "eventTime": "2025-08-27T08:24:05.574Z",
-              "stake": "0.002204430835000000",
-              "multiplier": "5.200000000453631833",
-              "payout": "0.009258609508000000",
+              "referenceId": "04c74824-0f95-4039-913e-33ed2490c56c",
+              "gameName": "Coin Era 2: Hold to Win",
+              "username": "d7***8",
+              "eventTime": "2025-09-02T13:51:57.888Z",
+              "stake": "0.003481038006000000",
+              "multiplier": "1.000000000000000000",
+              "payout": "0.000000000000000000",
               "currency": "ETH",
-              "stakeSystem": "8.575673811611505141"
+              "stakeSystem": "12.882994526773325289"
             },
             {
-              "referenceId": "461ffd86-65f3-4c84-ad40-2552d8bcfc86",
-              "gameName": "City Heat",
-              "username": "1**80",
-              "eventTime": "2025-08-27T08:23:49.596Z",
-              "stake": "0.002204430835000000",
-              "multiplier": "8.200000000453631833",
-              "payout": "0.015871902013000000",
+              "referenceId": "961ae9f3-934c-4839-9f46-784126084dad",
+              "gameName": "Coin Era 2: Hold to Win",
+              "username": "d7***8",
+              "eventTime": "2025-09-02T13:51:43.526Z",
+              "stake": "0.002320692004000000",
+              "multiplier": "3.400000000603268334",
+              "payout": "0.005569660811000000",
               "currency": "ETH",
-              "stakeSystem": "8.575673811611505141"
+              "stakeSystem": "8.588663017848883526"
             },
             {
-              "referenceId": "5944a94f-8637-4faf-8dca-f5196c8b8ff2",
-              "gameName": "City Heat",
-              "username": "1**80",
-              "eventTime": "2025-08-27T08:23:31.618Z",
-              "stake": "0.002204430835000000",
-              "multiplier": "0.400000000000000000",
-              "payout": "-0.001322658501000000",
-              "currency": "ETH",
-              "stakeSystem": "8.575673811611505141"
+              "referenceId": "4141fe7f-9fca-4c56-ae96-de6e5c29a7a1",
+              "gameName": "Blackjack Vegas Strip",
+              "username": "",
+              "eventTime": "2025-09-02T13:51:30.454Z",
+              "stake": "0.037600000000000000",
+              "multiplier": "1.000000000000000000",
+              "payout": "0.000000000000000000",
+              "currency": "SOL",
+              "stakeSystem": "6.445830872370534390"
             },
             {
-              "referenceId": "7324d8c9-085d-42fe-bf19-75169f2d0e10",
-              "gameName": "City Heat",
-              "username": "1**80",
-              "eventTime": "2025-08-27T08:23:27.429Z",
-              "stake": "0.002204430835000000",
-              "multiplier": "1.200000000000000000",
-              "payout": "0.000440886167000000",
+              "referenceId": "3a8db971-ad0e-4f9c-b032-47e3f1308da3",
+              "gameName": "Coin Era 2: Hold to Win",
+              "username": "d7***8",
+              "eventTime": "2025-09-02T13:51:29.4Z",
+              "stake": "0.011603460022000000",
+              "multiplier": "7.400000000275779810",
+              "payout": "0.074262144144000000",
               "currency": "ETH",
-              "stakeSystem": "8.575673811611505141"
+              "stakeSystem": "42.943315096646229678"
+            },
+            {
+              "referenceId": "8e0cf0a4-af62-41eb-aa56-604128e544af",
+              "gameName": "Coin Era 2: Hold to Win",
+              "username": "d7***8",
+              "eventTime": "2025-09-02T13:51:11.371Z",
+              "stake": "0.005801730011000000",
+              "multiplier": "0.499999999913818809",
+              "payout": "-0.002900865006000000",
+              "currency": "ETH",
+              "stakeSystem": "21.471657548323114839"
+            },
+            {
+              "referenceId": "5e2699d9-eabe-473e-a1dc-fc1d03218c7f",
+              "gameName": "Hallowin",
+              "username": "dz***as",
+              "eventTime": "2025-09-02T13:51:09.826Z",
+              "stake": "49.918027000000000000",
+              "multiplier": "4.062000006530706833",
+              "payout": "152.848999000000000000",
+              "currency": "USDT",
+              "stakeSystem": "42.907726336006435407"
+            },
+            {
+              "referenceId": "918b9090-4962-4f16-80b4-f4dc773a87ae",
+              "gameName": "European Roulette Xmas",
+              "username": "D**R",
+              "eventTime": "2025-09-02T13:51:00.26Z",
+              "stake": "14.997858000000000000",
+              "multiplier": "3.000000000000000000",
+              "payout": "29.995716000000000000",
+              "currency": "USDC",
+              "stakeSystem": "12.889809355285843271"
             }
           ],
           "feedMaxSize": 10,

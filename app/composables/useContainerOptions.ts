@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import type { ContainerType } from '~/core/types/Container'
 
 const ALLOWED_STYLES: any = {
@@ -10,6 +11,7 @@ const ALLOWED_STYLES: any = {
   padding: 'padding',
   width: 'width',
   border: 'border',
+  borderRadius: 'borderRadius',
 }
 
 export const useContainerOptions = (options: ContainerType) => {
@@ -32,6 +34,25 @@ export const useContainerOptions = (options: ContainerType) => {
     }
   })
 
+  const dataOptions = computed(() => {
+    if (!options.data.resolutionConfig) return false
+
+    switch (name.value) {
+      case 'lg':
+        return options.data.resolutionConfig.LG
+      case 'md':
+        return options.data.resolutionConfig.MD
+      case 'sm':
+        return options.data.resolutionConfig.SM
+      case 'xl':
+        return options.data.resolutionConfig.XL
+      case 'xs':
+        return options.data.resolutionConfig.XS
+      default:
+        return options.data.resolutionConfig.LG
+    }
+  })
+
   const display = computed(() => currentOptions.value.isVisible)
   const styles = computed(() => {
     const resOptions = currentOptions.value
@@ -49,7 +70,6 @@ export const useContainerOptions = (options: ContainerType) => {
         style[ALLOWED_STYLES[k]] = options.data[k]
       }
     })
-    console.log(style)
     return style
   })
 
@@ -57,5 +77,6 @@ export const useContainerOptions = (options: ContainerType) => {
     currentOptions,
     display,
     styles,
+    dataOptions,
   }
 }

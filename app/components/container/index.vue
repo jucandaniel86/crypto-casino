@@ -11,8 +11,6 @@ const currentContent = ref(props.content)
 watch(props, () => {
   currentContent.value = props.content
 })
-
-console.log('re-rendered')
 </script>
 <template>
   <div class="root-container">
@@ -24,6 +22,16 @@ console.log('re-rendered')
       />
       <container-flex
         v-if="section.container === ContainerSection.FLEX_COLUMN"
+        :key="section.id"
+        :options="section"
+      />
+      <container-button
+        v-if="section.container === ContainerSection.BUTTON"
+        :key="section.id"
+        :options="section"
+      />
+      <container-flex-row
+        v-if="section.container === ContainerSection.FLEX_ROW"
         :key="section.id"
         :options="section"
       />
