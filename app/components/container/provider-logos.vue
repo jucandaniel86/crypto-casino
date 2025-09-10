@@ -14,7 +14,7 @@ const { display } = useContainerOptions(options)
           height: options.data.height,
         }"
       >
-        <img :src="`https://play.coincasino.com${provider.imageUrl}`" />
+        <img :src="provider.imageUrl" />
       </button>
     </v-slide-group-item>
     <template #next="{ next }">

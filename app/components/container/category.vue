@@ -14,19 +14,6 @@ const arrowDisabled = ref<boolean>(false)
 //composables
 const { style } = useResolutionVars(props.options.data.resolutionsConfig)
 
-//computed
-const title = computed(() => {
-  const emojy = props.options.data.title.match(/\p{Emoji}+/gu)
-  const text = props.options.data.title.replace(
-    /(\p{Emoji_Presentation}|\p{Extended_Pictographic})/gu,
-    '',
-  )
-  return {
-    emojy: emojy && typeof emojy[0] !== 'undefined' ? emojy[0] : '',
-    text,
-  }
-})
-
 //methods
 const { x } = useScroll(scrollContent, { behavior: 'smooth' })
 
@@ -103,8 +90,8 @@ const l = () => {
   <div>
     <div class="d-flex justify-space-between">
       <h3 class="category_header">
-        <span class="emojy">{{ title.emojy }}</span>
-        <span>{{ title.text }}</span>
+        <SharedIcon :icon="props.options.data.icon" class="svg-icon" style="fill: #fff" />
+        <span>{{ props.options.data.title }}</span>
       </h3>
 
       <a class="view-more">View All</a>

@@ -11,6 +11,12 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/app.css'],
 
+  runtimeConfig: {
+    public: {
+      baseURL: process.env.API_URL || 'https://api.example.com/',
+    },
+  },
+
   modules: [
     '@nuxt/eslint',
     '@nuxt/icon',

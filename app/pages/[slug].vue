@@ -2,7 +2,6 @@
 <script setup lang="ts">
 import { useAppStore } from '~/core/store/app'
 
-const { wait } = useUtils()
 const { setPageLoading } = useAppStore()
 const renderID = ref('')
 
@@ -11,8 +10,10 @@ const { data } = await useAsyncData(
   async () => {
     setPageLoading(true)
     const route = useRoute()
-    const pageData: any = await $fetch(`/json/pages/${route.params.slug}.json`)
-    await wait(700)
+    const pageData: any = await useAsyncData('page', () =>
+      useAPIFetch('/page/' + route.params.slug),
+    )
+
     useSeoContainer(pageData.seo)
 
     renderID.value = route.params.slug + '_' + new Date().getTime()

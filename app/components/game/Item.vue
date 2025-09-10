@@ -11,7 +11,7 @@ const router = useRouter()
 const reveal = ref(false)
 
 //computed
-const image = computed(() => `https://play.coincasino.com${props.game.imageUrl}?w=400`)
+const image = computed(() => `${props.game.imageUrl}`)
 
 //methods
 const goToGame = () => {
