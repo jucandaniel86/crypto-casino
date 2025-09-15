@@ -114,3 +114,14 @@ a.purple:hover {
 .v-date-picker-controls {
   border-bottom: 1px solid #fff;
 }
+
+.v-btn.back-btn {
+  background: none;
+  padding: 0;
+  color: #fff;
+}
+
+.v-btn.back-btn .v-btn__overlay,
+.v-btn.back-btn .v-btn__underlay {
+  display: none;
+}

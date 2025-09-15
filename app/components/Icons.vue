@@ -5,8 +5,6 @@ const icons = ref()
 const getIcons = async (): Promise<void> => {
   const { data } = await useAPIFetch('/icons')
   icons.value = data
-
-  console.log('ICONS', icons.value)
 }
 
 onMounted(() => {

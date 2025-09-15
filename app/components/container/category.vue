@@ -12,7 +12,8 @@ const currentIndex = ref(0)
 const arrowDisabled = ref<boolean>(false)
 
 //composables
-const { style } = useResolutionVars(props.options.data.resolutionsConfig)
+const resolutionsConfig = ref(props.options.data.resolutionsConfig)
+const { style } = useResolutionVars(resolutionsConfig.value)
 
 //methods
 const { x } = useScroll(scrollContent, { behavior: 'smooth' })
@@ -87,16 +88,22 @@ const l = () => {
 }
 </script>
 <template>
-  <div>
+  <div :id="props.options.id">
     <div class="d-flex justify-space-between">
       <h3 class="category_header">
-        <SharedIcon :icon="props.options.data.icon" class="svg-icon" style="fill: #fff" />
+        <SharedIcon
+          v-if="props.options.data?.icon"
+          :icon="props.options.data.icon"
+          class="svg-icon"
+          style="fill: #fff"
+        />
         <span>{{ props.options.data.title }}</span>
       </h3>
 
-      <a class="view-more">View All</a>
+      <NuxtLink :to="`/${props.options.data.slug}`" class="view-more">View All</NuxtLink>
     </div>
-    <div :style="style" class="game-carousel__container" ref="scrollContainer">
+
+    <div ref="scrollContainer" :style="style" class="game-carousel__container">
       <ul ref="scrollContent" class="game_ul_carousel_list" @scroll="onScroll">
         <li
           v-for="(game, i) in props.options.data.initialState.data"

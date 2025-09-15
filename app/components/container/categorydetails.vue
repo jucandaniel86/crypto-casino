@@ -2,22 +2,24 @@
 import type { ContainerType } from '~/core/types/Container'
 
 const { options } = defineProps<{ options: ContainerType }>()
-
-const resolutionsConfig = ref(options.data.resolutionsConfig)
-const { style, itemsPerRow } = useResolutionVars(resolutionsConfig.value)
+const { display } = useContainerOptions(options)
 const page = ref(options.data.initialState.page)
 const totalItems = ref(options.data.initialState.totalItems)
-const size = ref(options.data.initialState.size)
+const slug = options.data.slug
 const games = ref(options.data.initialState.data)
+const size = ref(options.data.initialState.size)
 const loading = ref<boolean>(false)
+
+const { style, itemsPerRow } = useResolutionVars(options.data.resolutionsConfig)
 
 const getGames = async (): Promise<void> => {
   if (page.value * size.value >= totalItems.value) return
 
   page.value = page.value += 1
   loading.value = true
+  const currentSlug = slug.replace('category/', '')
 
-  const { data } = await useAPIFetch(options.data.fetchUrl, {
+  const { data } = await useAPIFetch('/category/games/' + currentSlug, {
     page: page.value,
   })
 
@@ -31,7 +33,7 @@ const displayedGames = computed(() => {
 })
 </script>
 <template>
-  <div :id="options.id" :key="options.id">
+  <div v-if="display">
     <Teleport :to="'body'">
       <div
         v-if="loading"
@@ -40,6 +42,13 @@ const displayedGames = computed(() => {
         <v-progress-circular color="purple" indeterminate />
       </div>
     </Teleport>
+
+    <div class="d-flex justify-center align-center mt-2 mb-2">
+      <h1 class="d-flex ga-2 justify-center align-center w-100">
+        <SharedIcon v-if="options.data.icon" :icon="options.data.icon" class="svg-icon" />
+        <span class="text-white">{{ options.data.title }}</span>
+      </h1>
+    </div>
     <div class="mb-4">
       <ul ref="scrollContent" class="game_ul_list" :style="style">
         <li v-for="(game, index) in displayedGames" :key="index">

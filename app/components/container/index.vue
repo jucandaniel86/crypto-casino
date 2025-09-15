@@ -85,6 +85,11 @@ watch(props, () => {
         :key="section.id"
         :options="section"
       />
+      <container-categorydetails
+        v-if="section.container === ContainerSection.CATEGORY_DETAILS"
+        :key="section.id"
+        :options="section"
+      />
       <container-accordion
         v-if="section.container === ContainerSection.ACCORDION"
         :key="section.id"

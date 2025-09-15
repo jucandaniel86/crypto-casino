@@ -17,6 +17,7 @@ export enum ContainerSection {
   CATEGORY_HEADLESS = 'GamesCategoryHeadlessContainer',
   ACCORDION = 'AccordionContainer',
   BUTTON = 'GenericButtonContainer',
+  CATEGORY_DETAILS = 'GamesCategoryDetailsContainer',
 }
 
 export type ResolutionConfig = {

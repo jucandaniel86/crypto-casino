@@ -1,54 +1,67 @@
 .app-search {
-  /* background: var(--background-hover-color);
-    border: var(--input-hover-focus-border); */
   --v-input-control-height: 46px !important;
-  /* background-color: var(--input-background-color); */
   margin-top: 4px;
-}
-
-.app-search .v-input--density-default .v-field--no-label {
   --v-input-control-height: 42px;
-}
-
-.app-search .v-field--variant-solo,
-.app-search .v-field--variant-solo-filled {
-  background-color: var(--input-background-color);
   min-height: auto !important;
-  padding: 8px var(--input-padding);
-}
 
-.app-search:hover .v-field--variant-solo,
-.app-search:hover .v-field--variant-solo-filled {
-  background-color: var(--input-hover-background-color);
-}
-
-.v-field--rounded {
-  border-radius: var(--input-border-radius) !important;
-}
-
-.app-search .v-field--variant-solo,
-.v-field--variant-solo-filled {
   box-shadow: none;
 }
 
-.v-autocomplete.app-search .v-field__input {
-  padding-bottom: 0 !important;
-  min-height: auto !important;
+.app-search .v-field {
+  background-color: var(--input-background-color);
+  border-radius: var(--input-border-radius) !important;
 }
 
-.v-autocomplete.app-search .v-field .v-field__input > input,
-.v-autocomplete.app-search .v-field .v-field__input > input::placeholder {
-  top: 0;
-  color: var(--text-color);
-  font-weight: var(--input-font-weight);
-  font-size: var(--input-font-size);
-  line-height: var(--input-height);
+.app-search:hover .v-field {
+  background-color: var(--input-hover-background-color);
 }
 
-.v-autocomplete.app-search .v-field__prepend-inner {
+.app-search:hover .v-field__input {
+  background: none !important;
+}
+
+.app-search .v-field__prepend-inner,
+.app-search .v-icon {
   color: #fff;
+  opacity: 1 !important;
 }
 
-.v-autocomplete.app-search .v-field__prepend-inner .v-icon {
-  opacity: 1 !important;
+/**  background-color: var(--input-hover-background-color); **/
+
+.v-card.search-results {
+  background: var(--search-results-bgcolor) !important;
+  box-shadow: none !important;
+  top: 50px;
+  z-index: 99;
+}
+
+.search__title {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.b-bottom {
+  border-bottom: 1px solid #fff;
+}
+
+.game-search-list {
+  display: grid;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.game-search-list .game__item {
+  box-sizing: border-box;
+  height: 100%;
+  overflow: visible;
+  padding: 4px;
+  width: 100%;
+}
+
+.results__title {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
 }
