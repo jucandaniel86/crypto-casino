@@ -95,6 +95,36 @@ watch(props, () => {
         :key="section.id"
         :options="section"
       />
+      <container-promotions
+        v-if="section.container === ContainerSection.PROMOTIONS"
+        :key="section.id"
+        :options="section"
+      />
+      <container-promotion-image
+        v-if="section.container === ContainerSection.PROMO_IMAGE"
+        :key="section.id"
+        :options="section"
+      />
+      <container-promotion-title
+        v-if="section.container === ContainerSection.PROMO_TITLE"
+        :key="section.id"
+        :options="section"
+      />
+      <container-promotion-subtitle
+        v-if="section.container === ContainerSection.PROMO_SUBTITLE"
+        :key="section.id"
+        :options="section"
+      />
+      <container-promotion-description
+        v-if="section.container === ContainerSection.PROMO_DESCRIPTION"
+        :key="section.id"
+        :options="section"
+      />
+      <container-promotion-button
+        v-if="section.container === ContainerSection.PROMO_BUTTON"
+        :key="section.id"
+        :options="section"
+      />
     </template>
   </div>
 </template>

@@ -1,6 +1,10 @@
 import moment from 'moment'
+import { useAuthStore } from '~/core/store/auth'
+import { OverlaysTypes } from '~/core/types/Overlays'
 
 export const useUtils = () => {
+  const router = useRouter()
+
   const wait = (duration: number) => new Promise((resolve) => setTimeout(resolve, duration))
 
   const onImagesLoadingEnded = () => {
@@ -24,10 +28,21 @@ export const useUtils = () => {
     return moment(date).format(format)
   }
 
+  const openOverlay = (overlay: OverlaysTypes) => {
+    const { isLogged } = useAuthStore()
+
+    if (!isLogged && overlay === OverlaysTypes.WALLET) {
+      return router.replace({ query: { overlay: OverlaysTypes.LOGIN } })
+    }
+
+    return router.replace({ query: { overlay } })
+  }
+
   return {
     wait,
     onImagesLoadingEnded,
     convertCurrency,
     convertDate,
+    openOverlay,
   }
 }

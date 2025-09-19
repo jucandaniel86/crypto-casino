@@ -11,7 +11,7 @@ const loadPage = async (): Promise<void> => {
   setPageLoading(true)
   const route = useRoute()
   const page = route.params.slug
-  const pageData: any = await useAPIFetch('/page/' + page)
+  const pageData: any = await useAPIFetch('/promotion/' + page)
 
   if (pageData && pageData.seo) {
     useSeoContainer(pageData.seo)

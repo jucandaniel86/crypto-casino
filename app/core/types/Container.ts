@@ -18,6 +18,12 @@ export enum ContainerSection {
   ACCORDION = 'AccordionContainer',
   BUTTON = 'GenericButtonContainer',
   CATEGORY_DETAILS = 'GamesCategoryDetailsContainer',
+  PROMOTIONS = 'PromotionsContainer',
+  PROMO_IMAGE = 'PromotionImageContainer',
+  PROMO_TITLE = 'PromotionTitleContainer',
+  PROMO_SUBTITLE = 'PromotionSubTitleContainer',
+  PROMO_DESCRIPTION = 'PromotionDescriptionContainer',
+  PROMO_BUTTON = 'PromotionButtonContainer',
 }
 
 export type ResolutionConfig = {
