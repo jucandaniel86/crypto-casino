@@ -1,40 +1,19 @@
-<!-- eslint-disable @typescript-eslint/no-explicit-any -->
 <script setup lang="ts">
-import type { ContainerType } from "~/core/types/Container";
+import type { ContainerType } from '~/core/types/Container'
+import type { BannerItem } from '../shared/BannerItem.vue'
 
-const { options } = defineProps<{ options: ContainerType }>();
-const { display, dataOptions } = useContainerOptions(options);
+const { options } = defineProps<{ options: ContainerType }>()
+const { display, styles } = useContainerOptions(options)
 
-const style: any = computed(() => {
-  if (dataOptions.value.visibleItemsCount) {
-    return { "--slider-visible-items-count": dataOptions.value.visibleItemsCount };
-  }
-  return {};
-});
+const banners: BannerItem[] = options.data.banners
 </script>
 <template>
-  <v-slide-group
-    v-if="display"
-    :id="options.id"
-    show-arrows
-    :style="style"
-    class="custom-slider"
-  >
-    <v-slide-group-item
-      v-for="(child, i) in options.children"
-      :key="`${options.id}_${i}`"
-    >
-      <container-html :options="child" />
-    </v-slide-group-item>
-    <template #next="{ next }">
-      <button class="carousel_btn next" @click.prevent="next">
-        <IconPlay />
-      </button>
-    </template>
-    <template #prev="{ prev }">
-      <button class="carousel_btn prev" @click.prevent="prev">
-        <IconPlay />
-      </button>
-    </template>
-  </v-slide-group>
+  <div v-if="display" :id="options.id" :style="styles">
+    <v-carousel :continuous="false" :show-arrows="false" height="300" hide-delimiter-background>
+      <!-- <v-carousel-item v-for="(slide, i) in slides" :key="i"> </v-carousel-item> -->
+      <v-carousel-item v-for="(banner, i) in banners" :key="i">
+        <shared-banner-item :option="banner" />
+      </v-carousel-item>
+    </v-carousel>
+  </div>
 </template>

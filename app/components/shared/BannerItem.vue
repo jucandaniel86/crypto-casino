@@ -1,57 +1,80 @@
 <!-- eslint-disable vue/no-dupe-keys -->
 <script setup lang="ts">
-//types
-type ContentRulesType = {
-  alignment: string
-  bannerTextFontShadow: boolean
-  headingFontSize: number
-  imageUrl: string
-  secondaryFontSize: number
-  verticalAlignment: number
-}
+import { ButtonActionTypesEnum } from '~/core/types/ActionButton'
+import type { OverlaysTypes } from '~/core/types/Overlays'
 
-type BannerItemButton = {
-  loggedOutVisible: boolean
-  overlayClass: string
-  overlayParams: string
-  type: string
+export type BannerActionButton = {
+  actionType: ButtonActionTypesEnum
+  slug?: string
+  url?: string
+  overlay?: string
+  isSameTab?: number
 }
-
 export type BannerItem = {
   contentRules: {
-    LG: ContentRulesType
-    MD: ContentRulesType
-    SM: ContentRulesType
-    XL: ContentRulesType
-    XS: ContentRulesType
+    LG: string
+    MD: string
+    SM: string
+    XL: string
+    XS: string
   }
   name: string
-  primaryCta: BannerItemButton
-  type: string
+  action: BannerActionButton
 }
 
 const { name } = useDisplay()
 const props = defineProps<{ option: BannerItem }>()
+const router = useRouter()
+const { openOverlay } = useUtils()
 
 const currentImage = computed(() => {
   switch (name.value) {
     case 'lg':
-      return props.option.contentRules.LG.imageUrl
+      return props.option.contentRules.LG
     case 'md':
-      return props.option.contentRules.MD.imageUrl
+      return props.option.contentRules.MD
     case 'sm':
-      return props.option.contentRules.SM.imageUrl
+      return props.option.contentRules.SM
     case 'xl':
-      return props.option.contentRules.XL.imageUrl
+      return props.option.contentRules.XL
     case 'xs':
-      return props.option.contentRules.XS.imageUrl
+      return props.option.contentRules.XS
     default:
-      return props.option.contentRules.LG.imageUrl
+      return props.option.contentRules.LG
   }
 })
+
+const handleClickAction = () => {
+  switch (props.option.action.actionType) {
+    case ButtonActionTypesEnum.OPEN_INTERNAL_PAGE: {
+      if (props.option.action.slug) {
+        return router.push(props.option.action.slug)
+      }
+      return null
+    }
+    case ButtonActionTypesEnum.OPEN_OVERLAY: {
+      if (props.option.action.overlay) {
+        openOverlay(props.option.action.overlay as OverlaysTypes)
+      }
+      return null
+    }
+    case ButtonActionTypesEnum.OPEN_EXTERNAL_PAGE: {
+      let whereToOpen = '_self'
+      if (!props.option.action.isSameTab) {
+        whereToOpen = '_blank'
+      }
+      if (props.option.action.url) {
+        return window.open(props.option.action.url, whereToOpen)
+      }
+      return null
+    }
+    default:
+      return null
+  }
+}
 </script>
 <template>
-  <div classs="d-flex justify-center align-center">
-    <img :src="currentImage" style="min-width: 100%" />
+  <div classs="d-flex justify-center align-center" @click.prevent="handleClickAction">
+    <v-img :src="currentImage" style="min-width: 100%" />
   </div>
 </template>

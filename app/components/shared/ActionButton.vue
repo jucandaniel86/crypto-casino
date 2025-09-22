@@ -8,7 +8,6 @@ const router = useRouter()
 const { openOverlay } = useUtils()
 
 const handleAction = () => {
-  console.log(props.action)
   switch (props.action.type) {
     case ButtonActionTypesEnum.OPEN_INTERNAL_PAGE: {
       if (props.action.slug) {

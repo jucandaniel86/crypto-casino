@@ -24,6 +24,8 @@ export enum ContainerSection {
   PROMO_SUBTITLE = 'PromotionSubTitleContainer',
   PROMO_DESCRIPTION = 'PromotionDescriptionContainer',
   PROMO_BUTTON = 'PromotionButtonContainer',
+  BONUS = 'HomepageBonusContainer',
+  OFFER = 'HomepageOfferContainer',
 }
 
 export type ResolutionConfig = {

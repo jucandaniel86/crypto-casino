@@ -125,6 +125,21 @@ watch(props, () => {
         :key="section.id"
         :options="section"
       />
+      <container-logos
+        v-if="section.container === ContainerSection.LOGOS"
+        :key="section.id"
+        :options="section"
+      />
+      <container-bonus
+        v-if="section.container === ContainerSection.BONUS"
+        :key="section.id"
+        :options="section"
+      />
+      <container-offer
+        v-if="section.container === ContainerSection.OFFER"
+        :key="section.id"
+        :options="section"
+      />
     </template>
   </div>
 </template>
