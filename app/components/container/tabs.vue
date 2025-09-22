@@ -9,13 +9,17 @@ const currentTab = ref(props.options.data.tabs[0].internalName)
 const currentContent = ref(props.options.children)
 const disabled = ref<boolean>(false)
 const isLoading = ref<boolean>(false)
+const lastTab = ref<string>()
 
 const onTabsChanged = async (tag: string) => {
+  if (tag === lastTab.value) return
+
   disabled.value = true
   isLoading.value = true
 
   const data: any = await useAPIFetch(`${props.options.data.fetchUrl}${tag}`)
 
+  lastTab.value = tag
   currentContent.value = data
   disabled.value = false
   isLoading.value = false
@@ -34,6 +38,7 @@ const onTabsChanged = async (tag: string) => {
     <v-tab
       v-for="(tab, i) in options.data.tabs"
       :key="`Tab${i}`"
+      :value="tab.internalName"
       @click.prevent="onTabsChanged(tab.internalName)"
     >
       <shared-icon-label :label="tab.tabName" :icon="tab.iconCode" :fill="'currentColor'" />

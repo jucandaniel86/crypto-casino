@@ -4,7 +4,6 @@ import type { ContainerType } from '~/core/types/Container'
 import type { GameType } from '~/core/types/Game'
 
 const { options } = defineProps<{ options: ContainerType }>()
-const { display } = useContainerOptions(options)
 const { itemsPerRow } = useResolutionVars(options.data.resolutionConfig)
 
 const search = ref<string>('')
@@ -55,7 +54,8 @@ watch(menu, () => {
 onClickOutside(target, () => (menu.value = false))
 </script>
 <template>
-  <div v-if="display" ref="SearchResultsContainer" class="w-100 position-relative">
+  <div ref="SearchResultsContainer" class="w-100 position-relative">
+    HERE. I
     <v-text-field
       v-model="search"
       hide-details
