@@ -13,6 +13,7 @@ const props = defineProps<FormLanguageT>()
 //models
 const loading = ref(false)
 const items = ref<LanguageItem[]>([])
+const model = defineModel<string>({ default: '' })
 
 const getLanguages = async (): Promise<void> => {
   loading.value = true
@@ -29,6 +30,7 @@ onMounted(() => {
   <div>
     <div class="text-subtitle-1 text-white">{{ props.label }}</div>
     <v-select
+      v-model="model"
       :loading="loading"
       :items="items"
       density="compact"

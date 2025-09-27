@@ -33,6 +33,10 @@ watch(
 onMounted(() => {
   loadPage()
 })
+
+definePageMeta({
+  middleware: 'auth',
+})
 </script>
 <template>
   <Container v-if="data" :key="renderID" :content="data.children.main" />

@@ -1,6 +1,8 @@
 export const useAppStore = defineStore('app', () => {
   const pageLoading = ref(false)
   const sidebarOpen = ref(false)
+  const snackbar = ref(false)
+  const snackbarMessage = ref('')
 
   const setPageLoading = (loading: boolean) => {
     pageLoading.value = loading
@@ -14,9 +16,22 @@ export const useAppStore = defineStore('app', () => {
     sidebarOpen.value = !sidebarOpen.value
   }
 
+  const setSnackbar = (message: string) => {
+    snackbarMessage.value = message
+    toggleSnackbar(true)
+  }
+
+  const toggleSnackbar = (_payload: boolean) => {
+    snackbar.value = _payload
+  }
+
   return {
     pageLoading,
     sidebarOpen,
+    snackbar,
+    snackbarMessage,
+    setSnackbar,
+    toggleSnackbar,
     setPageLoading,
     setSidebarOpen,
     toggleSidebar,

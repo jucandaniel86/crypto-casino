@@ -87,3 +87,15 @@ svg {
   height: 100%;
   overflow-y: scroll;
 }
+
+.v-date-picker-years__content .v-btn,
+.v-date-picker-months__content .v-btn {
+  background-color: rgba(255, 255, 255) !important;
+  margin-top: 5px;
+  padding: 0 !important;
+  border-radius: 2px !important;
+}
+
+.v-date-picker-months__content .v-btn.v-btn--active {
+  background-color: var(--active-tab-indicator) !important;
+}

@@ -33,12 +33,14 @@ const convertAmount = (amount: number, decimals = 8) => new Number(amount).toFix
       <v-tabs-window-item value="allBets">
         <table class="betfeed__table">
           <thead>
-            <th>Game</th>
-            <th v-if="isDesktop">User</th>
-            <th v-if="isDesktop">Time</th>
-            <th v-if="isDesktop">Bet Amount</th>
-            <th v-if="isDesktop">Multiplier</th>
-            <th>Payout</th>
+            <tr>
+              <th>Game</th>
+              <th v-if="isDesktop">User</th>
+              <th v-if="isDesktop">Time</th>
+              <th v-if="isDesktop">Bet Amount</th>
+              <th v-if="isDesktop">Multiplier</th>
+              <th>Payout</th>
+            </tr>
           </thead>
           <tbody>
             <tr v-for="(feed, i) in options.data.feed" :key="`${options.id}_feed${i}`">

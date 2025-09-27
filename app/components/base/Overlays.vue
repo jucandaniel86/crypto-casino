@@ -1,10 +1,12 @@
 <script setup lang="ts">
+import { useAuthStore } from '~/core/store/auth'
 import { OverlaysTypes } from '~/core/types/Overlays'
 
 const overlayView = ref()
 const dialog = ref<boolean>(false)
 const route = useRoute()
 const { replace } = useRouter()
+const { isLogged } = storeToRefs(useAuthStore())
 
 const onClose = () => replace({ query: {} })
 
@@ -56,13 +58,13 @@ watch(dialog, () => {
     close-delay="300"
     class="overlay-bg"
   >
-    <overlay-header @on-close="onClose" />
-    <auth-register v-if="overlayView === 'register'" @change-view="changeView" />
+    <overlay-header v-if="!isLogged" @on-close="onClose" />
+    <auth-register v-if="overlayView === 'register' && !isLogged" @change-view="changeView" />
     <auth-login v-if="overlayView === 'login'" @change-view="changeView" />
   </v-navigation-drawer>
 
   <v-dialog
-    v-if="[OverlaysTypes.WALLET].indexOf(overlayView) !== -1"
+    v-if="[OverlaysTypes.WALLET].indexOf(overlayView) !== -1 && isLogged"
     v-model="dialog"
     persistent
     transition="dialog-bottom-transition"

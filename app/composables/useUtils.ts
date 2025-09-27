@@ -7,6 +7,9 @@ export const useUtils = () => {
 
   const wait = (duration: number) => new Promise((resolve) => setTimeout(resolve, duration))
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const isset = (_var: any) => _var === null || typeof _var !== 'undefined'
+
   const onImagesLoadingEnded = () => {
     return Promise.all(
       Array.from(document.images)
@@ -34,12 +37,16 @@ export const useUtils = () => {
     if (!isLogged && overlay === OverlaysTypes.WALLET) {
       return router.replace({ query: { overlay: OverlaysTypes.LOGIN } })
     }
+    if (isLogged && overlay === OverlaysTypes.REGISTER) {
+      return false
+    }
 
     return router.replace({ query: { overlay } })
   }
 
   return {
     wait,
+    isset,
     onImagesLoadingEnded,
     convertCurrency,
     convertDate,

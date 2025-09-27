@@ -1,6 +1,10 @@
+<!-- eslint-disable @typescript-eslint/no-explicit-any -->
 <script setup lang="ts">
+import { useAuthStore } from '~/core/store/auth'
+
 import { PROFILE_TABS } from '~/config/Profile.config'
 import type { TabType } from '~/core/types/Game'
+import { useAppStore } from '~/core/store/app'
 
 //composables
 const route = useRoute()
@@ -9,6 +13,9 @@ const { replace } = useRouter()
 //models
 const tabs = ref(PROFILE_TABS)
 const currentTab = ref()
+const { isLogged } = storeToRefs(useAuthStore())
+const { setPageLoading } = useAppStore()
+const playerProfile = ref<any>()
 
 //methods
 const onTabChange = (tab: TabType) => {
@@ -24,12 +31,32 @@ const getDefaultTab = () => {
   return tabs.value[0] ? tabs.value[0].id : 'account-info'
 }
 
+const loadProfile = async (): Promise<void> => {
+  setPageLoading(true)
+  const profileData: any = await useAPIFetch('/player/profile')
+  playerProfile.value = profileData
+  setPageLoading(false)
+}
+
 onMounted(() => {
   currentTab.value = getDefaultTab()
+  if (isLogged) {
+    loadProfile()
+  }
+})
+
+watch(isLogged, () => {
+  if (isLogged.value) {
+    loadProfile()
+  }
+})
+
+definePageMeta({
+  middleware: 'auth',
 })
 </script>
 <template>
-  <div>
+  <div v-if="isLogged">
     <v-tabs v-model="currentTab" align-tabs="start" class="mb-5">
       <v-tab
         v-for="(tab, i) in tabs"
@@ -42,10 +69,19 @@ onMounted(() => {
       </v-tab>
     </v-tabs>
     <v-tabs-window v-model="currentTab">
-      <v-tabs-window-item value="account-info"><ProfileAccountInfo /></v-tabs-window-item>
-      <v-tabs-window-item value="settings"><ProfileSettings /> </v-tabs-window-item>
+      <v-tabs-window-item value="account-info">
+        <ProfileAccountInfo v-if="playerProfile" :profile="playerProfile" />
+      </v-tabs-window-item>
+      <v-tabs-window-item value="settings">
+        <ProfileSettings v-if="playerProfile" :profile="playerProfile" />
+      </v-tabs-window-item>
       <v-tabs-window-item value="activity"><ProfileActivity /> </v-tabs-window-item>
       <v-tabs-window-item value="bonus-history"><ProfileBonus /></v-tabs-window-item>
     </v-tabs-window>
+  </div>
+  <div v-else class="d-flex justify-center align-center h-100 mt-5">
+    <v-alert class="mb-1" border="start" density="compact" color="purple" variant="tonal">
+      No Access. Please login to see this section.
+    </v-alert>
   </div>
 </template>

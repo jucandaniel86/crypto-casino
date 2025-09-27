@@ -10,6 +10,10 @@ useHead({
   title: 'Coin Casino | Crypto & Bitcoin Casino and Sportsbook',
 })
 
+definePageMeta({
+  middleware: 'auth',
+})
+
 //models
 const content = ref<ContainerType[]>([])
 

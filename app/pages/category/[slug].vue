@@ -34,6 +34,10 @@ watch(
 onMounted(() => {
   loadPage()
 })
+
+definePageMeta({
+  middleware: 'auth',
+})
 </script>
 <template>
   <div>
