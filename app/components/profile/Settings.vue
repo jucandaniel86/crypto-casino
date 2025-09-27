@@ -136,6 +136,7 @@ onMounted(() => {
                   <div class="text-subtitle-1 text-white">Old password*</div>
                   <v-text-field
                     v-model="password.old_password"
+                    type="password"
                     placeholder="Old Password"
                     density="compact"
                     color="primary"
@@ -147,6 +148,7 @@ onMounted(() => {
                   <div class="text-subtitle-1 text-white">New password*</div>
                   <v-text-field
                     v-model="password.password"
+                    type="password"
                     placeholder="New Password"
                     density="compact"
                     color="primary"
@@ -158,6 +160,7 @@ onMounted(() => {
                   <div class="text-subtitle-1 text-white">Confirm password*</div>
                   <v-text-field
                     v-model="password.password_confirmation"
+                    type="password"
                     placeholder="Confirm Password"
                     density="compact"
                     color="primary"
