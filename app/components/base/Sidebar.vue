@@ -1,20 +1,25 @@
 <!-- eslint-disable vue/require-prop-types -->
 <script setup lang="ts">
-import { APP_MENU_CONFIG } from '../../config/Menu.config'
+import { ButtonActionTypesEnum } from '~/core/types/ActionButton'
+import type { MenuItemConfig } from '../../config/Menu.config'
 import { useAppStore } from '~/core/store/app'
+import type { OverlaysTypes } from '~/core/types/Overlays'
 const { name } = useDisplay()
 
 //models
-const AppMenu = ref(APP_MENU_CONFIG)
 const route = useRoute()
 const drawer = ref(false)
 const rail = ref(false)
-const isMobile = computed(() => ['xs', 'sm'].indexOf(name.value) !== -1)
+
+//composables
+const { sidebarOpen, sidebar } = storeToRefs(useAppStore())
+const router = useRouter()
+const { openOverlay } = useUtils()
 const { setSidebarOpen } = useAppStore()
 const { width } = useDisplay()
 
-const { sidebarOpen } = storeToRefs(useAppStore())
-
+//computed
+const isMobile = computed(() => ['xs', 'sm'].indexOf(name.value) !== -1)
 const sidebarWidth = computed(() => (isMobile.value ? width.value : 240))
 const railVal = computed(() => {
   if (isMobile.value) {
@@ -22,17 +27,43 @@ const railVal = computed(() => {
   }
   return !sidebarOpen.value
 })
+const handleOnClick = (item: MenuItemConfig) => {
+  switch (item.actionType) {
+    case ButtonActionTypesEnum.OPEN_INTERNAL_PAGE: {
+      if (item.slug) {
+        return router.push({ path: item.slug })
+      }
+      return null
+    }
+    case ButtonActionTypesEnum.OPEN_OVERLAY: {
+      if (item.slug) {
+        openOverlay(item.slug as OverlaysTypes)
+      }
+      return null
+    }
+    case ButtonActionTypesEnum.OPEN_EXTERNAL_PAGE: {
+      let whereToOpen = '_self'
+      if (!item.isSameTab) {
+        whereToOpen = '_blank'
+      }
+      if (item.slug) {
+        return window.open(item.slug, whereToOpen)
+      }
+      return null
+    }
+    default:
+      return null
+  }
+}
 
 watch(sidebarOpen, () => {
   if (isMobile.value) {
     rail.value = false
     drawer.value = sidebarOpen.value
-    console.log('railVal', railVal.value)
     return
   }
   // drawer.value = sidebarOpen.value
   rail.value = sidebarOpen.value
-  console.log('railVal', railVal.value)
 })
 
 onMounted(() => {
@@ -65,16 +96,14 @@ onMounted(() => {
       </v-btn>
     </div>
     <v-list density="compact" nav>
-      <template v-for="(item, i) in AppMenu">
+      <template v-for="(item, i) in sidebar" :key="item.id">
         <v-list-item
-          v-if="item.type !== 'divider'"
-          :key="i"
           :value="item"
           color="primary"
           variant="plain"
           link
-          :to="item.linkName"
-          :class="{ active: route.path.replace('/', '') === item.linkName }"
+          :class="{ active: route.path.replace('/', '') === item.slug }"
+          @click.prevent="handleOnClick(item)"
         >
           <template #prepend>
             <v-tooltip :text="item.title" color="white" :disabled="sidebarOpen">
@@ -88,7 +117,7 @@ onMounted(() => {
             item.title
           }}</v-list-item-title>
         </v-list-item>
-        <v-divider v-else :key="`AppMenuDivider${i}`" />
+        <v-divider v-if="i === 3 || i === 7" :key="`AppMenuDivider${i}`" />
       </template>
     </v-list>
   </v-navigation-drawer>

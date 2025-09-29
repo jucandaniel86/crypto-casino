@@ -17,7 +17,7 @@ definePageMeta({
 //models
 const content = ref<ContainerType[]>([])
 
-const { setPageLoading } = useAppStore()
+const { setPageLoading, setSidebar } = useAppStore()
 
 const loadPage = async (page: string) => {
   setPageLoading(true)
@@ -25,6 +25,7 @@ const loadPage = async (page: string) => {
 
   if (data) {
     content.value = data.value.children.main
+    setSidebar(data.value.children.leftSidebar)
   }
   setPageLoading(false)
 }

@@ -55,8 +55,7 @@ const save = async (): Promise<void> => {
   loading.value = false
 }
 
-onMounted(() => {
-  console.log('props', props.profile)
+onMounted(() => { 
   if (props.profile) {
     personalInfo.value = {
       ...personalInfo.value,
