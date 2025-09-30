@@ -18,7 +18,7 @@ export const useAuthStore = defineStore(
     //models
     const token = ref<string | null | undefined>('')
     const user = ref<UserType | null | undefined>()
-    const connectedWallet = ref<string>('')
+    const connectedWallet = ref<string | boolean>(false)
 
     //methods
     const setToken = (_token: string | null | undefined) => {
@@ -82,6 +82,8 @@ export const useAuthStore = defineStore(
       return false
     })
 
+    const setConnectedWallet = (_wallet: string) => (connectedWallet.value = _wallet)
+
     return {
       isLogged,
       token,
@@ -92,6 +94,7 @@ export const useAuthStore = defineStore(
       logout,
       refresh,
       walletConnectLogin,
+      setConnectedWallet,
     }
   },
   {

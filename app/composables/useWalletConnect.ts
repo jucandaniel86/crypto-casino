@@ -6,7 +6,7 @@ import { useAuthStore } from '~/core/store/auth'
 
 export const useWalletConnect = () => {
   const wallet = useMetaMaskWallet()
-  const { walletConnectLogin } = useAuthStore()
+  const { walletConnectLogin, setConnectedWallet } = useAuthStore()
   const changeView = ref<string>('')
 
   const connect = async () => {
@@ -27,6 +27,10 @@ export const useWalletConnect = () => {
     const accounts = await wallet.getAccounts()
     if (typeof accounts === 'string') return false
     return accounts.length > 0
+  })
+
+  onMounted(() => {
+    setConnectedWallet('')
   })
 
   return {

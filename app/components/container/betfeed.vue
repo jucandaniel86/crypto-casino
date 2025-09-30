@@ -34,12 +34,12 @@ const convertAmount = (amount: number, decimals = 8) => new Number(amount).toFix
         <table class="betfeed__table">
           <thead>
             <tr>
-              <th>Game</th>
-              <th v-if="isDesktop">User</th>
-              <th v-if="isDesktop">Time</th>
-              <th v-if="isDesktop">Bet Amount</th>
-              <th v-if="isDesktop">Multiplier</th>
-              <th>Payout</th>
+              <td>Game</td>
+              <td v-if="isDesktop">User</td>
+              <td v-if="isDesktop">Time</td>
+              <td v-if="isDesktop">Bet Amount</td>
+              <td v-if="isDesktop">Multiplier</td>
+              <td>Payout</td>
             </tr>
           </thead>
           <tbody>

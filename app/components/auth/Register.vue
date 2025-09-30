@@ -53,6 +53,11 @@ const handleRegistrationAction = async () => {
 </script>
 <template>
   <v-row>
+    <v-col v-if="connectedWallet" cols="12" class="pb-0 pt-0">
+      <span class="text-purple d-flex font-weight-bold mb-2"
+        >Almost there... last few steps to start enjoyng our games</span
+      >
+    </v-col>
     <v-col cols="12" class="pb-0 pt-0">
       <div class="text-subtitle-1 text-white">Email*</div>
       <v-text-field
