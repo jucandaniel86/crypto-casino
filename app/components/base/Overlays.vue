@@ -58,7 +58,7 @@ watch(dialog, () => {
     close-delay="300"
     class="overlay-bg"
   >
-    <overlay-header v-if="!isLogged" @on-close="onClose" />
+    <overlay-header v-if="!isLogged" @on-close="onClose" @change-view="changeView" />
     <auth-register v-if="overlayView === 'register' && !isLogged" @change-view="changeView" />
     <auth-login v-if="overlayView === 'login'" @change-view="changeView" />
   </v-navigation-drawer>

@@ -17,6 +17,7 @@ const { isset } = useUtils()
 const { setToken, setUser } = useAuthStore()
 const { replace } = useRouter()
 const { setSnackbar } = useAppStore()
+const { connectedWallet } = storeToRefs(useAuthStore())
 
 //emitters
 const emitters = defineEmits(['changeView'])
@@ -32,6 +33,7 @@ const handleRegistrationAction = async () => {
     email: email.value,
     legalAge: legalAge.value,
     agree: agree.value,
+    wallet: connectedWallet.value,
   })
 
   if (!success) {

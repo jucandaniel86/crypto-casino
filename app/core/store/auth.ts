@@ -2,6 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import * as jwtDecode from 'jwt-decode'
+import { useAppStore } from './app'
 
 type UserType = {
   username: string
@@ -17,6 +18,7 @@ export const useAuthStore = defineStore(
     //models
     const token = ref<string | null | undefined>('')
     const user = ref<UserType | null | undefined>()
+    const connectedWallet = ref<string>('')
 
     //methods
     const setToken = (_token: string | null | undefined) => {
@@ -44,6 +46,24 @@ export const useAuthStore = defineStore(
       }
     }
 
+    const walletConnectLogin = async (wallet: string): Promise<boolean> => {
+      const { setSnackbar } = useAppStore()
+      connectedWallet.value = wallet
+      const { success, data } = await useApiPostFetch('/player/wallet-connect', { wallet })
+      const router = useRouter()
+      if (success && data && data.authorization) {
+        if (data.user) {
+          setSnackbar(`Welcome ${data.user.username}`)
+        }
+
+        setToken(data.authorization.token)
+        router.replace({ query: {} })
+        return true
+      } else {
+        return false
+      }
+    }
+
     const isLogged = computed(() => {
       if (token.value) {
         try {
@@ -66,10 +86,12 @@ export const useAuthStore = defineStore(
       isLogged,
       token,
       user,
+      connectedWallet,
       setToken,
       setUser,
       logout,
       refresh,
+      walletConnectLogin,
     }
   },
   {

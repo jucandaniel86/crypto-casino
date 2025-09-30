@@ -1,5 +1,9 @@
 <script setup lang="ts">
-const emitters = defineEmits(['onClose'])
+const emitters = defineEmits(['onClose', 'changeView'])
+const { connect, changeView } = useWalletConnect()
+
+const onChangeView = (_view: string) => emitters('changeView', _view)
+watch(changeView, () => onChangeView(changeView.value))
 </script>
 
 <template>
@@ -15,13 +19,45 @@ const emitters = defineEmits(['onClose'])
       <p class="cta">Sign up with WalletConnect. Instant registration</p>
     </v-col>
     <v-col cols="12" class="d-flex justify-center">
-      <v-btn color="primary">
-        <template #prepend><IconWalletConnect /></template>
-        Wallet Connect
-      </v-btn>
+      <ConnectWalletButton address="">
+        <template #connectWalletButton>
+          <v-btn color="primary" @click.prevent="connect">
+            <template #prepend><IconWalletConnect /></template>
+            Wallet Connect
+          </v-btn>
+        </template>
+        <template #spinner>
+          <span class="rotate">
+            <svg class="MuiCircularProgress-svg css-13o7eu2" viewBox="22 22 44 44">
+              <circle
+                class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-14891ef"
+                cx="44"
+                cy="44"
+                r="20.2"
+                fill="none"
+                stroke-width="3.6"
+              />
+            </svg>
+          </span>
+        </template>
+      </ConnectWalletButton>
     </v-col>
     <v-col cols="12" class="pt-1 pb-1">
       <p class="cta">-OR-</p>
     </v-col>
   </v-row>
 </template>
+<style>
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate;
+}
+</style>

@@ -17,6 +17,8 @@ export default defineNuxtConfig({
     },
   },
 
+  plugins: [{ src: './plugins/walletconnect', mode: 'client' }],
+
   modules: [
     '@nuxt/eslint',
     '@nuxt/icon',

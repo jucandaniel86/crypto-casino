@@ -16,16 +16,21 @@
     "@nuxtjs/i18n": "^10.0.6",
     "@pinia/nuxt": "^0.11.2",
     "@vueuse/core": "^13.7.0",
+    "@walletconnect/web3-provider": "^1.8.0",
     "eslint": "^9.33.0",
+    "ethers": "^6.15.0",
     "jwt-decode": "^4.0.0",
     "moment": "^2.30.1",
+    "node-polyfill-webpack-plugin": "^4.1.0",
     "nuxt": "^4.0.3",
     "pinia": "^3.0.3",
     "pinia-plugin-persistedstate": "^4.5.0",
     "vue": "^3.5.18",
+    "vue-connect-wallet": "^0.1.7",
     "vue-i18n": "^11.1.11",
     "vue-router": "^4.5.1",
-    "vuetify-nuxt-module": "^0.18.7"
+    "vuetify-nuxt-module": "^0.18.7",
+    "web3": "^4.16.0"
   },
   "devDependencies": {
     "prettier": "^3.6.2",
