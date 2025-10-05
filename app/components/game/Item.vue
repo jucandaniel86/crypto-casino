@@ -14,21 +14,35 @@ const reveal = ref(false)
 const image = computed(() => `${props.game.imageUrl}`)
 
 //methods
-const goToGame = () => {
-  router.push({ name: 'game-slug', params: { slug: props.game.realPlayUrl } })
+const playRealMoney = () => {
+  router.push({
+    name: 'game-slug',
+    params: { slug: props.game.realPlayUrl },
+    query: { demo: 0 },
+  })
+}
+
+const playForFun = () => {
+  router.push({
+    name: 'game-slug',
+    params: { slug: props.game.realPlayUrl },
+    query: { demo: 1 },
+  })
 }
 </script>
 <template>
-  <div class="game__item" @mouseout="reveal = false" @mouseover="reveal = true" @click="goToGame">
+  <div class="game__item" @mouseout="reveal = false" @mouseover="reveal = true">
     <div class="wrapper">
       <img class="mx-auto" width="100%" :src="image" />
       <h2 v-show="reveal" class="game__title">{{ props.game.name }}</h2>
-      <div class="real-play">
+      <div class="real-play" @click="playRealMoney">
         <button class="">
           <IconPlay />
         </button>
       </div>
-      <div v-show="reveal" class="demo-play">Play for fun</div>
+      <div v-if="props.game.hasDemo" v-show="reveal" class="demo-play" @click="playForFun">
+        Play for fun
+      </div>
     </div>
   </div>
 </template>

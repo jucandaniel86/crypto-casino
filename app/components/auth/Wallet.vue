@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { WALLET_CONFIG, type WalletType } from '~/config/Wallet.config'
 import { useWalletStore } from '~/core/store/wallet'
 import { OverlaysTypes } from '~/core/types/Overlays'
+import type { WalletT } from '~/core/types/Wallet'
 
 const { currentWallet } = storeToRefs(useWalletStore())
 const { setWallet } = useWalletStore()
@@ -9,6 +9,8 @@ const { replace } = useRouter()
 const { name } = useDisplay()
 const menu = ref<boolean>(false)
 const walletButton = ref()
+const fiatOnly = ref<boolean>(false)
+const userWallets = ref<WalletT[]>()
 
 const openWalletModal = () => {
   replace({ query: { overlay: OverlaysTypes.WALLET } })
@@ -18,9 +20,34 @@ const convertBalance = (balance: number, decimal: number) => Number(balance).toF
 const isMobile = computed(() => ['xs', 'sm'].indexOf(name.value) !== -1)
 const isDesktop = computed(() => ['lg', 'md', 'xl'].indexOf(name.value) !== -1)
 
-onMounted(() => {
+const getUserWallets = async (): Promise<void> => {
+  const { wallets } = await useAPIFetch('/player/wallets')
+  if (wallets) {
+    userWallets.value = wallets
+  }
+}
+
+const handleWalletSelect = async (wallet: WalletT): Promise<void> => {
+  const data = await useApiPostFetch('/player/set-wallet', {
+    currency: wallet.code,
+  })
+  if (data) {
+    setWallet(wallet)
+  }
+}
+
+//computed
+const wallets = computed(() => {
+  if (fiatOnly.value) {
+    return userWallets.value?.filter((wallet) => wallet.isFiat)
+  }
+  return userWallets.value
+})
+
+onMounted(async () => {
+  await getUserWallets()
   if (!currentWallet.value) {
-    setWallet(WALLET_CONFIG.find((el) => el.balance > 0) as WalletType)
+    // setWallet(WALLET_CONFIG.find((el) => el.balance > 0) as WalletType)
   }
 })
 </script>
@@ -39,9 +66,11 @@ onMounted(() => {
       <template #activator="{ props }">
         <v-btn v-bind="props" class="wallet_btn" ref="walletButton">
           <div class="d-flex justify-center align-center ga-2">
-            <span>{{ convertBalance(currentWallet?.balance, currentWallet?.decimal) }}</span>
-
-            <SharedIcon :icon="currentWallet.icon" class="svg-icon" />
+            <span>{{ convertBalance(currentWallet?.balance, currentWallet?.precision) }}</span>
+            <SharedIcon
+              :icon="`currency-ico-${String(currentWallet.code).toLowerCase()}`"
+              class="svg-icon"
+            />
           </div>
           <template #append>
             <IconArrowDown :class="{ 'arrow-up': menu, 'arrow-down': !menu }" />
@@ -62,48 +91,54 @@ onMounted(() => {
               <div class="current-balance">
                 <span class="balance-label">Balance</span>
                 <span class="balance-value">
-                  {{ convertBalance(currentWallet.balance, currentWallet.decimal) }}
-                  <span>{{ currentWallet.name }}</span>
+                  {{ convertBalance(currentWallet.balance, currentWallet.precision) }}
+                  <span>{{ currentWallet.code }}</span>
                 </span>
               </div>
               <div class="balance-data">
                 <div class="balance-item">
                   <span class="balance-label">Withdrawable</span>
                   <span class="balance-value">
-                    {{ convertBalance(currentWallet.balance, currentWallet.decimal) }}
-                    <span>{{ currentWallet.name }}</span>
+                    {{ convertBalance(currentWallet.balance, currentWallet.precision) }}
+                    <span>{{ currentWallet.code }}</span>
                   </span>
                 </div>
                 <div class="balance-item">
                   <span class="balance-label">Bonus</span>
                   <span class="balance-value">
-                    {{ convertBalance(0, currentWallet.decimal) }}
-                    <span>{{ currentWallet.name }}</span>
+                    {{ convertBalance(0, currentWallet.precision) }}
+                    <span>{{ currentWallet.code }}</span>
                   </span>
                 </div>
               </div>
             </div>
             <div class="wallet_currencies_wrapper">
               <ul>
-                <li v-for="wallet in WALLET_CONFIG" :key="`Wallet${wallet.name}`">
+                <li v-for="wallet in wallets" :key="`Wallet${wallet.code}`">
                   <div
                     class="balance-component"
-                    :class="{ active: currentWallet?.name === wallet.name }"
-                    @click="setWallet(wallet)"
+                    :class="{ active: currentWallet?.name === wallet.code }"
+                    @click="handleWalletSelect(wallet)"
                   >
                     <div class="amount" :class="{ zero: wallet.balance <= 0 }">
-                      {{ convertBalance(wallet.balance, wallet.decimal) }}
+                      {{ convertBalance(wallet.balance, wallet.precision) }}
                     </div>
                     <div class="balance">
-                      <SharedIcon :icon="wallet.icon" />
-                      <span>{{ wallet.name }}</span>
+                      <SharedIcon :icon="`currency-ico-${String(wallet.code).toLowerCase()}`" />
+                      <span>{{ wallet.code }}</span>
                     </div>
                   </div>
                 </li>
               </ul>
             </div>
             <div class="wallet-balance-footer">
-              <v-checkbox :false-value="0" :true-value="1" label="Display in Fiat" hide-details />
+              <v-checkbox
+                v-model="fiatOnly"
+                :false-value="0"
+                :true-value="1"
+                label="Display in Fiat"
+                hide-details
+              />
             </div>
           </div>
         </div>

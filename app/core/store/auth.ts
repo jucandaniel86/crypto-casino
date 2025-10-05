@@ -3,6 +3,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import * as jwtDecode from 'jwt-decode'
 import { useAppStore } from './app'
+import { useWalletStore } from './wallet'
 
 type UserType = {
   username: string
@@ -15,6 +16,9 @@ type UserType = {
 export const useAuthStore = defineStore(
   'auth',
   () => {
+    //composables
+    const { setWallet, getCurrentWallet } = useWalletStore()
+
     //models
     const token = ref<string | null | undefined>('')
     const user = ref<UserType | null | undefined>()
@@ -35,6 +39,7 @@ export const useAuthStore = defineStore(
       if (success) {
         setToken(null)
         setUser(null)
+        setWallet(null)
       }
     }
 
@@ -83,6 +88,14 @@ export const useAuthStore = defineStore(
     })
 
     const setConnectedWallet = (_wallet: string) => (connectedWallet.value = _wallet)
+
+    watch(isLogged, () => {
+      if (isLogged.value) {
+        getCurrentWallet()
+      } else {
+        setWallet(null)
+      }
+    })
 
     return {
       isLogged,

@@ -17,7 +17,10 @@ export default defineNuxtConfig({
     },
   },
 
-  plugins: [{ src: './plugins/walletconnect', mode: 'client' }],
+  plugins: [
+    { src: './plugins/walletconnect', mode: 'client' },
+    { src: './plugins/wagmi', mode: 'client' },
+  ],
 
   modules: [
     '@nuxt/eslint',

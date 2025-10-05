@@ -13,7 +13,7 @@ const openWallet = () => router.replace({ query: { overlay: OverlaysTypes.WALLET
   <div class="d-flex">
     <v-menu location="bottom right">
       <template #activator="{ props }">
-        <v-btn v-bind="props" class="user-top-activator">
+        <v-btn v-bind="props" class="user-top-activator pa-0">
           <shared-icon :icon="'brand-ico-settings2'" class="svg-icon user-icon" />
         </v-btn>
       </template>

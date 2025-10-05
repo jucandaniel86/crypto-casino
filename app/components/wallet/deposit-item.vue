@@ -13,6 +13,9 @@ const props = defineProps<DepositItemT>()
 //composables
 const { setCurrentWalletDepositPage } = useWalletStore()
 
+//emitters
+const emitters = defineEmits(['onWalletChange'])
+
 //models
 const searchOpen = ref<boolean>(false)
 const search = ref('')
@@ -33,6 +36,10 @@ const currentWallets = computed(() => {
 })
 
 //methods
+const handleWalletChange = (wallet: WalletT) => {
+  emitters('onWalletChange', wallet)
+  setCurrentWalletDepositPage(wallet)
+}
 </script>
 <template>
   <div>
@@ -51,7 +58,7 @@ const currentWallets = computed(() => {
     </div>
     <ul v-if="currentWallets" class="wallet-currency-list">
       <li v-for="(currency, i) in currentWallets" :key="`CurrencyWallet${i}`">
-        <WalletCurrency :currency="currency" @on-click="setCurrentWalletDepositPage" />
+        <WalletCurrency :currency="currency" @on-click="handleWalletChange" />
       </li>
     </ul>
     <div v-if="currencyLimit > 0" class="wallet-currency-item-viewall" @click="currencyLimit = -1">

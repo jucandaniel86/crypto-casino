@@ -1,29 +1,165 @@
+<!-- eslint-disable @typescript-eslint/no-explicit-any -->
 <script setup lang="ts">
-const displayGame = ref<boolean>(false)
+import { useFullscreen } from '@vueuse/core'
+import { useAppStore } from '~/core/store/app'
+import { useAuthStore } from '~/core/store/auth'
+import { useGameStore } from '~/core/store/game'
+
+//models
+const el = useTemplateRef('gameIframe')
+const loadingPlayerSesson = ref<boolean>(false)
+const startGame = ref<boolean>(false)
+const gameLoading = ref<boolean>(false)
+const game = ref<any>()
+const favLoadingResponse = ref<boolean>(false)
+const favorites = ref<any>()
+
+//composables
+const { setDisplayGameDisclaimer } = useGameStore()
+const { displayGameDisclaimer } = storeToRefs(useGameStore())
+const { setPageLoading, setSidebar } = useAppStore()
+const route = useRoute()
+const router = useRouter()
+const { isLogged } = storeToRefs(useAuthStore())
+const { toggle } = useFullscreen(el)
+
+//methods
+const startGameSession = async (demo: boolean): Promise<void> => {
+  setDisplayGameDisclaimer(displayGameDisclaimer.value)
+  startGame.value = true
+  loadingPlayerSesson.value = true
+
+  const { data } = await useApiPostFetch('/player/play', {
+    game_id: game.value.gameID,
+    demo,
+  })
+  console.log('sessionData', data)
+  loadingPlayerSesson.value = false
+  startGame.value = true
+}
+
+const back = () => router.back()
+
+const toggleFavorite = async (): Promise<void> => {
+  favLoadingResponse.value = true
+  const data = await useApiPostFetch('/player/favorite', {
+    gameID: game.value.gameID,
+  })
+  if (data.success) {
+    game.value.favorite = !game.value.favorite
+  }
+  favLoadingResponse.value = false
+}
+
+const getGamePage = async (): Promise<void> => {
+  const slug = route.params.slug
+  gameLoading.value = true
+  setPageLoading(true)
+
+  const gameData = await useAPIFetch(`/game/${slug}`)
+
+  if (gameData.status && gameData.status === 404) {
+    setPageLoading(false)
+    if (import.meta.client) {
+      throw showError({
+        statusCode: 404,
+        statusMessage: 'Uh oh, Page not Found',
+        message: "Sorry the page you were looking for doesn't exist or has been moved.",
+        fatal: true,
+      })
+    } else {
+      throw createError({
+        statusCode: 404,
+        statusMessage: 'Uh oh, Page not Found',
+        message: "Sorry the page you were looking for doesn't exist or has been moved.",
+        fatal: true,
+      })
+    }
+  }
+  if (gameData.children.main) {
+    game.value = gameData.children.main.find(
+      (item: any) => item.container === 'GamePlayContainer',
+    )?.data
+    favorites.value = gameData.children.main.find(
+      (item: any) => item.container === 'FavouriteGamesContainer',
+    )
+    useSeoMeta({
+      title: game.value.name,
+    })
+  }
+
+  if (gameData.children.leftSidebar) {
+    setSidebar(gameData.children.leftSidebar)
+  }
+  setPageLoading(false)
+
+  gameLoading.value = false
+}
+
+onMounted(async () => {
+  await getGamePage()
+})
+
+watch(isLogged, () => {
+  getGamePage()
+})
 </script>
 <template>
-  <div class="gameplay-wrapper">
-    <div class="gameplay-content">
-      <div class="gameplay-overlay">
-        <div class="game-wrapper" :class="{ 'game-blur': !displayGame }">
-          <iframe
-            class="game-iframe"
-            src="https://launcher-eu1.fh8labs.com/games/encrypted/launcher?payload=QTEyOEdDTQ.UFS_CMZfosypj2FPtwIGLhreOjO28eEvA28bjzhqU8cNUkDPdr36PHVOOSc.6Vs8npj0XxX8xdrY.mCNMjqXbcXyWw4hEJrd4x0E3I2ax7N21oOb8Ft_uSGRpfpDR8BCdDEcaTDpcibxq0irNG9ogeNgJnyoC8yuvZfXlgwXx0k2_IoheclAHB4blvbTW6svf0iyqKUVxrlKattfuegRqXvGzpGVIBVsRSgJ8U1BKs5oIhKSzAPhXIKR7UTRCt4UyzFhaCe-NdBajSMBJI5GmLHPJQ8ATOvOA7EbWd5COlthrpGSy5kpt7zWCdJ4aDxXcswjmTxB4g8aP5CA5Xf-JAqeNWuHWqvrRn-95PJQRdw0oYHwLjxU41aw_r3KAB5BMfA73YMQjQJ8nAv2YFgwaFjgzaYQWQ3_UVnqL1azxnEfJJTndPlIVMhajkWGcBEUCLzMAg0zStTBuf3X1ojhk6v8WIneQnRobQO1PRuPO43ZdVd11EmGrKBcY8hEA-LA1KjzPM5aB7k-qWfWv723PJBixk_onkBVzpJkWa1cbg2olAdP2rlNRVFvMO2I3PqlaEbnJfg.qbq-U_hnET2NWJn-mu4ioQ&amp;"
-            allow="fullscreen"
-          />
-        </div>
-        <div class="gameplay-currencymessage" v-if="!displayGame">
-          <p>The in-game balance will be displayed in EUR.</p>
-          <p>
-            <v-checkbox label="Don't show this again" hide-details />
-          </p>
-          <p class="w-100 text-center">
-            <v-btn color="purple" class="w-100" max-width="200" @click.prevent="displayGame = true"
-              >Play</v-btn
-            >
-          </p>
+  <div>
+    <div class="gameplay-wrapper mb-10">
+      <div v-if="!gameLoading" class="gameplay-content">
+        <div class="gameplay-overlay">
+          <div class="game-wrapper" :class="{ 'game-blur': !startGame }">
+            <iframe ref="gameIframe" class="game-iframe" allow="fullscreen" />
+          </div>
+          <div v-if="!startGame" class="gameplay-currencymessage">
+            <p>The in-game balance will be displayed in EUR.</p>
+            <p class="w-100 text-center d-flex ga-1 justify-center">
+              <v-btn
+                :disabled="loadingPlayerSesson"
+                color="purple"
+                class="w-100"
+                max-width="200"
+                @click.prevent="startGameSession(false)"
+                >Play Real Money</v-btn
+              >
+              <v-btn
+                :disabled="loadingPlayerSesson"
+                color="purple"
+                class="w-100"
+                max-width="200"
+                @click.prevent="startGameSession(true)"
+                >Play DEMO</v-btn
+              >
+            </p>
+          </div>
         </div>
       </div>
+      <div class="gameplay-toolbar d-flex ga-2 flex-column">
+        <button class="game-tool-btn" @click.prevent="back"><IconClose /></button>
+        <button class="game-tool-btn" @click.prevent="toggle"><IconFullscreen /></button>
+        <button
+          v-if="isLogged && game"
+          :disabled="favLoadingResponse"
+          class="game-tool-btn"
+          @click.prevent="toggleFavorite"
+        >
+          <IconFav
+            :style="{
+              fill: game.favorite ? '#ff4242' : 'currentColor',
+              color: game.favorite ? '#ff4242' : 'currentColor',
+            }"
+          />
+        </button>
+      </div>
     </div>
+
+    <ContainerFavorites
+      v-if="isLogged && !gameLoading && favorites && favorites.data.length"
+      :id="favorites.id"
+      :options="favorites"
+      :games="favorites.data"
+      title="Favorites"
+    />
   </div>
 </template>
