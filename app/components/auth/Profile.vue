@@ -6,7 +6,7 @@ const { logout } = useAuthStore()
 const router = useRouter()
 
 const goToSettings = () => router.push({ name: 'profile' })
-const goToPromotions = () => router.push({ name: 'promotions' })
+const goToPromotions = () => router.push('/promotions')
 const openWallet = () => router.replace({ query: { overlay: OverlaysTypes.WALLET } })
 </script>
 <template>

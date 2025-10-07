@@ -1,16 +1,29 @@
-export const useGameStore = defineStore(
-  'game',
-  () => {
-    const displayGameDisclaimer = ref<boolean>(false)
+const REFRESH_BALANCE_TIMER = 5000 //ms
 
-    const setDisplayGameDisclaimer = (_payload: boolean) => {
-      displayGameDisclaimer.value = _payload
-    }
+export const useGameStore = defineStore('game', () => {
+  //models
+  const activePlaySession = ref<string>('')
+  const interval = ref()
+  //methods
+  const setActivePlaySession = (_payload: string) => {
+    activePlaySession.value = _payload
+  }
+  const refreshBalance = async (): Promise<void> => {
+    console.warn('REFRESH BALANCE TIMER')
+  }
 
-    return {
-      displayGameDisclaimer,
-      setDisplayGameDisclaimer,
+  watch(activePlaySession, () => {
+    if (activePlaySession.value) {
+      interval.value = setInterval(() => {
+        refreshBalance()
+      }, REFRESH_BALANCE_TIMER)
+    } else {
+      clearInterval(interval.value)
     }
-  },
-  { persist: true },
-)
+  })
+
+  return {
+    activePlaySession,
+    setActivePlaySession,
+  }
+})

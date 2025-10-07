@@ -4,8 +4,8 @@ export type PromotionT = {
   title: string
   description: string
   image: string
-  slug: string
+  slug?: string
   ctaText: string
-  primaryAction: ActionButtonType
+  primaryAction?: ActionButtonType
   secondaryAction: ActionButtonType
 }

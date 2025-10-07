@@ -3,6 +3,7 @@
 import { useFullscreen } from '@vueuse/core'
 import { useAppStore } from '~/core/store/app'
 import { useAuthStore } from '~/core/store/auth'
+import { useGameStore } from '~/core/store/game'
 import { OverlaysTypes } from '~/core/types/Overlays'
 
 //models
@@ -22,6 +23,7 @@ const { isLogged } = storeToRefs(useAuthStore())
 const { toggle } = useFullscreen(el)
 const { openOverlay } = useUtils()
 const { name } = useDisplay()
+const { setActivePlaySession } = useGameStore()
 
 //methods
 const startGameSession = async (demo: boolean): Promise<void> => {
@@ -37,7 +39,10 @@ const startGameSession = async (demo: boolean): Promise<void> => {
     game_id: game.value.gameID,
     demo,
   })
-  console.log('sessionData', data)
+  if (!demo && data && data.session_id) {
+    setActivePlaySession(data.session_id)
+  }
+
   loadingPlayerSesson.value = false
   startGame.value = true
 }
@@ -102,10 +107,17 @@ const getGamePage = async (): Promise<void> => {
 
 const mobile = computed(() => ['sm', 'xs'].indexOf(name.value) !== -1)
 
+//mounted
 onMounted(async () => {
   await getGamePage()
 })
 
+//onmounted
+onUnmounted(() => {
+  setActivePlaySession('')
+})
+
+//watchers
 watch(isLogged, () => {
   getGamePage()
 })

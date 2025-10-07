@@ -1,16 +1,21 @@
 <script setup lang="ts">
+import { useWindowFocus } from '@vueuse/core'
+import { useAuthStore } from '~/core/store/auth'
 import { useWalletStore } from '~/core/store/wallet'
 import { OverlaysTypes } from '~/core/types/Overlays'
 import type { WalletT } from '~/core/types/Wallet'
 
 //composables
 const { currentWallet } = storeToRefs(useWalletStore())
+const { isLogged } = storeToRefs(useAuthStore())
+const { logout } = useAuthStore()
 const { setWallet } = useWalletStore()
 const { replace } = useRouter()
 const { wait } = useUtils()
 const { name } = useDisplay()
 const route = useRoute()
 const router = useRouter()
+const focused = useWindowFocus()
 
 //models
 const menu = ref<boolean>(false)
@@ -56,10 +61,18 @@ const isMobile = computed(() => ['xs', 'sm'].indexOf(name.value) !== -1)
 const isDesktop = computed(() => ['lg', 'md', 'xl'].indexOf(name.value) !== -1)
 const inGame = computed(() => route.name === 'game-slug')
 
+//mounted
 onMounted(async () => {
   await getUserWallets()
   if (!currentWallet.value) {
     // setWallet(WALLET_CONFIG.find((el) => el.balance > 0) as WalletType)
+  }
+})
+
+//watchers
+watch(focused, () => {
+  if (focused.value && !isLogged.value) {
+    logout()
   }
 })
 </script>
