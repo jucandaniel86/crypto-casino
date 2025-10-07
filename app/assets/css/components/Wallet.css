@@ -108,6 +108,7 @@
 
 .balance-component.active {
   background: #181b22;
+  border: 1px solid #9f36f1;
 }
 
 .balance-component.disabled {

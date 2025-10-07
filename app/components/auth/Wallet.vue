@@ -99,7 +99,6 @@ onMounted(async () => {
             <IconClose />
           </v-btn>
         </div>
-
         <div class="content">
           <div class="wrapper">
             <div class="wallet_header">
@@ -134,7 +133,7 @@ onMounted(async () => {
                   <div
                     class="balance-component"
                     :class="{
-                      active: currentWallet?.name === wallet.code,
+                      active: currentWallet?.code === wallet.code,
                       disabled: walletSelectLoading,
                     }"
                     @click="handleWalletSelect(wallet)"
