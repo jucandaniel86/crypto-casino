@@ -3,23 +3,25 @@ import { useWalletStore } from '~/core/store/wallet'
 import { OverlaysTypes } from '~/core/types/Overlays'
 import type { WalletT } from '~/core/types/Wallet'
 
+//composables
 const { currentWallet } = storeToRefs(useWalletStore())
 const { setWallet } = useWalletStore()
 const { replace } = useRouter()
+const { wait } = useUtils()
 const { name } = useDisplay()
+const route = useRoute()
+const router = useRouter()
+
+//models
 const menu = ref<boolean>(false)
 const walletButton = ref()
 const fiatOnly = ref<boolean>(false)
 const userWallets = ref<WalletT[]>()
+const walletSelectLoading = ref<boolean>(false)
 
 const openWalletModal = () => {
   replace({ query: { overlay: OverlaysTypes.WALLET } })
 }
-
-const convertBalance = (balance: number, decimal: number) => Number(balance).toFixed(decimal)
-const isMobile = computed(() => ['xs', 'sm'].indexOf(name.value) !== -1)
-const isDesktop = computed(() => ['lg', 'md', 'xl'].indexOf(name.value) !== -1)
-
 const getUserWallets = async (): Promise<void> => {
   const { wallets } = await useAPIFetch('/player/wallets')
   if (wallets) {
@@ -28,13 +30,20 @@ const getUserWallets = async (): Promise<void> => {
 }
 
 const handleWalletSelect = async (wallet: WalletT): Promise<void> => {
+  walletSelectLoading.value = true
   const data = await useApiPostFetch('/player/set-wallet', {
     currency: wallet.code,
   })
   if (data) {
+    if (inGame.value) {
+      await wait(500)
+      router.replace({ query: { _r: new Date().getTime() } }).then(() => router.go(0))
+    }
     setWallet(wallet)
   }
+  walletSelectLoading.value = false
 }
+const convertBalance = (balance: number, decimal: number) => Number(balance).toFixed(decimal)
 
 //computed
 const wallets = computed(() => {
@@ -43,6 +52,9 @@ const wallets = computed(() => {
   }
   return userWallets.value
 })
+const isMobile = computed(() => ['xs', 'sm'].indexOf(name.value) !== -1)
+const isDesktop = computed(() => ['lg', 'md', 'xl'].indexOf(name.value) !== -1)
+const inGame = computed(() => route.name === 'game-slug')
 
 onMounted(async () => {
   await getUserWallets()
@@ -66,7 +78,10 @@ onMounted(async () => {
       <template #activator="{ props }">
         <v-btn v-bind="props" class="wallet_btn" ref="walletButton">
           <div class="d-flex justify-center align-center ga-2">
-            <span>{{ convertBalance(currentWallet?.balance, currentWallet?.precision) }}</span>
+            <span v-if="!inGame">{{
+              convertBalance(currentWallet?.balance, currentWallet?.precision)
+            }}</span>
+            <span v-else>(In Play)</span>
             <SharedIcon
               :icon="`currency-ico-${String(currentWallet.code).toLowerCase()}`"
               class="svg-icon"
@@ -113,11 +128,15 @@ onMounted(async () => {
               </div>
             </div>
             <div class="wallet_currencies_wrapper">
+              <v-progress-linear v-if="walletSelectLoading" indeterminate color="purple" />
               <ul>
                 <li v-for="wallet in wallets" :key="`Wallet${wallet.code}`">
                   <div
                     class="balance-component"
-                    :class="{ active: currentWallet?.name === wallet.code }"
+                    :class="{
+                      active: currentWallet?.name === wallet.code,
+                      disabled: walletSelectLoading,
+                    }"
                     @click="handleWalletSelect(wallet)"
                   >
                     <div class="amount" :class="{ zero: wallet.balance <= 0 }">

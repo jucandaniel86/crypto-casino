@@ -3,7 +3,7 @@
 import { useFullscreen } from '@vueuse/core'
 import { useAppStore } from '~/core/store/app'
 import { useAuthStore } from '~/core/store/auth'
-import { useGameStore } from '~/core/store/game'
+import { OverlaysTypes } from '~/core/types/Overlays'
 
 //models
 const el = useTemplateRef('gameIframe')
@@ -15,17 +15,21 @@ const favLoadingResponse = ref<boolean>(false)
 const favorites = ref<any>()
 
 //composables
-const { setDisplayGameDisclaimer } = useGameStore()
-const { displayGameDisclaimer } = storeToRefs(useGameStore())
 const { setPageLoading, setSidebar } = useAppStore()
 const route = useRoute()
 const router = useRouter()
 const { isLogged } = storeToRefs(useAuthStore())
 const { toggle } = useFullscreen(el)
+const { openOverlay } = useUtils()
+const { name } = useDisplay()
 
 //methods
 const startGameSession = async (demo: boolean): Promise<void> => {
-  setDisplayGameDisclaimer(displayGameDisclaimer.value)
+  if (!isLogged.value) {
+    openOverlay(OverlaysTypes.LOGIN)
+    return
+  }
+
   startGame.value = true
   loadingPlayerSesson.value = true
 
@@ -96,6 +100,8 @@ const getGamePage = async (): Promise<void> => {
   gameLoading.value = false
 }
 
+const mobile = computed(() => ['sm', 'xs'].indexOf(name.value) !== -1)
+
 onMounted(async () => {
   await getGamePage()
 })
@@ -107,7 +113,13 @@ watch(isLogged, () => {
 <template>
   <div>
     <div class="gameplay-wrapper mb-10">
-      <div v-if="!gameLoading" class="gameplay-content">
+      <div
+        v-if="!gameLoading"
+        class="gameplay-content"
+        :style="{
+          aspectRatio: mobile ? 'unset' : '16 / 9',
+        }"
+      >
         <div class="gameplay-overlay">
           <div class="game-wrapper" :class="{ 'game-blur': !startGame }">
             <iframe ref="gameIframe" class="game-iframe" allow="fullscreen" />
@@ -135,7 +147,7 @@ watch(isLogged, () => {
           </div>
         </div>
       </div>
-      <div class="gameplay-toolbar d-flex ga-2 flex-column">
+      <div v-if="!mobile" class="gameplay-toolbar d-flex ga-2 flex-column">
         <button class="game-tool-btn" @click.prevent="back"><IconClose /></button>
         <button class="game-tool-btn" @click.prevent="toggle"><IconFullscreen /></button>
         <button

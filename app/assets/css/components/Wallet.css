@@ -110,6 +110,12 @@
   background: #181b22;
 }
 
+.balance-component.disabled {
+  cursor: none;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
 .balance-component .amount {
   font-size: 16px;
   color: #fff;
