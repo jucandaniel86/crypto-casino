@@ -10,7 +10,7 @@ import type { WalletT } from '~/core/types/Wallet'
 const { currentWallet } = storeToRefs(useWalletStore())
 const { isLogged } = storeToRefs(useAuthStore())
 const { logout } = useAuthStore()
-const { setWallet } = useWalletStore()
+const { setWallet, getCurrentWallet } = useWalletStore()
 const { replace } = useRouter()
 const { wait } = useUtils()
 const { name } = useDisplay()
@@ -81,6 +81,7 @@ watch(focused, () => {
 watch(loadWallets, async () => {
   if (loadWallets) {
     await getUserWallets()
+    await getCurrentWallet()
     loadWallets.value = false
   }
 })
