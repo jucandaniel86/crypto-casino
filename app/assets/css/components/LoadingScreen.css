@@ -32,7 +32,7 @@
 .loading-progress-bar {
   height: 4px;
   border-radius: 4px;
-  background-color: #9f36f1;
+  background-color: var(--textlink-light-text-color);
   z-index: 2;
   animation-duration: 10s;
   animation-name: changeWidth;

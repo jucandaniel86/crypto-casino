@@ -174,7 +174,7 @@ watchEffect(() => {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: #9f36f1;
+  background-color: var(--textlink-light-text-color);
   color: #fff;
 }
 

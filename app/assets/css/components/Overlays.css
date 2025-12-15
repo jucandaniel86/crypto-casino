@@ -25,7 +25,7 @@
 
 .overlay-close {
   background: transparent !important;
-  color: #9f36f1 !important;
+  color: var(--textlink-light-text-color) !important;
   box-shadow: none !important;
   padding: 8px !important;
   position: absolute !important;
@@ -39,7 +39,7 @@
 }
 
 .overlay-close svg {
-  color: #9f36f1 !important;
+  color: var(--textlink-light-text-color) !important;
   width: 1em;
   height: 1em;
   display: inline-block;

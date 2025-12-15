@@ -46,7 +46,7 @@ const startGameSession = async (demo: boolean): Promise<void> => {
     iframeError.value = 'The game cannot be played for the moment. Please try again later!'
     return
   }
-  console.log(typeof data.response === 'undefined')
+
   if (
     typeof data.response === 'undefined' ||
     typeof data.response.launch_url === 'undefined' ||

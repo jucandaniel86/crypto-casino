@@ -9,10 +9,10 @@
 }
 
 .v-btn.bg-purple {
-  background: #9f36f1 !important;
+  background: var(--textlink-light-text-color) !important;
 }
 .v-btn.bg-purple:hover {
-  background: #9f36f1 !important;
+  background: var(--textlink-light-text-color) !important;
   color: #000 !important;
 }
 
@@ -57,7 +57,7 @@
 }
 
 a.purple {
-  color: #9f36f1;
+  color: var(--textlink-light-text-color);
   text-decoration: underline;
   font-weight: 700;
 }
@@ -68,7 +68,7 @@ a.purple {
 }
 
 .mdi-checkbox-marked {
-  color: #9f36f1;
+  color: var(--textlink-light-text-color);
   opacity: 1 !important;
 }
 a.purple:hover {

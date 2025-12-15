@@ -108,7 +108,7 @@
 
 .balance-component.active {
   background: #181b22;
-  border: 1px solid #9f36f1;
+  border: 1px solid var(--textlink-light-text-color);
 }
 
 .balance-component.disabled {
@@ -168,7 +168,7 @@
 }
 
 .current-balance .balance-value {
-  color: #9f36f1;
+  color: var(--textlink-light-text-color);
   font-size: 24px;
   font-weight: 700;
 }

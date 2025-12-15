@@ -10,7 +10,7 @@
   --gametile-border-radius: 20px;
   --search-results-bgcolor: #212338;
 
-  --arrowbut-text-color: #9f36f1;
+  --arrowbut-text-color: #f2cf8e;
   --arrowbut-bg-color: #000;
 
   --gamesCategoryColumnCount: 8;
@@ -24,11 +24,11 @@
   --accordion-border-radius: 8px;
   --accordion-padding-left: 8px;
 
-  --textlink-light-text-color: #9f36f1;
+  --textlink-light-text-color: #f2cf8e;
 
   /** tabs */
   --tab-border-width: 2px;
-  --active-tab-indicator: #9f36f1;
+  --active-tab-indicator: #f2cf8e;
   --tab-border-radius: 1px;
   --tab-font-size: 14px;
   --tab-padding: 12px;

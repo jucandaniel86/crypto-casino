@@ -31,7 +31,7 @@
 }
 
 .provider-link:hover {
-  border-color: #9f36f1;
+  border-color: var(--textlink-light-text-color);
 }
 
 .provider-link img {

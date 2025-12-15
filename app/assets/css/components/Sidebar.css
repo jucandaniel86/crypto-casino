@@ -29,7 +29,7 @@
 .v-navigation-drawer .v-list-item--variant-plain:hover,
 .v-list-item--variant-plain:hover,
 .v-navigation-drawer .v-list-item--variant-plain.active {
-  background-color: #9f36f1;
+  background-color: var(--textlink-light-text-color);
   border-radius: 6px;
 }
 .v-navigation-drawer .v-list-item--variant-plain {
@@ -100,6 +100,6 @@
 }
 
 .v-list-item--active {
-  background-color: #9f36f1;
+  background-color: var(--textlink-light-text-color);
   border-radius: 6px;
 }

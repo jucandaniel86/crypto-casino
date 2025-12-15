@@ -55,7 +55,6 @@ onClickOutside(target, () => (menu.value = false))
 </script>
 <template>
   <div ref="SearchResultsContainer" class="w-100 position-relative">
-    HERE. I
     <v-text-field
       v-model="search"
       hide-details
