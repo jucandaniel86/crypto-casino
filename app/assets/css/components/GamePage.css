@@ -41,9 +41,19 @@
 .game-wrapper {
   display: flex;
   flex: 1;
+  position: relative;
 }
 .game-wrapper.blurred {
   filter: blur(4px);
+}
+
+.game-wrapper .game-iframe-error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
 }
 
 .game-iframe {

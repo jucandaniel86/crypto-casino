@@ -15,6 +15,7 @@ const game = ref<any>()
 const favLoadingResponse = ref<boolean>(false)
 const favorites = ref<any>()
 const iframeURL = ref('')
+const iframeError = ref('')
 
 //composables
 const { setPageLoading, setSidebar, setLoadWallets } = useAppStore()
@@ -36,10 +37,26 @@ const startGameSession = async (demo: boolean): Promise<void> => {
   startGame.value = true
   loadingPlayerSesson.value = true
 
-  const { data } = await useApiPostFetch('/player/play', {
+  const { data, success }: any = await useApiPostFetch('/player/play', {
     game_id: game.value.rgs_game_id,
     demo,
   })
+
+  if (!success) {
+    iframeError.value = 'The game cannot be played for the moment. Please try again later!'
+    return
+  }
+  console.log(typeof data.response === 'undefined')
+  if (
+    typeof data.response === 'undefined' ||
+    typeof data.response.launch_url === 'undefined' ||
+    data.response.launch_url === ''
+  ) {
+    console.log('====')
+    iframeError.value = 'The game cannot be played for the moment. Please try again later!'
+    return
+  }
+
   if (!demo && data && data.session_id) {
     setActivePlaySession(data.session_id)
   }
@@ -139,6 +156,7 @@ watch(isLogged, () => {
       >
         <div class="gameplay-overlay">
           <div class="game-wrapper" :class="{ 'game-blur': !startGame }">
+            <div v-if="iframeError" class="game-iframe-error">{{ iframeError }}</div>
             <iframe ref="gameIframe" class="game-iframe" allow="fullscreen" :src="iframeURL" />
           </div>
           <div v-if="!startGame" class="gameplay-currencymessage">
