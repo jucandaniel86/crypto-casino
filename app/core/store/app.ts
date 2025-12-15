@@ -7,6 +7,11 @@ export const useAppStore = defineStore('app', () => {
   const snackbar = ref(false)
   const snackbarMessage = ref('')
   const sidebar = ref<MenuItemConfig[]>([])
+  const loadWallets = ref<boolean>(false)
+
+  const setLoadWallets = (_payload: boolean) => {
+    loadWallets.value = _payload
+  }
 
   const setPageLoading = (loading: boolean) => {
     pageLoading.value = loading
@@ -41,11 +46,13 @@ export const useAppStore = defineStore('app', () => {
     snackbar,
     snackbarMessage,
     sidebar,
+    loadWallets,
     setSnackbar,
     toggleSnackbar,
     setPageLoading,
     setSidebarOpen,
     toggleSidebar,
     setSidebar,
+    setLoadWallets,
   }
 })

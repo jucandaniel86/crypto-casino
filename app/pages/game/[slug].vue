@@ -14,9 +14,10 @@ const gameLoading = ref<boolean>(false)
 const game = ref<any>()
 const favLoadingResponse = ref<boolean>(false)
 const favorites = ref<any>()
+const iframeURL = ref('')
 
 //composables
-const { setPageLoading, setSidebar } = useAppStore()
+const { setPageLoading, setSidebar, setLoadWallets } = useAppStore()
 const route = useRoute()
 const router = useRouter()
 const { isLogged } = storeToRefs(useAuthStore())
@@ -36,11 +37,14 @@ const startGameSession = async (demo: boolean): Promise<void> => {
   loadingPlayerSesson.value = true
 
   const { data } = await useApiPostFetch('/player/play', {
-    game_id: game.value.gameID,
+    game_id: game.value.rgs_game_id,
     demo,
   })
   if (!demo && data && data.session_id) {
     setActivePlaySession(data.session_id)
+  }
+  if (data.response.launch_url) {
+    iframeURL.value = data.response.launch_url
   }
 
   loadingPlayerSesson.value = false
@@ -113,8 +117,9 @@ onMounted(async () => {
 })
 
 //onmounted
-onUnmounted(() => {
+onUnmounted(async () => {
   setActivePlaySession('')
+  setLoadWallets(true)
 })
 
 //watchers
@@ -134,7 +139,7 @@ watch(isLogged, () => {
       >
         <div class="gameplay-overlay">
           <div class="game-wrapper" :class="{ 'game-blur': !startGame }">
-            <iframe ref="gameIframe" class="game-iframe" allow="fullscreen" />
+            <iframe ref="gameIframe" class="game-iframe" allow="fullscreen" :src="iframeURL" />
           </div>
           <div v-if="!startGame" class="gameplay-currencymessage">
             <p>The in-game balance will be displayed in EUR.</p>

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useWindowFocus } from '@vueuse/core'
+import { useAppStore } from '~/core/store/app'
 import { useAuthStore } from '~/core/store/auth'
 import { useWalletStore } from '~/core/store/wallet'
 import { OverlaysTypes } from '~/core/types/Overlays'
@@ -16,6 +17,7 @@ const { name } = useDisplay()
 const route = useRoute()
 const router = useRouter()
 const focused = useWindowFocus()
+const { loadWallets } = storeToRefs(useAppStore())
 
 //models
 const menu = ref<boolean>(false)
@@ -73,6 +75,13 @@ onMounted(async () => {
 watch(focused, () => {
   if (focused.value && !isLogged.value) {
     logout()
+  }
+})
+
+watch(loadWallets, async () => {
+  if (loadWallets) {
+    await getUserWallets()
+    loadWallets.value = false
   }
 })
 </script>
