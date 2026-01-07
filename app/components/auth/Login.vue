@@ -9,11 +9,14 @@ const password = ref('')
 const message = ref('')
 const errors = ref<any>([])
 const loading = ref<boolean>(false)
+const showPassword = ref<boolean>(false)
+
 //composables
 const { emailRules } = useValidation()
 const { setToken, setUser } = useAuthStore()
 const { replace } = useRouter()
 const { setSnackbar } = useAppStore()
+const { t } = useI18n({ useScope: 'global' })
 //emitters
 const emitters = defineEmits(['changeView'])
 
@@ -50,7 +53,7 @@ const onLogin = async () => {
     </v-col>
 
     <v-col cols="12" class="pb-0 pt-0">
-      <div class="text-subtitle-1 text-white">Email or Username*</div>
+      <div class="text-subtitle-1 text-white">{{ t('auth.emailUsername') }}*</div>
       <v-text-field
         v-model="username"
         placeholder="Email or Username*"
@@ -60,23 +63,40 @@ const onLogin = async () => {
       />
     </v-col>
     <v-col cols="12" class="pb-0 pt-0">
-      <div class="text-subtitle-1 text-white">Password*</div>
-      <v-text-field v-model="password" placeholder="Password*" type="password" density="compact" />
+      <div class="text-subtitle-1 text-white">{{ t('auth.password') }}*</div>
+      <div class="password-wrapper">
+        <v-text-field
+          v-model="password"
+          :placeholder="`${t('auth.password')}*`"
+          :type="showPassword ? 'text' : 'password'"
+          density="compact"
+          autocomplete="false"
+        />
+        <button @click.prevent="showPassword = !showPassword">
+          <icon-eye v-if="!showPassword" />
+          <icon-eye-off v-if="showPassword" />
+        </button>
+      </div>
     </v-col>
     <v-col cols="12" class="pb-0 pt-0">
-      <v-btn color="purple" class="w-100" :disabled="loading" @click.prevent="onLogin">Login</v-btn>
+      <v-btn color="purple" class="w-100" :disabled="loading" @click.prevent="onLogin">{{
+        t('auth.login')
+      }}</v-btn>
     </v-col>
     <v-col cols="12" class="pb-0">
       <p class="register-disclaimer">
-        Forgot password? <br />
-        <a href="#" class="purple">Click here to reset</a>
+        {{ t('auth.forgot') }} <br />
+        <a href="#" class="purple">{{ t('auth.reset') }}</a>
       </p>
     </v-col>
     <v-col cols="12" class="pb-0">
       <p class="register-disclaimer">
-        Do not have an account? Click here to? <br />
-        <a href="#" class="purple" @click.prevent="onChangeView">Create one</a>
+        {{ t('auth.signDisclaimer') }} <br />
+        <a href="#" class="purple" @click.prevent="onChangeView">{{ t('auth.create') }}</a>
       </p>
     </v-col>
   </v-row>
 </template>
+<style lang="css" scoped>
+@import '../../assets/css/components/Auth.css';
+</style>

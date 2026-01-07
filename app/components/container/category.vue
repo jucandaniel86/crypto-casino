@@ -12,7 +12,7 @@ const currentIndex = ref(0)
 const arrowDisabled = ref<boolean>(false)
 
 //composables
-const resolutionsConfig = ref(props.options.data.resolutionsConfig)
+const resolutionsConfig = ref(props.options.data.resolutionConfig)
 const { style } = useResolutionVars(resolutionsConfig.value)
 
 //methods

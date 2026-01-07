@@ -33,6 +33,7 @@ const clearSearch = () => {
   resultsGames.value = []
   resultCategories.value = []
   resultProviders.value = []
+  menu.value = false
 }
 
 const totalResults = computed(() => {
@@ -40,7 +41,12 @@ const totalResults = computed(() => {
 })
 
 watch(search, () => {
+  if (String(search.value).length == 0) {
+    clearSearch()
+  }
+
   if (String(search.value).length <= 1 || !search.value) return
+  menu.value = true
   appSearch()
 })
 
@@ -48,6 +54,13 @@ watch(menu, () => {
   if (!menu.value) {
     clearSearch()
     search.value = ''
+  }
+})
+
+watch(resultsGames, () => {
+  menu.value = false
+  if (resultsGames.value.length > 0) {
+    menu.value = true
   }
 })
 
@@ -66,7 +79,6 @@ onClickOutside(target, () => (menu.value = false))
       prepend-inner-icon="mdi-magnify"
       clearable
       width="100%"
-      @focus="menu = true"
       @click:clear="clearSearch"
     />
     <v-container v-if="menu">

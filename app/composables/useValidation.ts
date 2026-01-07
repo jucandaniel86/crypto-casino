@@ -5,11 +5,11 @@ export const useValidation = () => {
 
       return 'E-mail is required.'
     },
-    (value: string) => {
-      if (/.+@.+\..+/.test(value)) return true
+    // (value: string) => {
+    //   if (/.+@.+\..+/.test(value)) return true
 
-      return 'E-mail must be valid.'
-    },
+    //   return 'E-mail must be valid.'
+    // },
   ]
 
   const userNameRules = () => [

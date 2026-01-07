@@ -18,6 +18,7 @@ const route = useRoute()
 const router = useRouter()
 const focused = useWindowFocus()
 const { loadWallets } = storeToRefs(useAppStore())
+const { t } = useI18n()
 
 //models
 const menu = ref<boolean>(false)
@@ -126,7 +127,7 @@ watch(loadWallets, async () => {
           <div class="wrapper">
             <div class="wallet_header">
               <div class="current-balance">
-                <span class="balance-label">Balance</span>
+                <span class="balance-label">{{ t('wallet.balance') }}</span>
                 <span class="balance-value">
                   {{ convertBalance(currentWallet.balance, currentWallet.precision) }}
                   <span>{{ currentWallet.code }}</span>
@@ -134,14 +135,14 @@ watch(loadWallets, async () => {
               </div>
               <div class="balance-data">
                 <div class="balance-item">
-                  <span class="balance-label">Withdrawable</span>
+                  <span class="balance-label">{{ t('wallet.withdrawable') }}</span>
                   <span class="balance-value">
                     {{ convertBalance(currentWallet.balance, currentWallet.precision) }}
                     <span>{{ currentWallet.code }}</span>
                   </span>
                 </div>
                 <div class="balance-item">
-                  <span class="balance-label">Bonus</span>
+                  <span class="balance-label">{{ t('wallet.bonus') }}</span>
                   <span class="balance-value">
                     {{ convertBalance(0, currentWallet.precision) }}
                     <span>{{ currentWallet.code }}</span>
@@ -191,7 +192,7 @@ watch(loadWallets, async () => {
       variant="flat"
       class="wallet_trigger_btn"
       @click.prevent="openWalletModal"
-      >Wallet</v-btn
+      >{{ t('wallet.wallet') }}</v-btn
     >
     <v-btn v-if="isMobile" class="mobile-wallet-button ml-2" @click.prevent="openWalletModal">
       <shared-icon icon="brand-ico-wallet2" class="svg-icon" />

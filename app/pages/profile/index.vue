@@ -9,6 +9,7 @@ import { useAppStore } from '~/core/store/app'
 //composables
 const route = useRoute()
 const { replace } = useRouter()
+const { t } = useI18n()
 
 //models
 const tabs = ref(PROFILE_TABS)
@@ -65,7 +66,7 @@ definePageMeta({
         :class="{ 'v-tab--selected': currentTab && tab.id === currentTab }"
         @click.prevent="onTabChange(tab)"
       >
-        {{ tab.label }}
+        {{ t(tab.label) }}
       </v-tab>
     </v-tabs>
     <v-tabs-window v-model="currentTab">
@@ -81,7 +82,7 @@ definePageMeta({
   </div>
   <div v-else class="d-flex justify-center align-center h-100 mt-5">
     <v-alert class="mb-1" border="start" density="compact" color="purple" variant="tonal">
-      No Access. Please login to see this section.
+      {{ t('settings.noAccess') }}
     </v-alert>
   </div>
 </template>

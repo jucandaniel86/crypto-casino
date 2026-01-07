@@ -7,7 +7,7 @@ import { useAppStore } from '~/core/store/app'
 import type { ContainerType } from '~/core/types/Container'
 
 useHead({
-  title: 'Coin Casino | Crypto & Bitcoin Casino and Sportsbook',
+  title: 'Joci.ro | Crypto & Bitcoin Casino and Sportsbook',
 })
 
 definePageMeta({

@@ -33,6 +33,7 @@ const accountInfoForm = useTemplateRef<HTMLElement>('accountInfoForm')
 const { user } = storeToRefs(useAuthStore())
 const { setSnackbar } = useAppStore()
 const { isset } = useUtils()
+const { t } = useI18n()
 
 //methods
 const save = async (): Promise<void> => {
@@ -55,7 +56,7 @@ const save = async (): Promise<void> => {
   loading.value = false
 }
 
-onMounted(() => { 
+onMounted(() => {
   if (props.profile) {
     personalInfo.value = {
       ...personalInfo.value,
@@ -70,19 +71,19 @@ onMounted(() => {
       <v-col cols="4" class="pb-0">
         <v-row v-if="user" no-gutters>
           <v-col cols="12">
-            <div class="text-subtitle-1 text-white">Email</div>
+            <div class="text-subtitle-1 text-white">{{ t('settings.email') }}</div>
             <v-text-field
               :value="user.email"
-              placeholder="Email"
+              :placeholder="t('settings.email')"
               density="compact"
               color="primary"
             />
           </v-col>
           <v-col cols="12">
-            <div class="text-subtitle-1 text-white">Username</div>
+            <div class="text-subtitle-1 text-white">{{ t('settings.username') }}</div>
             <v-text-field
               :value="user.username"
-              placeholder="Username"
+              :placeholder="t('settings.username')"
               density="compact"
               color="primary"
             />
@@ -99,29 +100,29 @@ onMounted(() => {
       <v-col cols="8">
         <v-row>
           <v-col cols="6" class="pb-0">
-            <div class="text-subtitle-1 text-white">First Name</div>
+            <div class="text-subtitle-1 text-white">{{ t('settings.firstName') }}</div>
             <v-text-field
               v-model="personalInfo.first_name"
               :error="isset(errors.first_name)"
               :error-messages="isset(errors.first_name) ? errors.first_name[0] : null"
-              placeholder="Username"
+              :placeholder="t('settings.firstName')"
               density="compact"
               color="primary"
             />
           </v-col>
           <v-col cols="6" class="pb-0">
-            <div class="text-subtitle-1 text-white">Last Name</div>
+            <div class="text-subtitle-1 text-white">{{ t('settings.lastName') }}</div>
             <v-text-field
               v-model="personalInfo.last_name"
               :error="isset(errors.last_name)"
               :error-messages="isset(errors.last_name) ? errors.last_name[0] : null"
-              placeholder="Username"
+              :placeholder="t('settings.lastName')"
               density="compact"
               color="primary"
             />
           </v-col>
           <v-col cols="6" class="pt-0 pb-0">
-            <div class="text-subtitle-1 text-white">Birthday</div>
+            <div class="text-subtitle-1 text-white">{{ t('settings.birthday') }}</div>
 
             <v-date-input
               v-model="personalInfo.birthday"
@@ -148,10 +149,10 @@ onMounted(() => {
       <v-col cols="8">
         <v-row>
           <v-col cols="6" class="pb-0">
-            <div class="text-subtitle-1 text-white">Country</div>
+            <div class="text-subtitle-1 text-white">{{ t('settings.country') }}</div>
             <v-text-field
               v-model="personalInfo.country"
-              placeholder="Country"
+              :placeholder="t('settings.country')"
               density="compact"
               color="primary"
               :error="isset(errors.country)"
@@ -159,10 +160,10 @@ onMounted(() => {
             />
           </v-col>
           <v-col cols="6" class="pb-0">
-            <div class="text-subtitle-1 text-white">Postal Code</div>
+            <div class="text-subtitle-1 text-white">{{ t('settings.postalCode') }}</div>
             <v-text-field
               v-model="personalInfo.postal_code"
-              placeholder="Postal Code"
+              :placeholder="t('settings.postalCode')"
               density="compact"
               color="primary"
               :error="isset(errors.postal_code)"
@@ -170,19 +171,19 @@ onMounted(() => {
             />
           </v-col>
           <v-col cols="6" class="pb-0">
-            <div class="text-subtitle-1 text-white">Address</div>
+            <div class="text-subtitle-1 text-white">{{ t('settings.address') }}</div>
             <v-text-field
               v-model="personalInfo.address"
-              placeholder="Address"
+              :placeholder="t('settings.address')"
               density="compact"
               color="primary"
             />
           </v-col>
           <v-col cols="6" class="pb-0">
-            <div class="text-subtitle-1 text-white">City</div>
+            <div class="text-subtitle-1 text-white">{{ t('settings.city') }}</div>
             <v-text-field
               v-model="personalInfo.city"
-              placeholder="City"
+              :placeholder="t('settings.city')"
               density="compact"
               color="primary"
               :error="isset(errors.city)"
@@ -201,10 +202,10 @@ onMounted(() => {
       <v-col cols="12">
         <v-row no-gutters>
           <v-col cols="4" class="pb-0 pt-0">
-            <div class="text-subtitle-1 text-white">Phone Number</div>
+            <div class="text-subtitle-1 text-white">{{ t('settings.phoneNumber') }}</div>
             <v-text-field
               v-model="personalInfo.phone"
-              placeholder="Phone Number"
+              :placeholder="t('settings.phoneNumber')"
               density="compact"
               color="primary"
               :error="isset(errors.phone)"
@@ -225,7 +226,7 @@ onMounted(() => {
           max-width="200"
           :disabled="loading"
           @click.prevent="save"
-          >Save</v-btn
+          >{{ t('settings.save') }}</v-btn
         >
       </v-col>
     </v-row>

@@ -13,6 +13,7 @@ const props = defineProps({
 //composables
 const { setSnackbar } = useAppStore()
 const { isset } = useUtils()
+const { t } = useI18n()
 
 //models
 const settings = ref({
@@ -75,17 +76,14 @@ onMounted(() => {
   <div>
     <v-row>
       <v-col cols="4">
-        <form-languages v-model="settings.language" label="Language" />
+        <form-languages v-model="settings.language" :label="t('settings.language')" />
       </v-col>
       <v-col cols="4">
-        <form-currencies
-          v-model="settings.display_fiat_currency"
-          label="Preferred Fiat Display Currency"
-        />
+        <form-currencies v-model="settings.display_fiat_currency" :label="t('settings.fiat')" />
       </v-col>
     </v-row>
 
-    <h3 class="settings-title mt-5">Communication</h3>
+    <h3 class="settings-title mt-5">{{ t('settings.communication') }}</h3>
 
     <v-row>
       <v-col cols="4">
@@ -93,20 +91,20 @@ onMounted(() => {
           v-model="settings.marketing_emails"
           :true-value="1"
           :false-value="0"
-          label="Receive marketing emails"
+          :label="t('settings.marketingMails')"
           hide-details
         />
       </v-col>
     </v-row>
 
-    <h3 class="settings-title mt-5">Privacy</h3>
+    <h3 class="settings-title mt-5">{{ t('settings.privacy') }}</h3>
     <v-row>
       <v-col cols="4">
         <v-checkbox
           v-model="settings.hide_username"
           :true-value="1"
           :false-value="0"
-          label="Hide my Username"
+          :label="t('settings.hideUsername')"
           hide-details
           class="custom-select"
         />
@@ -118,26 +116,31 @@ onMounted(() => {
           max-width="200"
           :disabled="loading"
           @click.prevent="save"
-          >Save changes</v-btn
+          >{{ t('settings.save') }}</v-btn
         >
       </v-col>
     </v-row>
 
-    <h3 class="settings-title mt-5 mb-5">Security</h3>
+    <h3 class="settings-title mt-5 mb-5">{{ t('settings.security') }}</h3>
 
     <v-row>
       <v-col cols="4" class="pb-0">
         <v-expansion-panels v-model="passInfo" :class="{ 'mb-6': passInfo !== 0 }">
-          <v-expansion-panel>
-            <v-expansion-panel-title>Change your password</v-expansion-panel-title>
-            <v-expansion-panel-text class="password-wrapper pr-0">
+          <v-expansion-panel
+            style="border: 1px solid var(--accordion-header-background-color) !important"
+          >
+            <v-expansion-panel-title>{{ t('settings.changePassword') }}</v-expansion-panel-title>
+            <v-expansion-panel-text
+              class="password-wrapper pr-2 mb-3"
+              style="border: 1px solid var(--accordion-header-background-color) !important"
+            >
               <v-row>
                 <v-col cols="12" class="pb-0">
-                  <div class="text-subtitle-1 text-white">Old password*</div>
+                  <div class="text-subtitle-1 text-white">{{ t('settings.oldPassword') }}*</div>
                   <v-text-field
                     v-model="password.old_password"
                     type="password"
-                    placeholder="Old Password"
+                    :placeholder="t('settings.oldPassword')"
                     density="compact"
                     color="primary"
                     :error="isset(errors.old_password)"
@@ -145,11 +148,11 @@ onMounted(() => {
                   />
                 </v-col>
                 <v-col cols="12" class="pb-0">
-                  <div class="text-subtitle-1 text-white">New password*</div>
+                  <div class="text-subtitle-1 text-white">{{ t('settings.newPassword') }}*</div>
                   <v-text-field
                     v-model="password.password"
                     type="password"
-                    placeholder="New Password"
+                    :placeholder="t('settings.newPassword')"
                     density="compact"
                     color="primary"
                     :error="isset(errors.password)"
@@ -157,7 +160,7 @@ onMounted(() => {
                   />
                 </v-col>
                 <v-col cols="12" class="pb-0">
-                  <div class="text-subtitle-1 text-white">Confirm password*</div>
+                  <div class="text-subtitle-1 text-white">{{ t('settings.confirmPassword') }}*</div>
                   <v-text-field
                     v-model="password.password_confirmation"
                     type="password"
@@ -189,7 +192,7 @@ onMounted(() => {
                     max-width="200"
                     :disabled="loadingPass"
                     @click.prevent="savePassword"
-                    >Change password</v-btn
+                    >{{ t('settings.savePassword') }}</v-btn
                   >
                 </v-col>
               </v-row>

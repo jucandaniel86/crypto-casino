@@ -12,4 +12,5 @@ export type GameType = {
   imageUrl: string
   name: string
   realPlayUrl: string
+  favorite?: boolean
 }

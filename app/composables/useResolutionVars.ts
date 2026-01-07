@@ -1,60 +1,54 @@
 import { useDisplay } from 'vuetify'
 import type { ResolutionValuesType } from '~/core/types/TabsFetch'
 
-export const useResolutionVars = (resolutionsConfig: ResolutionValuesType) => {
+const resolutionKeys = ['XS', 'SM', 'MD', 'LG', 'XL'] as const
+type ResolutionKey = (typeof resolutionKeys)[number]
+
+const getCurrentResolution = (name: string | null | undefined): ResolutionKey => {
+  const upperName = String(name ?? '').toUpperCase()
+  return resolutionKeys.includes(upperName as ResolutionKey) ? (upperName as ResolutionKey) : 'LG'
+}
+
+const parseConfig = (
+  resolutionsConfig?: ResolutionValuesType | string | null,
+): ResolutionValuesType | undefined => {
+  if (!resolutionsConfig) return undefined
+
+  if (typeof resolutionsConfig === 'string') {
+    try {
+      return JSON.parse(resolutionsConfig) as ResolutionValuesType
+    } catch {
+      return undefined
+    }
+  }
+
+  return resolutionsConfig
+}
+
+export const useResolutionVars = (resolutionsConfig?: ResolutionValuesType | string | null) => {
   const { name } = useDisplay()
+  const parsedConfig = parseConfig(resolutionsConfig)
 
   const style = computed(() => {
-    switch (name.value) {
-      case 'lg':
-        return {
-          '--aspect-ratio': resolutionsConfig.LG.aspectRatioPercentage,
-          '--itemsPerRow': resolutionsConfig.LG.itemsPerRow,
-        }
-      case 'md':
-        return {
-          '--aspect-ratio': resolutionsConfig.MD.aspectRatioPercentage,
-          '--itemsPerRow': resolutionsConfig.MD.itemsPerRow,
-        }
-      case 'sm':
-        return {
-          '--aspect-ratio': resolutionsConfig.SM.aspectRatioPercentage,
-          '--itemsPerRow': resolutionsConfig.SM.itemsPerRow,
-        }
-      case 'xs':
-        return {
-          '--aspect-ratio': resolutionsConfig.XS.aspectRatioPercentage,
-          '--itemsPerRow': resolutionsConfig.XS.itemsPerRow,
-        }
-      case 'xl':
-        return {
-          '--aspect-ratio': resolutionsConfig.XL.aspectRatioPercentage,
-          '--itemsPerRow': resolutionsConfig.XL.itemsPerRow,
-        }
-      default:
-        return {
-          '--aspect-ratio': resolutionsConfig.LG.aspectRatioPercentage,
-          '--itemsPerRow': resolutionsConfig.LG.itemsPerRow,
-        }
+    const currentResolution = getCurrentResolution(name.value)
+    const configForResolution = parsedConfig?.[currentResolution]
+
+    const aspectRatio = configForResolution?.aspectRatioPercentage ?? 0
+    const itemsPerRow = configForResolution?.itemsPerRow ?? 6
+
+    return {
+      '--aspect-ratio': aspectRatio,
+      '--itemsPerRow': itemsPerRow,
     }
   })
 
   const itemsPerRow = computed(() => {
-    switch (name.value) {
-      case 'lg':
-        return resolutionsConfig.LG.itemsPerRow
-      case 'md':
-        return resolutionsConfig.MD.itemsPerRow
-      case 'sm':
-        return resolutionsConfig.SM.itemsPerRow
-      case 'xs':
-        return resolutionsConfig.XS.itemsPerRow
-      case 'xl':
-        return resolutionsConfig.XL.itemsPerRow
-      default:
-        return resolutionsConfig.XL.itemsPerRow
-    }
+    const currentResolution = getCurrentResolution(name.value)
+    const configForResolution = parsedConfig?.[currentResolution]
+
+    return configForResolution?.itemsPerRow ?? 6
   })
+
   return {
     style,
     itemsPerRow,

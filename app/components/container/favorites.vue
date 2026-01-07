@@ -80,6 +80,10 @@ const itemsPerRow = computed(() => {
       return 5
   }
 })
+
+const displayArrows = computed(() => {
+  return itemsPerRow.value > props.games.length
+})
 </script>
 <template>
   <div :id="props.id">
@@ -110,14 +114,19 @@ const itemsPerRow = computed(() => {
         </li>
       </ul>
       <button
-        v-if="currentIndex > 1"
+        v-if="currentIndex > 1 || !displayArrows"
         class="carousel_btn prev"
         :disabled="arrowDisabled"
         @click.prevent="prev"
       >
         <IconPlay />
       </button>
-      <button class="carousel_btn next" :disabled="arrowDisabled" @click.prevent="next">
+      <button
+        v-if="!displayArrows"
+        class="carousel_btn next"
+        :disabled="arrowDisabled"
+        @click.prevent="next"
+      >
         <IconPlay />
       </button>
     </div>

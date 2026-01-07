@@ -4,11 +4,10 @@ import { useAppStore } from '~/core/store/app'
 //composables
 const router = useRouter()
 const { toggleSidebar } = useAppStore()
+const { t } = useI18n()
 
 //methods
 const openCasino = () => router.push({ path: '/casino' })
-
-const openSports = () => router.push({ path: '/sports' })
 
 const openPromo = () => router.push({ path: '/promotions' })
 </script>
@@ -17,19 +16,15 @@ const openPromo = () => router.push({ path: '/promotions' })
     <div class="content">
       <button class="FooterMenuItem" @click="toggleSidebar">
         <SharedIcon icon="brand-ico-menu2" />
-        <p>Menu</p>
+        <p>{{ t('footer.meu') }}</p>
       </button>
       <button class="FooterMenuItem" @click="openCasino">
         <SharedIcon icon="brand-ico-casino2" />
-        <p>Casino</p>
-      </button>
-      <button class="FooterMenuItem" @click="openSports">
-        <SharedIcon icon="brand-ico-sports2" />
-        <p>Sports</p>
+        <p>{{ t('footer.casino') }}</p>
       </button>
       <button class="FooterMenuItem" @click="openPromo">
         <SharedIcon icon="brand-ico-promotions2" />
-        <p>Promotions</p>
+        <p>{{ t('footer.promo') }}</p>
       </button>
     </div>
   </div>

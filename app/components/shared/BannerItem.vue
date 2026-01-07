@@ -74,7 +74,7 @@ const handleClickAction = () => {
 }
 </script>
 <template>
-  <div classs="d-flex justify-center align-center" @click.prevent="handleClickAction">
-    <v-img :src="currentImage" style="min-width: 100%" />
+  <div classs="d-flex justify-center align-center w-100 h-100" @click.prevent="handleClickAction">
+    <v-img :src="currentImage" height="100%" aspect-ratio="16/9" :cover="true" />
   </div>
 </template>

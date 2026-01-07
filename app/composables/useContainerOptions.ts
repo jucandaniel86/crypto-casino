@@ -17,6 +17,8 @@ const ALLOWED_STYLES: any = {
 export const useContainerOptions = (options: ContainerType) => {
   const { name } = useDisplay()
 
+  if (typeof options === 'string') options = JSON.parse(options)
+
   const currentOptions = computed(() => {
     switch (name.value) {
       case 'lg':
@@ -60,6 +62,7 @@ export const useContainerOptions = (options: ContainerType) => {
     const style: Record<string, string> = {}
     Object.keys(resOptions).forEach((k) => {
       if (typeof ALLOWED_STYLES[k] !== 'undefined') {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         //@ts-ignore
         style[ALLOWED_STYLES[k]] = resOptions[k]
       }

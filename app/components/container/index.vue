@@ -140,6 +140,11 @@ watch(props, () => {
         :key="section.id"
         :options="section"
       />
+      <container-player-favourites
+        v-if="section.container === ContainerSection.PLAYER_FAVORITES"
+        :key="section.id"
+        :options="section"
+      />
     </template>
   </div>
 </template>

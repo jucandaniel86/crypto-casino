@@ -4,25 +4,25 @@ import type { TabType } from '~/core/types/Game'
 export const PROFILE_TABS: TabType[] = [
   {
     icon: '',
-    label: 'Account Info',
+    label: 'settings.accountInfo',
     id: 'account-info',
     file: '',
   },
   {
     icon: '',
-    label: 'Settings',
+    label: 'settings.settings',
     id: 'settings',
     file: '',
   },
   {
     icon: '',
-    label: 'Activity',
+    label: 'settings.activity',
     id: 'activity',
     file: '',
   },
   {
     icon: '',
-    label: 'Bonus History',
+    label: 'settings.bonus',
     id: 'bonus-history',
     file: '',
   },
@@ -31,7 +31,7 @@ export const PROFILE_TABS: TabType[] = [
 export type ProfileActivityItem = {
   id: string
   label: string
-  type: 'SELECT' | 'TIME'
+  type: 'SELECT' | 'TIME' | 'AUTOCOMPLETE'
   visible: boolean
   values?: any[]
   cols: number
@@ -121,11 +121,11 @@ export const ProfileActivityFilters: ProfileActivityFilterT[] = [
   {
     id: 'bets',
     label: 'Bets',
-    fetchUrl: '/json/responses/bets.json',
+    fetchUrl: '/player/bets',
     items: [
       {
         id: 'game',
-        type: 'SELECT',
+        type: 'AUTOCOMPLETE',
         visible: true,
         label: 'Game',
         cols: 6,
@@ -152,92 +152,8 @@ export const ProfileActivityFilters: ProfileActivityFilterT[] = [
             value: 'EUR',
           },
           {
-            label: 'CAD',
-            value: 'CAD',
-          },
-          {
-            label: 'DKK',
-            value: 'DKK',
-          },
-          {
-            label: 'NOK',
-            value: 'NOK',
-          },
-          {
-            label: 'PLN',
-            value: 'PLN',
-          },
-          {
-            label: 'BRL',
-            value: 'BRL',
-          },
-          {
-            label: 'NZD',
-            value: 'NZD',
-          },
-          {
-            label: 'JPY',
-            value: 'JPY',
-          },
-        ],
-      },
-      {
-        id: 'time',
-        cols: 12,
-        type: 'TIME',
-        visible: true,
-        label: '',
-      },
-    ],
-  },
-  //sports
-  {
-    id: 'sports',
-    label: 'Sport Bets',
-    fetchUrl: '/json/responses/sports.json',
-    items: [
-      {
-        id: 'currency',
-        label: 'Currency',
-        type: 'SELECT',
-        visible: true,
-        cols: 12,
-        values: [
-          {
-            label: 'USD',
-            value: 'USD',
-          },
-          {
-            label: 'EUR',
-            value: 'EUR',
-          },
-          {
-            label: 'CAD',
-            value: 'CAD',
-          },
-          {
-            label: 'DKK',
-            value: 'DKK',
-          },
-          {
-            label: 'NOK',
-            value: 'NOK',
-          },
-          {
-            label: 'PLN',
-            value: 'PLN',
-          },
-          {
-            label: 'BRL',
-            value: 'BRL',
-          },
-          {
-            label: 'NZD',
-            value: 'NZD',
-          },
-          {
-            label: 'JPY',
-            value: 'JPY',
+            label: 'JC',
+            value: 'JC',
           },
         ],
       },
@@ -327,3 +243,13 @@ export const ProfileBonusFilters: ProfileActivityFilterT[] = [
     ],
   },
 ]
+
+export type BetTransactonType = {
+  transaction_type: 'bet' | 'win' | 'refund'
+  stake: number
+  payout: number
+  refund: number
+  currency: string
+  transaction_id: string
+  round_finished: number
+}

@@ -126,7 +126,7 @@ hr.desp {
 }
 
 .transactions-table {
-  display: table;
+  display: block;
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0px;
@@ -134,7 +134,9 @@ hr.desp {
 }
 
 .transactions-table thead {
-  display: table-header-group;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
   border-collapse: collapse;
   border-spacing: 0px;
   font-size: 16px;
@@ -150,7 +152,7 @@ hr.desp {
 .transactions-table thead th {
   background-color: #212338;
   max-width: 200px !important;
-  padding: 24px 8px !important;
+  padding: 12px 4px !important;
   word-break: break-all !important;
   font-size: 14px;
   font-weight: 700;
@@ -165,7 +167,15 @@ hr.desp {
 }
 
 .transactions-table tbody {
-  display: table-row-group;
+  display: block;
+  height: 350px;
+  overflow-y: auto;
+}
+
+.transactions-table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
 }
 
 .transactions-table tbody td {
@@ -176,9 +186,8 @@ hr.desp {
   position: relative;
   max-width: 200px !important;
   overflow-wrap: break-word !important;
-  padding: 24px 8px !important;
-  font-weight: 700;
-  font-size: 16px !important;
+  padding: 6px 2px !important;
+  font-size: 14px !important;
   line-height: 1.43;
   display: table-cell;
   text-align: center;
@@ -190,4 +199,33 @@ hr.desp {
   text-overflow: ellipsis;
   white-space: nowrap;
   max-width: 10ch;
+}
+
+.transitions_wrapper {
+  position: relative;
+}
+
+.activity-pagination {
+  background-color: #212338;
+  color: #fff;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.activity-pagination button {
+  border: none;
+  box-shadow: none;
+}
+
+.activity-pagination .v-pagination__item--is-active button {
+  background-color: var(--arrowbut-text-color);
+}
+
+.transactions_loader {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  color: var(--arrowbut-text-color) !important;
+  transform: translate(-50%, -50%);
+  z-index: 99;
 }

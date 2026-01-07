@@ -6,6 +6,7 @@ import { OverlaysTypes } from '~/core/types/Overlays'
 const { replace } = useRouter()
 const { isLogged } = storeToRefs(useAuthStore())
 const { name } = useDisplay()
+const { t } = useI18n()
 
 //methods
 const login = () => replace({ query: { overlay: OverlaysTypes.LOGIN } })
@@ -25,8 +26,12 @@ const register = () => replace({ query: { overlay: OverlaysTypes.REGISTER } })
         <auth-wallet v-if="isLogged" />
 
         <div v-if="!isLogged" class="d-flex ga-2">
-          <v-btn color="primary" variant="flat" @click.prevent="login"> Log In </v-btn>
-          <v-btn color="purple" variant="flat" @click.prevent="register"> Sign Up </v-btn>
+          <v-btn color="primary" variant="flat" @click.prevent="login">
+            {{ t('header.logIn') }}
+          </v-btn>
+          <v-btn color="purple" variant="flat" @click.prevent="register">
+            {{ t('header.signUp') }}</v-btn
+          >
         </div>
         <auth-profile v-else />
       </div>

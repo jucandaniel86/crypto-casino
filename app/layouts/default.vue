@@ -17,8 +17,10 @@ const { toggleSnackbar } = useAppStore()
       border="start"
       density="compact"
       color="purple"
-      location-strategy="static"
+      location-strategy="connected"
       location="top right"
+      position="absolute"
+      style="top: 1rem"
     >
       {{ snackbarMessage }}
       <template #actions>

@@ -1,48 +1,73 @@
 <script setup lang="ts">
+import { storeToRefs } from 'pinia'
+import { useAppStore } from '~/core/store/app'
+
 const { name } = useDisplay()
-const layoutClass = computed(() => `footer-layout-${name.value}`)
-const lang = ref('English')
+const appStore = useAppStore()
+const { t } = useI18n()
+const router = useRouter()
+
+const { currentLanguage } = storeToRefs(appStore)
+const langOptions = [
+  { title: 'English', value: 'en' },
+  { title: 'Română', value: 'ro' },
+]
 
 const isDesktop = computed(() => ['lg', 'md', 'xl'].indexOf(name.value) !== -1)
+
+//methods
+const goTo = (link: string) => {
+  router.push(link)
+}
 </script>
 <template>
   <v-footer class="w-100 flex-column" :class="{ desktop: isDesktop }">
     <v-container>
-      <div :class="layoutClass">
-        <div class="links">
-          <h2 class="f-title">About</h2>
-          <a href="#" class="f-link">Terms & Conditions</a>
-          <a href="#" class="f-link">AML Policy</a>
-          <a href="#" class="f-link">Privacy Policy</a>
-          <a href="#" class="f-link">Responsible Gambling</a>
-          <a href="#" class="f-link">Affiliates</a>
-        </div>
-        <div class="links">
-          <h2 class="f-title">Casino</h2>
-          <a href="#" class="f-link">Casino</a>
-          <a href="#" class="f-link">Promotions</a>
-          <a href="#" class="f-link">Bonus Terms & Conditions</a>
-        </div>
-        <div class="links">
-          <h2 class="f-title">Sports</h2>
-          <a href="#" class="f-link">Casino</a>
-          <a href="#" class="f-link">Promotions</a>
-          <a href="#" class="f-link">Bonus Terms & Conditions</a>
-        </div>
-        <div>
+      <v-row>
+        <v-col md="4" cols="6">
+          <div class="links">
+            <h2 class="f-title">{{ t('footer.about') }}</h2>
+            <a href="#" class="f-link" @click.prevent="goTo('terms-and-conditions')">{{
+              t('footer.terms')
+            }}</a>
+            <a href="#" class="f-link" @click.prevent="goTo('privacy-policy')">{{
+              t('footer.privacy')
+            }}</a>
+            <a href="#" class="f-link" @click.prevent="goTo('responsible-gambling')">{{
+              t('footer.responsible')
+            }}</a>
+          </div>
+        </v-col>
+        <v-col md="4" cols="6">
+          <div class="links">
+            <h2 class="f-title">{{ t('footer.casino') }}</h2>
+            <a href="#" class="f-link" @click.prevent="goTo('casino')">{{ t('footer.casino') }}</a>
+            <a href="#" class="f-link" @click.prevent="goTo('promotions')">{{
+              t('footer.promo')
+            }}</a>
+            <a href="#" class="f-link" @click.prevent="goTo('bonus-terms-conditions')">{{
+              t('footer.bonus')
+            }}</a>
+          </div>
+        </v-col>
+        <v-col md="4" cols="12">
           <v-select
-            v-model="lang"
-            :items="['English', 'Spanish', 'Italiano']"
+            v-model="currentLanguage"
+            :items="langOptions"
             max-width="120"
             height="35"
             hide-details
             density="compact"
+            item-title="title"
+            item-value="value"
+            @update:model-value="appStore.setCurrentLanguage"
           />
-        </div>
-      </div>
+        </v-col>
+      </v-row>
+
       <div class="footer-contact mt-4 pt-4 pb-4 pl-5 pr-5">
         <div class="d-flex justify-space-between align-center mb-10">
-          <h3>Get in touch</h3>
+          <h3>{{ t('footer.get') }}</h3>
           <div class="d-flex ga-2">
             <icon-x class="social-icons" />
             <icon-telegram class="social-icons" />
@@ -52,19 +77,19 @@ const isDesktop = computed(() => ['lg', 'md', 'xl'].indexOf(name.value) !== -1)
         <v-row no-gutters>
           <v-col>
             <div class="contact-details">
-              <p>Support</p>
+              <p>{{ t('footer.support') }}</p>
               <p>support@coincasino.com</p>
             </div>
           </v-col>
           <v-col>
             <div class="contact-details">
-              <p>Affiliates</p>
+              <p>{{ t('footer.affiliates') }}</p>
               <p>affiliates@coincasino.com</p>
             </div>
           </v-col>
           <v-col>
             <div class="contact-details">
-              <p>Complaints</p>
+              <p>{{ t('footer.complaints') }}</p>
               <p>complaints@coincasino.com</p>
             </div>
           </v-col>
@@ -76,7 +101,7 @@ const isDesktop = computed(() => ['lg', 'md', 'xl'].indexOf(name.value) !== -1)
       <v-container>
         <div class="d-flex justify-space-between align-center">
           <p class="copyright">
-            © {{ new Date().getFullYear() }} coincasino.com | All Rights Reserved.
+            © {{ new Date().getFullYear() }} joci.ro | {{ t('footer.allRights') }}
           </p>
           <div class="d-flex ga-2 align-center">
             <icon18-plus />
@@ -84,12 +109,7 @@ const isDesktop = computed(() => ['lg', 'md', 'xl'].indexOf(name.value) !== -1)
           </div>
         </div>
         <p class="disclaimer mt-4">
-          Coincasino.com is owned and operated by Igloo Ventures SRL. Registration number:
-          3-102-880024, registered address: San Jose, Cedula Juridica, Costa Rica. Coincasino.com is
-          licensed and regulated by the Government of the Autonomous Island of Anjouan, Union of
-          Comoros and operates under License No. ALSI-142311005-FI2. Coincasino.com has passed all
-          regulatory compliance and is legally authorized to conduct gaming operations for any and
-          all games of chance and wagering.
+          {{ t('footer.disclaimer') }}
         </p>
       </v-container>
     </div>

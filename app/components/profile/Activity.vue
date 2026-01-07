@@ -1,17 +1,24 @@
 <!-- eslint-disable @typescript-eslint/no-explicit-any -->
 <script setup lang="ts">
-import { ProfileActivityFilters } from '~/config/Profile.config'
+import { ProfileActivityFilters, type BetTransactonType } from '~/config/Profile.config'
 
 //composables
-const { convertCurrency, convertDate } = useUtils()
+const { convertCurrency, convertDate, isset } = useUtils()
+const { t } = useI18n()
 
 //models
-const activities = ProfileActivityFilters.map((el) => ({ label: el.label, value: el.id }))
+const activities = ProfileActivityFilters.map((el) => ({
+  label: el.label,
+  value: el.id,
+}))
 const filterVisible = ref<boolean>(false)
 const activityType = ref(activities[0]?.value)
 const filters = ref<any>({})
 const results = ref<any[]>([])
 const loading = ref<boolean>(false)
+const page = ref<number>(1)
+const length = ref<number>(15)
+const total = ref<number>(0)
 
 //computed
 const currentFilters = computed(() => {
@@ -23,16 +30,61 @@ const fetchResults = async (): Promise<void> => {
   const currentFetchURL = ProfileActivityFilters.find((el) => el.id === activityType.value)
   if (currentFetchURL) {
     loading.value = true
-    const data: any = await $fetch(currentFetchURL.fetchUrl)
-    results.value = data
+    try {
+      const { data, success }: any = await useAPIFetch(currentFetchURL.fetchUrl, {
+        page: page.value,
+        length: length.value,
+        currency: isset(filters.value.currency) ? filters.value.currency : undefined,
+        from: isset(filters.value.time) ? filters.value.time.from : undefined,
+        to: isset(filters.value.time) ? filters.value.time.to : undefined,
+        game: isset(filters.value.game) ? filters.value.game : undefined,
+      })
+
+      if (data && success) {
+        results.value = data.data
+        total.value = data.total
+      }
+    } catch (err) {
+      console.warn('err', err)
+    }
     loading.value = false
   }
 }
 
+const handleBetType = (transactionType: string) => {
+  return String(transactionType).toLowerCase()
+}
+
+const handleAmount = (transition: BetTransactonType) => {
+  let value = 0
+  switch (transition.transaction_type) {
+    case 'bet':
+      value = transition.stake
+      break
+    case 'win':
+      value = transition.payout
+      break
+    case 'refund':
+      value = transition.refund
+      break
+  }
+  return convertCurrency(value)
+}
+
+const handleFilterSearch = async () => {
+  page.value = 1
+  await fetchResults()
+}
+
 //watchers
-watch(activityType, () => {
+watch(activityType, async () => {
   filterVisible.value = false
-  fetchResults()
+  results.value = []
+  await fetchResults()
+})
+
+watch(page, async () => {
+  await fetchResults()
 })
 
 //mounted
@@ -73,7 +125,13 @@ onMounted(() => {
               class="pb-0 pt-0"
               :cols="filter.cols"
             >
-              <div v-if="filter.label" class="text-subtitle-1 text-white">{{ filter.label }}</div>
+              <div v-if="filter.label" class="text-subtitle-1 text-white">
+                {{ filter.label }}
+              </div>
+              <SharedGameSearchAutocomplete
+                v-if="filter.visible && filter.type === 'AUTOCOMPLETE'"
+                v-model="filters[filter.id]"
+              />
               <v-select
                 v-if="filter.visible && filter.type === 'SELECT'"
                 v-model="filters[filter.id]"
@@ -90,48 +148,63 @@ onMounted(() => {
           </v-row>
           <v-row>
             <v-col cols="12">
-              <v-btn color="primary" class="w-100" max-width="200">Apply</v-btn>
+              <v-btn
+                color="primary"
+                class="w-100"
+                max-width="200"
+                :disabled="loading"
+                @click.prevent="handleFilterSearch"
+                >{{ t('settings.apply') }}</v-btn
+              >
             </v-col>
           </v-row>
         </v-col>
       </v-row>
     </div>
 
-    <v-progress-circular v-if="loading" color="purple" />
+    <div v-if="results.length === 0" class="no-results-wrapper mt-5 mb-5">
+      {{ t('settings.noResults') }}
+    </div>
 
-    <div v-if="results.length === 0" class="no-results-wrapper mt-5 mb-5">No Results</div>
-
-    <div v-else>
+    <div v-else class="transitions_wrapper">
+      <v-progress-circular
+        v-if="loading"
+        color="yellow"
+        indeterminate
+        class="transactions_loader"
+      />
       <table class="transactions-table mt-8">
         <thead>
           <tr>
-            <th>Type</th>
-            <th>Currency</th>
-            <th>Amount</th>
-            <th>Timestamp</th>
-            <th>Status</th>
-            <th>Transaction ID</th>
-            <th>Payment method</th>
+            <th>{{ t('settings.game') }}</th>
+            <th>{{ t('settings.type') }}</th>
+            <th>{{ t('settings.currency') }}</th>
+            <th>{{ t('settings.amount') }}</th>
+            <th>{{ t('settings.timestamp') }}</th>
+            <th>{{ t('settings.status') }}</th>
+            <th>{{ t('settings.transID') }}</th>
           </tr>
         </thead>
         <tbody>
           <tr v-for="(result, i) in results" :key="`${activityType}_${i}`">
-            <td>{{ result.type }}</td>
+            <td>{{ isset(result.game) ? result.game.name : '-' }}</td>
+            <td>{{ handleBetType(result.transaction_type) }}</td>
             <td>{{ result.currency }}</td>
-            <td>{{ convertCurrency(result.amount) }}</td>
-            <td>{{ convertDate(result.timestamp) }}</td>
-            <td>{{ result.status }}</td>
+            <td>{{ handleAmount(result) }}</td>
+            <td>{{ convertDate(result.when_placed) }}</td>
+            <td>{{ result.round_finished ? 'Completed' : 'Completed' }}</td>
             <td>
-              <span class="transaction-text-overlay">{{ result.transactionId }}</span>
-            </td>
-            <td>
-              <span class="transaction-text-overlay">{{
-                result.paymentMethodAccountIdentifier
-              }}</span>
+              <span class="transaction-text-overlay">{{ result.transaction_id }}</span>
             </td>
           </tr>
         </tbody>
       </table>
+      <v-pagination
+        v-model="page"
+        :total-visible="7"
+        :length="Math.floor(total / length)"
+        class="activity-pagination"
+      />
     </div>
   </div>
 </template>
