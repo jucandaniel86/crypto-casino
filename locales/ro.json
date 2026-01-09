@@ -86,5 +86,18 @@
     "payment": "Metodă de plată",
     "game": "Joc",
     "apply": "Aplică"
+  },
+  "forgot": {
+    "title": "Resetează parola",
+    "email": "Email",
+    "reset": "Resetează"
+  },
+  "gamePage": {
+    "startSessionError": "Jocul nu poate fi jucat momentan. Te rugăm să încerci din nou mai târziu!",
+    "err404Title": "Ups, pagina nu a fost găsită",
+    "err404Content": "Ne pare rău, pagina pe care o cauți nu există sau a fost mutată.",
+    "realMoney": "Joacă pe bani reali",
+    "demo": "Joacă DEMO",
+    "currencyDisclaimer": "Soldul din joc va fi afișat în EUR."
   }
 }

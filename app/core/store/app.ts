@@ -1,4 +1,5 @@
 import type { MenuItemConfig } from '~/config/Menu.config'
+import * as Pk from '../../../package.json'
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 export const useAppStore = defineStore(
@@ -11,6 +12,7 @@ export const useAppStore = defineStore(
     const sidebar = ref<MenuItemConfig[]>([])
     const loadWallets = ref<boolean>(false)
     const currentLanguage = ref<string>('en') //@todo make an enum
+    const version = ref<string>(Pk.version)
 
     const setLoadWallets = (_payload: boolean) => {
       loadWallets.value = _payload
@@ -48,6 +50,7 @@ export const useAppStore = defineStore(
     }
 
     return {
+      version,
       pageLoading,
       sidebarOpen,
       snackbar,

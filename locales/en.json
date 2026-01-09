@@ -86,5 +86,18 @@
     "payment": "Payment method",
     "game": "Game",
     "apply": "Apply"
+  },
+  "forgot": {
+    "title": "Reset password",
+    "email": "Email",
+    "reset": "Reset"
+  },
+  "gamePage": {
+    "startSessionError": "The game cannot be played for the moment. Please try again later!",
+    "err404Title": "'Uh oh, Page not Found'",
+    "err404Content": "Sorry the page you were looking for doesn't exist or has been moved.",
+    "realMoney": "Play Real Money",
+    "demo": "Play DEMO",
+    "currencyDisclaimer": "The in-game balance will be displayed in EUR."
   }
 }

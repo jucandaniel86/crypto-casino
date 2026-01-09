@@ -36,3 +36,18 @@
   color: #fff;
   fill: #fff;
 }
+
+.logo-wrapper {
+  position: relative;
+}
+.logo-wrapper a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo-wrapper sup {
+  position: absolute;
+  top: 0.5rem;
+  right: -30%;
+  font-size: 0.7rem;
+}

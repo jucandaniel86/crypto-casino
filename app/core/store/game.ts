@@ -1,3 +1,6 @@
+import { watch, ref } from 'vue'
+import { defineStore } from 'pinia'
+
 const REFRESH_BALANCE_TIMER = 5000 //ms
 
 export const useGameStore = defineStore('game', () => {

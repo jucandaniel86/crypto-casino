@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useAuthStore } from '~/core/store/auth'
 import { OverlaysTypes } from '~/core/types/Overlays'
+import Forgot from '../auth/Forgot.vue'
 
 const overlayView = ref()
 const dialog = ref<boolean>(false)
@@ -31,6 +32,7 @@ watch(
       OverlaysTypes.LOGIN,
       OverlaysTypes.REGISTER,
       OverlaysTypes.WALLET,
+      OverlaysTypes.FORGOT,
     ]
     overlayView.value = overlay
     if (overlay && allowedValues.indexOf(overlay) !== -1) {
@@ -64,11 +66,12 @@ watch(dialog, () => {
   </v-navigation-drawer>
 
   <v-dialog
-    v-if="[OverlaysTypes.WALLET].indexOf(overlayView) !== -1 && isLogged"
+    v-if="[OverlaysTypes.WALLET, OverlaysTypes.FORGOT].indexOf(overlayView) !== -1"
     v-model="dialog"
-    persistent
+    :persistent="overlayView !== OverlaysTypes.FORGOT"
     transition="dialog-bottom-transition"
   >
-    <wallet />
+    <wallet v-if="OverlaysTypes.WALLET && isLogged" />
+    <forgot v-if="OverlaysTypes.FORGOT" />
   </v-dialog>
 </template>

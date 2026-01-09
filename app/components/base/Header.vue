@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useAppStore } from '~/core/store/app'
 import { useAuthStore } from '~/core/store/auth'
 import { OverlaysTypes } from '~/core/types/Overlays'
 
@@ -7,6 +8,7 @@ const { replace } = useRouter()
 const { isLogged } = storeToRefs(useAuthStore())
 const { name } = useDisplay()
 const { t } = useI18n()
+const { version } = storeToRefs(useAppStore())
 
 //methods
 const login = () => replace({ query: { overlay: OverlaysTypes.LOGIN } })
@@ -16,10 +18,11 @@ const register = () => replace({ query: { overlay: OverlaysTypes.REGISTER } })
   <v-app-bar color="primary" height="48" class="layout-header d-flex align-center justify-center">
     <v-container>
       <div class="d-flex justify-space-between align-center">
-        <v-app-bar-title class="d-flex align-center">
+        <v-app-bar-title class="d-flex align-center logo-wrapper">
           <nuxt-link :to="'/'">
             <icon-logo v-if="['lg', 'md', 'xl'].indexOf(name) !== -1" class="layout-logo" />
             <icon-logo-sm v-if="['sm', 'xs'].indexOf(name) !== -1" class="layout-logo" />
+            <sup>v.{{ version }}</sup>
           </nuxt-link>
         </v-app-bar-title>
 

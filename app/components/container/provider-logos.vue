@@ -3,6 +3,11 @@ import type { ContainerType } from '~/core/types/Container'
 
 const { options } = defineProps<{ options: ContainerType }>()
 const { display } = useContainerOptions(options)
+const router = useRouter()
+
+const goToProviderPage = (slug: string) => {
+  router.push(slug)
+}
 </script>
 <template>
   <v-slide-group v-if="display" show-arrows :id="options.id">
@@ -13,6 +18,7 @@ const { display } = useContainerOptions(options)
           width: options.data.width,
           height: options.data.height,
         }"
+        @click.prevent="goToProviderPage(provider.slug)"
       >
         <img :src="provider.imageUrl" />
       </button>

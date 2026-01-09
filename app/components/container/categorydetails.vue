@@ -5,7 +5,7 @@ const { options } = defineProps<{ options: ContainerType }>()
 const { display } = useContainerOptions(options)
 const page = ref(options.data.initialState.page)
 const totalItems = ref(options.data.initialState.totalItems)
-const slug = options.data.slug
+const slug = options.data.fetchUrl
 const games = ref(options.data.initialState.data)
 const size = ref(options.data.initialState.size)
 const loading = ref<boolean>(false)
@@ -17,9 +17,8 @@ const getGames = async (): Promise<void> => {
 
   page.value = page.value += 1
   loading.value = true
-  const currentSlug = slug.replace('category/', '')
 
-  const { data } = await useAPIFetch('/category/games/' + currentSlug, {
+  const { data } = await useAPIFetch(slug, {
     page: page.value,
   })
 

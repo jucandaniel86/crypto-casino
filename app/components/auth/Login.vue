@@ -2,6 +2,7 @@
 <script setup lang="ts">
 import { useAppStore } from '~/core/store/app'
 import { useAuthStore } from '~/core/store/auth'
+import { OverlaysTypes } from '~/core/types/Overlays'
 
 //models
 const username = ref('')
@@ -21,6 +22,7 @@ const { t } = useI18n({ useScope: 'global' })
 const emitters = defineEmits(['changeView'])
 
 //methids
+const forgotPassword = () => replace({ query: { overlay: OverlaysTypes.FORGOT } })
 const onChangeView = () => emitters('changeView', 'register')
 const onLogin = async () => {
   loading.value = true
@@ -86,7 +88,7 @@ const onLogin = async () => {
     <v-col cols="12" class="pb-0">
       <p class="register-disclaimer">
         {{ t('auth.forgot') }} <br />
-        <a href="#" class="purple">{{ t('auth.reset') }}</a>
+        <a href="#" class="purple" @click.prevent="forgotPassword">{{ t('auth.reset') }}</a>
       </p>
     </v-col>
     <v-col cols="12" class="pb-0">

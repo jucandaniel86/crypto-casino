@@ -5,6 +5,7 @@ import { useAppStore } from '~/core/store/app'
 import { useAuthStore } from '~/core/store/auth'
 import { useGameStore } from '~/core/store/game'
 import { OverlaysTypes } from '~/core/types/Overlays'
+import { ref, computed } from 'vue'
 
 //models
 const el = useTemplateRef('gameIframe')
@@ -26,6 +27,7 @@ const { toggle } = useFullscreen(el)
 const { openOverlay } = useUtils()
 const { name } = useDisplay()
 const { setActivePlaySession } = useGameStore()
+const { t } = useI18n()
 
 //methods
 const startGameSession = async (demo: boolean): Promise<void> => {
@@ -43,7 +45,8 @@ const startGameSession = async (demo: boolean): Promise<void> => {
   })
 
   if (!success) {
-    iframeError.value = 'The game cannot be played for the moment. Please try again later!'
+    iframeError.value = t('gamePage.startSessionError')
+    loadingPlayerSesson.value = false
     return
   }
 
@@ -52,8 +55,8 @@ const startGameSession = async (demo: boolean): Promise<void> => {
     typeof data.response.launch_url === 'undefined' ||
     data.response.launch_url === ''
   ) {
-    console.log('====')
-    iframeError.value = 'The game cannot be played for the moment. Please try again later!'
+    iframeError.value = t('gamePage.startSessionError')
+    loadingPlayerSesson.value = false
     return
   }
 
@@ -61,10 +64,14 @@ const startGameSession = async (demo: boolean): Promise<void> => {
     setActivePlaySession(data.session_id)
   }
   if (data.response.launch_url) {
-    iframeURL.value = data.response.launch_url
+    if (el.value) {
+      el.value.src = data.response.launch_url
+      el.value.onload = () => {
+        loadingPlayerSesson.value = false
+      }
+    }
   }
 
-  loadingPlayerSesson.value = false
   startGame.value = true
 }
 
@@ -93,15 +100,15 @@ const getGamePage = async (): Promise<void> => {
     if (import.meta.client) {
       throw showError({
         statusCode: 404,
-        statusMessage: 'Uh oh, Page not Found',
-        message: "Sorry the page you were looking for doesn't exist or has been moved.",
+        statusMessage: t('gamePage.err404Title'),
+        message: t('gamePage.err404Content'),
         fatal: true,
       })
     } else {
       throw createError({
         statusCode: 404,
-        statusMessage: 'Uh oh, Page not Found',
-        message: "Sorry the page you were looking for doesn't exist or has been moved.",
+        statusMessage: t('gamePage.err404Title'),
+        message: t('gamePage.err404Content'),
         fatal: true,
       })
     }
@@ -158,9 +165,15 @@ watch(isLogged, () => {
           <div class="game-wrapper" :class="{ 'game-blur': !startGame }">
             <div v-if="iframeError" class="game-iframe-error">{{ iframeError }}</div>
             <iframe ref="gameIframe" class="game-iframe" allow="fullscreen" :src="iframeURL" />
+            <v-progress-circular
+              v-if="loadingPlayerSesson"
+              indeterminate
+              color="yellow"
+              class="game-iframe-loader"
+            />
           </div>
           <div v-if="!startGame" class="gameplay-currencymessage">
-            <p>The in-game balance will be displayed in EUR.</p>
+            <p>{{ t('gamePage.currencyDisclaimer') }}</p>
             <p class="w-100 text-center d-flex ga-1 justify-center">
               <v-btn
                 :disabled="loadingPlayerSesson"
@@ -168,7 +181,7 @@ watch(isLogged, () => {
                 class="w-100"
                 max-width="200"
                 @click.prevent="startGameSession(false)"
-                >Play Real Money</v-btn
+                >{{ t('gamePage.realMoney') }}</v-btn
               >
               <v-btn
                 :disabled="loadingPlayerSesson"
@@ -176,7 +189,7 @@ watch(isLogged, () => {
                 class="w-100"
                 max-width="200"
                 @click.prevent="startGameSession(true)"
-                >Play DEMO</v-btn
+                >{{ t('gamePage.demo') }}</v-btn
               >
             </p>
           </div>
