@@ -28,10 +28,17 @@ export const PROFILE_TABS: TabType[] = [
   },
 ]
 
+export enum ProfileActivityItemType {
+  SELECT = 'SELECT',
+  TIME = 'TIME',
+  CURRENCY = 'CURRENCY',
+  AUTOCOMPLETE = 'AUTOCOMPLETE',
+}
+
 export type ProfileActivityItem = {
   id: string
   label: string
-  type: 'SELECT' | 'TIME' | 'AUTOCOMPLETE'
+  type: ProfileActivityItemType
   visible: boolean
   values?: any[]
   cols: number
@@ -48,71 +55,32 @@ export const ProfileActivityFilters: ProfileActivityFilterT[] = [
   {
     id: 'transactions',
     label: 'Transactions',
-    fetchUrl: '/json/responses/transactions.json',
+    fetchUrl: '/player/transactions',
     items: [
       {
         id: 'type',
         label: 'Type',
-        type: 'SELECT',
+        type: ProfileActivityItemType.SELECT,
         visible: true,
         cols: 6,
         values: [
           { label: 'All', value: '' },
-          { label: 'Deposit', value: 'DEPOSIT' },
-          { label: 'Withdrawal', value: 'WITHDRAWAL' },
-          { label: 'Manual Deposit', value: 'MANUAL_DEPOSIT' },
-          { label: 'Manual Deduction', value: 'MANUAL_WITHDRAWAL' },
+          { label: 'Deposit', value: 'deposit' },
+          { label: 'Withdrawal', value: 'withdraw' },
         ],
       },
       {
         id: 'currency',
         label: 'Currency',
-        type: 'SELECT',
+        type: ProfileActivityItemType.CURRENCY,
         visible: true,
         cols: 6,
-        values: [
-          {
-            label: 'USD',
-            value: 'USD',
-          },
-          {
-            label: 'EUR',
-            value: 'EUR',
-          },
-          {
-            label: 'CAD',
-            value: 'CAD',
-          },
-          {
-            label: 'DKK',
-            value: 'DKK',
-          },
-          {
-            label: 'NOK',
-            value: 'NOK',
-          },
-          {
-            label: 'PLN',
-            value: 'PLN',
-          },
-          {
-            label: 'BRL',
-            value: 'BRL',
-          },
-          {
-            label: 'NZD',
-            value: 'NZD',
-          },
-          {
-            label: 'JPY',
-            value: 'JPY',
-          },
-        ],
+        values: [],
       },
       {
         id: 'time',
         cols: 12,
-        type: 'TIME',
+        type: ProfileActivityItemType.TIME,
         visible: true,
         label: '',
       },
@@ -125,7 +93,7 @@ export const ProfileActivityFilters: ProfileActivityFilterT[] = [
     items: [
       {
         id: 'game',
-        type: 'AUTOCOMPLETE',
+        type: ProfileActivityItemType.AUTOCOMPLETE,
         visible: true,
         label: 'Game',
         cols: 6,
@@ -139,28 +107,15 @@ export const ProfileActivityFilters: ProfileActivityFilterT[] = [
       {
         id: 'currency',
         label: 'Currency',
-        type: 'SELECT',
+        type: ProfileActivityItemType.CURRENCY,
         visible: true,
         cols: 6,
-        values: [
-          {
-            label: 'USD',
-            value: 'USD',
-          },
-          {
-            label: 'EUR',
-            value: 'EUR',
-          },
-          {
-            label: 'JC',
-            value: 'JC',
-          },
-        ],
+        values: [],
       },
       {
         id: 'time',
         cols: 12,
-        type: 'TIME',
+        type: ProfileActivityItemType.TIME,
         visible: true,
         label: '',
       },
@@ -177,66 +132,27 @@ export const ProfileBonusFilters: ProfileActivityFilterT[] = [
       {
         id: 'type',
         label: 'Type',
-        type: 'SELECT',
+        type: ProfileActivityItemType.SELECT,
         visible: true,
         cols: 6,
         values: [
           { label: 'All', value: '' },
           { label: 'Deposit', value: 'DEPOSIT' },
           { label: 'Withdrawal', value: 'WITHDRAWAL' },
-          { label: 'Manual Deposit', value: 'MANUAL_DEPOSIT' },
-          { label: 'Manual Deduction', value: 'MANUAL_WITHDRAWAL' },
         ],
       },
       {
         id: 'currency',
         label: 'Currency',
-        type: 'SELECT',
+        type: ProfileActivityItemType.SELECT,
         visible: true,
         cols: 6,
-        values: [
-          {
-            label: 'USD',
-            value: 'USD',
-          },
-          {
-            label: 'EUR',
-            value: 'EUR',
-          },
-          {
-            label: 'CAD',
-            value: 'CAD',
-          },
-          {
-            label: 'DKK',
-            value: 'DKK',
-          },
-          {
-            label: 'NOK',
-            value: 'NOK',
-          },
-          {
-            label: 'PLN',
-            value: 'PLN',
-          },
-          {
-            label: 'BRL',
-            value: 'BRL',
-          },
-          {
-            label: 'NZD',
-            value: 'NZD',
-          },
-          {
-            label: 'JPY',
-            value: 'JPY',
-          },
-        ],
+        values: [],
       },
       {
         id: 'time',
         cols: 12,
-        type: 'TIME',
+        type: ProfileActivityItemType.TIME,
         visible: true,
         label: '',
       },

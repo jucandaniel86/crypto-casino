@@ -12,6 +12,8 @@ const networkData = computed(() => {
   return Object.entries(props.currency.networkData).map((network: any) => network[1].name)
 })
 
+const displayExchangeRate = ref<boolean>(false)
+
 const network = ref('')
 
 onMounted(() => {
@@ -59,14 +61,18 @@ onMounted(() => {
               </ul>
 
               <div class="currency-page-wallet mt-2">
-                0x4Ddb182191E9633DCdd8f3d2f72AbB415140219e
+                <SharedQrCode
+                  v-if="props.currency.owner_address"
+                  :address="props.currency.owner_address"
+                />
+                <span v-else>No address available.</span>
               </div>
             </div>
           </div>
         </v-col>
       </v-row>
     </div>
-    <div class="currency-page mt-2">
+    <div v-if="displayExchangeRate" class="currency-page mt-2">
       <p class="w-100 text-left">Exchange Rate</p>
       <v-row no-gutters class="w-100">
         <v-col cols="5">

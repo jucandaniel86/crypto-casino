@@ -8,13 +8,20 @@ export type NetworkDataT = {
 }
 
 export type WalletT = {
+  wallet_id: number
   code: string
   name: string
   symbol: string
   balance: number
-  isFiat: boolean
+  is_fiat: boolean
   precision: number
+  decimals: number
   minAmount: number
   supportsTag: boolean
   networkData?: NetworkDataT[]
+  available_base: number
+  available: number
+  reserved: number
+  owner_address: string
+  token_mint: string
 }

@@ -1,6 +1,11 @@
 <!-- eslint-disable @typescript-eslint/no-explicit-any -->
 <script setup lang="ts">
-import { ProfileActivityFilters, type BetTransactonType } from '~/config/Profile.config'
+import {
+  ProfileActivityFilters,
+  ProfileActivityItemType,
+  type BetTransactonType,
+} from '~/config/Profile.config'
+import CurrencySelector from '../shared/CurrencySelector.vue'
 
 //composables
 const { convertCurrency, convertDate, isset } = useUtils()
@@ -31,18 +36,27 @@ const fetchResults = async (): Promise<void> => {
   if (currentFetchURL) {
     loading.value = true
     try {
-      const { data, success }: any = await useAPIFetch(currentFetchURL.fetchUrl, {
+      const { data, meta }: any = await useAPIFetch(currentFetchURL.fetchUrl, {
         page: page.value,
         length: length.value,
         currency: isset(filters.value.currency) ? filters.value.currency : undefined,
         from: isset(filters.value.time) ? filters.value.time.from : undefined,
         to: isset(filters.value.time) ? filters.value.time.to : undefined,
         game: isset(filters.value.game) ? filters.value.game : undefined,
+        type: isset(filters.value.type) ? filters.value.type : undefined,
       })
 
-      if (data && success) {
-        results.value = data.data
-        total.value = data.total
+      if (data) {
+        switch (activityType.value) {
+          case 'bets':
+            results.value = data.data
+            total.value = data.total
+            break
+          case 'transactions':
+            results.value = data
+            total.value = meta.total
+            break
+        }
       }
     } catch (err) {
       console.warn('err', err)
@@ -129,19 +143,23 @@ onMounted(() => {
                 {{ filter.label }}
               </div>
               <SharedGameSearchAutocomplete
-                v-if="filter.visible && filter.type === 'AUTOCOMPLETE'"
+                v-if="filter.visible && filter.type === ProfileActivityItemType.AUTOCOMPLETE"
                 v-model="filters[filter.id]"
               />
               <v-select
-                v-if="filter.visible && filter.type === 'SELECT'"
+                v-if="filter.visible && filter.type === ProfileActivityItemType.SELECT"
                 v-model="filters[filter.id]"
                 density="compact"
                 :items="filter.values"
                 :item-title="'label'"
                 :item-value="'value'"
               />
+              <CurrencySelector
+                v-if="filter.visible && filter.type === ProfileActivityItemType.CURRENCY"
+                v-model="filters[filter.id]"
+              />
               <form-datetime
-                v-if="filter.visible && filter.type === 'TIME'"
+                v-if="filter.visible && filter.type === ProfileActivityItemType.TIME"
                 v-model="filters[filter.id]"
               />
             </v-col>
@@ -173,7 +191,7 @@ onMounted(() => {
         indeterminate
         class="transactions_loader"
       />
-      <table class="transactions-table mt-8">
+      <table v-if="activityType === 'bets'" class="transactions-table mt-8">
         <thead>
           <tr>
             <th>{{ t('settings.game') }}</th>
@@ -195,6 +213,31 @@ onMounted(() => {
             <td>{{ result.round_finished ? 'Completed' : 'Completed' }}</td>
             <td>
               <span class="transaction-text-overlay">{{ result.transaction_id }}</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table v-if="activityType === 'transactions'" class="transactions-table mt-8">
+        <thead>
+          <tr>
+            <th>{{ t('settings.type') }}</th>
+            <th>{{ t('settings.currency') }}</th>
+            <th>{{ t('settings.amount') }}</th>
+            <th>{{ t('settings.timestamp') }}</th>
+            <th>{{ t('settings.status') }}</th>
+            <th>{{ t('settings.transID') }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="(result, i) in results" :key="`Transaction_${activityType}_${i}`">
+            <td>{{ result.type }}</td>
+            <td>{{ result.currency }}</td>
+            <td>{{ convertCurrency(result.amount) }}</td>
+            <td>{{ convertDate(result.created_at) }}</td>
+            <td>{{ result.status }}</td>
+            <td>
+              <span class="transaction-text-overlay">{{ result.txid }}</span>
             </td>
           </tr>
         </tbody>

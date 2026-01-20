@@ -20,6 +20,7 @@ export default defineNuxtConfig({
   plugins: [
     { src: './plugins/i18n', mode: 'client' },
     { src: './plugins/walletconnect', mode: 'client' },
+    { src: './plugins/alerts', mode: 'client' },
     { src: './plugins/wagmi', mode: 'client' },
   ],
 

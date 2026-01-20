@@ -2,7 +2,6 @@
 <script setup lang="ts">
 import { useWalletStore } from '~/core/store/wallet'
 import type { WalletT } from '~/core/types/Wallet'
-import CurrencyPage from './currency-page.vue'
 
 //enums
 enum DepositViewTypes {
@@ -11,27 +10,11 @@ enum DepositViewTypes {
   WALLET_CONNECT = 'WALLET_CONNECT',
 }
 
-const wallets = ref({})
-const loading = ref<boolean>(false)
-const depositData = ref<any>()
 const currentView = ref<DepositViewTypes>(DepositViewTypes.WALLETS)
 
 //composables
-const { currentWalletDepositPage } = storeToRefs(useWalletStore())
+const { currentWalletDepositPage, cryptoWallets, fiatWallets } = storeToRefs(useWalletStore())
 const { setCurrentWalletDepositPage } = useWalletStore()
-
-//methods
-const getDepositWallets = async (): Promise<void> => {
-  loading.value = true
-  const data: any = await $fetch('/json/responses/deposit.json')
-  const DepositContainer = data.find((el: any) => el.container === 'DepositContainer')
-
-  if (DepositContainer) {
-    depositData.value = DepositContainer
-    wallets.value = DepositContainer.data.depositCurrencies
-  }
-  loading.value = false
-}
 
 const handleBackToMain = () => {
   setCurrentWalletDepositPage(null)
@@ -44,27 +27,14 @@ const handleWalletChange = (wallet: WalletT) => {
 }
 
 //computed
-const cryptoWallets: ComputedRef<WalletT[]> = computed(() => {
-  return Object.entries(wallets.value)
-    .filter((wallet: any) => !wallet[1].isFiat)
-    .map((wallet: any) => wallet[1])
-})
-
-const fiatWallets: ComputedRef<WalletT[]> = computed(() => {
-  return Object.entries(wallets.value)
-    .filter((wallet: any) => !wallet[1].isFiat)
-    .map((wallet: any) => wallet[1])
-})
-
 onMounted(() => {
-  getDepositWallets()
   setCurrentWalletDepositPage(null)
   currentView.value = DepositViewTypes.WALLETS
 })
 </script>
 <template>
   <div>
-    <CurrencyPage
+    <WalletDepositPage
       v-if="currentView === DepositViewTypes.WALLET_ITEM && currentWalletDepositPage"
       :currency="currentWalletDepositPage"
       :back-label="'Deposit in crypto'"
@@ -75,21 +45,16 @@ onMounted(() => {
       @on-back="handleBackToMain"
     />
     <template v-else>
-      <div v-if="loading" class="d-flex justify-center align-center">
-        <v-progress-circular color="purple" />
-      </div>
-      <div v-else>
-        <wallet-deposit-item
-          label="Deposit in crypto"
-          :wallets="cryptoWallets"
-          @on-wallet-change="handleWalletChange"
-        />
-        <wallet-deposit-item
-          label="Deposit in fiat"
-          :wallets="fiatWallets"
-          @on-wallet-change="handleWalletChange"
-        />
-      </div>
+      <WalletCurrenciesWrapper
+        label="Deposit in crypto"
+        :wallets="cryptoWallets"
+        @on-wallet-change="handleWalletChange"
+      />
+      <WalletCurrenciesWrapper
+        label="Deposit in fiat"
+        :wallets="fiatWallets"
+        @on-wallet-change="handleWalletChange"
+      />
       <div class="deposit-item-footer">
         <p>Deposit using WalletConnect</p>
         <v-btn

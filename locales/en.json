@@ -99,5 +99,16 @@
     "realMoney": "Play Real Money",
     "demo": "Play DEMO",
     "currencyDisclaimer": "The in-game balance will be displayed in EUR."
+  },
+  "wallets": {
+    "withdraw_balance": "Available balance",
+    "withdraw_amount": "This is the total amount of real money in the specific currency you have selected. Keep in mind wagering requirements may still apply, so you might not be able to withdraw all of them.",
+    "minAmount": "Min amount {amount}",
+    "withdraw_disclaimer": "Please enter the wallet address where you wish to receive the funds. Once confirmed, the transaction is usually processed within a few minutes.",
+    "address": "Receiving {currency} address *",
+    "amount": "Amount",
+    "rate": "Rate",
+    "requestWithdraw": "Request Withdraw",
+    "withdraw_disclaimer2": "Requesting a withdrawal means that you forfeit all bonus funds <br />All withdrawals are subject to a fee"
   }
 }

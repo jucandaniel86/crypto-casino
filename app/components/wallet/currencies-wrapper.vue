@@ -61,7 +61,11 @@ const handleWalletChange = (wallet: WalletT) => {
         <WalletCurrency :currency="currency" @on-click="handleWalletChange" />
       </li>
     </ul>
-    <div v-if="currencyLimit > 0" class="wallet-currency-item-viewall" @click="currencyLimit = -1">
+    <div
+      v-if="currencyLimit < currentWallets.length"
+      class="wallet-currency-item-viewall"
+      @click="currencyLimit = -1"
+    >
       View all
     </div>
   </div>

@@ -16,10 +16,11 @@ const emitters = defineEmits(['onClick'])
     <div class="content">
       <p class="fw-600">{{ props.currency.name }} ({{ props.currency.code }})</p>
       <div class="fw-600">
-        {{ convertCurrency(props.currency.balance, props.currency.precision) }}
+        {{ convertCurrency(props.currency.available, props.currency.precision) }}
       </div>
       <p class="fw-400">
-        Min. Amount: <span class="fw-600">{{ convertCurrency(props.currency.minAmount, 4) }}</span>
+        Min. Amount:
+        <span class="fw-600">{{ convertCurrency(props.currency.minAmount, 4) }}</span>
       </p>
     </div>
   </div>

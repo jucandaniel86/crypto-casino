@@ -71,7 +71,7 @@ watch(dialog, () => {
     :persistent="overlayView !== OverlaysTypes.FORGOT"
     transition="dialog-bottom-transition"
   >
-    <wallet v-if="OverlaysTypes.WALLET && isLogged" />
-    <forgot v-if="OverlaysTypes.FORGOT" />
+    <wallet v-if="isLogged && overlayView === OverlaysTypes.WALLET" />
+    <forgot v-if="overlayView === OverlaysTypes.FORGOT" />
   </v-dialog>
 </template>

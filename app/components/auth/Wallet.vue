@@ -7,10 +7,10 @@ import { OverlaysTypes } from '~/core/types/Overlays'
 import type { WalletT } from '~/core/types/Wallet'
 
 //composables
-const { currentWallet } = storeToRefs(useWalletStore())
+const { currentWallet, wallets } = storeToRefs(useWalletStore())
 const { isLogged } = storeToRefs(useAuthStore())
 const { logout } = useAuthStore()
-const { setWallet, getCurrentWallet } = useWalletStore()
+const { setWallet, getCurrentWallet, setWallets } = useWalletStore()
 const { replace } = useRouter()
 const { wait } = useUtils()
 const { name } = useDisplay()
@@ -22,25 +22,24 @@ const { t } = useI18n()
 
 //models
 const menu = ref<boolean>(false)
-const walletButton = ref()
 const fiatOnly = ref<boolean>(false)
-const userWallets = ref<WalletT[]>()
+
 const walletSelectLoading = ref<boolean>(false)
 
 const openWalletModal = () => {
   replace({ query: { overlay: OverlaysTypes.WALLET } })
 }
 const getUserWallets = async (): Promise<void> => {
-  const { wallets } = await useAPIFetch('/player/wallets')
-  if (wallets) {
-    userWallets.value = wallets
+  const { wallets: dataWallets } = await useAPIFetch('/player/wallets')
+  if (dataWallets) {
+    setWallets(dataWallets)
   }
 }
 
 const handleWalletSelect = async (wallet: WalletT): Promise<void> => {
   walletSelectLoading.value = true
-  const data = await useApiPostFetch('/player/set-wallet', {
-    currency: wallet.code,
+  const data = await useApiPostFetch('/player/wallets/current', {
+    wallet_id: wallet.wallet_id,
   })
   if (data) {
     if (inGame.value) {
@@ -54,11 +53,10 @@ const handleWalletSelect = async (wallet: WalletT): Promise<void> => {
 const convertBalance = (balance: number, decimal: number) => Number(balance).toFixed(decimal)
 
 //computed
-const wallets = computed(() => {
-  if (fiatOnly.value) {
-    return userWallets.value?.filter((wallet) => wallet.isFiat)
-  }
-  return userWallets.value
+const activeWallets = computed(() => {
+  if (!fiatOnly.value) return wallets.value
+
+  return wallets.value.filter((wallet) => wallet.is_fiat)
 })
 const isMobile = computed(() => ['xs', 'sm'].indexOf(name.value) !== -1)
 const isDesktop = computed(() => ['lg', 'md', 'xl'].indexOf(name.value) !== -1)
@@ -100,10 +98,10 @@ watch(loadWallets, async () => {
       :open-delay="400"
     >
       <template #activator="{ props }">
-        <v-btn v-bind="props" class="wallet_btn" ref="walletButton">
+        <v-btn v-bind="props" class="wallet_btn" :disabled="inGame">
           <div class="d-flex justify-center align-center ga-2">
             <span v-if="!inGame">{{
-              convertBalance(currentWallet?.balance, currentWallet?.precision)
+              convertBalance(currentWallet?.available, currentWallet?.precision)
             }}</span>
             <span v-else>(In Play)</span>
             <SharedIcon
@@ -129,7 +127,7 @@ watch(loadWallets, async () => {
               <div class="current-balance">
                 <span class="balance-label">{{ t('wallet.balance') }}</span>
                 <span class="balance-value">
-                  {{ convertBalance(currentWallet.balance, currentWallet.precision) }}
+                  {{ convertBalance(currentWallet.available, currentWallet.precision) }}
                   <span>{{ currentWallet.code }}</span>
                 </span>
               </div>
@@ -137,7 +135,7 @@ watch(loadWallets, async () => {
                 <div class="balance-item">
                   <span class="balance-label">{{ t('wallet.withdrawable') }}</span>
                   <span class="balance-value">
-                    {{ convertBalance(currentWallet.balance, currentWallet.precision) }}
+                    {{ convertBalance(currentWallet.available, currentWallet.precision) }}
                     <span>{{ currentWallet.code }}</span>
                   </span>
                 </div>
@@ -153,7 +151,7 @@ watch(loadWallets, async () => {
             <div class="wallet_currencies_wrapper">
               <v-progress-linear v-if="walletSelectLoading" indeterminate color="purple" />
               <ul>
-                <li v-for="wallet in wallets" :key="`Wallet${wallet.code}`">
+                <li v-for="wallet in activeWallets" :key="`Wallet${wallet.code}`">
                   <div
                     class="balance-component"
                     :class="{
@@ -163,7 +161,7 @@ watch(loadWallets, async () => {
                     @click="handleWalletSelect(wallet)"
                   >
                     <div class="amount" :class="{ zero: wallet.balance <= 0 }">
-                      {{ convertBalance(wallet.balance, wallet.precision) }}
+                      {{ convertBalance(wallet.available, wallet.precision) }}
                     </div>
                     <div class="balance">
                       <SharedIcon :icon="`currency-ico-${String(wallet.code).toLowerCase()}`" />

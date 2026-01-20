@@ -14,7 +14,7 @@ const tabs = ref([
 const closeModal = () => replace({ query: {} })
 </script>
 <template>
-  <v-card class="wallet-card mx-auto w-100" max-width="550" max-height="100%">
+  <v-card class="wallet-card mx-auto w-100" max-width="550" max-height="100%" height="600">
     <v-card-title>
       <v-tabs v-model="currentTab" align-tabs="start" class="mb-5">
         <v-tab v-for="(tab, i) in tabs" :key="`Tab${i}`" :value="tab.id">
