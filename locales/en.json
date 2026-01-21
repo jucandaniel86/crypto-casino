@@ -110,5 +110,13 @@
     "rate": "Rate",
     "requestWithdraw": "Request Withdraw",
     "withdraw_disclaimer2": "Requesting a withdrawal means that you forfeit all bonus funds <br />All withdrawals are subject to a fee"
+  },
+  "betfeed": {
+    "game": "Game",
+    "user": "User",
+    "time": "Time",
+    "betAmount": "Bet Amount",
+    "multiplier": "Multiplier",
+    "payout": "Payout"
   }
 }
