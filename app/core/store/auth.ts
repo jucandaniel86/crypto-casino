@@ -74,6 +74,11 @@ export const useAuthStore = defineStore(
         try {
           const decodedToken = jwtDecode.jwtDecode(token.value as any)
           const currentTime = Date.now() / 1000
+          if (typeof decodedToken !== 'undefined') {
+            //@ts-ignore
+            console.log('decoded', decodedToken?.exp, decodedToken?.exp < currentTime)
+          }
+
           //@ts-ignore
           if (typeof decodedToken !== 'undefined' && decodedToken?.exp < currentTime) {
             return false
